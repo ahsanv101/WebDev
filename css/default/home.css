@@ -1,0 +1,554 @@
+@import "/typetravel/styles/themes/components/dropdown.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/home.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
+
+body{
+    font-family: "cousine", Courier, monospace;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1em;
+    color: #f2771f;
+    font-size: 10vh;
+    font-weight: 600;
+}
+
+/*LINKS, SELECTION, CODE*/
+a {
+    color: white;
+}
+
+a:hover {
+    color: #e8853f !important;
+}
+
+::selection{
+    background-color: #83c0cf;
+    color: white;
+}
+
+code{
+    color:rgb(17, 120, 138);
+}
+
+.btn:hover{
+    background-color: #ccf5ff !important;
+    color:#83c0cf;
+}
+  
+/*NAVBAR*/
+.navbar{
+    font-family: "cousine", Courier, monospace;
+    text-transform: lowercase;
+    font-weight: 300;
+    background-color: black;
+}
+
+.nav-active {
+    box-shadow: 5px -1px 12px -5px rgb(255, 255, 255);
+    backdrop-filter: blur(7px);
+    background: transparent;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link{
+    font-size: 6vh !important;
+    color: white !important;
+}
+
+.navbar-dark .navbar-brand{
+    font-size: 4vh;
+    color: white;
+}
+
+.dropdown-menu{
+  background-color: #e8853f;
+}
+
+.dropdown-item:hover{
+    color: #2d6f80 !important;
+    background-color: #e8853f;
+}
+
+.spType{
+  display: inline-block;
+}
+
+#ttlType{
+    direction: rtl;
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+.navbar-brand{
+  font-family: "montserrat", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 3vh !important;
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+}
+
+#capT{
+  background-image: url("/typetravel/images/icons/T-future-light.svg");
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 10vh;
+  padding: 2rem;
+}
+.modal-dialog{
+    max-width: 100vh !important;
+}
+
+.modal-body p{
+    font-size: 1rem;
+    text-align: left;
+    padding: 0;
+}
+
+.modal-header, .discl-basic .modal-footer{
+    background-color: #83c0cf;
+  }
+  
+  .modal-footer .btn{
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+  
+  .modal-title{
+    font-family: "montserrat", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.5vh;
+  }
+
+/*FIRST*/
+#first{
+    background-color: #e8853f !important;
+}
+
+#first h1{
+    padding-top: 16vh !important;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white !important;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16vh;
+}
+
+#first #travel{
+    color: #000000 !important;
+    margin-left: -1rem !important;
+}
+
+#T-main{
+    background-image: url("/typetravel/images/icon.png");
+    background-size: 18vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    padding: 5rem;
+}
+
+#first h2{
+    font-size: 5vh;
+    padding-bottom: 1rem;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    color: black;
+}
+
+#project-description{
+    opacity: 0.5;
+    font-size: 4vh;
+    padding-top: 2vh;
+    text-align: center;
+}
+
+#icon{
+    padding: 10vh;
+    background-image: url("/typetravel/images/icons/start.svg");
+    background-size: 15vh;
+    margin: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+#icon:hover{
+    background-image: url("/typetravel/images/icons/start-hov.svg");
+    background-color: transparent !important;
+}
+
+#get-started-btn-1{
+    padding-top: 4rem;
+}
+
+.get-s, .get-s #get-started-btn{
+    display: none;
+}
+
+/*SECOND*/
+#second, #gosecond{
+    background-color: #241603 !important;
+}
+
+#about-proj{
+    padding: 0 5rem 0 5rem;
+    text-align: center;
+}
+
+#about-proj p{
+    font-size: 3.5vh;
+    color: white;
+}
+
+#btn-themes{
+    background-color: #e08e1d;
+    font-family: "montserrat", Courier, monospace;
+    color: white;
+    border-radius: 0;
+    border: none;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    margin-right: -0.5rem !important;
+}
+
+#btn-themes:hover, 
+#btn-issues:hover{
+    color: black !important;
+}
+
+#btn-issues{
+    background-color: white;
+    font-family: "montserrat", Courier, monospace;
+    color: #e08e1d;
+    border-radius: 0;
+    border: none;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    margin-left: -0.5rem!important;
+}
+
+/*THIRD*/
+#third{
+    background-color: #ffc197;
+}
+
+#gothird{
+    background-color: #e08e1d;
+}
+
+.btn-third{
+    font-family: "montserrat", Courier, monospace;
+    color: #e08e1d;
+    border-radius: 0;
+    border: none;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-size: 4vh !important;
+}
+.btn-third:first-child{
+    background-color: #e08e1d !important;
+    margin-right: -0.5rem!important;
+    margin-left: -13rem !important;
+}
+
+.btn-third:first-child:hover{
+    background-color: #e08e1d !important;
+}
+
+.btn-third:nth-child(2){
+    background-color: #e08e1d !important;
+    color: black;
+    margin-left: 0rem!important;
+}
+
+.btn-third:nth-child(2):hover{
+    background-color: #e08e1d !important;
+}
+
+#card-renaissance, #card-1980s{
+    margin-left: 6vh !important;
+}
+
+#card-secession, #card-future{
+    margin-right: 6vh !important;
+}
+
+#third .card-body .btn:first-of-type{    
+    font-size: 5.5vh;
+}
+
+#third .card-body img{
+    height: 25vh !important;
+}
+
+#third .card-body .btn:hover{
+    background: none !important;
+}
+
+#third p{
+    padding: 0.5rem 2rem 0.5rem 2rem!important;
+    font-size: 2.5vh;
+}
+
+#third #themes-text{
+    margin: 1rem 0 1rem 0;
+}
+
+#card-renaissance .btn-doc{
+    margin-top: 0.5rem !important;
+    font-size: 4vh;
+}
+
+#card-renaissance .btn-doc:hover{
+    color: #535353;
+}
+
+#card-secession .btn-doc{
+    margin-top: 1rem !important;
+    padding: 2vh;
+    color: #e08e1d;
+    font-size: 4.5vh;
+}
+
+#card-secession .btn-doc:hover{
+    color: #5a4120;
+}
+
+#card-1980s .btn-doc{
+    margin-top: 1rem !important;
+    padding: 2vh;
+    font-size: 5vh;
+}
+
+#card-1980s .btn-doc:hover{
+    color: #2d1c55;
+}
+
+#card-future .btn-doc{
+    margin-top: 1rem !important;
+}
+
+#card-future .btn-doc:hover{
+    color: #818181;
+}
+
+/*FOURTH*/
+#gofourth{
+    background-color: #e08e1d !important;
+}
+
+#fourth{
+    background-color: #ffc197;
+}
+
+#fourth h2{
+    color: #e08e1d;
+}
+
+#issue-text{
+    padding: 0 10rem 0 10rem;
+}
+
+.issue {
+    cursor: pointer;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#card-iss1 .fadedbox{
+    background-color:rgb(255, 203, 60, 0.6);
+}  
+
+#card-iss2 .fadedbox{
+    background-color:rgb(85, 175, 109, 0.6);
+    font-size: 4.5vh;
+}
+
+.issue .fadedbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    font-family: montserrat;
+    font-weight: bold;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: auto;
+    height: inherit;
+    padding: 3rem;
+    font-size: 5vh;
+}
+
+.issue:hover .fadedbox {
+    opacity: 1;
+}
+.issue .text {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+}
+.issue .title {
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+.issue:hover .title,
+.issue:focus .title {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+
+.card-txt{
+    font-weight: 500;
+    font-size: 3vh;
+    font-family: "cousine", Courier, monospace;
+}
+
+.see-article{
+    background-color: black;
+    border: none;
+    padding: 0 2rem 1rem 2rem !important;
+    margin-top: 1rem;
+}
+
+.see-article a{
+    font-size: 3vh;
+    color: white !important;
+    text-decoration: none !important;
+    background-color: transparent;
+}
+
+.see-article:hover{
+    background-color: #72A8B5;
+}
+
+/*IMAGES*/
+#fourth .card{
+    height: auto;
+    margin: 2em;
+    margin-top: 2em;
+    border: none;
+    border-radius: 0;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #e08e1d !important;
+}  
+
+footer p, .contacts, #discl, #cp{
+    font-size: 2.5vh !important;
+    padding: 3rem 0 0 0 !important;
+}
+
+#footer-left, #footer-right{
+    width: 10% !important;
+}
+
+.info-footer, .contacts{
+    width: 40% !important;
+}
+
+footer p{
+    text-align: right;
+    padding-left: 0;
+}
+
+#cp{
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: #578b99 !important;
+}
+
+
+:root{
+    --time-color: black;
+    --time-transition: ease-in-out 0.3s;
+}
+
+@media (max-width: 768px){
+    .btn-third{
+        font-size: 3vh !important;
+        margin-left: 1rem !important;
+    }
+    .btn-third:first-child{
+        margin-left: 1rem !important;
+        padding-top: 1rem;
+    }
+}
+
+
+@media (max-width: 992px){
+    /*NAVBAR*/
+    .navbar .collapse{
+        background: #83c0cf !important;
+        border: 2px solid #578b99;
+        border-top: none;
+    }
+    #first h1{
+        font-size: 8vh !important;
+    }
+    #first #travel{
+        margin-left: -1rem !important;
+    }
+    #first h2{
+        font-size: 3.5vh;
+    }
+    #project-description{
+        font-size: 3.5vh !important;
+        
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px){
+    #about-proj p{
+        font-size: 3vh;
+    }
+    .issue-description{
+        font-size: 2.5vh !important;
+        padding-bottom: 0.5rem !important;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .issue-description{
+        font-size: 2.5vh !important;
+        padding-bottom: 0.5rem !important;
+    }
+}
