@@ -231,29 +231,29 @@
 
 		function main() {
 
-			var xhttp = new XMLHttpRequest();
-			var obj = xhttp.open("GET", "filelist.json", true);
-			xhttp.send();
-			var obj1 = JSON.parse(obj);
-			a0 = obj1.a0;
-			console.log(a0)
+			// var xhttp = new XMLHttpRequest();
+			// var obj = xhttp.open("GET", "filelist.json", true);
+			// xhttp.send();
+			// var obj1 = JSON.parse(obj);
+			// a0 = obj1.a0;
+			// console.log(a0)
 
 
 
 
-			// $.ajax({
-			// 	type: 'GET',
-			// 	dataType: 'json',
-			// 	url: 'filelist.json',
-			// 	success: function(d) {
-			// 		for (var i=0; i<d.length; i++) {
-			// 			$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
-			// 		}	
-			// 	},
-			// 	error: function() {
-			// 		alert('No document to show')
-			// 	}
-			// });
+			$.ajax({
+				type: 'GET',
+				dataType: 'json',
+				url: 'filelist.json',
+				success: function(d) {
+					for (var i=0; i<d.length; i++) {
+						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
+					}	
+				},
+				error: function() {
+					alert('No document to show')
+				}
+			});
 			
 			
 			$('#showasides').click(function() {
@@ -279,7 +279,7 @@
 		function load(file) {
 			$.ajax({
 				method: 'GET',
-				url: 'filelist.json',
+				url: file,
 				success: function(d) {
 					$('#file').html(d)
 					$('#title').html($('#file h1'))
