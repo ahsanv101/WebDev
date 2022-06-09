@@ -17,6 +17,7 @@ function main() {
         url: 'filelist.json',
         success: function(d) {
             for (var i=0; i<d.length; i++) {
+                alert(d)
                 $('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
             }	
         },
@@ -51,7 +52,7 @@ function load(file) {
         method: 'GET',
         url: file,
         success: function(d) {
-            alert(file)
+            // alert(file)
             $('#file').html(d)
             $('#title').html($('#file h1'))
             $('.show').prop("checked", false)
