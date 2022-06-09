@@ -51,6 +51,7 @@ function load(file) {
         method: 'GET',
         url: file,
         success: function(d) {
+            alert(file)
             $('#file').html(d)
             $('#title').html($('#file h1'))
             $('.show').prop("checked", false)
