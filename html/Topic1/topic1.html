@@ -1,0 +1,339 @@
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Sentences</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Custom styles for this template -->
+	<style>
+		body {
+			padding-top: 70px;
+		}
+
+		.myborder {
+			border: solid rgb(220,220,220) 1px;
+			padding: 10px;
+			margin-bottom: 15px; 
+		}
+		.myborder-notop {
+			border-top: none;
+		}
+		
+		.breath {
+			margin-top: 15px;
+		}
+		
+		.tab-pane {
+			min-height: 150px;
+		}
+		
+		.aside:before {
+			content: " – ";
+			background-color: #ffffff !important;
+		}
+		.aside:after {
+			content: " – ";
+			background-color: #ffffff !important;
+		}
+
+		q:before {
+			content: "“";
+			background-color: #ffffff !important;
+		}
+		q:after {
+			content: "”";
+			background-color: #ffffff !important;
+		}
+		q.speech:before {
+			content: "«";
+			background-color: #ffffff !important;
+		}
+		q.speech:after {
+			content: "»";
+			background-color: #ffffff !important;
+		}
+		
+		.text-aside {
+			background-color: #ffddff;
+		}
+		
+		.text-speeches {
+			background-color: #ddffdd;
+		}
+		.text-quotes {
+			background-color: #ffffdd;
+		}
+		
+		ul {
+			padding-inline-start: 0.5em; 
+		}
+		.list {
+			font-size: 80%;
+			line-height: 1.2; 
+			margin: 0; 
+			white-space: nowrap; 
+			overflow-x: hidden;
+			list-style-position:inside;  
+		}
+		.list a {
+			color: black;
+			margin: 0; 
+		}
+		.list-speech:before {
+			content: "«";
+		}
+		.list-speech:after {
+			content: "»";
+		}
+		.list-quote:before {
+			content: "“";
+		}
+		.list-quote:after {
+			content: "”";
+		}
+		
+		.animate {
+			animation-name: bgcolor ;
+			animation-duration: 0.75s ; 
+			animation-iteration-count: 3;
+			animation-fill-mode: backwards;
+		}
+
+		@keyframes bgcolor {
+			from { background-color: #ffffff;  }
+			to { background-color: #cccc00; }
+		}
+		
+	</style>
+	</head>
+
+	<body>
+
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<a class="navbar-brand" href="#">Sentences</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#" role="button" data-toggle="modal" data-target="#about">About <span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+  	<div class="container-fluid">
+
+		<!-- Main component for a primary marketing message or call to action -->
+		<div class="row clearfix">
+			<div class="col-md-3">
+				<div class="row clearfix border p-2">
+					<div class="col-md-12">
+						<h3>Documents</h3>
+						<ul id="list">
+						</ul>
+					</div>
+				</div>
+				<div class="row clearfix mt-4">
+					<div class="col-md-12">
+						<form role="form">
+							<div class="checkbox"><label>
+								<input type="checkbox" id="showasides" class="show">Show asides</label></div>
+							<div class="checkbox"><label>
+								<input type="checkbox" id="showspeeches" class="show">Show speeches</label></div>
+							<div class="checkbox"><label>
+								<input type="checkbox" id="showquotes" class="show">Show quotes</label></div>
+						</form>
+					</div>
+				</div>
+				<div class="row clearfix mt-4">
+					<div class="col-md-12">
+						<ul class="nav nav-tabs" id="sentenceTab" role="tablist">
+						  <li class="nav-item">
+							<a class="nav-link active" id="asides-tab" data-toggle="tab" href="#asides" role="tab" aria-controls="view" aria-selected="true">Asides</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" id="speeches-tab" data-toggle="tab" href="#speeches" role="tab" aria-controls="home" aria-selected="false">Speeches</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" id="quotes-tab" data-toggle="tab" href="#quotes" role="tab" aria-controls="home" aria-selected="false">Quotes</a>
+						  </li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content" id="sentenceContent">
+							<div class="tab-pane active myBorder myBorder-notop" id="asides" role="tabpanel" aria-labelledby="asides-tab">
+								<ul></ul>
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="speeches" role="tabpanel" aria-labelledby="speeches-tab">
+								<ul></ul>
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="quotes" role="tabpanel" aria-labelledby="quotes-tab">
+								<ul></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+			<div class="col-md-9">
+				<div class="jumbotron" id="title"><h1>Sentences</h1> </div>
+				<div id="file"></div>
+			</div>
+		</div>	
+	</div> <!-- /container -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="aboutLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutLabel">About Sentences</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<p>Used for the purpose of the course in Web Technologies for DHDK students at the University of Bologna</p>
+		<p>© 2020 Fabio Vitali. All right reserved.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+		String.prototype.tpl = function(o) { 
+			var r = this ; 
+			for (var i in o) { 
+				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
+			} 
+			return r 
+		}
+		
+		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
+		
+		$(document).ready(main);
+
+		function main() {
+
+			var xhttp = new XMLHttpRequest();
+			var obj = xhttp.open("GET", "filelist.json", true);
+			xhttp.send();
+			var obj1 = JSON.parse(obj);
+			a0 = obj1.a0;
+			console.log(a0)
+
+
+
+
+			// $.ajax({
+			// 	type: 'GET',
+			// 	dataType: 'json',
+			// 	url: 'filelist.json',
+			// 	success: function(d) {
+			// 		for (var i=0; i<d.length; i++) {
+			// 			$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
+			// 		}	
+			// 	},
+			// 	error: function() {
+			// 		alert('No document to show')
+			// 	}
+			// });
+			
+			
+			$('#showasides').click(function() {
+				if (this.checked) 
+					$('.aside').addClass('text-aside')
+				else
+					$('.aside').removeClass('text-aside')
+			})
+			$('#showspeeches').click(function() {
+				if (this.checked) 
+					$('q.speech').addClass('text-speeches')
+				else
+					$('q.speech').removeClass('text-speeches')
+			})
+			$('#showquotes').change(function() {
+				if (this.checked) 
+					$('q:not(.speech)').addClass('text-quotes')
+				else
+					$('q:not(speech)').removeClass('text-quotes')
+			})
+		}
+		
+		function load(file) {
+			$.ajax({
+				method: 'GET',
+				url: file,
+				success: function(d) {
+					$('#file').html(d)
+					$('#title').html($('#file h1'))
+					$('.show').prop("checked", false)
+					addIds()
+					filltabs()
+				},
+				error: function() {
+					alert('Could not load file '+file)
+				}
+			});
+		}
+		
+		function addIds() {
+			addId('.aside','aside')
+			addId('q.speech', 'speech')
+			addId('q:not(.speech)', 'quote')
+		}
+		
+		function addId(what, prefix) {
+			var id = '0'
+			var elements = $(what); 
+			for (var i=0; i<elements.length; i++) {
+				elements[i].id = prefix + "-" + id++
+			}
+		}
+		function filltabs(){
+			filltab("#file .aside","list-aside","#asides")
+			filltab("#file q.speech","list-speech","#speeches")
+			filltab("#file q:not(.speech)","list-quote","#quotes")
+		}
+		
+		function filltab(what,style,where) {
+			var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
+			var elements = $(what); 
+			$(where+' ul').empty(); 
+			for (var i=0; i<elements.length; i++) {
+				$(where+' ul').append(list.tpl({
+					style:style, 
+					place: '#'+elements[i].id,
+					content: elements[i].innerHTML
+				}) )
+			}
+		}
+		
+		function goto(id) {
+			var t = $(id)[0].offsetTop;
+			$('body').animate({ scrollTop: t }, 200);
+			$(id).addClass('animate');
+			setTimeout(function(){
+				$(id).removeClass('animate');
+			},5000);
+		}
+		
+	</script>
+	</body>
+</html>

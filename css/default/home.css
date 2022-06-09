@@ -21,7 +21,7 @@ h2{
 
 /*LINKS, SELECTION, CODE*/
 a {
-    color: white;
+    color: black;
 }
 
 a:hover {
@@ -29,23 +29,23 @@ a:hover {
 }
 
 ::selection{
-    background-color: #83c0cf;
+    background-color: #e8853f;
     color: white;
 }
 
 code{
-    color:rgb(17, 120, 138);
+    color:rgb(255, 255, 255);
 }
 
 .btn:hover{
-    background-color: #ccf5ff !important;
-    color:#83c0cf;
+    background-color: #e5c18e !important;
+    color:black;
 }
   
 /*NAVBAR*/
 .navbar{
     font-family: "cousine", Courier, monospace;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     font-weight: 300;
     background-color: white;
 }
@@ -112,24 +112,25 @@ code{
     font-size: 1rem;
     text-align: left;
     padding: 0;
+    /* color: #e08e1d; */
 }
 
 .modal-header, .discl-basic .modal-footer{
-    background-color: #83c0cf;
+    background-color: #e8853f;
   }
   
-  .modal-footer .btn{
-    background-color: transparent;
-    border: none;
-    color: white;
-  }
-  
-  .modal-title{
-    font-family: "montserrat", Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 3.5vh;
-  }
+.modal-footer .btn{
+background-color: transparent;
+border: none;
+color: rgb(249, 199, 142);
+}
+
+.modal-title{
+font-family: "montserrat", Arial, sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 3.5vh;
+}
 
 /*FIRST*/
 #first{
@@ -155,7 +156,7 @@ code{
     background-image: url("/typetravel/images/icon.png");
     background-size: 18vh;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center ;
     height: 40vh;
     padding: 5rem;
 }
@@ -463,6 +464,149 @@ code{
     background-color: #72A8B5;
 }
 
+
+/* Glitch effect */
+
+
+.glitchedAnim,
+.invisible-text {
+  font-size: 150px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #fff;
+  margin-top: 1.5em;
+}
+.glitchedAnim {
+  position:absolute;
+  top: 0;
+  opacity: 0.9;
+}
+.invisible-text {
+  visibility: hidden;
+}
+.glitchedAnim:nth-child(2) {
+  color: #fc2424;
+  animation: skewAnim 3s infinite;
+}
+.glitchedAnim:nth-child(3) {
+  color: #e1b943;
+  animation: glitchAnim2 3s infinite;
+}
+.glitchedAnim:nth-child(4) {
+  color: #f1f1f1;
+  animation: glitchAnim1 3s infinite;
+}
+.txt-info {
+  font-family: Open Sans, sans-serif;
+  color: #f1f1f1;
+  font-size: 10px;
+}
+@keyframes glitchAnim1 {
+  7% {
+    transform: none;
+  }
+  10% {
+    transform: translate(6px, -2px);
+  }
+  13% {
+    transform: none;
+  }
+  20% {
+    transform: none;
+  }
+  23% {
+    transform: translate(-12px, -7px);
+  }
+  26% {
+    transform: none;
+  }
+  40% {
+    transform: none;
+  }
+  43% {
+    transform: translate(10px, -9px);
+  }
+  46% {
+    transform: none;
+  }
+  65% {
+    transform: none;
+  }
+  68% {
+    transform: translate(7px, 5px);
+  }
+  71% {
+    transform: none;
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes glitchAnim2 {
+  7% {
+    transform: none;
+  }
+  10% {
+    transform: translate(-6px, 2px);
+  }
+  13% {
+    transform: none;
+  }
+  20% {
+    transform: none;
+  }
+  23% {
+    transform: translate(12px, 7px);
+  }
+  26% {
+    transform: none;
+  }
+  40% {
+    transform: none;
+  }
+  43% {
+    transform: translate(-10px, 9px);
+  }
+  46% {
+    transform: none;
+  }
+  65% {
+    transform: none;
+  }
+  68% {
+    transform: translate(-7px, 5px);
+  }
+  71% {
+    transform: none;
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes skewAnim {
+  20% {
+    transform: none;
+  }
+  23% {
+    transform: skew(5deg, -5deg) translate(10px, 5px);
+  }
+  26% {
+    transform: none;
+  }
+  40% {
+    transform: none;
+  }
+  43% {
+    transform: skew(5deg, -10deg) translate(-5px, 2px);
+  }
+  46% {
+    transform: none;
+  }
+  100% {
+    transform: none;
+  }
+}
+
 /*IMAGES*/
 #fourth .card{
     height: auto;
@@ -563,4 +707,21 @@ footer p{
         font-size: 2.5vh !important;
         padding-bottom: 0.5rem !important;
     }
+}
+
+
+
+
+/* ABOUT US */
+
+
+.about-content{
+
+margin-top: 4em;
+
+}
+
+img{
+    height: 40vh;
+    margin: 1.5rem;
 }
