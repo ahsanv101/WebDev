@@ -17,7 +17,7 @@ function main() {
         url: 'filelist.json',
         success: function(d) {
             for (var i=0; i<d.length; i++) {
-                alert(d)
+                // alert(d)
                 $('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
             }	
         },
