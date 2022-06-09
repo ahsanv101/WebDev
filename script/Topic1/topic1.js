@@ -28,22 +28,26 @@ function main() {
     
     
     $('#showasides').click(function() {
-        if (this.checked) 
-            $('.aside').addClass('text-aside')
+        if (this.checked)
+             $('.person').addClass('text-aside')
+
+            // $('.aside').addClass('text-aside')
         else
-            $('.aside').removeClass('text-aside')
+            $('.person').removeClass('text-aside')
     })
     $('#showspeeches').click(function() {
         if (this.checked) 
-            $('q.speech').addClass('text-speeches')
+            $('.place').addClass('text-speeches')
+            // $('q.speech').addClass('text-speeches')
         else
-            $('q.speech').removeClass('text-speeches')
+            $('.place').removeClass('text-speeches')
     })
     $('#showquotes').change(function() {
         if (this.checked) 
-            $('q:not(.speech)').addClass('text-quotes')
+            $('.event').addClass('text-speeches')
+            // $('q:not(.speech)').addClass('text-quotes')
         else
-            $('q:not(speech)').removeClass('text-quotes')
+            $('.event').removeClass('text-quotes')
     })
 }
 
@@ -66,9 +70,14 @@ function load(file) {
 }
 
 function addIds() {
-    addId('.aside','aside')
-    addId('q.speech', 'speech')
-    addId('q:not(.speech)', 'quote')
+    // addId('.aside','aside')
+    // addId('q.speech', 'speech')
+    // addId('q:not(.speech)', 'quote')
+
+
+    addId('.person','aside')
+    addId('.place', 'speech')
+    addId('.event', 'quote')
 }
 
 function addId(what, prefix) {
@@ -79,9 +88,12 @@ function addId(what, prefix) {
     }
 }
 function filltabs(){
-    filltab("#file .aside","list-aside","#asides")
-    filltab("#file q.speech","list-speech","#speeches")
-    filltab("#file q:not(.speech)","list-quote","#quotes")
+    // filltab("#file .aside","list-aside","#asides")
+    // filltab("#file q.speech","list-speech","#speeches")
+    // filltab("#file q:not(.speech)","list-quote","#quotes")
+     filltab("#file .person","list-aside","#asides")
+    filltab("#file .place","list-speech","#speeches")
+    filltab("#file .event","list-quote","#quotes")
 }
 
 function filltab(what,style,where) {
