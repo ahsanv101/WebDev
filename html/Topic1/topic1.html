@@ -279,7 +279,7 @@
 		function load(file) {
 			$.ajax({
 				method: 'GET',
-				url: file,
+				url: 'filelist.json',
 				success: function(d) {
 					$('#file').html(d)
 					$('#title').html($('#file h1'))
