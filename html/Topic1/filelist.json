@@ -11,5 +11,10 @@
 		"label": "New York times",
 		"url": "NYTimes.html"
 	
+	},
+	{
+		"label": "Cannibalism",
+		"url": "cannibalism.html"
+	
 	}
 ]
