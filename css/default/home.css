@@ -3,13 +3,17 @@
 /* @import "/typetravel/styles/home.css"; */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
+@import url(https://github.com/ahsanv101/WebDev/fonts/Manuskript-Gotisch.ttf);
+@import url('http://fonts.cdnfonts.com/css/plague-death');
+@import url('http://fonts.cdnfonts.com/css/bertholdr-mainzer-fraktur');
 
+                
 body{
-    font-family: "cousine", Courier, monospace;
+  font-family: 'Bertholdr Mainzer Fraktur', sans-serif;
 }
 
 h2{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'PlAGuEdEaTH', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -44,7 +48,7 @@ code{
   
 /*NAVBAR*/
 .navbar{
-    font-family: "cousine", Courier, monospace;
+    font-family: 'Bertholdr Mainzer Fraktur', sans-serif;
     /* text-transform: lowercase; */
     font-weight: 300;
     background-color: white;
@@ -89,7 +93,7 @@ code{
     transform: scale(-1, 1);
 }
 .navbar-brand{
-  font-family: "montserrat", Arial, sans-serif;
+  font-family: 'Bertholdr Mainzer Fraktur', sans-serif;
   text-transform: uppercase;
   font-size: 3vh !important;
   letter-spacing: 0.4rem;
@@ -126,10 +130,10 @@ color: rgb(249, 199, 142);
 }
 
 .modal-title{
-font-family: "montserrat", Arial, sans-serif;
-text-transform: uppercase;
-font-weight: bold;
-font-size: 3.5vh;
+  font-family: 'PlAGuEdEaTH', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3.5vh;
 }
 
 /*FIRST*/
@@ -139,7 +143,7 @@ font-size: 3.5vh;
 
 #first h1{
     padding-top: 16vh !important;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'PlAGuEdEaTH', sans-serif;
     text-transform: uppercase;
     color: white !important;
     text-align: center;
@@ -217,7 +221,7 @@ font-size: 3.5vh;
 
 #btn-themes{
     background-color: #e08e1d;
-    font-family: "montserrat", Courier, monospace;
+    font-family: 'Bertholdr Mainzer Fraktur', sans-serif;
     color: white;
     border-radius: 0;
     border: none;
@@ -235,7 +239,7 @@ font-size: 3.5vh;
 
 #btn-issues{
     background-color: white;
-    font-family: "montserrat", Courier, monospace;
+    font-family: 'Bertholdr Mainzer Fraktur', sans-serif;
     color: #e08e1d;
     border-radius: 0;
     border: none;
@@ -256,7 +260,7 @@ font-size: 3.5vh;
 }
 
 .btn-third{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Bertholdr Mainzer Fraktur', sans-serif;
     color: #e08e1d;
     border-radius: 0;
     border: none;
@@ -396,24 +400,7 @@ font-size: 3.5vh;
     font-size: 4.5vh;
 }
 
-.issue .fadedbox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #000;
-    font-family: montserrat;
-    font-weight: bold;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out;
-    transition: all 300ms ease-out;
-    opacity: 0;
-    width: auto;
-    height: inherit;
-    padding: 3rem;
-    font-size: 5vh;
-}
+
 
 .issue:hover .fadedbox {
     opacity: 1;
@@ -440,29 +427,8 @@ font-size: 3.5vh;
     -webkit-transform: translateY(0px);
 }
 
-.card-txt{
-    font-weight: 500;
-    font-size: 3vh;
-    font-family: "cousine", Courier, monospace;
-}
 
-.see-article{
-    background-color: black;
-    border: none;
-    padding: 0 2rem 1rem 2rem !important;
-    margin-top: 1rem;
-}
 
-.see-article a{
-    font-size: 3vh;
-    color: white !important;
-    text-decoration: none !important;
-    background-color: transparent;
-}
-
-.see-article:hover{
-    background-color: #72A8B5;
-}
 
 
 /* Glitch effect */
@@ -497,7 +463,7 @@ font-size: 3.5vh;
   animation: glitchAnim1 3s infinite;
 }
 .txt-info {
-  font-family: Open Sans, sans-serif;
+  font-family: 'Bertholdr Mainzer Fraktur', sans-serif;
   color: #f1f1f1;
   font-size: 10px;
 }
