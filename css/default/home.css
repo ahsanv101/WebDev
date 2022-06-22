@@ -23,7 +23,7 @@ h2{
     text-transform: uppercase;
     text-align: center;
     margin-top: 1em;
-    color: #9b3133;
+    color: #732627;
     font-size: 10vh;
     font-weight: 600;
 }
@@ -82,14 +82,18 @@ code{
 }
 
 .dropdown-item:hover{
-    color: #2d6f80 !important;
-    background-color: #260D0E;
+    color: #9b3133;
+    background-color: #4c1a1b;
 }
-
+.dropdown-item{
+  color:#9b3139;
+}
 .spType{
   display: inline-block;
 }
-
+#plague{
+  padding-top: 2rem;
+}
 #ttlType{
     direction: rtl;
     transform: scale(-1, 1);
@@ -122,9 +126,13 @@ code{
 .modal-body p{
     font-size: 1rem;
     text-align: left;
-    padding: 0;
-    /* color: #e08e1d; */
-}
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  #pur{
+    padding:2rem;
+    margin-top:2rem;
+  }
 
 .modal-header, .discl-basic .modal-footer{
     background-color: #9b3133;
@@ -185,6 +193,7 @@ color: #260d0e;
     font-size: 4vh;
     padding-top: 2vh;
     text-align: center;
+    color: white;
 }
 
 #icon{
@@ -225,11 +234,14 @@ color: #260d0e;
     font-size: 3.5vh;
     color: white;
 }
+.btn{
+  color: #9b3133;
+}
 
 #btn-themes{
     background-color: #260d0e;
+    color: #4c1a1b;
     font-family: 'Slippery Dip', sans-serif;
-    color: white;
     border-radius: 0;
     border: none;
     letter-spacing: 0.2rem;
@@ -243,7 +255,7 @@ color: #260d0e;
 }
 #btn-themes:hover, 
 #btn-issues:hover{
-    color: black !important;
+    color: #9b3133;
 }
 
 #btn-issues{
@@ -385,7 +397,7 @@ color: #260d0e;
 }
 
 #fourth h2{
-    color: #e08e1d;
+    color: white;
 }
 
 #issue-text{
@@ -613,6 +625,7 @@ footer p, .contacts, #discl, #cp{
 footer p{
     text-align: center;
     padding-left: 0;
+    font-family: 'Bertholdr Mainzer Fraktur', sans-serif;
 }
 
 #cp{
