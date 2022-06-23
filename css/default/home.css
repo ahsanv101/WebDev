@@ -4,21 +4,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
 @import url('http://fonts.cdnfonts.com/css/plague-death');
-@import url('http://fonts.cdnfonts.com/css/bertholdr-mainzer-fraktur');
-@import url('http://fonts.cdnfonts.com/css/slippery-dip');
-                
+@import url('http://fonts.cdnfonts.com/css/dragon-harbour');  
+
+@font-face {
+  font-family: 'canterbury';
+  src: url(../fonts/Canterbury.ttf);
+}
+@font-face {
+  font-family: 'carolingia';
+  src: url(../fonts/carolingia.ttf);
+}
+@font-face {
+  font-family: 'scribish', serif;
+  src: url(../fonts/scribish.ttf);
+}
+
+
 body{
-  font-family: 'Slippery Dip', sans-serif;
+  font-family: 'carolingia', sans-serif;
                                             
 }
 
 
-.glitchblock{
-  font-family: 'PlAGuEdEaTH', sans-serif;
+.glitch-bloc{
+  font-family: 'scribish', serif;
 }
 
+.d-grip{
+  font-family: 'scribish';
+}
+
+
+
 h2{
-    font-family: 'PlAGuEdEaTH', sans-serif;
+    font-family: 'scribish', serif;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -53,41 +72,60 @@ code{
   
 /*NAVBAR*/
 .navbar{
-    font-family: 'Bertholdr Mainzer Fraktur', sans-serif;
+  font-family: 'canterbury', serif;
     /* text-transform: lowercase; */
     font-weight: 300;
-    background-color: white;
+    background-color:#9b3133;
 }
 
 .nav-active {
     box-shadow: 5px -1px 12px -5px rgb(255, 255, 255);
     backdrop-filter: blur(7px);
-    background: transparent;
+    background: #9b3139;
 }
-
+.dropdown-menu:hover{
+  background-color: #9b3139;
+  border-color: #4c1a1b;
+}
+.dropdown-menu:active{
+  background-color: #9b3139;
+  color:#9b3139 ;
+}
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link{
-    font-size: 6vh !important;
-    color: white !important;
+    font-size: 4rem;
 }
 .nav-item, .nav-link{
   color:white;
+  font-size: x-large;
 } 
 .navbar-dark .navbar-brand{
     font-size: 4vh;
-    color: white;
+    color:#260d0e;
 }
-
+.nav-link.active{
+  background-color:#9b3139 ;
+}
+#un{
+  color:#260d0e ;
+}
 .dropdown-menu{
   background-color: #260D0E;
+  color: #4c1a1b;
 }
 
 .dropdown-item:hover{
     color: #9b3133;
-    background-color: #4c1a1b;
 }
 .dropdown-item{
-  color:#9b3139;
+  color:black;
+  font-size: x-large;
 }
+#disclaimer:hover.dropdown-toggle{
+  color:#9b3133;
+}
+.navbar-toggler-icon{
+  transition: background-color .5s;}
+
 .spType{
   display: inline-block;
 }
@@ -104,7 +142,7 @@ code{
     transform: scale(-1, 1);
 }
 .navbar-brand{
-  font-family: 'Slippery Dip', sans-serif;
+  font-family: 'Canterbury', sans-serif;
   text-transform: uppercase;
   font-size: 3vh !important;
   letter-spacing: 0.4rem;
@@ -124,10 +162,23 @@ code{
 }
 
 .modal-body p{
-    font-size: 1rem;
-    text-align: left;
-    padding: 2rem;
-    margin-top: 2rem;
+
+    font-size: 2rem;
+    font-family: 'canterbury';
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 100;
+  }
+  #mod{
+    font-family:'scribish';
+  }
+  #ref{
+    font-family:'canterbury';
+    color:#260d0e;
+    font-size: x-large;
+  }
+  :hover{
+    background-color: #9b3139;
   }
   #pur{
     padding:2rem;
@@ -145,10 +196,10 @@ color: #260d0e;
 }
 
 .modal-title{
-  font-family: 'PlAGuEdEaTH', sans-serif;
+  font-family: 'scribish';
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 3.5vh;
+  font-size: 3rem;
 }
 
 /*FIRST*/
@@ -157,17 +208,16 @@ color: #260d0e;
 }
 
 #first h1{
-    padding-top: 16vh !important;
-    font-family: 'PlAGuEdEaTH', sans-serif;
+    padding-top: 16vh ;
+    
     text-transform: uppercase;
-    color: #260d0e!important;
+    color: #260d0e;
     text-align: center;
     font-weight: 500;
     font-size: 16vh;
 }
 
 #first #travel{
-    color: #000000 !important;
     margin-left: -1rem !important;
 }
 
@@ -193,9 +243,11 @@ color: #260d0e;
     font-size: 4vh;
     padding-top: 2vh;
     text-align: center;
-    color: white;
+    color: #260d0e;
 }
-
+#but{
+  font-family:'scribish' ;
+}
 #icon{
     padding: 10vh;
     background-image: url("/typetravel/images/icons/start.svg");
@@ -209,7 +261,7 @@ color: #260d0e;
 
 #icon:hover{
     background-image: url("/typetravel/images/icons/start-hov.svg");
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 #get-started-btn-1{
@@ -607,6 +659,7 @@ color: #260d0e;
 /*FOOTER*/
 footer{
     background-color: #e08e1d !important;
+    font-family: 'Canterbury';
 }  
 
 footer p, .contacts, #discl, #cp{
@@ -655,13 +708,19 @@ footer p{
         padding-top: 1rem;
     }
 }
-
-
+#navbarDropdownMenuLink{
+  background-color: #9b3139;
+}
+.dropdown-item:hover{
+  background-color: #4c1a1b;
+}
+.dropdown-item:active{
+  background-color:#9b3133;
+}
 @media (max-width: 992px){
     /*NAVBAR*/
     .navbar .collapse{
-        background: #83c0cf !important;
-        border: 2px solid #578b99;
+        
         border-top: none;
     }
     #first h1{
