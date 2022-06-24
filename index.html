@@ -26,7 +26,7 @@
                 <h5 class="modal-title">Disclaimer</h5>
                 <button type="button" class="btn-close" id="mod" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-4" #un>
+                <div class="modbod">
                 <p>
                   The purpose of this web-site is exploring various types of typographic and 
                   layout styles for text documents, as an end-of-course project for the <i>Information Modeling and Web technologies</i>&#8217;course of the Master Degree in <i>Digital Humanities
@@ -39,7 +39,7 @@
                 </p>
                   <ul id="ref">
                     <li><a href="https://time.com/" target="_blank">Time</a>: <a href="https://time.com/magazine/us/4766607/may-15th-2017-vol-189-no-18-u-s/" target="_blank">The World Is Not Ready for the Next Pandemic</a></li>
-                    <li><a href="https://thebulletin.org/#navbar-brand" target="_blank">The Bulletin</a> : <a href="https://thebulletin.org/doomsday-clock/current-time/" target="_blank"></a>Bulletin of the Atomic Scientists</li>
+                    <li><a href="https://thebulletin.org/#navbar-brand" target="_blank">The Bulletin</a> : <a href="https://thebulletin.org/doomsday-clock/current-time/" target="_blank"></a><a href="https://thebulletin.org/#navbar-brand">Bulletin of the Atomic Scientists</a></li>
                     <li><a href="https://www.vox.com/" trarget="_blank">Vox</a>: <a href="https://www.vox.com/future-perfect/2018/12/21/18126576/ai-artificial-intelligence-machine-learning-safety-alignment" target="_blank">The case for taking AI seriously as a threat to humanity</a></li>
                   </ul>
                 <p>
@@ -65,12 +65,12 @@
               <h5 class="modal-title">Disclaimer</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body p-4">
+              <div class="modbod">
               <p>
                 This is about us
               </p>
               <p>
-               Alessandra Trenchi, Ahsan Syed, Ginevra Botto
+               Alessandra Trenchi, Ahsan Syed, Ginevra Botto.
               </p>
                 <ul>
                     <li><a href="https://www.architectmagazine.com/" target="_blank">Architect Magazine</a>: <a href="https://www.architectmagazine.com/design/editorial/the-climate-is-changing-so-must-architecture_o" target="_blank">The Climate Is Changing. So Must Architecture</a></li>
@@ -109,7 +109,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse justify-content-lg-center" class="h"id="navbarNavDropdown">
                 <ul class="navbar-nav">
                 <li class="nav-item ps-2">
                     <a class="nav-link active" aria-current="page" href="index.html" id="nav-active-link">Home</a>
@@ -118,8 +118,8 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Topics
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="html/Topic1/topic1.html">The Story of Evolution</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="DropdownMenuLink">
+                    <li><a class="dropdown-item" href="html/Topic1/topic1.html">Human Failures</a></li>
                     <!-- <li><a class="dropdown-item" href="/typetravel/html/the-future-of-architecture.html">The Future of Architecture</a></li> -->
                     </ul>
                 </li>
@@ -128,11 +128,11 @@
                   Themes
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" tag="link" id="enable-default">The Black Plague</a></li>
-                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-renaissance" >Colonisation</a></li>
-                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-secession">The Great Depresion</a></li>
-                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">WWI</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" rel="stylesheet" href="css/blackplague.css" tag="link" id="enable-default">The Black Plague</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-colon" >Colonization</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-sec">&rsquo;29 Wall Street Crash</a></li>
                     <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">The Cold War</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">Hacker Attacks</a></li>
                     <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-future">Alien Invasion</a></li>
                   </ul>
               </li>
@@ -211,7 +211,18 @@
             </div>
             
         </div>
-
+<!-- start fourth container -->
+<div id="gofourth">
+</div>
+<div class="container-fluid"id="fourth">
+  <div id="renaiss-bg">
+    <div class="row">
+        <h2>Topics</h2>
+      <!-- <p id="issue-text">Are you ready to read? Dive into the issues to read captivating and entertaining articles. And the best part is... you can <b>do it your style!</b></p> -->
+      <p id="issue-text">Select the topic you want to read from here</p>
+        <a href="#" class="btn btn-primary" id="theme5">Humanity Fails</a><br> 
+    </div>
+    </div>
         <div id="gothird">
         </div>        
         <div class="container-fluid" id="third">
@@ -375,41 +386,7 @@
             <div class="col-1"></div>
             </div>
         </div>
-        
-        <!-- start fourth container -->
-        <div id="gofourth">
-        </div>
-        <div class="container-fluid"id="fourth">
-          <div id="renaiss-bg">
-            <div class="row">
-                <h2>Topics</h2>
-            </div>
-            <div class="row">
-              <!-- <p id="issue-text">Are you ready to read? Dive into the issues to read captivating and entertaining articles. And the best part is... you can <b>do it your style!</b></p> -->
-              <p id="issue-text">Select the topic you wan to read from here</p>
-         
-            </div>
-            
-
-            <div class="row" id="themes-card">
-              <div class="col-md-6">
-                <a href="#" class="btn btn-primary" id="theme5">See the articles</a><br> 
-              <!-- <div id="card-1980s" class="card text-center">
-                <button onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">1980s design</a><br>
-                  <img src="/typetravel/images/icons/tv-card.png"><br>
-                  <a href="/typetravel/html/documentation.html#before-1980s" class="btn btn-primary btn-doc">See 1980s documentation</a>
-                </div>
-              </button>
-              </div> -->
-            </div>
-            <div class="col-md-6">
-              <div id="text-1980s">
-                <p class="c-right">1. The Story of Evolution</p>
-              </div>
-              </div>
-            </div>
+      
 
 
             <!-- <div class="row">
@@ -450,7 +427,7 @@
               <div class="row">
                 <div class="col-md-3" id="footer-left"></div>
                 <div class="col-md-3 info-footer">
-                  <p>The team responsible for this project is Ahsan Syed, Alessandra Trenchi and Ginevra Botto for the course Information Modeling and Web Technologies held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali</a></p>
+                  <p>The team responsible for this project is Ahsan Syed, Alessandra Trenchi and Ginevra Botto, for the course Information Modeling and Web Technologies held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali</a></p>
                 </div>
                 <!-- <div class="col-md-3 contacts">
                   <h4>Contacts</h4>
