@@ -58,7 +58,7 @@ body{
   background-color: #9b3133;
 }
 
-.modal-footer .btn{
+.modal-footer, .btn{
 border: none;
 color:#000000;
 }
@@ -79,7 +79,7 @@ color:#000000;
   color:white;
 }
 .btn:hover{
-    background-color:#260d0e !important;
+    background-color:#260d0e;
     color:white;
 }
 .row{
@@ -100,7 +100,9 @@ h2{
 a {
     color: black;
 }
-
+a:hover{
+  color:#9b3139;
+}
 
 
 ::selection{
@@ -122,7 +124,7 @@ code{
 }
 
 .nav-active {
-    box-shadow: 5px -1px 12px -5px rgb(255, 255, 255);
+    box-shadow: 5px -1px 12px -5px white;
     backdrop-filter: blur(7px);
     background-color: white;
 }
@@ -135,7 +137,6 @@ code{
     font-size: 4rem;
 }
 .nav-item, .nav-link{
-  color:white;
   font-size: x-large;
 } 
 .navbar-dark .navbar-brand{
@@ -160,38 +161,10 @@ code{
 .navbar-toggler-icon{
   transition: background-color .5s;}
 
-.spType{
-  display: inline-block;
-}
+
 #plague{
   padding-top: 2rem;
 }
-#ttlType{
-    direction: rtl;
-    transform: scale(-1, 1);
-    -moz-transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
-    -o-transform: scale(-1, 1);
-    -ms-transform: scale(-1, 1);
-    transform: scale(-1, 1);
-}
-.navbar-brand{
-  font-family: 'Canterbury', sans-serif;
-  text-transform: uppercase;
-  font-size: 3vh !important;
-  letter-spacing: 0.4rem;
-  font-weight: bold;
-}
-
-#capT{
-  background-image: url("/typetravel/images/icons/T-future-light.svg");
-  background-size: 5vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 10vh;
-  padding: 2rem;
-}
-
 
   #mod{
     font-family:'scribish';
@@ -204,9 +177,6 @@ code{
     padding:2rem;
     margin-top:2rem;
   }
-
-
-
 
 /*FIRST*/
 #first{
@@ -227,14 +197,6 @@ code{
     margin-left: -1rem !important;
 }
 
-#T-main{
-    background-image: url("/typetravel/images/icon.png");
-    background-size: 18vh;
-    background-repeat: no-repeat;
-    background-position: center ;
-    height: 40vh;
-    padding: 5rem;
-}
 
 #first h2{
     font-size: 5vh;
@@ -260,7 +222,7 @@ code{
     background-repeat: no-repeat;
     background-position: center;
     text-align: center !important;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 #icon:hover{
@@ -269,11 +231,8 @@ code{
 }
 
 #get-started-btn-1{
-    padding-top: 4rem;
-}
-
-.get-s, .get-s #get-started-btn{
-    display: none;
+  padding-top: 4rem;
+  display: none;
 }
 
 /*SECOND*/
@@ -284,11 +243,22 @@ code{
 #about-proj{
     padding: 0 5rem 0 5rem;
     text-align: center;
-}
-
-#about-proj p{
     font-size: 3.5vh;
     color: white;
+}
+
+
+#btn-issues, #btn-themes{
+    background-color: white;
+    font-family: 'Slippery Dip', sans-serif;
+    color: #4c1a1b;
+    border-radius: 0;
+    border: none;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-size: 4vh;
+    margin-top: 3rem !important;
+    margin-left: -0.5rem!important;
 }
 .btn{
   color: #9b3133;
@@ -309,27 +279,11 @@ code{
 .c-right {
   color: white;
 }
-#btn-themes:hover, 
-#btn-issues:hover{
-    color: #9b3133;
-}
-
-#btn-issues{
-    background-color: white;
-    font-family: 'Slippery Dip', sans-serif;
-    color: #4c1a1b;
-    border-radius: 0;
-    border: none;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    font-size: 4vh;
-    margin-top: 3rem !important;
-    margin-left: -0.5rem!important;
-}
 
 /*THIRD*/
 #third{
     background-color: #4c1a1b;
+    font-size: 5.5vh;
 }
 
 #gothird{
@@ -337,8 +291,8 @@ code{
 }
 
 .btn-third{
-    font-family: 'Bertholdr Mainzer Fraktur', sans-serif;
-    color: #e08e1d;
+    font-family: 'canterbury', sans-serif;
+    background-color: #000000;
     border-radius: 0;
     border: none;
     letter-spacing: 0.2rem;
@@ -346,35 +300,8 @@ code{
     font-size: 4vh !important;
 }
 .btn-third:first-child{
-    background-color: #e08e1d !important;
     margin-right: -0.5rem!important;
     margin-left: -13rem !important;
-}
-
-.btn-third:first-child:hover{
-    background-color: #e08e1d !important;
-}
-
-.btn-third:nth-child(2){
-    background-color: #e08e1d !important;
-    color: black;
-    /* margin-left: 0rem!important; */
-}
-
-.btn-third:nth-child(2):hover{
-    background-color: #e08e1d !important;
-}
-
-#card-renaissance, #card-1980s{
-   
-}
-
-#card-secession, #card-future{
-    /* margin-right: 6vh !important; */
-}
-
-#third .card-body .btn:first-of-type{    
-    font-size: 5.5vh;
 }
 
 #third .card-body img{
