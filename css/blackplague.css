@@ -52,7 +52,7 @@ body{
   color:#260d0e;
 }
 .modbod:hover{
-  background-color: white!important;
+  background-color: white;
 }
 .modal-header, .discl-basic .modal-footer{
   background-color: #9b3133;
@@ -71,19 +71,26 @@ color:#000000;
 #but{
   font-family:'scribish' ;
 }
-.fab-content, .fab-shadow, .sub-button, .fab{
-  background-color:#9b3139;
+
+
+
+.row{
+  padding-top:5rem;
+}
+.container-fluid:hover, .row:hover{
+  background-color: #9b3139;
+  color:#260d0e;
+}
+#plu:hover{
+  color:#260d0e;
+}
+#about-proj{
+  text-align: center;
+  font-size: 3.5vh;
   color: white;
 }
-.btn:active{
-  color:white;
-}
-.btn:hover{
-    background-color:#260d0e;
-    color:white;
-}
-.row{
-  padding:0;
+#about-proj:hover{
+color:#260d0e;
 }
 h2{
     font-family: 'scribish', serif;
@@ -95,6 +102,10 @@ h2{
     font-size: 10vh;
     font-weight: 600;
 }
+h2:hover{
+  color:#260d0e;
+}
+
 
 /*LINKS, SELECTION, CODE*/
 a {
@@ -103,17 +114,6 @@ a {
 a:hover{
   color:#9b3139;
 }
-
-
-::selection{
-    background-color: #9b3133;
-    color: white;
-}
-
-code{
-    color:white;
-}
-
   
 /*NAVBAR*/
 .navbar{
@@ -123,26 +123,16 @@ code{
     background-color:#9b3133;
 }
 
-.nav-active {
-    box-shadow: 5px -1px 12px -5px white;
-    backdrop-filter: blur(7px);
-    background-color: white;
-}
 .dropdown-menu:hover{
   background-color: #9b3139;
   border-color: #4c1a1b;
 }
 
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link{
-    font-size: 4rem;
-}
-.nav-item, .nav-link{
+.nav-item, .nav-link, #navbarDropdownMenuLink{
   font-size: x-large;
+  color:#260d0e;
 } 
-.navbar-dark .navbar-brand{
-    font-size: 4vh;
-    color:#260d0e;
-}
+
 
 
 .dropdown-menu{
@@ -165,19 +155,14 @@ code{
 #plague{
   padding-top: 2rem;
 }
-
-  #mod{
-    font-family:'scribish';
-  }
   
- .container-fluid:hover, .row:hover{
-    background-color: #9b3139;
-  }
-  #pur{
-    padding:2rem;
-    margin-top:2rem;
-  }
-
+#pur{
+  padding:2rem;
+  margin-top:2rem;
+}
+#short:hover{
+  color:#260d0e;
+}
 /*FIRST*/
 #first{
     background-color: #260d0e !important;
@@ -211,7 +196,11 @@ code{
     font-size: 4vh;
     padding-top: 2vh;
     text-align: center;
-    color: #260d0e;
+    color: #9b3139;
+    padding-bottom: 2rem;
+}
+#project-description:hover{
+  color:#260d0e;
 }
 
 #icon{
@@ -240,17 +229,10 @@ code{
     background-color: #4c1a1b !important;
 }
 
-#about-proj{
-    padding: 0 5rem 0 5rem;
-    text-align: center;
-    font-size: 3.5vh;
-    color: white;
-}
-
 
 #btn-issues, #btn-themes{
     background-color: white;
-    font-family: 'Slippery Dip', sans-serif;
+    font-family: 'scribish', serif;
     color: #4c1a1b;
     border-radius: 0;
     border: none;
@@ -260,9 +242,7 @@ code{
     margin-top: 3rem !important;
     margin-left: -0.5rem!important;
 }
-.btn{
-  color: #9b3133;
-}
+
 
 #btn-themes{
     background-color: #260d0e;
@@ -279,6 +259,9 @@ code{
 .c-right {
   color: white;
 }
+.c-right:hover{
+  color:#000000;
+}
 
 /*THIRD*/
 #third{
@@ -289,153 +272,87 @@ code{
 #gothird{
     background-color: #000000;
 }
-
-.btn-third{
-    font-family: 'canterbury', sans-serif;
-    background-color: #000000;
-    border-radius: 0;
-    border: none;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    font-size: 4vh !important;
+#the:hover{
+  background-color: white;
+  color:#260d0e;
 }
-.btn-third:first-child{
-    margin-right: -0.5rem!important;
-    margin-left: -13rem !important;
+#me:hover{
+  background-color:#260d0e;
+  color:#9b3139;
 }
-
-#third .card-body img{
-    height: 25vh !important;
+#second{
+  padding-bottom: 3rem;
 }
-
-#third .card-body .btn:hover{
-    background: none !important;
-}
-
 #third p{
     /* padding: 0.5rem 2rem 0.5rem 2rem!important; */
     font-size: 2.5vh;
     text-align: center;
 }
 
+
 #third #themes-text{
     /* margin: 1rem 0 1rem 0; */
-    color: #000000;
+    color: white;
+    font-size: x-large;
 }
-
-#card-renaissance .btn-doc{
-    margin-top: 0.5rem !important;
-    font-size: 4vh;
+#third:hover, #themes-text:hover{
+  color:#000000!important;
 }
-
-#card-renaissance .btn-doc:hover{
-    color: #535353;
+#them{
+  padding-bottom:2em;
 }
-
-#card-secession .btn-doc{
-    margin-top: 1rem !important;
-    padding: 2vh;
-    color: #e08e1d;
-    font-size: 4.5vh;
-}
-
-#card-secession .btn-doc:hover{
-    color: #5a4120;
-}
-
-#card-1980s .btn-doc{
-    margin-top: 1rem !important;
-    padding: 2vh;
-    font-size: 5vh;
-}
-
-#card-1980s .btn-doc:hover{
-    /* color: #2d1c55; */
-}
-
-#card-future .btn-doc{
-    margin-top: 1rem !important;
-}
-
-#card-future .btn-doc:hover{
-    /* color: #818181; */
-}
-
-/*FOURTH*/
-
-#theme1,#theme2,#theme3,#theme4,#theme5{
-   
-    margin-top: 5em;
-    margin-left: 12em;
-  
-
-}
-
 #gofourth{
-    background-color:white;
+  background-color:white;
+}
+#gofourth:hover{
+background-color: #260d0e;
+color:#9b3139;
 }
 
 #fourth{
-    background-color:#4c1a1b;
+  background-color:#4c1a1b;
 }
 
 #fourth h2{
-    color: white;
+  color: white;
+}
+
+#theme1,#theme2,#theme3,#theme4, #theme6, .btn-close, #mod{
+   
+    text-align: left;
+    background-color: #260d0e;
+    color: #9b3139;
+    font-family: scribish;
+    
+}
+#theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover,#theme5:hover, #theme6:hover, #mod:hover{
+  background-color: black;
+  color: white;
+}
+#theme5{
+  width: 10em;
+  text-align: center;
+  background-color: #260d0e;
+  color: #9b3139;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  font-family: 'scribish';
 }
 
 #issue-text{
     padding: 0 10rem 0 10rem;
     text-align: center;
     font-size: x-large;
+    color:white;
 }
-
-.issue {
-    cursor: pointer;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
+#issue-text:hover{
+  color: #000;
 }
-
-#card-iss1 .fadedbox{
-    background-color:#9b3133;
-}  
-
-#card-iss2 .fadedbox{
-    background-color:#9b3133;
-    font-size: 4.5vh;
+#fourth:hover{
+  color:#260d0e;
 }
-
-
-
-.issue:hover .fadedbox {
-    opacity: 1;
-}
-.issue .text {
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out;
-    transition: all 300ms ease-out;
-    transform: translateY(30px);
-    -webkit-transform: translateY(30px);
-    color: black;
-}
-.issue .title {
-    opacity: 0;
-    transition-delay: 0.2s;
-    transition-duration: 0.3s;
-}
-.issue:hover .title,
-.issue:focus .title {
-    opacity: 1;
-    transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-}
-
-
-
-
 
 /* Glitch effect */
 
@@ -468,11 +385,7 @@ code{
   color: #f1f1f1;
   animation: glitchAnim1 3s infinite;
 }
-.txt-info {
-  font-family: 'Bertholdr Mainzer Fraktur', sans-serif;
-  color: #f1f1f1;
-  font-size: 10px;
-}
+
 @keyframes glitchAnim1 {
   7% {
     transform: none;
@@ -580,13 +493,6 @@ code{
 }
 
 /*IMAGES*/
-#fourth .card{
-    height: auto;
-    /* margin: 2em;
-    margin-top: 2em; */
-    border: none;
-    border-radius: 0;
-}
 
 /*FOOTER*/
 footer{
@@ -598,13 +504,13 @@ footer{
     font-size: x-large;
 }  
 
-footer p, .contacts, #discl, #cp{
+footer p, #cp{
     font-size: 2.5vh !important;
     
 }
 
 
-.info-footer, .contacts{
+.info-footer{
     width: 100% !important;
 }
 
@@ -669,11 +575,7 @@ footer p{
     #first h2{
         font-size: 3.5vh;
     }
-    #project-description{
-        font-size: 3.5vh !important;
-        color:#4c1a1b;
-    }
-}
+    
 
 
 @media (min-width: 768px) and (max-width: 992px){
