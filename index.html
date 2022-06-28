@@ -77,12 +77,12 @@
                   <li class="nav-item dropdown ps-2">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Themes</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" rel="stylesheet" href="css/blackplague.css" tag="link" id="enable-default">The Black Plague</a></li>
-                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-colon" >Colonization</a></li>
-                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-sec">Wall Stret Crash</a></li>
-                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">The Cold War</a></li>
-                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">Hacker Attacks</a></li>
-                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-future">Alien Invasion</a></li>
+                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" rel="stylesheet" href="css/blackplague.css" tag="link" id="plague">The Black Plague</a></li>
+                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="colon" >Colonization</a></li>
+                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="crash">Wall Stret Crash</a></li>
+                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="war">The Cold War</a></li>
+                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="hack">Hacker Attacks</a></li>
+                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="alien">Alien Invasion</a></li>
                     </ul>
                   </li>
                   <li class="nav-item ps-2">
@@ -114,16 +114,16 @@
                           <p class="glitchedAnim">Text ; Gate</p>
                         </div>
                     </div>
-                    <h2 >It's the choice of the Text;Gate</h2>
+                    <h2>It's the choice of the Text;Gate</h2>
                     <div id="first-text">
                       <div class="renaiss-left" id="rl1"></div>
                       <div class="renaiss-right" id="rr1"></div>
                         <p id="project-description">
-                          Texts have a begining but no ending. Discover the journey of the evolution of text by choosing publications you want to read of a particular topic. 
-                          Select a theme and leave the rest up to Text;Gate.
+                          Texts have a begining but no ending. Discover the <b>journey of text evolution</b> by choosing the publications you want to read of a particular topic. 
+                          Select a <b>theme</b> and leave the rest up to Text;Gate.
                         </p>
                     </div>
-                    <div class="d-grid gap-2 d-flex justify-content-center basic-btn">
+                    <div id="them">
                       <a id="get-started-btn-1" href="#gosecond" data-bs-toggle="tooltip" data-placement="top" title="GET STARTED"><span id="icon"></span></a>  
                     </div>
                 </div>
@@ -137,20 +137,20 @@
         </div>
         <div class="container-fluid" id="second">
           <div class="row">
-            <div class="col-12" id="renaiss-div">
+            <div class="col-12" id="black">
               <!-- <h2>What is Typetravel?</h2> -->
               <div id="about-proj">
                 <div class="renaiss-left" id="rl1"></div>
                 <div class="renaiss-right" id="rr1"></div>
                 <!-- <p id="site-short-description"><b>Typetravel</b> allows to read articles while travelling in time through four historical typographical and layout styles that span over <b>five hundred years</b>. Each theme draws inspiration from original sources, carefully selected and re-elaborated to offer users an excellent reading experience.
                 </p> -->
-                <p id="site-short-motivation">This website was developed for the course <b>Information Modeling and Web Technology</b>, 
+                <p id="short">This website was developed for the course <b>Information Modeling and Web Technologies</b>, 
                   for our masters degree Digital Humanities and Digital Knowledge at the University of Bologna.</p>
               </div>
-              <div class="d-grid gap-2 d-flex justify-content-center sec-buttons">
-                  <a id="play-1980s" href="#gothird"></a>
+              <div id="ttp">
+                  <a id="the" href="#gothird"></a>
                   <a class="btn  btn-outline-info btn-lg justify-content-center" id="btn-themes"  href="#gothird">Themes</a>
-                  <a id="rec-1980s" href="#gofourth"></a>
+                  <a id="me" href="#gofourth"></a>
                   <a class="btn btn-outline-info btn-lg justify-content-center" id="btn-issues" href="#gofourth">Topics</a>
               </div>
             </div>
@@ -162,7 +162,7 @@
         <div id="gofourth">
         </div>
         <div class="container-fluid"id="fourth">
-          <div id="renaiss-bg">
+          <div id="plu">
             <div class="row">
                 <h2>Topics</h2>
               
@@ -212,7 +212,7 @@
                           
                     <div class="row" id="themes-card">
                       <div class="col-md-6">
-                            <a href="#" class="btn btn-primary" id="theme2">Colonisations XIX Century</a><br> 
+                            <a href="#" class="btn btn-primary" id="theme2">Colonizations XIX Century</a><br> 
                             <!-- <div id="card-secession" class="card text-center">
                               <button onclick="changeThemeHome(this.id)" href="#" id="enable-secession">
                               <div class="card-body">
@@ -225,7 +225,7 @@
                       </div>
                       <div class="col-md-6">
                         <div id="text-an">
-                          <p class="c-left">New territories are being discovered daily and European powers become greedy for lands and precious materials. You have conquered this theme without colonizing anyone, for now.
+                          <p class="c-right">New territories are being discovered daily and European powers become greedy for lands and precious materials. You have conquered this theme without colonizing anyone, for now.
                           </p>
                         </div>
                       </div>
@@ -267,7 +267,7 @@
                       </div>
                       <div class="col-md-6">
                         <div id="wwi">
-                            <p class="c-left">Brrr this war is really cold and scheming like a chess game. During WWII USA and URSS were allies, however, their relationship was tense. President Reagan fights communism till its end. The Berlin wall finally falls, and the Cold War ends.</p>
+                            <p class="c-right">Brrr this war is really cold and scheming like a chess game. During WWII USA and URSS were allies, however, their relationship was tense. President Reagan fights communism till its end. The Berlin wall finally falls, and the Cold War ends.</p>
                         </div>
                       </div>
                     </div>
@@ -308,7 +308,7 @@
                       </div>
                       <div class="col-md-6">
                           <div id="alien">
-                            <p class="c-left">It&rsquo;s 2053. Pollution has destroyed the environment, men caused their own extinction. Earth has become … a new world. The richest people fled to Mars by shooting missiles, what was planet Earth good for? Intergalactic snails have found a good home, by eating corpses and toxic materials, their radioactivity even increased. Are you one of the remaining humans? Eat or be eaten!
+                            <p class="c-right">It&rsquo;s 2053. Pollution has destroyed the environment, men caused their own extinction. Earth has become … a new world. The richest people fled to Mars by shooting missiles, what was planet Earth good for? Intergalactic snails have found a good home, by eating corpses and toxic materials, their radioactivity even increased. Are you one of the remaining humans? Eat or be eaten!
                             </p>
                           </div>
                       </div>
