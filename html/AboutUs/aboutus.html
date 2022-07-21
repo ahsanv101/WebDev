@@ -3,25 +3,25 @@
   <head>
     <!-- meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="-_IANAcharset_" content-type="text/html">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- css links -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <link rel="stylesheet" href="../../css/blackplague.css">    
    <title>About Us</title>
-   <link rel="icon" type="image/x-icon" href="images/tg.ico">
+   <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
   </head>
 
   <body>
     <!-- MODALS -->
         <!-- disclaimer start -->
-        <div class="modal" tabindex="-1" id="disclaimer">
+        <div class="modal" tabindex="-1" id="disclaim">
           <div class="modal-dialog">
           <div class="modal-content">
               <div class="modal-header">
               <h5 class="modal-title">Disclaimer</h5>
-              <button type="button" class="btn-close" id="mod" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="mode"></button>
               </div>
               <div class="modbod">
               <p>
@@ -34,10 +34,10 @@
                 complexity from various websites. Their publication here is not intended to be an alternative or 
                 replace their original locations:
               </p>
-                <ul id="ref">
-                  <li><a href="https://time.com/" target="_blank">Time</a>: <a href="https://time.com/magazine/us/4766607/may-15th-2017-vol-189-no-18-u-s/" target="_blank">The World Is Not Ready for the Next Pandemic</a></li>
-                  <li><a href="https://thebulletin.org/#navbar-brand" target="_blank">The Bulletin</a> : <a href="https://thebulletin.org/doomsday-clock/current-time/" target="_blank"></a><a href="https://thebulletin.org/#navbar-brand">Bulletin of the Atomic Scientists</a></li>
-                  <li><a href="https://www.vox.com/" trarget="_blank">Vox</a>: <a href="https://www.vox.com/future-perfect/2018/12/21/18126576/ai-artificial-intelligence-machine-learning-safety-alignment" target="_blank">The case for taking AI seriously as a threat to humanity</a></li>
+                <ul id="refe">
+                  <li><a href="https://time.com/" target="_blank" class="link">Time</a>: <a href="https://time.com/magazine/us/4766607/may-15th-2017-vol-189-no-18-u-s/" target="_blank" class="link">The World Is Not Ready for the Next Pandemic</a></li>
+                  <li><a href="https://thebulletin.org/#navbar-brand" target="_blank" class="link">The Bulletin</a> : <a href="https://thebulletin.org/doomsday-clock/current-time/" target="_blank" class="link"></a><a href="https://thebulletin.org/#navbar-brand" class="link">Bulletin of the Atomic Scientists</a></li>
+                  <li><a href="https://www.vox.com/" trarget="_blank" class="link">Vox</a>: <a href="https://www.vox.com/future-perfect/2018/12/21/18126576/ai-artificial-intelligence-machine-learning-safety-alignment" target="_blank" class="link">The case for taking AI seriously as a threat to humanity</a></li>
                 </ul>
               <p>
                   All copyrights and related rights on the content remain with their original owners.
@@ -46,7 +46,7 @@
               </p> 
               </div>
               <div class="modal-footer">
-              <button type="button" id="but" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" id="butt" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
           </div>
           </div>
@@ -55,33 +55,33 @@
       
     <!-- HEADER -->
         <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg navbar-light p-2 nav-fixed fixed-top" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light p-2 nav-fixed fixed-top" id="navba">
           <div class="container-fluid">
             <!-- <a class="navbar-brand justify-content-lg-start ps-2 " href="index.html"><span id="capT"></span>Text;Gate</a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-lg-center" class="h"id="navbarNavDropdown">
+            <div class="collapse navbar-collapse justify-content-lg-center" class="h"id="navbarNavDrop">
               <ul class="navbar-nav">
                 <li class="nav-item ps-2">
                   <a class="nav-link active" aria-current="page" href="../../index.html" id="nav-active-link">Home</a>
                 </li>
                 <li class="nav-item dropdown ps-2">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Topics</a>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLi" role="button" data-bs-toggle="dropdown" aria-expanded="false">Topics</a>
                   <ul class="dropdown-menu" aria-labelledby="DropdownMenuLink">
-                    <li><a class="dropdown-item" href="html/Topic1/topic1.html">Human Failures</a></li>
+                    <li><a class="dropdown-item" href="html/Topic1/Topic1.html">Human Failures</a></li>
                     <!-- <li><a class="dropdown-item" href="/typetravel/html/the-future-of-architecture.html">The Future of Architecture</a></li> -->
                   </ul>
                 </li>
                 <li class="nav-item dropdown ps-2">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Themes</a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" rel="stylesheet" href="css/blackplague.css" tag="link" id="enable-default">The Black Plague</a></li>
-                      <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-colon" >Colonization</a></li>
-                      <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-sec">Wall Stret Crash</a></li>
-                      <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">The Cold War</a></li>
-                      <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">Hacker Attacks</a></li>
-                      <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-future">Alien Invasion</a></li>
+                      <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" rel="stylesheet" href="css/blackplague.css" tag="link" id="plagu" >The Black Plague</a></li>
+                      <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="colon" >Colonization</a></li>
+                      <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="crashw">Wall Stret Crash</a></li>
+                      <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="coldw">The Cold War</a></li>
+                      <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="hacke">Hacker Attacks</a></li>
+                      <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="alie">Alien Invasion</a></li>
                   </ul>
                 </li>
                 <li class="nav-item ps-2">
@@ -105,36 +105,36 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6 about-us" id="ahsan">
+          <div class="col-md-6 about-us" class="desc">
             <h3>Ahsan Syed</h3>
             <div class="deco"></div>
-            <p><img src="../../images/AboutUs/ahsan.jfif"></p>
+            <p><img src="../../images/AboutUs/ahsan.jfif" class="imm"></p>
           </div>
-          <div class="col-md-6 about-us" id="alessandra">
+          <div class="col-md-6 about-us" class="stud">
             <div class="deco"></div>
             <p>Im stidyung abc  </p>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-6 about-us" id="ahsan">
+          <div class="col-md-6 about-us" class="desc">
             <h3>Allesandra Trenchi</h3>
             <div class="deco"></div>
-            <p><img src="../../images/AboutUs/ale.jpg">
+            <p><img src="../../images/AboutUs/ale.jpg" class="imm">
           </div>
-          <div class="col-md-6 about-us" id="alessandra">
+          <div class="col-md-6 about-us" class="stud">
             <div class="deco"></div>
             <p>Im stidyung abc  </p>
           </div>
         </div>
        
         <div class="row">
-          <div class="col-md-6 about-us" id="ahsan">
+          <div class="col-md-6 about-us" class="desc">
             <h3>Ginevra Botto</h3>
             <div class="deco"></div>
-            <p><img src="images/AboutUs/ahsan.jpeg">
+            <p><img src="../../images/AboutUs/gb.jpeg" class="imm">
           </div>
-          <div class="col-md-6 about-us" id="alessandra">
+          <div class="col-md-6 about-us" class="desc">
             <div class="deco"></div>
             <p>Im stidyung aasdasd  </p>
           </div>
@@ -182,22 +182,22 @@
         <footer>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-3" id="footer-left"></div>
+              <div class="col-md-3" id="footer"></div>
               <div class="col-md-3 info-footer">
-                  <p>The team responsible for this project is Ahsan Syed, Alessandra Trenchi and Ginevra Botto, for the course Information Modeling and Web Technologies held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali</a></p>
+                  <p>The team responsible for this project is Ahsan Syed, Alessandra Trenchi and Ginevra Botto, for the course Information Modeling and Web Technologies held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en" class="fabvit">Fabio Vitali</a></p>
               </div>
                <!-- <div class="col-md-3 contacts">
                         <h4>Contacts</h4>
                         <a href="mailto: muho@gmail.com">edoardo.dalborgo@studio.unibo.it</a>
                         <a href="mailto: alessandra.failla2@studio.unibo.it">alessandra.failla2@studio.unibo.it</a>
                    </div> -->
-              <div class="col-md-3" id="footer-right"></div>
+              <div class="col-md-3" id="footer-r"></div>
             </div>
             <div class="row">
-                <p id="cp">© 2022 Copyright: Ahsan Syed, Alessandra Trenchi and Ginevra Botto</p>
+                <p id="copp">© 2022 Copyright: Ahsan Syed, Alessandra Trenchi and Ginevra Botto</p>
                   <!-- <p id="discl"><a data-bs-toggle="modal" data-bs-target="#disclaimer">Learn more</a></p> -->
             </div>
-            <a name="bottom" id="bottom"></a>
+            <a name="bottom" id="bott"></a>
               <!--fab-->
               <!-- <div class="fab-container">
                 <div class="fab shadow">
