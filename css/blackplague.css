@@ -31,8 +31,8 @@ body{
   font-family: 'scribish';
 }
 
-#disclaimer:hover.dropdown-toggle{
-  color:#260d0e;
+#disclaimer, #disclaim, #discl{
+  background-color:#260d0e;
 }
 .modal-dialog{
   max-width: 100vh ;
@@ -63,16 +63,20 @@ border: none;
 color:#000000;
 }
 
-#ref{
+#refer, #refe, #ref{
   font-family:'canterbury';
   color:#260d0e;
   font-size: x-large;
 }
-#but{
+#butto, #butt, #but{
   font-family:'scribish' ;
+  color: white;
+  background-color: #000;
 }
-
-
+#butto:hover, #but:hover, #butt:hover{
+  color:#9b3139;
+  background-color: #260d0e;
+}
 
 .row{
   padding-top:5rem;
@@ -81,9 +85,7 @@ color:#000000;
   background-color: #9b3139;
   color:#260d0e;
 }
-#plu:hover{
-  color:#260d0e;
-}
+
 #about-proj{
   text-align: center;
   font-size: 3.5vh;
@@ -105,18 +107,26 @@ h2{
 h2:hover{
   color:#260d0e;
 }
-
-
-/*LINKS, SELECTION, CODE*/
-a {
-    color: black;
+.link{
+  color:#000;
 }
-a:hover{
+.link:hover{
   color:#9b3139;
 }
-  
+
+/*LINKS, SELECTION, CODE*/
+
+.change:hover{
+  color:#9b3139;
+}
+#fv{
+  color:white;
+}
+#fv.hover{
+  color:#000000;
+}
 /*NAVBAR*/
-.navbar{
+#navbar, #navba, #navb{
   font-family: 'canterbury', serif;
     /* text-transform: lowercase; */
     font-weight: 300;
@@ -128,7 +138,7 @@ a:hover{
   border-color: #4c1a1b;
 }
 
-.nav-item, .nav-link, #navbarDropdownMenuLink{
+.nav-item, .nav-link, #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL{
   font-size: x-large;
   color:#260d0e;
 } 
@@ -148,11 +158,8 @@ a:hover{
   color:#260D0E;
 }
 
-.navbar-toggler-icon{
-  transition: background-color .5s;}
 
-
-#plague{
+#plague, #plagu, #plag{
   padding-top: 2rem;
 }
   
@@ -160,8 +167,14 @@ a:hover{
   padding:2rem;
   margin-top:2rem;
 }
+#short{ 
+  color:black;
+  text-align:center;
+  margin-left:3rem;
+  margin-right: 3rem;
+}
 #short:hover{
-  color:#260d0e;
+  color:#260D0E;
 }
 /*FIRST*/
 #first{
@@ -192,7 +205,6 @@ a:hover{
 }
 
 #project-description{
-    opacity: 0.5;
     font-size: 4vh;
     padding-top: 2vh;
     text-align: center;
@@ -205,20 +217,12 @@ a:hover{
 
 #icon{
     padding: 10vh;
-    background-image: url("/typetravel/images/icons/start.svg");
-    background-size: 15vh;
     margin: 1rem;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center !important;
     text-decoration: none;
 }
-
-#icon:hover{
-    background-image: url("/typetravel/images/icons/start-hov.svg");
-    background-color: transparent;
-}
-
 #get-started-btn-1{
   padding-top: 4rem;
   display: none;
@@ -229,35 +233,38 @@ a:hover{
     background-color: #4c1a1b !important;
 }
 
-
-#btn-issues, #btn-themes{
-    background-color: white;
-    font-family: 'scribish', serif;
-    color: #4c1a1b;
-    border-radius: 0;
-    border: none;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    font-size: 4vh;
-    margin-top: 3rem !important;
-    margin-left: -0.5rem!important;
-}
-
-
 #btn-themes{
-    background-color: #260d0e;
-    color: #4c1a1b;
-    font-family: 'Slippery Dip', sans-serif;
+  background-color: #260D0E;
+  color:white;
+}
+#btn-themes:hover{
+  background-color:#260D0E;
+  color: #9b3139;
+}
+#btn-issues{
+  color:#260d0e;
+  background-color: white;
+}
+#btn-issues:hover{
+  background-color: white;
+  color: #9b3139;
+}
+#btn-issues, #btn-themes{
+    font-family: 'scribish', serif;
     border-radius: 0;
     border: none;
-    letter-spacing: 0.2rem;
     text-transform: uppercase;
     font-size: 4vh;
-    margin-top: 3rem !important;
-    margin-right: -0.5rem !important;
+    width: 10rem;
+    display: inline-flex;
+    margin-top: 2rem;
 }
+
+
 .c-right {
-  color: white;
+ color:#732627;
+ font-size: 1.8rem!important;
+ border-color: #260D0E;
 }
 .c-right:hover{
   color:#000000;
@@ -271,15 +278,13 @@ a:hover{
 
 #gothird{
     background-color: #000000;
+    margin-left: 10rem;
 }
 #the:hover{
   background-color: white;
   color:#260d0e;
 }
-#me:hover{
-  background-color:#260d0e;
-  color:#9b3139;
-}
+
 #second{
   padding-bottom: 3rem;
 }
@@ -288,25 +293,24 @@ a:hover{
     font-size: 2.5vh;
     text-align: center;
 }
-
-
+#topp{
+  margin-left: 33rem;
+  margin-bottom: 2rem;
+}
+#themes-text{
+  margin-top: 1rem;
+}
 #third #themes-text{
     /* margin: 1rem 0 1rem 0; */
-    color: white;
+    color:#260d0e;
     font-size: x-large;
 }
 #third:hover, #themes-text:hover{
   color:#000000!important;
 }
-#them{
-  padding-bottom:2em;
-}
+
 #gofourth{
-  background-color:white;
-}
-#gofourth:hover{
-background-color: #260d0e;
-color:#9b3139;
+  color:#260D0E;
 }
 
 #fourth{
@@ -314,18 +318,25 @@ color:#9b3139;
 }
 
 #fourth h2{
-  color: white;
+  color: #732627;
+}
+#fourth h2:hover{
+  color:#260D0E;
 }
 
-#theme1,#theme2,#theme3,#theme4, #theme6, .btn-close, #mod{
+#theme1,#theme2,#theme3,#theme4, #theme6, .btn-close{
    
     text-align: left;
     background-color: #260d0e;
     color: #9b3139;
     font-family: scribish;
-    
 }
-#theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover,#theme5:hover, #theme6:hover, #mod:hover{
+#model, #mode, #mod{ 
+  background-color: #260d0e;
+  color: #9b3139;
+  font-family: scribish;
+}
+#theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover,#theme5:hover, #theme6:hover, #mod:hover, #model:hover, #mode:hover{
   background-color: black;
   color: white;
 }
@@ -345,7 +356,8 @@ color:#9b3139;
     padding: 0 10rem 0 10rem;
     text-align: center;
     font-size: x-large;
-    color:white;
+    color: #260D0E;
+    margin-top: 1rem;
 }
 #issue-text:hover{
   color: #000;
@@ -498,14 +510,19 @@ color:#9b3139;
 footer{
     background-color: #260D0E;
     font-family: 'canterbury';
-    color:white;
+    color:#732627;
     text-align: center;
     font-weight: 100;
-    font-size: x-large;
+    padding-top: 0.1vh;
 }  
-
-footer p, #cp{
-    font-size: 2.5vh !important;
+.fabvit{
+  color:#732627;
+}
+.fabvit:hover{
+  color: #000000;
+}
+footer p, #cop, #copy, #copp{
+    font-size: 1.5rem ;
     
 }
 
@@ -518,15 +535,19 @@ footer p{
     text-align: center;
     padding-left: 0;
     font-weight: 100;
+    margin-bottom: 0.1vh;
 }
-
-#cp{
+#footer-left, #footer, #foot{
+  padding-top: 0.1vh;
+}
+#copy, #copp, #cop{
     text-align: center;
-    padding-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 1.5rem;
 }
 
-
+.imm{
+  width: 30rem;
+}
 
 
 
@@ -545,7 +566,7 @@ footer p{
         padding-top: 1rem;
     }
 }
-#navbarDropdownMenuLink{
+#navbarDropdownMenuLink, #navbarDropdownMenuli, #navbarDropdownMenuL{
   background-color: #9b3139;
 }
 .navbarDropdownMenuLink:active{
@@ -562,7 +583,7 @@ footer p{
 }
 @media (max-width: 992px){
     /*NAVBAR*/
-    .navbar .collapse{
+    #navbar .collapse, #navba .collapse, #navb .collapse{
         
         border-top: none;
     }
