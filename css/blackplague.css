@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: 'scribish', serif;
+  font-family: 'scribish';
   src: url(../fonts/scribish.ttf);
 }
 
@@ -611,7 +611,6 @@ footer p{
         padding-bottom: 0.5rem !important;
     }
 }
-
 
 
 
