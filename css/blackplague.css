@@ -133,31 +133,10 @@ h2:hover{
     background-color:#9b3133;
 }
 
-.dropdown-menu:hover{
-  background-color: #9b3139;
-  border-color: #4c1a1b;
-}
-
 .nav-item, .nav-link, #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL{
   font-size: x-large;
   color:#260d0e;
 } 
-
-
-
-.dropdown-menu{
-  background-color: #260D0E;
-  color: #4c1a1b;
-}
-
-.dropdown-item:hover{
-    color: #9b3133;
-}
-.dropdown-item{
-  font-size: x-large;
-  color:#260D0E;
-}
-
 
 #plague, #plagu, #plag{
   padding-top: 2rem;
@@ -568,19 +547,35 @@ footer p{
 }
 #navbarDropdownMenuLink, #navbarDropdownMenuli, #navbarDropdownMenuL{
   background-color: #9b3139;
+  color:#260D0E;
 }
-.navbarDropdownMenuLink:active{
-  background-color: #9b3133;
-}
+
 .dropdown-item:hover{
   background-color: #4c1a1b;
+  color:#9b3133;
 }
-.dropdown-item:active{
+
+.dropdown-item{
+  color:#732627;
+}
+.dropdown-menu:hover{
+  background-color: #9b3139;
+  border-color: #4c1a1b;
+  color:#260d0e;
+}
+.dropdown-menu{
   background-color:#9b3133;
+  color: #260D0E;
+}
+
+.dropdown-item:hover{
+    color: #9b3133;
 }
 .dropdown-item{
-  color:#000000;
+  font-size: x-large;
+  color:#260D0E;
 }
+
 @media (max-width: 992px){
     /*NAVBAR*/
     #navbar .collapse, #navba .collapse, #navb .collapse{
