@@ -8,125 +8,93 @@
 
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="../../css/blackplague.css">    
 	<!-- Custom styles for this template -->
-	<style>
-		body {
-			padding-top: 70px;
-		}
-
-		.myborder {
-			border: solid rgb(220,220,220) 1px;
-			padding: 10px;
-			margin-bottom: 15px; 
-		}
-		.myborder-notop {
-			border-top: none;
-		}
-		
-		.breath {
-			margin-top: 15px;
-		}
-		
-		.tab-pane {
-			min-height: 150px;
-		}
-		
-		.aside:before {
-			content: " – ";
-			background-color: #ffffff !important;
-		}
-		.aside:after {
-			content: " – ";
-			background-color: #ffffff !important;
-		}
-
-		q:before {
-			content: "“";
-			background-color: #ffffff !important;
-		}
-		q:after {
-			content: "”";
-			background-color: #ffffff !important;
-		}
-		q.speech:before {
-			content: "«";
-			background-color: #ffffff !important;
-		}
-		q.speech:after {
-			content: "»";
-			background-color: #ffffff !important;
-		}
-		
-		.text-aside {
-			background-color: #ffddff;
-		}
-		
-		.text-speeches {
-			background-color: #ddffdd;
-		}
-		.text-quotes {
-			background-color: #ffffdd;
-		}
-		
-		ul {
-			padding-inline-start: 0.5em; 
-		}
-		.list {
-			font-size: 80%;
-			line-height: 1.2; 
-			margin: 0; 
-			white-space: nowrap; 
-			overflow-x: hidden;
-			list-style-position:inside;  
-		}
-		.list a {
-			color: black;
-			margin: 0; 
-		}
-		.list-speech:before {
-			content: "«";
-		}
-		.list-speech:after {
-			content: "»";
-		}
-		.list-quote:before {
-			content: "“";
-		}
-		.list-quote:after {
-			content: "”";
-		}
-		
-		.animate {
-			animation-name: bgcolor ;
-			animation-duration: 0.75s ; 
-			animation-iteration-count: 3;
-			animation-fill-mode: backwards;
-		}
-
-		@keyframes bgcolor {
-			from { background-color: #ffffff;  }
-			to { background-color: #cccc00; }
-		}
-		
-	</style>
+	
 	</head>
 
 	<body>
+		<div class="modal" tabindex="-1" id="dis">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Disclaimer</h5>
+                <button type="button" class="btn-close" id="mood" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modbod">
+                <p>
+                  The purpose of this web-site is exploring various types of typographic and 
+                  layout styles for text documents, as an end-of-course project for the <i>Information Modeling and Web technologies</i>&#8217;course of the Master Degree in <i>Digital Humanities
+                  and Digital Knowledge</i> of the University of Bologna, under prof. Fabio Vitali. 
+                </p>
+                <p>
+                  The documents contained in this web site have been selected for their length and 
+                  complexity from various websites. Their publication here is not intended to be an alternative or 
+                  replace their original locations:
+                </p>
+                  <ul id="refr">
+                    <li><a href="https://time.com/" target="_blank" class="link">Time</a>: <a href="https://time.com/magazine/us/4766607/may-15th-2017-vol-189-no-18-u-s/" target="_blank" class="link">The World Is Not Ready for the Next Pandemic</a></li>
+                    <li><a href="https://thebulletin.org/#navbar-brand" target="_blank" class="link">The Bulletin</a> : <a href="https://thebulletin.org/doomsday-clock/current-time/" target="_blank" class="link"></a><a href="https://thebulletin.org/#navbar-brand" class="link">Bulletin of the Atomic Scientists</a></li>
+                    <li><a href="https://www.vox.com/" trarget="_blank" class="link">Vox</a>: <a href="https://www.vox.com/future-perfect/2018/12/21/18126576/ai-artificial-intelligence-machine-learning-safety-alignment" target="_blank" class="link">The case for taking AI seriously as a threat to humanity</a></li>
+                  </ul>
+                <p>
+                    All copyrights and related rights on the content remain with their original owners.
+                    <br>
+                    All copyright on the typographic and layout choices are 2022 © Ahsan Syed, Alessandra Trenchi and Ginevra Botto.
+                </p> 
+                </div>
+                <div class="modal-footer">
+                <button type="button" id="buttn" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- disclaimer end -->
 
-	<!-- Fixed navbar -->
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-		<a class="navbar-brand" href="#">Sentences</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarCollapse">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#" role="button" data-toggle="modal" data-target="#about">About <span class="sr-only">(current)</span></a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+    <!-- HEADER -->
+        <!-- navbar start -->
+         <nav class="navbar navbar-expand-lg navbar-light p-2 nav-fixed fixed-top" id="navbi">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand justify-content-lg-start ps-2 " href="index.html"><span id="capT"></span>Text;Gate</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-lg-center" class="h"id="navbarN">
+                <ul class="navbar-nav">
+                  <li class="nav-item ps-2">
+                    <a class="nav-link active" aria-current="page" href="index.html" id="nav-active">Home</a>
+                  </li>
+                  <li class="nav-item dropdown ps-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownM" role="button" data-bs-toggle="dropdown" aria-expanded="false">Topics</a>
+                    <ul class="dropdown-menu" aria-labelledby="DropdownMenuLink">
+                      <li><a class="dropdown-item" href="../Topic1/topic1.html">Human Failures</a></li>
+                      <!-- <li><a class="dropdown-item" href="/typetravel/html/the-future-of-architecture.html">The Future of Architecture</a></li> -->
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown ps-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDro" role="button" data-bs-toggle="dropdown" aria-expanded="false">Themes</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" rel="stylesheet" href="css/blackplague.css" tag="link" id="black">The Black Plague</a></li>
+                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" tag="link" id="colonia" >Colonization</a></li>
+                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" tag="link" id="crashwo">Wall Stret Crash</a></li>
+                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" tag="link" id="coldo">The Cold War</a></li>
+                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" tag="link" id="hac">Hacker Attacks</a></li>
+                        <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" tag="link" id="alieni">Alien Invasion</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item ps-2">
+                    <a class="nav-link active" aria-current="page" href="../Documentation/documentation.html">Documentation</a>
+                  </li>
+                  <li class="nav-item ps-2">
+                    <a class="nav-link active" aria-current="page" href="../AboutUs/aboutus.html">About Us</a>
+                  </li>
+                  <li class="nav-item ps-2">
+                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#dis">Disclaimer</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+			</nav>
 
   	<div class="container-fluid">
 
@@ -209,7 +177,27 @@
     </div>
   </div>
 </div>
-
+<footer>
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-md-3" id="footo"></div>
+		<div class="col-md-3 info-footer">
+			<p>The team responsible for this project is Ahsan Syed, Alessandra Trenchi and Ginevra Botto, for the course Information Modeling and Web Technologies held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en" class="fabvit">Fabio Vitali</a></p>
+		</div>
+		 <!-- <div class="col-md-3 contacts">
+				  <h4>Contacts</h4>
+				  <a href="mailto: muho@gmail.com">edoardo.dalborgo@studio.unibo.it</a>
+				  <a href="mailto: alessandra.failla2@studio.unibo.it">alessandra.failla2@studio.unibo.it</a>
+			 </div> -->
+		<div class="col-md-3" id="foott"></div>
+	  </div>
+	  <div class="row">
+		  <p id="copia">© 2022 Copyright: Ahsan Syed, Alessandra Trenchi and Ginevra Botto</p>
+			<!-- <p id="discl"><a data-bs-toggle="modal" data-bs-target="#disclaimer">Learn more</a></p> -->
+	  </div>
+	  <a name="bottom" id="bikini"></a>
+	</div>
+  </footer>
 	<!-- Bootstrap core JavaScript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
