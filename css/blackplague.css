@@ -31,7 +31,7 @@ body{
   font-family: 'scribish';
 }
 
-#disclaimer, #disclaim, #discl{
+#disclaimer, #disclaim, #discl, #dis{
   background-color:#260d0e;
 }
 .modal-dialog{
@@ -63,25 +63,23 @@ border: none;
 color:#000000;
 }
 
-#refer, #refe, #ref{
+#refer, #refe, #ref, #refr{
   font-family:'canterbury';
   color:#260d0e;
   font-size: x-large;
 }
-#butto, #butt, #but{
+button{
+  cursor:pointer;
+}
+#butto, #butt, #but, #buttn{
   font-family:'scribish' ;
   color: white;
   background-color: #000;
 }
-#butto:hover, #but:hover, #butt:hover{
-  color:#9b3139;
-  background-color: #260d0e;
-}
-
 .row{
   padding-top:5rem;
 }
-.container-fluid:hover, .row:hover{
+.container-fluid:hover, .ce:hover, #butto:hover, #but:hover, #butt:hover, .row:hover, #met:hover, #uno:hover{
   background-color: #9b3139;
   color:#260d0e;
 }
@@ -104,14 +102,11 @@ h2{
     font-size: 10vh;
     font-weight: 600;
 }
-h2:hover{
+h2:hover, h3:hover{
   color:#260d0e;
 }
 .link{
   color:#000;
-}
-.link:hover{
-  color:#9b3139;
 }
 
 /*LINKS, SELECTION, CODE*/
@@ -119,28 +114,20 @@ h2:hover{
 .change:hover{
   color:#9b3139;
 }
-#fv{
-  color:white;
-}
-#fv.hover{
-  color:#000000;
-}
+
 /*NAVBAR*/
-#navbar, #navba, #navb{
+#navbar, #navba, #navb, #navbi{
   font-family: 'canterbury', serif;
     /* text-transform: lowercase; */
     font-weight: 300;
     background-color:#9b3133;
+    width:100%;
 }
 
-.nav-item, .nav-link, #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL{
-  font-size: x-large;
+.nav-item, .nav-link, #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL, #navbarDropdownM{
+  font-size: xx-large;
   color:#260d0e;
 } 
-
-#plague, #plagu, #plag{
-  padding-top: 2rem;
-}
   
 #pur{
   padding:2rem;
@@ -238,7 +225,6 @@ h2:hover{
     display: inline-flex;
     margin-top: 2rem;
 }
-
 
 .c-right {
  color:#732627;
@@ -493,6 +479,7 @@ footer{
     text-align: center;
     font-weight: 100;
     padding-top: 0.1vh;
+    position:sticky;
 }  
 .fabvit{
   color:#732627;
@@ -502,12 +489,11 @@ footer{
 }
 footer p, #cop, #copy, #copp{
     font-size: 1.5rem ;
-    
 }
 
 
 .info-footer{
-    width: 100% !important;
+    width: 100% ;
 }
 
 footer p{
@@ -516,10 +502,10 @@ footer p{
     font-weight: 100;
     margin-bottom: 0.1vh;
 }
-#footer-left, #footer, #foot{
+#footer-left, #footer, #foot, #footo{
   padding-top: 0.1vh;
 }
-#copy, #copp, #cop{
+#copy, #copp, #cop, #copia{
     text-align: center;
     padding-bottom: 1.5rem;
 }
@@ -545,7 +531,7 @@ footer p{
         padding-top: 1rem;
     }
 }
-#navbarDropdownMenuLink, #navbarDropdownMenuli, #navbarDropdownMenuL{
+#navbarDropdownMenuLink, #navbarDropdownMenuli, #navbarDropdownMenuL, #navbarDropdownM{
   background-color: #9b3139;
   color:#260D0E;
 }
@@ -555,9 +541,6 @@ footer p{
   color:#9b3133;
 }
 
-.dropdown-item{
-  color:#732627;
-}
 .dropdown-menu:hover{
   background-color: #9b3139;
   border-color: #4c1a1b;
@@ -568,17 +551,62 @@ footer p{
   color: #260D0E;
 }
 
-.dropdown-item:hover{
-    color: #9b3133;
-}
 .dropdown-item{
-  font-size: x-large;
+  font-size: xx-large;
   color:#260D0E;
+  cursor:pointer;
 }
+#doclist{
+  margin-top: 0;
+  text-align: center;
+  width:100%;
+  size: fit-content;
+}
+label{
+  font-size: x-large;
+  font-family:'scribish';
+  color: #260d0e;
+  }
 
+label:hover{
+  color:black;
+}
+#uno{
+  width:100%;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  background-color: #4c1a1b;
+  cursor: pointer;
+}
+h3{
+  font-family:'scribish';
+  color:#732627;
+}
+.form-check-group{
+  border-width:0.2rem dotted #260d0e;
+}
+input[type="checkbox"]{
+  color:#732627;
+}
+#met{
+  text-align: center;
+  background-color: #4c1a1b;
+  padding-bottom: 3rem;
+}
+.bann{
+  padding: 1rem;
+}
+.space{
+  padding:2rem;
+}
+h3{
+  border: 4mm ridge #732627;
+}
 @media (max-width: 992px){
     /*NAVBAR*/
-    #navbar .collapse, #navba .collapse, #navb .collapse{
+    #navbar .collapse, #navba .collapse, #navb .collapse, #navbi .collapse{
         
         border-top: none;
     }
@@ -618,9 +646,7 @@ footer p{
 
 
 .about-content{
-
 margin-top: 4em;
-
 }
 
 img{
