@@ -61,6 +61,7 @@ body{
 border: none;
 color:#000000;
 }
+  
 
 #refer, #refe, #ref, #refr{
   font-family:'canterbury';
@@ -75,19 +76,20 @@ button{
   color: white;
   background-color: #000;
 }
-.row{
-  padding-top:5rem;
-}
-.container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover{
+
+.container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover, .tett:hover{
   background-color: #9b3139;
   color:#260d0e;
 }
-
+.container-fluid{
+  padding: none!important;
+}
 #about-proj{
   text-align: center;
   font-size: 3.5vh;
   color: white;
 }
+
 #about-proj:hover{
 color:#260d0e;
 }
@@ -259,7 +261,9 @@ h2:hover, h3:hover{
     font-size: 2.5vh;
     text-align: center;
 }
-
+.bann{
+  padding-top: 5rem;
+}
 #themes-text{
   margin-top: 1rem;
 }
@@ -275,7 +279,13 @@ h2:hover, h3:hover{
 #gofourth{
   color:#260D0E;
 }
-
+.about-content{
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  background-color: #4c1a1b;
+  margin-top: 0;
+  display: flex;
+}
 #fourth{
   background-color:#4c1a1b;
 }
@@ -476,8 +486,8 @@ footer{
     color:#732627;
     text-align: center;
     font-weight: 100;
-    padding-top: 0.1vh;
     position:sticky;
+    box-align:center;
 }  
 .fabvit{
   color:#732627;
@@ -488,19 +498,31 @@ footer{
 footer p, #cop, #copy, #copp{
     font-size: 1.5rem ;
 }
-.info-footer{
-    width: 100% ;
+#form10{
+  background-color: #260d0e;
+  color: white;
+  width:50%;
+  font-size: large;
 }
-
+.md-form{
+  background-color: #732627;
+  margin:none;
+  padding: none;
+}
 footer p{
     text-align: center;
     padding-left: 0;
     font-weight: 100;
-    margin-bottom: 0.1vh;
+     fargin-bottom: 0.1vh;
+    box-align:center;
 }
 #footer-left, #footer, #foot, #footo{
   padding-top: 0.1vh;
   position: sticky;
+  width: 100% ;
+  text-align: center;
+  border: none;
+  box-align: center;
 }
 #copy, #copp, #cop, #copia{
     text-align: center;
@@ -570,7 +592,7 @@ label:hover{
   width:100%;
   text-align: center;
   margin-top: 0!important;
-  padding-top: 3rem;
+  padding-top: 8rem;
   padding-bottom: 2rem;
   background-color: #4c1a1b;
   cursor: pointer;
@@ -589,7 +611,7 @@ input[type="checkbox"]{
 }
 #met{
   text-align: center;
-  background-color: #4c1a1b;
+  background-color: #732627;
   padding-bottom: 3rem;
 }
 .bann{
@@ -598,7 +620,7 @@ input[type="checkbox"]{
 .space{
   padding:2rem;
 }
-#frag, #fragm,h4, #fra, #fratm{
+#frag, #fragm, h4, #fra, #fratm{
   border: 4mm ridge #732627;
   background-color: #000;
 }
@@ -613,7 +635,7 @@ h4:hover{
   background-color: #000;
 }
 #fragm, #frag, #fra, #fratm{
-  width: 50%;
+  width: 45%%;
 }
 h5{
   font-size: xx-large;
@@ -683,9 +705,7 @@ h5{
 /* ABOUT US */
 
 
-.about-content{
-margin-top: 4em;
-}
+
 
 img{
     height: 40vh;
