@@ -19,7 +19,8 @@
 
 
 body{
-  font-family: 'carolingia', sans-serif;                                        
+  font-family: 'carolingia', sans-serif;    
+  size-adjust: fit-content;                                    
 }
 
 
@@ -77,12 +78,23 @@ button{
   background-color: #000;
 }
 
-.container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover, .tett:hover{
+.container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover, #tett:hover{
   background-color: #9b3139;
   color:#260d0e;
 }
 .container-fluid{
-  padding: none!important;
+  padding-right:0;
+  padding-left:0;
+}
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+#tett{
+  background-color: #732627;
+  text-align: center;
+  padding-top: 2rem;
+  margin: 0;
 }
 #about-proj{
   text-align: center;
@@ -309,7 +321,7 @@ h2:hover, h3:hover{
   color: #9b3139;
   font-family: scribish;
 }
-#theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover, #theme5:hover, #theme6:hover, #mod:hover, #model:hover, #mode:hover, .sort{
+#theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover, #theme5:hover, #theme6:hover, #mod:hover, #model:hover, #mode:hover, .sort, .sub:hover{
   background-color: black;
   color: white;
 }
@@ -498,11 +510,27 @@ footer{
 footer p, #cop, #copy, #copp{
     font-size: 1.5rem ;
 }
-#form10{
-  background-color: #260d0e;
+#form10, #form11{
+  background-color: #4c1a1b;
   color: white;
-  width:50%;
+  width:10rem;
   font-size: large;
+  margin:0;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.addo{
+  margin: none;
+  display: inline-block;
+}
+.sub{
+  background-color: #260d0e;
+  color: #9b3139;
+}
+.form-control{
+  size: 3rem;
+  height: 3rem;
 }
 .md-form{
   background-color: #732627;
@@ -613,6 +641,14 @@ input[type="checkbox"]{
   text-align: center;
   background-color: #732627;
   padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+.btn-lg{
+  background-color: #4c1a1b;
+}
+.btn-lg:hover{
+  background-color: #000;
+  color:white;
 }
 .bann{
   padding: 1rem;
@@ -620,7 +656,7 @@ input[type="checkbox"]{
 .space{
   padding:2rem;
 }
-#frag, #fragm, h4, #fra, #fratm{
+#frag, #fragm, h4, #fra, #fratm, #acca{
   border: 4mm ridge #732627;
   background-color: #000;
 }
@@ -648,7 +684,7 @@ h5{
   position: relative;
 }
 
-.row mt-4{
+.row{} mt-4{
   margin-top: 0;
 }
 .space{
@@ -658,9 +694,7 @@ h5{
   color: #732627;
   font-size: xx-large;
 }
-.tett{
-  background-color: #732627;
-}
+
 .col:hover{
   background-color: #9b3133;
 }
