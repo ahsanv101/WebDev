@@ -77,7 +77,7 @@ button{
   background-color: #000;
 }
 
-.container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover, #tett:hover{
+.container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover, #tett:hover, #metto:hover{
   background-color: #9b3139;
   color:#260d0e;
 }
@@ -531,6 +531,7 @@ footer p, #cop, #copy, #copp{
 .sub{
   background-color: #260d0e;
   color: #9b3139;
+  size: 2rem;
 }
 .form-control{
   size: 3rem;
@@ -641,11 +642,15 @@ h3{
 input[type="checkbox"]{
   color:#732627;
 }
-#met{
+#met, #metto{
   text-align: center;
   background-color: #732627;
   padding-bottom: 3rem;
   padding-top: 3rem;
+}
+#flow{
+  display: flex;
+  margin-right: 0;
 }
 .btn-lg{
   background-color: #4c1a1b;
