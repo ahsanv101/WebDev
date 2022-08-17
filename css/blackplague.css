@@ -19,8 +19,7 @@
 
 
 body{
-  font-family: 'carolingia', sans-serif;    
-  size-adjust: fit-content;                                    
+  font-family: 'carolingia', sans-serif;                                
 }
 
 
@@ -85,6 +84,8 @@ button{
 .container-fluid{
   padding-right:0;
   padding-left:0;
+  margin-left: 0;
+  margin-right:0;
 }
 .row{
   margin-left: 0;
@@ -254,6 +255,7 @@ h2:hover, h3:hover{
 #third{
     background-color: #4c1a1b;
     font-size: 5.5vh;
+    padding-top: 3rem;
 }
 
 #gothird{
@@ -267,6 +269,7 @@ h2:hover, h3:hover{
 
 #second{
   padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 #third p{
     /* padding: 0.5rem 2rem 0.5rem 2rem!important; */
@@ -300,6 +303,7 @@ h2:hover, h3:hover{
 }
 #fourth{
   background-color:#4c1a1b;
+  padding-top: 3rem;
 }
 
 #fourth h2{
@@ -499,14 +503,14 @@ footer{
     text-align: center;
     font-weight: 100;
     position:sticky;
-    box-align:center;
 }  
 .fabvit{
   color:#732627;
 }
-.fabvit:hover{
-  color: #000000;
+.fabvit:active,.fabvit:hover{
+  color: #260d0e;
 }
+
 footer p, #cop, #copy, #copp{
     font-size: 1.5rem ;
 }
@@ -610,8 +614,8 @@ footer p{
 label{
   font-size: x-large;
   font-family:'scribish';
-  color: #260d0e;
-  }
+  color:#260D0E;
+}
 
 label:hover{
   color:black;
