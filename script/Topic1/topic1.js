@@ -6,8 +6,8 @@ String.prototype.tpl = function(o) {
     return r 
 }
 
-var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
-var listItemTpl2 = `<li><a href='#' onclick='load2("$url")'>$label</a></li>`
+var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`;
+var listItemTpl2 = `<li><a href='#' onclick='load2("$url")'>$label</a></li>`;
 
 $(document).ready(main);
 
@@ -17,10 +17,10 @@ function main() {
         dataType: 'json',
         url: 'filelist.json',
         success: function(d) {
-            for (var i=0; i<d.length; i++) {
-                // alert(d)
-                $('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
-            }	
+            // for (var i=0; i<d.length; i++) {
+            //     // alert(d)
+            //     $('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
+            // }	
 
             for (var i=0; i<d.length; i++) {
                 // alert(d)
