@@ -62,7 +62,7 @@ function load(file) {
         success: function(d) {
             // alert(file)
             $('#file').html(d)
-            $('#title').html($('#file h1'))
+            $('#title').html($('#file h4'))
             // $('.show').prop("checked", false)
             // addIds()
             // filltabs()
@@ -80,7 +80,7 @@ function load2(file) {
         success: function(d) {
             // alert(file)
             $('#file2').html(d)
-            $('#title2').html($('#file h1'))
+            $('#title2').html($('#file2 h4'))
             // $('.show').prop("checked", false)
             // addIds()
             // filltabs()
