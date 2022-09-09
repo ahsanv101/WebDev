@@ -17,15 +17,13 @@ function main() {
         dataType: 'json',
         url: 'filelist.json',
         success: function(d) {
-            // for (var i=0; i<d.length; i++) {
-            //     // alert(d)
-            //     $('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
-            // }	
-
             for (var i=0; i<d.length; i++) {
                 // alert(d)
+                $('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
                 $('#list2').append(listItemTpl2.tpl({url:d[i].url, label: d[i].label}))
             }	
+
+           
         },
         error: function() {
             alert('No document to show')
