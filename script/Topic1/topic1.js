@@ -7,6 +7,7 @@ String.prototype.tpl = function(o) {
 }
 
 var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
+var listItemTpl2 = `<li><a href='#' onclick='load2("$url")'>$label</a></li>`
 
 $(document).ready(main);
 
@@ -19,6 +20,11 @@ function main() {
             for (var i=0; i<d.length; i++) {
                 // alert(d)
                 $('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
+            }	
+
+            for (var i=0; i<d.length; i++) {
+                // alert(d)
+                $('#list2').append(listItemTpl2.tpl({url:d[i].url, label: d[i].label}))
             }	
         },
         error: function() {
@@ -59,9 +65,27 @@ function load(file) {
             // alert(file)
             $('#file').html(d)
             $('#title').html($('#file h1'))
-            $('.show').prop("checked", false)
-            addIds()
-            filltabs()
+            // $('.show').prop("checked", false)
+            // addIds()
+            // filltabs()
+        },
+        error: function() {
+            alert('Could not load file '+file)
+        }
+    });
+}
+
+function load2(file) {
+    $.ajax({
+        method: 'GET',
+        url: file,
+        success: function(d) {
+            // alert(file)
+            $('#file2').html(d)
+            $('#title2').html($('#file h1'))
+            // $('.show').prop("checked", false)
+            // addIds()
+            // filltabs()
         },
         error: function() {
             alert('Could not load file '+file)
