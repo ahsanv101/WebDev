@@ -81,9 +81,9 @@ function load2(file) {
             // alert(file)
             $('#file2').html(d)
             $('#title2').html($('#file2 h4'))
-            // $('.show').prop("checked", false)
-            // addIds()
-            // filltabs()
+            $('.show').prop("checked", false)
+            addIds()
+            filltabs()
         },
         error: function() {
             alert('Could not load file '+file)
