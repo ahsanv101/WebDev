@@ -63,9 +63,9 @@ function load(file) {
             // alert(file)
             $('#file').html(d)
             $('#title').html($('#file h4'))
-            // $('.show').prop("checked", false)
-            // addIds()
-            // filltabs()
+            $('.show').prop("checked", false)
+            addIds()
+            filltabs()
         },
         error: function() {
             alert('Could not load file '+file)
