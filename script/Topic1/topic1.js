@@ -83,7 +83,7 @@ function load2(file) {
             $('#title2').html($('#file2 h4'))
             $('.show').prop("checked", false)
             addIds()
-            filltabs()
+            filltabs2()
         },
         error: function() {
             alert('Could not load file '+file)
@@ -117,6 +117,15 @@ function filltabs(){
     filltab("#file .event","list-quote","#quotes")
 }
 
+function filltabs2(){
+    // filltab("#file .aside","list-aside","#asides")
+    // filltab("#file q.speech","list-speech","#speeches")
+    // filltab("#file q:not(.speech)","list-quote","#quotes")
+     filltab("#file2 .person","list-aside","#asides2")
+    filltab("#file2 .place","list-speech","#speeches2")
+    filltab("#file2 .event","list-quote","#quotes2")
+}
+
 function filltab(what,style,where) {
     var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
     var elements = $(what); 
@@ -132,18 +141,6 @@ function filltab(what,style,where) {
 
 
 
-function filltab2(what,style,where) {
-    var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
-    var elements = $(what); 
-    $(where+' ul').empty(); 
-    for (var i=0; i<elements.length; i++) {
-        $(where+' ul').append(list.tpl({
-            style:style, 
-            place: '#'+elements[i].id,
-            content: elements[i].innerHTML
-        }) )
-    }
-}
 
 
 function goto(id) {
