@@ -96,7 +96,6 @@ function addIds() {
     // addId('q.speech', 'speech')
     // addId('q:not(.speech)', 'quote')
 
-
     addId('.person','aside')
     addId('.place', 'speech')
     addId('.event', 'quote')
@@ -130,6 +129,22 @@ function filltab(what,style,where) {
         }) )
     }
 }
+
+
+
+function filltab2(what,style,where) {
+    var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
+    var elements = $(what); 
+    $(where+' ul').empty(); 
+    for (var i=0; i<elements.length; i++) {
+        $(where+' ul').append(list.tpl({
+            style:style, 
+            place: '#'+elements[i].id,
+            content: elements[i].innerHTML
+        }) )
+    }
+}
+
 
 function goto(id) {
     var t = $(id)[0].offsetTop;
