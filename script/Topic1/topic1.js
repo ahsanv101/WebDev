@@ -33,25 +33,28 @@ function main() {
     
     $('#showasides').click(function() {
         if (this.checked)
-             $('.person').addClass('text-aside')
+            //  $('.person').addClass('text-aside')
 
-            // $('.aside').addClass('text-aside')
+            $('.aside').addClass('text-aside')
         else
-            $('.person').removeClass('text-aside')
+            $('.aside').removeClass('text-aside')
+            // $('.person').removeClass('text-aside')
     })
     $('#showspeeches').click(function() {
         if (this.checked) 
-            $('.place').addClass('text-speeches')
-            // $('q.speech').addClass('text-speeches')
+            // $('.place').addClass('text-speeches')
+            $('q.speech').addClass('text-speeches')
         else
-            $('.place').removeClass('text-speeches')
+            $('q.speech').removeClass('text-speeches')
+            // $('.place').removeClass('text-speeches')
     })
     $('#showquotes').change(function() {
         if (this.checked) 
-            $('.event').addClass('text-speeches')
-            // $('q:not(.speech)').addClass('text-quotes')
+            // $('.event').addClass('text-speeches')
+            $('q:not(.speech)').addClass('text-quotes')
         else
-            $('.event').removeClass('text-quotes')
+            $('q:not(.speech)').removeClass('text-quotes')
+            // $('.event').removeClass('text-quotes')
     })
 }
 
@@ -92,13 +95,13 @@ function load2(file) {
 }
 
 function addIds() {
-    // addId('.aside','aside')
-    // addId('q.speech', 'speech')
-    // addId('q:not(.speech)', 'quote')
+    addId('.aside','aside')
+    addId('q.speech', 'speech')
+    addId('q:not(.speech)', 'quote')
 
-    addId('.person','aside')
-    addId('.place', 'speech')
-    addId('.event', 'quote')
+    // addId('.person','aside')
+    // addId('.place', 'speech')
+    // addId('.event', 'quote')
 }
 
 function addId(what, prefix) {
@@ -109,21 +112,24 @@ function addId(what, prefix) {
     }
 }
 function filltabs(){
-    // filltab("#file .aside","list-aside","#asides")
-    // filltab("#file q.speech","list-speech","#speeches")
-    // filltab("#file q:not(.speech)","list-quote","#quotes")
-     filltab("#file .person","list-aside","#asides")
-    filltab("#file .place","list-speech","#speeches")
-    filltab("#file .event","list-quote","#quotes")
+    filltab("#file .aside","list-aside","#asides")
+    filltab("#file q.speech","list-speech","#speeches")
+    filltab("#file q:not(.speech)","list-quote","#quotes")
+    
+    
+    // filltab("#file .person","list-aside","#asides")
+    // filltab("#file .place","list-speech","#speeches")
+    // filltab("#file .event","list-quote","#quotes")
 }
 
 function filltabs2(){
-    // filltab("#file .aside","list-aside","#asides")
-    // filltab("#file q.speech","list-speech","#speeches")
-    // filltab("#file q:not(.speech)","list-quote","#quotes")
-     filltab("#file2 .person","list-aside","#asides2")
-    filltab("#file2 .place","list-speech","#speeches2")
-    filltab("#file2 .event","list-quote","#quotes2")
+    filltab("#file .aside","list-aside","#asides")
+    filltab("#file q.speech","list-speech","#speeches")
+    filltab("#file q:not(.speech)","list-quote","#quotes")
+    
+    // filltab("#file2 .person","list-aside","#asides2")
+    // filltab("#file2 .place","list-speech","#speeches2")
+    // filltab("#file2 .event","list-quote","#quotes2")
 }
 
 function filltab(what,style,where) {
