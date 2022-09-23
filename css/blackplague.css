@@ -546,7 +546,7 @@ footer p{
     text-align: center;
     padding-left: 0;
     font-weight: 100;
-     fargin-bottom: 0.1vh;
+    margin-bottom: 0.1vh;
     box-align:center;
 }
 #footer-left, #footer, #foot, #footo{
@@ -746,7 +746,7 @@ h5{
 
 /* Addded by ahsan */
 
-.tab-pane {
+/* .tab-pane {
   min-height: 150px;
 }
 
@@ -813,7 +813,7 @@ ul {
 }
 .list-quote:after {
   content: "”";
-}
+} */
 
 .animate {
   animation-name: bgcolor ;
