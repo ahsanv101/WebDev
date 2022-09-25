@@ -101,7 +101,7 @@ function load(file) {
             filltabs()
         },
         error: function() {
-            alert('Could not load file '+file)
+            alert('Could not load file 1 '+file)
         }
     });
 }
@@ -119,7 +119,7 @@ function load2(file) {
             filltabs2()
         },
         error: function() {
-            alert('Could not load file '+file)
+            alert('Could not load file 2 '+file)
         }
     });
 }
@@ -180,8 +180,8 @@ function filltab(what,style,where) {
 
 
 function goto(id) {
-    var t = $(id)[-2].offsetTop;
-    $('body').animate({ scrollTop: t }, 200);
+    var t = $(id)[0].offsetTop;
+    $('body').animate({ scrollTop: t }, 300);
     console.log(id)
     $(id).addClass('animate');
     setTimeout(function(){
