@@ -62,32 +62,32 @@ function main() {
     
 
 
-    $('#showasides').click(function() {
-        if (this.checked)
-            //  $('.person').addClass('text-aside')
+    // $('#showasides').click(function() {
+    //     if (this.checked)
+    //         //  $('.person').addClass('text-aside')
 
-            $('.aside').addClass('text-aside')
+    //         $('.aside').addClass('text-aside')
             
-        else
-            $('.aside').removeClass('text-aside')
-            // $('.person').removeClass('text-aside')
-    })
-    $('#showspeeches').click(function() {
-        if (this.checked) 
-            // $('.place').addClass('text-speeches')
-            $('q.speech').addClass('text-speeches')
-        else
-            $('q.speech').removeClass('text-speeches')
-            // $('.place').removeClass('text-speeches')
-    })
-    $('#showquotes').change(function() {
-        if (this.checked) 
-            // $('.event').addClass('text-speeches')
-            $('q:not(.speech)').addClass('text-quotes')
-        else
-            $('q:not(.speech)').removeClass('text-quotes')
-            // $('.event').removeClass('text-quotes')
-    })
+    //     else
+    //         $('.aside').removeClass('text-aside')
+    //         // $('.person').removeClass('text-aside')
+    // })
+    // $('#showspeeches').click(function() {
+    //     if (this.checked) 
+    //         // $('.place').addClass('text-speeches')
+    //         $('q.speech').addClass('text-speeches')
+    //     else
+    //         $('q.speech').removeClass('text-speeches')
+    //         // $('.place').removeClass('text-speeches')
+    // })
+    // $('#showquotes').change(function() {
+    //     if (this.checked) 
+    //         // $('.event').addClass('text-speeches')
+    //         $('q:not(.speech)').addClass('text-quotes')
+    //     else
+    //         $('q:not(.speech)').removeClass('text-quotes')
+    //         // $('.event').removeClass('text-quotes')
+    // })
 }
 
 function load(file) {
