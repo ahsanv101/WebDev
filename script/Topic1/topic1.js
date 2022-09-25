@@ -178,14 +178,12 @@ function filltab(what,style,where) {
 
 
 
-
-
 function goto(id) {
     var t = $(id)[0].offsetTop;
-    $('body').animate({ scrollTop: t }, 200);
+    $('body').animate({ scrollTop: t +500}, 200);
     console.log(id)
     $(id).addClass('animate');
     setTimeout(function(){
         $(id).removeClass('animate');
-    },5000);
+    },7000);
 }
