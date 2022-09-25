@@ -748,15 +748,23 @@ h5{
 
 
 
-.text-aside {
+.text-people {
   background-color: #ffddff;
 }
 
-.text-speeches {
+.text-place {
   background-color: #ddffdd;
 }
-.text-quotes {
+.text-event {
   background-color: #ffffdd;
+}
+
+.text-concept {
+  background-color: #4d4451;
+}
+
+.text-opinion {
+  background-color: #377c50;
 }
 
 .animate {

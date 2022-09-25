@@ -34,28 +34,46 @@ function main() {
         if (this.checked)
             //  $('.person').addClass('text-aside')
 
-            $('.aside').addClass('text-aside')
+            $('.people').addClass('text-people')
         else
-            $('.aside').removeClass('text-aside')
+            $('.people').removeClass('text-people')
             // $('.person').removeClass('text-aside')
     })
 
     $('#plac').click(function() {
         if (this.checked) 
-        // $('.place').addClass('text-speeches')
-        $('q.speech').addClass('text-speeches')
+        $('.place').addClass('text-place')
+        // $('q.speech').addClass('text-speeches')
     else
-        $('q.speech').removeClass('text-speeches')
-        // $('.place').removeClass('text-speeches')
+        // $('q.speech').removeClass('text-speeches')
+        $('.place').removeClass('text-place')
     })
 
     $('#eve').change(function() {
         if (this.checked) 
-            // $('.event').addClass('text-speeches')
-            $('q:not(.speech)').addClass('text-quotes')
+            $('.event').addClass('text-event')
+            // $('q:not(.speech)').addClass('text-quotes')
         else
-            $('q:not(.speech)').removeClass('text-quotes')
-            // $('.event').removeClass('text-quotes')
+            // $('q:not(.speech)').removeClass('text-quotes')
+            $('.event').removeClass('text-event')
+    })
+
+    $('#conce').change(function() {
+        if (this.checked) 
+            $('.concept').addClass('text-concept')
+            // $('q:not(.speech)').addClass('text-quotes')
+        else
+            // $('q:not(.speech)').removeClass('text-quotes')
+            $('.concept').removeClass('text-concept')
+    })
+
+    $('#oppi').change(function() {
+        if (this.checked) 
+            $('.opinion').addClass('text-opinion')
+            // $('q:not(.speech)').addClass('text-quotes')
+        else
+            // $('q:not(.speech)').removeClass('text-quotes')
+            $('.opinion').removeClass('text-opinion')
     })
 
     
@@ -126,13 +144,20 @@ function load2(file) {
 }
 
 function addIds() {
-    addId('.aside','aside')
-    addId('q.speech', 'speech')
-    addId('q:not(.speech)', 'quote')
+    // addId('.aside','aside')
+    // addId('q.speech', 'speech')
+    // addId('q:not(.speech)', 'quote')
 
     // addId('.person','aside')
     // addId('.place', 'speech')
     // addId('.event', 'quote')
+
+    addId('.people','people')
+    addId('.place', 'place')
+    addId('.event', 'event')
+    addId('.concept', 'concept')
+    addId('.opinion', 'opinion')
+
 }
 
 function addId(what, prefix) {
@@ -142,15 +167,22 @@ function addId(what, prefix) {
         elements[i].id = prefix + "-" + id++
     }
 }
+
 function filltabs(){
-    filltab("#file .aside","list-aside","#asides")
-    filltab("#file q.speech","list-speech","#speeches")
-    filltab("#file q:not(.speech)","list-quote","#quotes")
+    // filltab("#file .aside","list-aside","#asides")
+    // filltab("#file q.speech","list-speech","#speeches")
+    // filltab("#file q:not(.speech)","list-quote","#quotes")
     
     
     // filltab("#file .person","list-aside","#asides")
     // filltab("#file .place","list-speech","#speeches")
     // filltab("#file .event","list-quote","#quotes")
+
+    filltab("#file .people","list-people","#peoples")
+    filltab("#file .place","list-place","#places")
+    filltab("#file .event","list-event","#events")
+    filltab("#file .concept","list-concept","#concepts")
+    filltab("#file .opinion","list-opinion","#opinions")
 }
 
 function filltabs2(){
