@@ -722,7 +722,7 @@ h5{
     #first h2{
         font-size: 3.5vh;
     }
-    
+}  
 
 
 @media (min-width: 768px) and (max-width: 992px){
@@ -746,35 +746,7 @@ h5{
 
 /* Addded by ahsan */
 
-/* .tab-pane {
-  min-height: 150px;
-}
 
-.aside:before {
-  content: " – ";
-  background-color: #ffffff !important;
-}
-.aside:after {
-  content: " – ";
-  background-color: #ffffff !important;
-}
-
-q:before {
-  content: "“";
-  background-color: #ffffff !important;
-}
-q:after {
-  content: "”";
-  background-color: #ffffff !important;
-}
-q.speech:before {
-  content: "«";
-  background-color: #ffffff !important;
-}
-q.speech:after {
-  content: "»";
-  background-color: #ffffff !important;
-}
 
 .text-aside {
   background-color: #ffddff;
@@ -785,44 +757,4 @@ q.speech:after {
 }
 .text-quotes {
   background-color: #ffffdd;
-}
-
-ul {
-  padding-inline-start: 0.5em; 
-}
-.list {
-  font-size: 80%;
-  line-height: 1.2; 
-  margin: 0; 
-  white-space: nowrap; 
-  overflow-x: hidden;
-  list-style-position:inside;  
-}
-.list a {
-  color: black;
-  margin: 0; 
-}
-.list-speech:before {
-  content: "«";
-}
-.list-speech:after {
-  content: "»";
-}
-.list-quote:before {
-  content: "“";
-}
-.list-quote:after {
-  content: "”";
-} */
-
-.animate {
-  animation-name: bgcolor ;
-  animation-duration: 0.75s ; 
-  animation-iteration-count: 3;
-  animation-fill-mode: backwards;
-}
-
-@keyframes bgcolor {
-  from { background-color: #ffffff;  }
-  to { background-color: #cccc00; }
 }
