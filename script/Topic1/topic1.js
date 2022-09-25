@@ -33,9 +33,7 @@ function main() {
     $('#peop').click(function() {
         if (this.checked)
             //  $('.person').addClass('text-aside')
-
             $('.aside').addClass('text-aside')
-            
         else
             $('.aside').removeClass('text-aside')
             // $('.person').removeClass('text-aside')
@@ -182,7 +180,7 @@ function filltab(what,style,where) {
 
 
 function goto(id) {
-    var t = $(id)[0].offsetTop;
+    var t = $(id)[1].offsetTop;
     $('body').animate({ scrollTop: t }, 200);
     console.log(id)
     $(id).addClass('animate');
