@@ -40,6 +40,7 @@ function main() {
             // $('.person').removeClass('text-aside')
     })
 
+
     $('#plac').click(function() {
         if (this.checked) 
         $('.place').addClass('text-place')
@@ -186,13 +187,19 @@ function filltabs(){
 }
 
 function filltabs2(){
-    filltab("#file .aside","list-aside","#asides")
-    filltab("#file q.speech","list-speech","#speeches")
-    filltab("#file q:not(.speech)","list-quote","#quotes")
+    // filltab("#file .aside","list-aside","#asides")
+    // filltab("#file q.speech","list-speech","#speeches")
+    // filltab("#file q:not(.speech)","list-quote","#quotes")
     
     // filltab("#file2 .person","list-aside","#asides2")
     // filltab("#file2 .place","list-speech","#speeches2")
     // filltab("#file2 .event","list-quote","#quotes2")
+
+    filltab("#file2 .people","list-people2","#peoples2")
+    filltab("#file2 .place","list-place2","#places2")
+    filltab("#file2 .event","list-event2","#events2")
+    filltab("#file2 .concept","list-concept2","#concepts2")
+    filltab("#file2 .opinion","list-opinion2","#opinions2")
 }
 
 function filltab(what,style,where) {
