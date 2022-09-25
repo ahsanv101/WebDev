@@ -180,7 +180,7 @@ function filltab(what,style,where) {
 
 
 function goto(id) {
-    var t = $(id)[3].offsetTop;
+    var t = $(id)[-2].offsetTop;
     $('body').animate({ scrollTop: t }, 200);
     console.log(id)
     $(id).addClass('animate');
