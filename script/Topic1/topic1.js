@@ -34,28 +34,28 @@ function main() {
         if (this.checked)
             //  $('.person').addClass('text-aside')
 
-            $('.aside').addClass('text-aside')
+            $('#peop').addClass('text-aside')
             
         else
-            $('.aside').removeClass('text-aside')
+            $('#peop').removeClass('text-aside')
             // $('.person').removeClass('text-aside')
     })
 
     $('#plac').click(function() {
         if (this.checked) 
             // $('.place').addClass('text-speeches')
-            $('q.speech').addClass('text-speeches')
+            $('#plac').addClass('text-speeches')
         else
-            $('q.speech').removeClass('text-speeches')
+            $('#plac').removeClass('text-speeches')
             // $('.place').removeClass('text-speeches')
     })
 
     $('#eve').change(function() {
         if (this.checked) 
             // $('.event').addClass('text-speeches')
-            $('q:not(.speech)').addClass('text-quotes')
+            $('#eve').addClass('text-quotes')
         else
-            $('q:not(.speech)').removeClass('text-quotes')
+            $('#eve').removeClass('text-quotes')
             // $('.event').removeClass('text-quotes')
     })
 
