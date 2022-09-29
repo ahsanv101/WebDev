@@ -546,7 +546,7 @@ footer p{
     text-align: center;
     padding-left: 0;
     font-weight: 100;
-     fargin-bottom: 0.1vh;
+    margin-bottom: 0.1vh;
     box-align:center;
 }
 #footer-left, #footer, #foot, #footo{
@@ -680,7 +680,7 @@ h4:hover{
   background-color: #000;
 }
 #fragm, #frag, #fra, #fratm{
-  width: 45%%;
+  width: 45%;
 }
 h5{
   font-size: xx-large;
@@ -722,7 +722,7 @@ h5{
     #first h2{
         font-size: 3.5vh;
     }
-    
+}  
 
 
 @media (min-width: 768px) and (max-width: 992px){
@@ -743,3 +743,38 @@ h5{
     }
 }
 
+
+/* Addded by ahsan */
+
+
+
+.text-people {
+  background-color: #ffddff;
+}
+
+.text-place {
+  background-color: #ddffdd;
+}
+.text-event {
+  background-color: #ffffdd;
+}
+
+.text-concept {
+  background-color: #4d4451;
+}
+
+.text-opinion {
+  background-color: #377c50;
+}
+
+.animate {
+  animation-name: bgcolor ;
+  animation-duration: 0.75s ; 
+  animation-iteration-count: 3;
+  animation-fill-mode: backwards;
+}
+
+@keyframes bgcolor {
+  from { background-color: #ffffff;  }
+  to { background-color: #cccc00; }
+}

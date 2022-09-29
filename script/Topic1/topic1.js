@@ -30,29 +30,82 @@ function main() {
         }
     });
     
-    
-    $('#showasides').click(function() {
+    $('#peop').click(function() {
         if (this.checked)
-             $('.person').addClass('text-aside')
+            //  $('.person').addClass('text-aside')
 
-            // $('.aside').addClass('text-aside')
+            $('.people').addClass('text-people')
         else
-            $('.person').removeClass('text-aside')
+            $('.people').removeClass('text-people')
+            // $('.person').removeClass('text-aside')
     })
-    $('#showspeeches').click(function() {
+
+
+    $('#plac').click(function() {
         if (this.checked) 
-            $('.place').addClass('text-speeches')
-            // $('q.speech').addClass('text-speeches')
-        else
-            $('.place').removeClass('text-speeches')
+        $('.place').addClass('text-place')
+        // $('q.speech').addClass('text-speeches')
+    else
+        // $('q.speech').removeClass('text-speeches')
+        $('.place').removeClass('text-place')
     })
-    $('#showquotes').change(function() {
+
+    $('#eve').change(function() {
         if (this.checked) 
-            $('.event').addClass('text-speeches')
+            $('.event').addClass('text-event')
             // $('q:not(.speech)').addClass('text-quotes')
         else
-            $('.event').removeClass('text-quotes')
+            // $('q:not(.speech)').removeClass('text-quotes')
+            $('.event').removeClass('text-event')
     })
+
+    $('#conce').change(function() {
+        if (this.checked) 
+            $('.concept').addClass('text-concept')
+            // $('q:not(.speech)').addClass('text-quotes')
+        else
+            // $('q:not(.speech)').removeClass('text-quotes')
+            $('.concept').removeClass('text-concept')
+    })
+
+    $('#oppi').change(function() {
+        if (this.checked) 
+            $('.opinion').addClass('text-opinion')
+            // $('q:not(.speech)').addClass('text-quotes')
+        else
+            // $('q:not(.speech)').removeClass('text-quotes')
+            $('.opinion').removeClass('text-opinion')
+    })
+
+    
+
+
+    // $('#showasides').click(function() {
+    //     if (this.checked)
+    //         //  $('.person').addClass('text-aside')
+
+    //         $('.aside').addClass('text-aside')
+            
+    //     else
+    //         $('.aside').removeClass('text-aside')
+    //         // $('.person').removeClass('text-aside')
+    // })
+    // $('#showspeeches').click(function() {
+    //     if (this.checked) 
+    //         // $('.place').addClass('text-speeches')
+    //         $('q.speech').addClass('text-speeches')
+    //     else
+    //         $('q.speech').removeClass('text-speeches')
+    //         // $('.place').removeClass('text-speeches')
+    // })
+    // $('#showquotes').change(function() {
+    //     if (this.checked) 
+    //         // $('.event').addClass('text-speeches')
+    //         $('q:not(.speech)').addClass('text-quotes')
+    //     else
+    //         $('q:not(.speech)').removeClass('text-quotes')
+    //         // $('.event').removeClass('text-quotes')
+    // })
 }
 
 function load(file) {
@@ -96,9 +149,16 @@ function addIds() {
     // addId('q.speech', 'speech')
     // addId('q:not(.speech)', 'quote')
 
-    addId('.person','aside')
-    addId('.place', 'speech')
-    addId('.event', 'quote')
+    // addId('.person','aside')
+    // addId('.place', 'speech')
+    // addId('.event', 'quote')
+
+    addId('.people','people')
+    addId('.place', 'place')
+    addId('.event', 'event')
+    addId('.concept', 'concept')
+    addId('.opinion', 'opinion')
+
 }
 
 function addId(what, prefix) {
@@ -108,22 +168,38 @@ function addId(what, prefix) {
         elements[i].id = prefix + "-" + id++
     }
 }
+
 function filltabs(){
     // filltab("#file .aside","list-aside","#asides")
     // filltab("#file q.speech","list-speech","#speeches")
     // filltab("#file q:not(.speech)","list-quote","#quotes")
-     filltab("#file .person","list-aside","#asides")
-    filltab("#file .place","list-speech","#speeches")
-    filltab("#file .event","list-quote","#quotes")
+    
+    
+    // filltab("#file .person","list-aside","#asides")
+    // filltab("#file .place","list-speech","#speeches")
+    // filltab("#file .event","list-quote","#quotes")
+
+    filltab("#file .people","list-people","#peoples")
+    filltab("#file .place","list-place","#places")
+    filltab("#file .event","list-event","#events")
+    filltab("#file .concept","list-concept","#concepts")
+    filltab("#file .opinion","list-opinion","#opinions")
 }
 
 function filltabs2(){
     // filltab("#file .aside","list-aside","#asides")
     // filltab("#file q.speech","list-speech","#speeches")
     // filltab("#file q:not(.speech)","list-quote","#quotes")
-     filltab("#file2 .person","list-aside","#asides2")
-    filltab("#file2 .place","list-speech","#speeches2")
-    filltab("#file2 .event","list-quote","#quotes2")
+    
+    // filltab("#file2 .person","list-aside","#asides2")
+    // filltab("#file2 .place","list-speech","#speeches2")
+    // filltab("#file2 .event","list-quote","#quotes2")
+
+    filltab("#file2 .people","list-people2","#peoples2")
+    filltab("#file2 .place","list-place2","#places2")
+    filltab("#file2 .event","list-event2","#events2")
+    filltab("#file2 .concept","list-concept2","#concepts2")
+    filltab("#file2 .opinion","list-opinion2","#opinions2")
 }
 
 function filltab(what,style,where) {
@@ -141,13 +217,12 @@ function filltab(what,style,where) {
 
 
 
-
-
 function goto(id) {
     var t = $(id)[0].offsetTop;
-    $('body').animate({ scrollTop: t }, 200);
+    $('body').animate({ scrollTop: t +500}, 200);
+    console.log(id)
     $(id).addClass('animate');
     setTimeout(function(){
         $(id).removeClass('animate');
-    },5000);
+    },7000);
 }
