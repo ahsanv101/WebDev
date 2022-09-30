@@ -140,7 +140,7 @@ h2:hover, h3:hover{
 }
 
 .nav-item, .nav-link, #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL, #navbarDropdownM{
-  font-size: xx-large;
+  font-size: medium;
   color:#260d0e;
 } 
 
@@ -782,3 +782,6 @@ h5{
 }
 
 
+.sticky-top{
+  padding-top:60px
+}
