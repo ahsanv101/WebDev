@@ -782,7 +782,7 @@ h5{
 }
 
 
-.bann{
 
-  position: fixed;
+#bann{
+  display: block;
 }

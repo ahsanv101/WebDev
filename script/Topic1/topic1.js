@@ -226,3 +226,4 @@ function goto(id) {
         $(id).removeClass('animate');
     },7000);
 }
+
