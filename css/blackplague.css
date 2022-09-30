@@ -780,3 +780,9 @@ h5{
   from { background-color: #ffffff;  }
   to { background-color: #cccc00; }
 }
+
+
+.bann{
+
+  position: fixed;
+}
