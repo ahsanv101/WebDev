@@ -143,7 +143,7 @@ h2:hover, h3:hover{
   font-size: xx-large;
   color:#260d0e;
 } 
-  
+
 #pur{
   padding:2rem;
   margin-top:2rem;
@@ -210,7 +210,9 @@ h2:hover, h3:hover{
 #second, #gosecond{
     background-color: #4c1a1b !important;
 }
-
+#sentencetab.nav-item{
+  position: fixed;
+}
 #btn-themes{
   background-color: #260D0E;
   color:white;
