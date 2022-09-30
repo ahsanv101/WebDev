@@ -290,7 +290,9 @@ h2:hover, h3:hover{
 #third:hover, #themes-text:hover{
   color:#000000!important;
 }
-
+.form-check-input{
+  position:fixed;
+}
 #gofourth{
   color:#260D0E;
 }
