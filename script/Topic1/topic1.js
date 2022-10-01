@@ -226,7 +226,7 @@ function filltab(what,style,where) {
         
         counts[el2] = counts[el2] ? counts[el2].concat(['#'+el3]): new Array('#'+el3);       
         // console.log(elements[i].innerHTML,elements[i].id)
-        // counts[el2].push(el3)
+
     }
 
     console.log(counts);
