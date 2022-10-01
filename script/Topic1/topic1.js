@@ -206,6 +206,7 @@ function filltabs2(){
     filltab("#file2 .opinion","list-opinion2","#opinions2")
 }
 
+
 function filltab(what,style,where) {
     var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
     var elements = $(what); 
@@ -213,23 +214,39 @@ function filltab(what,style,where) {
 
     const counts = {};
     
-    for (var i=0; i<elements.length; i++) {
+     for (var i=0; i<elements.length; i++) {
         var el = elements[i].innerHTML;
         let c = el.toUpperCase();
-        counts[c] = counts[c] ? ++counts[c] : 1;
+        elements[i].innerHTML = c;
+        var el2 = elements[i].innerHTML;
         
+        var el3 = elements[i].id;
+
+        
+        
+        counts[el2] = counts[el2] ? counts[el2].concat(['#'+el3]): new Array('#'+el3);       
+        // console.log(elements[i].innerHTML,elements[i].id)
+        // counts[el2].push(el3)
     }
 
     console.log(counts);
 
-    for (var i=0; i<elements.length; i++) {
-        $(where+' ul').append(list.tpl({
+    for (let x in counts) {
+       // console.log);
+       // console.log(counts)
+         $(where+' ul').append(list.tpl({
             style:style, 
-            place: '#'+elements[i].id,
-            content: elements[i].innerHTML
+            place: counts[x],
+            content: (x + ": "+ counts[x].length)
         }) )
-    }
+        }
+
+    // for (var i=0; i<elements.length; i++) {
+       
+    // }
 }
+
+
 
 
 
