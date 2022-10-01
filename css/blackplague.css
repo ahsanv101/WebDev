@@ -786,3 +786,8 @@ h5{
   padding-top:60px;
 
 }
+
+.tab-content{
+  overflow-y:scroll;
+  height:250px;
+}

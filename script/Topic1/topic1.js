@@ -179,6 +179,8 @@ function filltabs(){
     // filltab("#file .place","list-speech","#speeches")
     // filltab("#file .event","list-quote","#quotes")
 
+   
+
     filltab("#file .people","list-people","#peoples")
     filltab("#file .place","list-place","#places")
     filltab("#file .event","list-event","#events")
@@ -195,6 +197,8 @@ function filltabs2(){
     // filltab("#file2 .place","list-speech","#speeches2")
     // filltab("#file2 .event","list-quote","#quotes2")
 
+
+
     filltab("#file2 .people","list-people2","#peoples2")
     filltab("#file2 .place","list-place2","#places2")
     filltab("#file2 .event","list-event2","#events2")
@@ -206,6 +210,18 @@ function filltab(what,style,where) {
     var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
     var elements = $(what); 
     $(where+' ul').empty(); 
+
+    const counts = {};
+    
+    for (var i=0; i<elements.length; i++) {
+        var el = elements[i].innerHTML;
+        let c = el.toUpperCase();
+        counts[c] = counts[c] ? ++counts[c] : 1;
+        
+    }
+
+    console.log(counts);
+
     for (var i=0; i<elements.length; i++) {
         $(where+' ul').append(list.tpl({
             style:style, 
