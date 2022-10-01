@@ -251,6 +251,7 @@ function filltab(what,style,where) {
 
 
 function goto(id) {
+    const myArray = id.split(",");
     var t = $(id)[0].offsetTop;
     $('body').animate({ scrollTop: t +400}, 100);
     console.log(id)
