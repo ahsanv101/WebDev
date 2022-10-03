@@ -208,7 +208,7 @@ function filltabs2(){
 
 
 function filltab(what,style,where) {
-    var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
+    var list = `<li class="list $style"><a href="#" onclick="goto('$place','$content')">$content</a></li>`
     var elements = $(what); 
     $(where+' ul').empty(); 
 
@@ -248,9 +248,13 @@ function filltab(what,style,where) {
 
 
 
+var data = new Array();
+console.log(data);
 
 
-function goto(id) {
+function goto(id,con) {
+    data.push(con);
+    console.log(data);
     const myArray = id.split(",");
     var t = $(id)[0].offsetTop;
     $('body').animate({ scrollTop: t +400}, 100);
