@@ -258,23 +258,64 @@ function goto(id,con) {
     {
        if (con == data[data.length -1])
            { 
+               
                const myArray = id.split(",");
                
                data.push(con);
                var count = data.length-1;
-               console.log(myArray,count);
+               console.log(myArray,data,count);
+                
+               var che  = con.split(" ");
+               if (count+1>Number(che[che.length-1]))
+               {
+                   alert('You have reached end of count');
+                   count=0;
+               }
+               else
+               {
+                    if ($(myArray[count])[0])
+                       {
+                           var t = $(myArray[count])[0].offsetTop;
+                          
+                       }
+                       else{
+                           var t = $(myArray[count-1])[0].offsetTop;
+                       }
+                        $('body').animate({ scrollTop: t +400}, 100);
+                        
+                           $(myArray[count]).addClass('animate');
+                           setTimeout(function(){
+                               $(myArray[count]).removeClass('animate');
+                           },7000);
+                           count = count+1;
+               }
+
+               
+              
+               
+               
+           }
+        else
+           {   
+               data=[];
+               console.log('else block');
+               var count = 0;
+               const myArray = id.split(",");
                var t = $(myArray[count])[0].offsetTop;
                $('body').animate({ scrollTop: t +400}, 100);
-               // console.log(id)
+               console.log(myArray[count]);
                $(myArray[count]).addClass('animate');
                setTimeout(function(){
                    $(myArray[count]).removeClass('animate');
                },7000);
+               data.push(con);
                count = count+1;
+               console.log(data);
            }
   
         
     }
+
    else
    {
        var count = 0;
