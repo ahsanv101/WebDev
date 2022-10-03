@@ -253,33 +253,42 @@ console.log(data);
 
 
 function goto(id,con) {
-   
-    // console.log(data,ind);
-    if (con == data[data.length -1])
+
+    if (data.length!= 0)
     {
-        const myArray = id.split(",");
-        var t = $(myArray[count])[0].offsetTop;
-        $('body').animate({ scrollTop: t +400}, 100);
-        // console.log(id)
-        $(myArray[count]).addClass('animate');
-        setTimeout(function(){
-            $(myArray[count]).removeClass('animate');
-        },7000);
-        count = count+1;
+       if (con == data[data.length -1])
+           { 
+               const myArray = id.split(",");
+               
+               data.push(con);
+               var count = data.length-1;
+               console.log(myArray,count);
+               var t = $(myArray[count])[0].offsetTop;
+               $('body').animate({ scrollTop: t +400}, 100);
+               // console.log(id)
+               $(myArray[count]).addClass('animate');
+               setTimeout(function(){
+                   $(myArray[count]).removeClass('animate');
+               },7000);
+               count = count+1;
+           }
+  
+        
     }
-    else
-    {
-        var count = 0;
-        const myArray = id.split(",");
-        var t = $(myArray[count])[0].offsetTop;
-        $('body').animate({ scrollTop: t +400}, 100);
-        // console.log(id)
-        $(myArray[count]).addClass('animate');
-        setTimeout(function(){
-            $(myArray[count]).removeClass('animate');
-        },7000);
-        data.push(con);
-        count = count+1;
-    }
-   
+   else
+   {
+       var count = 0;
+       const myArray = id.split(",");
+       var t = $(myArray[count])[0].offsetTop;
+       $('body').animate({ scrollTop: t +400}, 100);
+       console.log(myArray[count]);
+       $(myArray[count]).addClass('animate');
+       setTimeout(function(){
+           $(myArray[count]).removeClass('animate');
+       },7000);
+       data.push(con);
+       count = count+1;
+   }
+
+  
 }
