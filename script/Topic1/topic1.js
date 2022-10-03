@@ -254,14 +254,15 @@ console.log(data);
 
 function goto(id,con) {
     data.push(con);
+    ind = con.length;
     console.log(data);
     const myArray = id.split(",");
-    var t = $(id)[0].offsetTop;
+    var t = $(myArray[ind])[0].offsetTop;
     $('body').animate({ scrollTop: t +400}, 100);
-    console.log(id)
-    $(id).addClass('animate');
+    // console.log(id)
+    $(myArray[ind]).addClass('animate');
     setTimeout(function(){
-        $(id).removeClass('animate');
+        $(myArray[ind]).removeClass('animate');
     },7000);
 }
 
