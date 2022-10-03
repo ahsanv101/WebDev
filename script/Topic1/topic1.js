@@ -211,6 +211,7 @@ function filltab(what,style,where) {
     var list = `<li class="list $style"><a href="#" onclick="goto('$place','$content')">$content</a></li>`
     var elements = $(what); 
     $(where+' ul').empty(); 
+    
 
     const counts = {};
     
