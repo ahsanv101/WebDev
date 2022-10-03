@@ -237,7 +237,7 @@ function filltab(what,style,where) {
          $(where+' ul').append(list.tpl({
             style:style, 
             place: counts[x],
-            content: (x + ": "+ counts[x].length)
+            content: (x + " count: "+ counts[x].length)
         }) )
         }
 
@@ -333,3 +333,4 @@ function goto(id,con) {
 
   
 }
+
