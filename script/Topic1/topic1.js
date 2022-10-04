@@ -151,7 +151,7 @@ function filltabs2(){
 
 function filltab(what,style,where) {
 
-    var where_new = where.split(' ');
+    var where_new = what.split(' ');
     where_new = where_new[0];
     var list = `<li class="list $style"><a href="#" onclick="goto('$place','$content','$wh')">$content</a></li>`
     var elements = $(what); 
@@ -200,7 +200,7 @@ console.log(data);
 
 
 function goto(id,con,wh) {
-    console.log(wh)
+    console.log(wh);
 
     if (data.length!= 0)
     {
