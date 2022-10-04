@@ -798,3 +798,13 @@ h5{
 #asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
   font-size: 18px;
 }
+
+#file{
+  overflow-y: scroll;
+  height: 800px;
+}
+
+#file2{
+  overflow-y: scroll;
+  height: 800px;
+}
