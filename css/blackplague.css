@@ -808,3 +808,7 @@ h5{
   overflow-y: scroll;
   height: 800px;
 }
+
+img {
+  width: 100%;
+}
