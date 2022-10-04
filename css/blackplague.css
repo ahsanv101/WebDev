@@ -210,9 +210,7 @@ h2:hover, h3:hover{
 #second, #gosecond{
     background-color: #4c1a1b !important;
 }
-#sentencetab.nav-item{
-  position: fixed;
-}
+
 #btn-themes{
   background-color: #260D0E;
   color:white;
@@ -793,3 +791,6 @@ h5{
 }
 
 
+#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
+  font-size: 18px;
+}
