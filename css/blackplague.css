@@ -780,9 +780,13 @@ h5{
 }
 
 
-#bann, #bann2{
-  padding-top:100px;
+.sticky-top{
+  padding-top:10px;
 
+}
+
+#sti{
+  padding-top:100px;
 }
 
 .tab-content{
