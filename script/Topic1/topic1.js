@@ -200,7 +200,7 @@ console.log(data);
 
 
 function goto(id,con,wh) {
-    console.log(wh);
+    
 
     if (data.length!= 0)
     {
@@ -229,7 +229,7 @@ function goto(id,con,wh) {
                        else{
                            var t = $(myArray[count-1])[0].offsetTop;
                        }
-                        $('body').animate({ scrollTop: t +400}, 100);
+                        $(wh).animate({ scrollTop: t +400}, 100);
                         
                            $(myArray[count]).addClass('animate');
                            setTimeout(function(){
@@ -250,7 +250,7 @@ function goto(id,con,wh) {
                var count = 0;
                const myArray = id.split(",");
                var t = $(myArray[count])[0].offsetTop;
-               $('body').animate({ scrollTop: t +400}, 100);
+               $(wh).animate({ scrollTop: t +400}, 100);
                console.log(myArray[count]);
                $(myArray[count]).addClass('animate');
                setTimeout(function(){
@@ -269,7 +269,7 @@ function goto(id,con,wh) {
        var count = 0;
        const myArray = id.split(",");
        var t = $(myArray[count])[0].offsetTop;
-       $('body').animate({ scrollTop: t +400}, 100);
+       $(wh).animate({ scrollTop: t +400}, 100);
        console.log(myArray[count]);
        $(myArray[count]).addClass('animate');
        setTimeout(function(){
