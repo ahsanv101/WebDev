@@ -150,7 +150,10 @@ function filltabs2(){
 
 
 function filltab(what,style,where) {
-    var list = `<li class="list $style"><a href="#" onclick="goto('$place','$content')">$content</a></li>`
+
+    var where_new = where.split(' ');
+    where_new = where_new[0];
+    var list = `<li class="list $style"><a href="#" onclick="goto('$place','$content','$wh')">$content</a></li>`
     var elements = $(what); 
     $(where+' ul').empty(); 
     
@@ -180,6 +183,7 @@ function filltab(what,style,where) {
          $(where+' ul').append(list.tpl({
             style:style, 
             place: counts[x],
+            wh: where_new,
             content: (x + " count: "+ counts[x].length)
         }) )
         }
@@ -195,7 +199,8 @@ var data = new Array();
 console.log(data);
 
 
-function goto(id,con) {
+function goto(id,con,wh) {
+    console.log(wh)
 
     if (data.length!= 0)
     {
