@@ -1,25 +1,18 @@
 ﻿[
-	{
-		"label": "Trigger",
-		"url": "trigger.html"
-	},
-	{
-		"label": "Japan's prisons",
-		"url": "bloomberg.html"
-	},
-	{
-		"label": "New York times",
-		"url": "NYTimes.html"
 	
-	},
-	{
-		"label": "Cannibalism",
-		"url": "cannibalism.html"
-	
-	},
 	{
 		"label": "Artifical Intelligence",
 		"url": "AI.html"
+	
+	},
+	{
+		"label": "Pandemic",
+		"url": "pandemic.html"
+	
+	},
+	{
+		"label": "Doomsday",
+		"url": "Doomsday.html"
 	
 	}
 ]
