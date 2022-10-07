@@ -555,7 +555,7 @@ footer p{
   width: 100% ;
   text-align: center;
   border: none;
-  box-align: center;
+  /* box-align: center; */
 }
 #copy, #copp, #cop, #copia{
     text-align: center;
@@ -811,4 +811,12 @@ h5{
 
 img {
   width: 100%;
+}
+
+
+.btn-group-toggle{
+
+  padding-top: 10px;
+text-align: center;
+
 }
