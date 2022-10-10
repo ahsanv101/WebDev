@@ -55,7 +55,7 @@
             localStorage.setItem('selectedTheme', 'ali');
             break;
         default:
-            theme.href = "css/blackplague/blackplague.css";
+            theme.href = "css/blackplague.css";
             localStorage.setItem('selectedTheme', 'default');
             break;
       }
