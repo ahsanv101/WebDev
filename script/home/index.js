@@ -31,26 +31,41 @@ function changeTheme(id) {
         case "plag":
             console.log(theme);
             theme.href = "css/blackplague/blackplague.css";
+            localStorage.setItem('selectedTheme', 'plag');
             break;
         case "colo":
             theme.href = "css/colonization/colonization.css";
+            localStorage.setItem('selectedTheme', 'colo');
             break;
         case "crash":
             theme.href = "css/wallstreet_crash/wallstreet_crash.css";
+            localStorage.setItem('selectedTheme', 'crash');
             break;
         case "cold":
             theme.href = "css/thecoldwar/thecoldwar.css";
+            localStorage.setItem('selectedTheme', 'cold');
             break;
         case "cons":
   
             theme.href = "css/conspiracy/conspiracy.css";
+            localStorage.setItem('selectedTheme', 'cons');
             break;
         case "ali":
 
             theme.href = "css/alieninvasion/alieninvasion.css";
+            localStorage.setItem('selectedTheme', 'ali');
+            break;
+        default:
+            theme.href = "css/blackplague/blackplague.css";
+            localStorage.setItem('selectedTheme', 'default');
             break;
       }
     }
+
+if (localStorage.getItem('selectedTheme')) {
+chooseTheme(localStorage.getItem('selectedTheme'));
+}
+    
   
     function changeThemeDoc(id) {
       const theme = document.getElementsByTagName('link')[1];
