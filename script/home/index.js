@@ -61,16 +61,19 @@
             break;
       }
     }
+    
 let docname = document.getElementsByTagName("title")[0];
 console.log(docname.innerHTML);
 if(docname.innerHTML = 'Home'){
     if (localStorage.getItem('selectedTheme')) {
+        console.log('this is home block');
         changeThemeHome(localStorage.getItem('selectedTheme'));
         }
 
 }
 else{
     if (localStorage.getItem('selectedTheme')) {
+        console.log('else block not home');
         changeThemeDoc(localStorage.getItem('selectedTheme'));
         }
 }
