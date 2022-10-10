@@ -62,16 +62,16 @@
       }
     }
 let docname = document.getElementsByTagName('title').innerHTML;
-console
-if(docname = 'Documentation'){
+
+if(docname = 'Home'){
     if (localStorage.getItem('selectedTheme')) {
-        changeThemeDoc(localStorage.getItem('selectedTheme'));
+        changeThemeHome(localStorage.getItem('selectedTheme'));
         }
 
 }
 else{
     if (localStorage.getItem('selectedTheme')) {
-        changeThemeHome(localStorage.getItem('selectedTheme'));
+        changeThemeDoc(localStorage.getItem('selectedTheme'));
         }
 }
 
@@ -113,31 +113,31 @@ function changeThemeDoc(id) {
     }
 }
   
-//     function changeThemeAbout(id) {
-//       const theme = document.getElementsByTagName('link')[1];
-//       switch (id) {
-//         case "plag":
-//             theme.href = "../../css/blackplague/blackplague.css";
-//             break;
-//         case "colo":
-//             theme.href = "../../css/colonization/colonization.css";
-//             break;
-//         case "crash":
-//             theme.href = "../../css/wallstreet_crash/wallstreet_crash.css";
-//             break;
-//         case "cold":
-//             theme.href = "../../css/thecoldwar/thecoldwar.css";
-//             break;
-//         case "cons":
+    // function changeThemeAbout(id) {
+    //   const theme = document.getElementsByTagName('link')[1];
+    //   switch (id) {
+    //     case "plag":
+    //         theme.href = "../../css/blackplague/blackplague.css";
+    //         break;
+    //     case "colo":
+    //         theme.href = "../../css/colonization/colonization.css";
+    //         break;
+    //     case "crash":
+    //         theme.href = "../../css/wallstreet_crash/wallstreet_crash.css";
+    //         break;
+    //     case "cold":
+    //         theme.href = "../../css/thecoldwar/thecoldwar.css";
+    //         break;
+    //     case "cons":
   
-//             theme.href = "../../css/conspiracy/conspiracy.css";
-//             break;
-//         case "ali":
+    //         theme.href = "../../css/conspiracy/conspiracy.css";
+    //         break;
+    //     case "ali":
 
-//             theme.href = "../../css/alieninvasion/alieninvasion.css";
-//             break;
-//       }
-//     }
+    //         theme.href = "../../css/alieninvasion/alieninvasion.css";
+    //         break;
+    //   }
+    // }
   
 //   function changeModeFuture(id){
 //     const theme = document.getElementsByTagName('link')[1];
