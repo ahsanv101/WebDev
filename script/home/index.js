@@ -30,7 +30,7 @@
       switch (id) {
         case "plag":
             console.log(theme);
-            theme.href = "css/blackplague.css";
+            theme.href = "css/blackplague/blackplague.css";
             localStorage.setItem('selectedTheme', 'plag');
             break;
         case "colo":
@@ -56,7 +56,7 @@
             break;
         case 'default':
         default:
-            theme.href = "css/blackplague.css";
+            theme.href = "css/blackplague/blackplague.css";
             localStorage.setItem('selectedTheme', 'default');
             break;
       }
