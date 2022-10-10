@@ -54,6 +54,7 @@
             theme.href = "css/alieninvasion/alieninvasion.css";
             localStorage.setItem('selectedTheme', 'ali');
             break;
+        case 'default':
         default:
             theme.href = "css/blackplague.css";
             localStorage.setItem('selectedTheme', 'default');
