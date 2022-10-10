@@ -30,24 +30,24 @@ function changeTheme(id) {
       switch (id) {
         case "plag":
             console.log(theme);
-            theme.href = "../../WebDev/css/blackplague/blackplague.css";
+            theme.href = "css/blackplague/blackplague.css";
             break;
         case "colo":
-            theme.href = "../../WebDev/css/colonization/colonization.css";
+            theme.href = "css/colonization/colonization.css";
             break;
         case "crash":
-            theme.href = "../../WebDev/css/wallstreet_crash/wallstreet_crash.css";
+            theme.href = "css/wallstreet_crash/wallstreet_crash.css";
             break;
         case "cold":
-            theme.href = "../../WebDev/css/thecoldwar/thecoldwar.css";
+            theme.href = "css/thecoldwar/thecoldwar.css";
             break;
         case "cons":
   
-            theme.href = "../../WebDev/css/conspiracy/conspiracy.css";
+            theme.href = "css/conspiracy/conspiracy.css";
             break;
         case "ali":
 
-            theme.href = "../../WebDev/css/alieninvasion/alieninvasion.css";
+            theme.href = "css/alieninvasion/alieninvasion.css";
             break;
       }
     }
