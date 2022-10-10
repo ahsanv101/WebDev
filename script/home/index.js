@@ -29,6 +29,7 @@ function changeTheme(id) {
       const theme = document.getElementsByTagName('link')[1];
       switch (id) {
         case "plag":
+            console.log(theme);
             theme.href = "../../css/blackplague/blackplague.css";
             break;
         case "colo":
