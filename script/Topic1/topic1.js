@@ -229,7 +229,7 @@ function goto(id,con,wh) {
                        else{
                            var t = $(myArray[count-1])[0].offsetTop;
                        }
-                        $(wh).animate({ scrollTop: t -50}, 100);
+                        $('body').animate({ scrollTop: t -50}, 100);
                         
                            $(myArray[count]).addClass('animate');
                            setTimeout(function(){
@@ -250,7 +250,7 @@ function goto(id,con,wh) {
                var count = 0;
                const myArray = id.split(",");
                var t = $(myArray[count])[0].offsetTop;
-               $(wh).animate({ scrollTop: t -50}, 100);
+               $('body').animate({ scrollTop: t -50}, 100);
                console.log(myArray[count]);
                $(myArray[count]).addClass('animate');
                setTimeout(function(){
@@ -269,7 +269,7 @@ function goto(id,con,wh) {
        var count = 0;
        const myArray = id.split(",");
        var t = $(myArray[count])[0].offsetTop;
-       $(wh).animate({ scrollTop: t -50}, 100);
+       $('body').animate({ scrollTop: t -50}, 100);
        console.log(myArray[count]);
        $(myArray[count]).addClass('animate');
        setTimeout(function(){
@@ -338,25 +338,27 @@ function t2(){
     var but2 = document.getElementById('toggle2');
 
     if (toggle2){
-        file.id = 'file';
-        file2.id = 'file2';
-        bann.id='bann';
-        bann2.id = 'bann2';
+
+        
 
         bann.className = "col-2";
         file.className = "col-4";
         file2.className ="col-4";
         bann2.className="col-2";
 
-        file.style.visibility = 'visible';
+        file2.style.visibility = 'visible';
         bann.style.visibility = 'visible';
+
         but1.style.visibility = 'visible';
 
-        
+
 
         toggle2 = 0;
     }
     else{
+
+
+
         bann.className = "col-2";
         file.className = "col-10";
         file2.className ="";
@@ -364,12 +366,10 @@ function t2(){
 
         file2.style.visibility = 'hidden';
         bann2.style.visibility = 'hidden';
+
         but1.style.visibility = 'hidden';
 
-        file.id = 'file2';
-        file2.id = 'file';
-        bann.id='bann2';
-        bann2.id = 'bann';
+        
 
         toggle2 =1;
     }
