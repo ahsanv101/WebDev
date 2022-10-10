@@ -61,10 +61,19 @@
             break;
       }
     }
+let docname = document.getElementsByTagName('title').html;
+if(docname = 'Documentation'){
+    if (localStorage.getItem('selectedTheme')) {
+        changeThemeDoc(localStorage.getItem('selectedTheme'));
+        }
 
-if (localStorage.getItem('selectedTheme')) {
-changeThemeHome(localStorage.getItem('selectedTheme'));
 }
+else{
+    if (localStorage.getItem('selectedTheme')) {
+        changeThemeHome(localStorage.getItem('selectedTheme'));
+        }
+}
+
     
   
     function changeThemeDoc(id) {
