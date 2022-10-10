@@ -2,17 +2,17 @@
 	
 	{
 		"label": "Artifical Intelligence",
-		"url": "AI.html"
+		"url": "AI/AI.html"
 	
 	},
 	{
 		"label": "Pandemic",
-		"url": "pandemic.html"
+		"url": "Pandemic/pandemic.html"
 	
 	},
 	{
 		"label": "Doomsday",
-		"url": "Doomsday.html"
+		"url": "Doomsday/doomsday.html"
 	
 	}
 ]

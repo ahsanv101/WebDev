@@ -46,8 +46,8 @@ body{
 .modbod{
   font-size: 2rem;
   font-family: 'canterbury';
-  text-align: center;
-  margin-top: 1rem;
+  /* text-align: center; */
+  margin: 1rem;
   font-weight: 100;
   color:#260d0e;
 }

@@ -284,103 +284,114 @@ function goto(id,con,wh) {
 var toggle1 = 0;
 var toggle2 = 0;
 
-// function t1(){
+    // function t1(){
 
-//     var file = document.getElementById('file');
-//     var bann = document.getElementById('bann');
+    //     var file = document.getElementById('file');
+    //     var bann = document.getElementById('bann');
 
-//     var file2 = document.getElementById('file2');
-//     var bann2 = document.getElementById('bann2');
+    //     var file2 = document.getElementById('file2');
+    //     var bann2 = document.getElementById('bann2');
 
-//     var but1 = document.getElementById('toggle1');
-//     var but2 = document.getElementById('toggle2');
+    //     var but1 = document.getElementById('toggle1');
+    //     var but2 = document.getElementById('toggle2');
 
-//     if (toggle1){
+    //     if (toggle1){
 
-//         bann.className = "col-2";
-//         file.className = "col-4";
-//         file2.className ="col-4";
-//         bann2.className="col-2";
+    //         bann.className = "col-2";
+    //         file.className = "col-4";
+    //         file2.className ="col-4";
+    //         bann2.className="col-2";
 
-//         file2.style.visibility = 'visible';
-//         bann2.style.visibility = 'visible';
-//         but2.style.visibility = 'visible';
+    //         file2.style.visibility = 'visible';
+    //         bann2.style.visibility = 'visible';
+    //         but2.style.visibility = 'visible';
 
-//         toggle1 = 0;
-//     }
-//     else{
-        
-//         bann.className = "col-2";
-//         file.className = "col-10";
-//         file2.className ="";
-//         bann2.className="";
+    //         toggle1 = 0;
+    //     }
+    //     else{
+            
+    //         bann.className = "col-2";
+    //         file.className = "col-10";
+    //         file2.className ="";
+    //         bann2.className="";
 
-//         file2.style.visibility = 'hidden';
-//         bann2.style.visibility = 'hidden';
-//         but2.style.visibility = 'hidden';
+    //         file2.style.visibility = 'hidden';
+    //         bann2.style.visibility = 'hidden';
+    //         but2.style.visibility = 'hidden';
 
-//         toggle1 =1;
-//     }
-//     console.log(toggle1);
-   
+    //         toggle1 =1;
+    //     }
+    //     console.log(toggle1);
+    
 
-// }
+    // }
 
-// function t2(){
+    // function t2(){
 
-//     var file = document.getElementById('file');
-//     var bann = document.getElementById('bann');
+    //     var file = document.getElementById('file');
+    //     var bann = document.getElementById('bann');
 
-//     var file2 = document.getElementById('file2');
-//     var bann2 = document.getElementById('bann2');
+    //     var file2 = document.getElementById('file2');
+    //     var bann2 = document.getElementById('bann2');
 
-//     var but1 = document.getElementById('toggle1');
-//     var but2 = document.getElementById('toggle2');
+    //     var but1 = document.getElementById('toggle1');
+    //     var but2 = document.getElementById('toggle2');
 
-//     if (toggle2){
+    //     if (toggle2){
 
-        
+            
 
-//         bann.className = "col-2";
-//         file.className = "col-4";
-//         file2.className ="col-4";
-//         bann2.className="col-2";
+    //         bann.className = "col-2";
+    //         file.className = "col-4";
+    //         file2.className ="col-4";
+    //         bann2.className="col-2";
 
-//         file2.style.visibility = 'visible';
-//         bann.style.visibility = 'visible';
+    //         file2.style.visibility = 'visible';
+    //         bann.style.visibility = 'visible';
 
-//         but1.style.visibility = 'visible';
-
-
-
-//         toggle2 = 0;
-//     }
-//     else{
+    //         but1.style.visibility = 'visible';
 
 
 
-//         bann.className = "col-2";
-//         file.className = "col-10";
-//         file2.className ="";
-//         bann2.className="";
-
-//         file2.style.visibility = 'hidden';
-//         bann2.style.visibility = 'hidden';
-
-//         but1.style.visibility = 'hidden';
-
-        
-
-//         toggle2 =1;
-//     }
+    //         toggle2 = 0;
+    //     }
+    //     else{
 
 
 
+    //         bann.className = "col-2";
+    //         file.className = "col-10";
+    //         file2.className ="";
+    //         bann2.className="";
 
-//     console.log(toggle1);
-   
+    //         file2.style.visibility = 'hidden';
+    //         bann2.style.visibility = 'hidden';
+
+    //         but1.style.visibility = 'hidden';
+
+            
+
+    //         toggle2 =1;
+    //     }
 
 
-   
-// }
 
+
+    //     console.log(toggle1);
+    
+
+
+    
+    // }
+
+const navbar = document.querySelector('.nav-fixed');
+const collapseNav = document.querySelector(".navbar-collapse");
+window.onscroll = () => {
+    if (window.scrollY > 30) {
+        navbar.classList.add('nav-active');
+    } else {
+        navbar.classList.remove('nav-active');
+    }
+};
+    
+    
