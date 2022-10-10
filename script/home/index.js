@@ -61,8 +61,8 @@
             break;
       }
     }
-let docname = document.getElementsByTagName('title').innerHTML;
-console.log(docname);
+let docname = document.getElementsByTagName('title');
+console.log(docname.body.innerHTML);
 if(docname = 'Home'){
     if (localStorage.getItem('selectedTheme')) {
         changeThemeHome(localStorage.getItem('selectedTheme'));
