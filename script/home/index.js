@@ -2,21 +2,25 @@
 function changeTheme(id) {
     const theme = document.getElementsByTagName('link')[1];
     switch (id) {
-        case "enable-renaissance":
-            theme.href = "/typetravel/styles/themes/renaissance/mainRenaissance.css";
+        case "plag":
+            theme.href = "../../css/blackplague/blackplague.css";
             break;
-        case "enable-default":
-            theme.href = "/typetravel/styles/themes/basicStyle/mainBasic.css";
+        case "colo":
+            theme.href = "../../css/colonization/colonization.css";
             break;
-        case "enable-secession":
-            theme.href = "/typetravel/styles/themes/secession/mainSecession.css";
+        case "crash":
+            theme.href = "../../css/wallstreet_crash/wallstreet_crash.css";
             break;
-        case "enable-eighty":
-            theme.href = "/typetravel/styles/themes/eighty/mainEighty.css";
+        case "cold":
+            theme.href = "../../css/thecoldwar/thecoldwar.css";
             break;
-        case "enable-future":
+        case "cons":
   
-            theme.href = "/typetravel/styles/themes/future/mainFuture.css";
+            theme.href = "../../css/conspiracy/conspiracy.css";
+            break;
+        case "ali":
+
+            theme.href = "../../css/alieninvasion/alieninvasion.css";
             break;
     }
   }
@@ -24,63 +28,78 @@ function changeTheme(id) {
   function changeThemeHome(id) {
       const theme = document.getElementsByTagName('link')[1];
       switch (id) {
-          case "enable-renaissance":
-              theme.href = "/typetravel/styles/themes/renaissance/homeRenaissance.css";
-              break;
-          case "enable-default":
-              theme.href = "/typetravel/styles/themes/basicStyle/homeBasic.css";
-              break;
-          case "enable-secession":
-              theme.href = "/typetravel/styles/themes/secession/homeSecession.css";
-              break;
-          case "enable-eighty":
-              theme.href = "/typetravel/styles/themes/eighty/homeEighties.css";
-              break;
-          case "enable-future":
-              theme.href = "/typetravel/styles/themes/future/homeFuture.css";
-              break;
+        case "plag":
+            theme.href = "../../css/blackplague/blackplague.css";
+            break;
+        case "colo":
+            theme.href = "../../css/colonization/colonization.css";
+            break;
+        case "crash":
+            theme.href = "../../css/wallstreet_crash/wallstreet_crash.css";
+            break;
+        case "cold":
+            theme.href = "../../css/thecoldwar/thecoldwar.css";
+            break;
+        case "cons":
+  
+            theme.href = "../../css/conspiracy/conspiracy.css";
+            break;
+        case "ali":
+
+            theme.href = "../../css/alieninvasion/alieninvasion.css";
+            break;
       }
     }
   
     function changeThemeDoc(id) {
       const theme = document.getElementsByTagName('link')[1];
       switch (id) {
-          case "enable-renaissance":
-              theme.href = "/typetravel/styles/themes/renaissance/docRenaissance.css";
-              break;
-          case "enable-default":
-              theme.href = "/typetravel/styles/themes/basicStyle/docBasic.css";
-              break;
-          case "enable-secession":
-              theme.href = "/typetravel/styles/themes/secession/docSecession.css";
-              break;
-          case "enable-eighty":
-              theme.href = "/typetravel/styles/themes/eighty/docEighties.css";
-              break;
-          case "enable-future":
-              theme.href = "/typetravel/styles/themes/future/docFuture.css";
-              break;
+        case "plag":
+            theme.href = "../../css/blackplague/blackplague.css";
+            break;
+        case "colo":
+            theme.href = "../../css/colonization/colonization.css";
+            break;
+        case "crash":
+            theme.href = "../../css/wallstreet_crash/wallstreet_crash.css";
+            break;
+        case "cold":
+            theme.href = "../../css/thecoldwar/thecoldwar.css";
+            break;
+        case "cons":
+  
+            theme.href = "../../css/conspiracy/conspiracy.css";
+            break;
+        case "ali":
+
+            theme.href = "../../css/alieninvasion/alieninvasion.css";
+            break;
       }
     }
   
     function changeThemeAbout(id) {
       const theme = document.getElementsByTagName('link')[1];
       switch (id) {
-          case "enable-renaissance":
-              theme.href = "/typetravel/styles/themes/renaissance/aboutRenaissance.css";
-              break;
-          case "enable-default":
-              theme.href = "/typetravel/styles/themes/basicStyle/aboutBasic.css";
-              break;
-          case "enable-secession":
-              theme.href = "/typetravel/styles/themes/secession/aboutSecession.css";
-              break;
-          case "enable-eighty":
-              theme.href = "/typetravel/styles/themes/eighty/aboutEighties.css";
-              break;
-          case "enable-future":
-              theme.href = "/typetravel/styles/themes/future/aboutFuture.css";
-              break;
+        case "plag":
+            theme.href = "../../css/blackplague/blackplague.css";
+            break;
+        case "colo":
+            theme.href = "../../css/colonization/colonization.css";
+            break;
+        case "crash":
+            theme.href = "../../css/wallstreet_crash/wallstreet_crash.css";
+            break;
+        case "cold":
+            theme.href = "../../css/thecoldwar/thecoldwar.css";
+            break;
+        case "cons":
+  
+            theme.href = "../../css/conspiracy/conspiracy.css";
+            break;
+        case "ali":
+
+            theme.href = "../../css/alieninvasion/alieninvasion.css";
+            break;
       }
     }
   
