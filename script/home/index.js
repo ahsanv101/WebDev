@@ -63,7 +63,7 @@ function changeTheme(id) {
     }
 
 if (localStorage.getItem('selectedTheme')) {
-chooseTheme(localStorage.getItem('selectedTheme'));
+changeThemeHome(localStorage.getItem('selectedTheme'));
 }
     
   
