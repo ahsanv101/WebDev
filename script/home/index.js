@@ -62,7 +62,7 @@
       }
     }
 let docname = document.getElementsByTagName('title').innerHTML;
-
+console.log(docname);
 if(docname = 'Home'){
     if (localStorage.getItem('selectedTheme')) {
         changeThemeHome(localStorage.getItem('selectedTheme'));
@@ -107,7 +107,7 @@ function changeThemeDoc(id) {
         localStorage.setItem('selectedTheme', 'ali');
         break;
     default:
-        theme.href = "../../css/colonization/colonization.css";
+        theme.href = "../../css/blackplague/blackplague.css";
         localStorage.setItem('selectedTheme', 'default');
         break;
     }
