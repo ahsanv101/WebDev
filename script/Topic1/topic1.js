@@ -175,7 +175,7 @@ function filltab(what,style,where) {
 
     }
 
-    console.log(counts);
+    // console.log(counts);
 
     for (let x in counts) {
        // console.log);
@@ -196,7 +196,7 @@ function filltab(what,style,where) {
 
 
 var data = new Array();
-console.log(data);
+// console.log(data);
 
 
 function goto(id,con,wh) {
@@ -211,7 +211,7 @@ function goto(id,con,wh) {
                
                data.push(con);
                var count = data.length-1;
-               console.log(myArray,data,count);
+            //    console.log(myArray,data,count);
                 
                var che  = con.split(" ");
                if (count+1>Number(che[che.length-1]))
@@ -246,19 +246,19 @@ function goto(id,con,wh) {
         else
            {   
                data=[];
-               console.log('else block');
+            //    console.log('else block');
                var count = 0;
                const myArray = id.split(",");
                var t = $(myArray[count])[0].offsetTop;
                $(wh).animate({ scrollTop: t - 600}, 100);
-               console.log(myArray[count]);
+            //    console.log(myArray[count]);
                $(myArray[count]).addClass('animate');
                setTimeout(function(){
                    $(myArray[count]).removeClass('animate');
                },7000);
                data.push(con);
                count = count+1;
-               console.log(data);
+            //    console.log(data);
            }
   
         
@@ -270,7 +270,7 @@ function goto(id,con,wh) {
        const myArray = id.split(",");
        var t = $(myArray[count])[0].offsetTop;
        $(wh).animate({ scrollTop: t - 600}, 100);
-       console.log(myArray[count]);
+    //    console.log(myArray[count]);
        $(myArray[count]).addClass('animate');
        setTimeout(function(){
            $(myArray[count]).removeClass('animate');
@@ -281,8 +281,8 @@ function goto(id,con,wh) {
 
   
 }
-var toggle1 = 0;
-var toggle2 = 0;
+// var toggle1 = 0;
+// var toggle2 = 0;
 
     // function t1(){
 
