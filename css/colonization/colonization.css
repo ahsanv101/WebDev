@@ -820,3 +820,9 @@ img {
 text-align: center;
 
 }
+
+.glitch-bloc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
