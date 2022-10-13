@@ -826,3 +826,55 @@ text-align: center;
   justify-content: center;
   align-items: center;
 }
+
+/* CSS polaroid ITEM */
+.polaroid-container {
+  padding-left: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+
+.polaroid a {
+  color: black;
+  text-decoration: none;
+}
+
+.polaroidimg {
+  width: 100%;
+  object-fit: cover;
+  height: 13vw;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.polaroid-container .polaroidimg:hover {
+    opacity:0.2;
+    transition: .5s ease;
+}
+
+.polartext {
+  text-align: center;
+  padding: 5px 15px;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+
+.polartextcomm {
+  text-align: center;
+  padding: 7px 20px;
+  font-size: 10pt;
+}
+
+.show {
+  display: block;
+}
+
+/*END POLAROID*/
