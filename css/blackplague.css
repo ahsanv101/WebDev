@@ -95,6 +95,7 @@ button{
   padding-left:0;
   margin-left: 0;
   margin-right:0;
+  margin-top: 0;
 }
 .row{
   margin-left: 0;
@@ -695,7 +696,7 @@ h5{
   font-size: xx-large;
 }
 .thumbnail{
-  padding:2rem;
+  padding-top:2rem;
   resize:vertical;
   width:3rem;
   height:0.2rem;
@@ -703,6 +704,10 @@ h5{
   position: absolute;
   top:0;
   left:0;
+  align-content: center;
+}
+.thumbnail.p{
+  margin-top: 0.2rem;
 }
 #ttx, #ttxt, #tutto, #nulla{
   color: #9b3133;
