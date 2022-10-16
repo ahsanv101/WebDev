@@ -21,8 +21,17 @@
 body{
   font-family: 'carolingia', sans-serif;                                
 }
-
-
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  display: block;
+  }
+.navbar-nav{
+  font-size: xx-large!important;
+}
 .glitch-bloc{
   font-family: 'scribish', serif;
 }
@@ -133,10 +142,10 @@ h2:hover, h3:hover{
 #navbar, #navba, #navb, #navbi{
   font-family: 'canterbury', serif;
     /* text-transform: lowercase; */
-    font-weight: 300;
     background-color:#9b3133;
     width:100%;
     cursor:pointer;
+    font-size: 30rem;
 }
 
 .nav-item, .nav-link, #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL, #navbarDropdownM{
@@ -685,7 +694,16 @@ h4:hover{
 h5{
   font-size: xx-large;
 }
-
+.thumbnail{
+  padding:2rem;
+  resize:vertical;
+  width:3rem;
+  height:0.2rem;
+  object-fit: cover;
+  position: absolute;
+  top:0;
+  left:0;
+}
 #ttx, #ttxt, #tutto, #nulla{
   color: #9b3133;
   font-size: xx-large;
@@ -707,12 +725,16 @@ h5{
 .col:hover{
   background-color: #9b3133;
 }
+.carousel-inner{
+  padding-top:100rem;
+}
 @media (max-width: 992px){
     /*NAVBAR*/
     #navbar .collapse, #navba .collapse, #navb .collapse, #navbi .collapse{
         
         border-top: none;
     }
+    
     #first h1{
         font-size: 8vh !important;
     }
