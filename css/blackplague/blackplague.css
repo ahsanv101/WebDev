@@ -868,5 +868,43 @@ text-align: center;
   font-size: 24pt;
 }
 
-
 /*END POLAROID*/
+
+/*START DOCUMENTATIO*/
+div.main-body {
+  display: grid;
+  grid-template-columns: minmax(300px , auto)1fr;   
+  grid-template-areas: "navbardoc mainContent";
+  grid-gap: 20px;
+}
+ 
+nav#navbardoc {
+  grid-area: navbardoc;
+  position: fixed;   
+     
+}
+ 
+nav#navbardoc a {
+  display: block;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: black;
+}
+ 
+main#main-doc {
+  grid-area: mainContent;
+}
+ 
+header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+ 
+code {
+  background-color: #CCC;
+  display: block;
+  padding: 20px;
+}
+/*END DOCUMENTATION*/
