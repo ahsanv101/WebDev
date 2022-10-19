@@ -153,9 +153,9 @@
               </div>
               <div id="topp">
                   <a id="tue" href="#gothird"></a>
-                  <a class="btn  btn-outline-info btn-lg justify-content-center" id="btn-themes"  href="#gothird">Topics</a>
+                  <a class="btn  btn-outline-info btn-lg justify-content-center" id="btn-themes"  href="#gofourth">Topics</a>
                   <a id="me" href="#gofourth"></a>
-                  <a class="btn btn-outline-info btn-lg justify-content-center" id="btn-issues" href="#gofourth">Themes</a>
+                  <a class="btn btn-outline-info btn-lg justify-content-center" id="btn-issues" href="#gothird">Themes</a>
               </div>
             </div>
           </div>
@@ -172,13 +172,15 @@
               
                 <!-- <p id="issue-text">Are you ready to read? Dive into the issues to read captivating and entertaining articles. And the best part is... you can <b>do it your style!</b></p> -->
               <p id="issue-text">Select the topic you want to read from here</p>
-                <a href="#" class="btn btn-primary" id="theme5">Humanity Fails</a><br> 
+                <a href="html/Topic1/topic1.html" class="btn btn-primary" id="theme5">Humanity Fails</a><br> 
             </div>
           </div>
         </div>
+        <!-- end fourth container -->
 
+        <!-- start third container -->
         <div id="gothird">
-        </div>        
+        </div>    
         <div class="container-fluid" id="third">
           <div class="row" class="bann">
             <h2>Themes</h2>
@@ -188,139 +190,94 @@
             <p id="themes-text"> You can choose any of the themes present here to choose your style path on the project</p>
             </div>
                     
-            <div class="col-1"></div>
-              <div class="col-10">
-                <div id="renaiss-bg">
-                  <div id="cards">
-
-                    <div class="row" id="themes-card">
-                      <div class="col-md-6">
-                              <a href="#" class="btn btn-primary" id="theme1" class="theme0">The Black Plague 1348</a><br> 
-                              <!-- <div id="card-renaissance" class="card text-center">
-                                <button onclick="changeThemeHome(this.id)" href="#" id="enable-renaissance">
-                                
-                                <div class="card-body">
-                                  <a href="#" class="btn btn-primary">Renaissance</a><br>
-                                  <img src="/typetravel/images/icons/ren-white.png" ><br>
-                                  <a href="/typetravel/html/documentation.html#before-ren" class="btn btn-primary btn-doc">See Renaissance documentation</a>
+        <!-- Themes Polaroid -->
+        <section class="polaroid-container">
+          <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="polaroid" >
+                    <a title="The Black Plague" data-bs-toggle="collapse" data-bs-target="#theblackplaguedesc">
+                      <img src="images/plague.jpg" alt="The Black Plague" style="width:100%" class="polaroidimg" >
+                    </a>
+                    <div id="theblackplaguedesc" class="collapse">
+                      <p>There are many frequently occurring plagues in 15th-16th century Florence.
+                        Bubonic plagues, like the Black Death, whose symptoms were fever, weakness, and blood loss.
+                        It results in the death of more than 20% of Florence’s inhabitants.
+                      </p>
+                      </div>
+                    <div class="polartext">1348</div>
+                    <div class="polartextcomm">The Black Plague</div>
+                  </div>
+                </div>              
+                <div class="col-sm">
+                  <div class="polaroid">
+                      <a title="Colonization" data-bs-toggle="collapse" data-bs-target="#colonizationdesc"><img src="images/colonitazion.jpg" alt="Colonization" style="width:100%" class="polaroidimg">
+                      </a>
+                      <div id="colonizationdesc" class="collapse">
+                        <p>New territories are being discovered daily and European powers become greedy for lands and precious materials.
+                          You have conquered this theme without colonising anyone, for now.
+                        </p>
+                        </div>
+                      <div class="polartext">1800-1900</div>
+                      <div class="polartextcomm">Colonization</div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="polaroid">
+                      <a title="Wall Street Crash" data-bs-toggle="collapse" data-bs-target="#wallstreetcrashdesc"><img src="images/wallstreet.jpg" alt="Wall Street Crash" style="width:100%" class="polaroidimg"></a>
+                      <div id="wallstreetcrashdesc" class="collapse">
+                        <p>To be written
+                        </p>
+                        </div>
+                      <div class="polartext">1929</div>
+                      <div class="polartextcomm">Wall Street Crash</div>
+                  </div>
+                </div>           
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="polaroid">
+                      <a title="The Cold War" data-bs-toggle="collapse" data-bs-target="#thecoldwardesc"><img src="images/coldwar.jpg" alt="The Cold War" style="width:100%" class="polaroidimg"></a>
+                      <div id="thecoldwardesc" class="collapse">
+                        <p>Brrr this war is really cold and scheming like a chess game.
+                          During WWII USA and URSS were allies, however, their relationshipg was tense.
+                          President Reagan fights communism till its end.
+                          The wall finally falls, and the Cold War ends.
+                        </p>
+                        </div>
+                      <div class="polartext">1947-1991</div>
+                      <div class="polartextcomm">The Cold War</div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="polaroid">
+                      <a  title="Conspiracy Theory" data-bs-toggle="collapse" data-bs-target="#conspiracytheorydesc"><img src="images/conspiracy.jpg" alt="Conspiracy Theory" style="width:100%" class="polaroidimg"></a>
+                      <div id="conspiracytheorydesc" class="collapse">
+                        <p>To be written
+                        </p>
+                        </div>
+                      <div class="polartext">1950-2000</div>
+                      <div class="polartextcomm">Conspiracy Theory</div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="polaroid">
+                      <a  title="Alien Invasion" data-bs-toggle="collapse" data-bs-target="#alieninvasiondesc"><img src="images/aliens.jpg" alt="Alien Invasion" style="width:100%" class="polaroidimg"></a>
+                              <div id="alieninvasiondesc" class="collapse">
+                                <p>It’s 2053. Pollution has destroyed the environment, men caused their own extinction.
+                                  Earth has become…a new world. The richest people fled to Mars by shooting missiles, what was planet Earth good for?
+                                  Intergalactic snails have found a good home, by eating corpses and toxic materials, their radioactivity even increased.
+                                  Are you one of the remaining humans? Eat or be eaten!
+                                </p>
                                 </div>
-                              </button>
-                              </div> -->
-                      </div>
-                      <div class="col-md-6">
-                        <div id="text-plague">
-                          <p class="c-right">There are many frequently occurring plagues in 15th-16th century Florence. Bubonic plagues, like the Black Death, whose symptoms were fever, weakness, and blood loss. It results in the death of more than 20% of Florence’s inhabitants.</p>
-                        </div>
-                      </div>
-                    </div>
-                          
-                    <div class="row" class="bann">
-                      <div class="col-md-6">
-                            <a href="#" class="btn btn-primary" id="theme2" class="theme0">Colonizations XIX Century</a><br> 
-                            <!-- <div id="card-secession" class="card text-center">
-                              <button onclick="changeThemeHome(this.id)" href="#" id="enable-secession">
-                              <div class="card-body">
-                                <a href="#" class="btn btn-primary">Secession</a><br>
-                                <img src="/typetravel/images/icons/anouv-white.png"><br>
-                                <a href="/typetravel/html/documentation.html#before-sec" class="btn btn-primary btn-doc">See Secession documentation</a>
-                              </div>
-                            </button> -->
-                            <!-- </div> -->
-                      </div>
-                      <div class="col-md-6">
-                        <div id="text-an">
-                          <p class="c-right">New territories are being discovered daily and European powers become greedy for lands and precious materials. You have conquered this theme without colonizing anyone, for now.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row" class="bann">
-                      <div class="col-md-6">
-                            <a href="#" class="btn btn-primary" id="theme3" class="theme0">Wall Street Crash of 1929</a><br> 
-                            <!-- <div id="card-1980s" class="card text-center">
-                            <button onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">
-                            <div class="card-body">
-                              <a href="#" class="btn btn-primary">1980s design</a><br>
-                              <img src="/typetravel/images/icons/tv-card.png"><br>
-                              <a href="/typetravel/html/documentation.html#before-1980s" class="btn btn-primary btn-doc">See 1980s documentation</a>
-                            </div>
-                          </button>
-                          </div> -->
-                      </div>
-                      <div class="col-md-6">
-                        <div id="great">
-                            <p class="c-right"> Welcome to the Economic Depression! The economy collapses and trade fails. Alcohol is prohibited so if we catch you drinking….
-                            </p>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="row" class="bann"> 
-                      <div class="col-md-6">
-                            <a href="#" class="btn btn-primary" id="theme4" class="theme0">Cold War 1947-1991</a><br> 
-                            <!-- <div id="card-future" class="card text-center">
-                              <button onclick="changeThemeHome(this.id)" href="#" id="enable-future">
-                              <div class="card-body">
-                                <a href="#" class="btn btn-primary">Future</a><br>
-                                <img src="/typetravel/images/icons/future.png"><br>
-                                <a href="/typetravel/html/documentation.html#before-future" class="btn btn-primary btn-doc">See future documentation</a>
-                              </div>
-                            </button>
-                            </div> -->
-                      </div>
-                      <div class="col-md-6">
-                        <div id="wwi">
-                            <p class="c-right">Brrr this war is really cold and scheming like a chess game. During WWII USA and URSS were allies, however, their relationship was tense. President Reagan fights communism till its end. The Berlin wall finally falls, and the Cold War ends.</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row" class="bann">
-                      <div class="col-md-6">
-                            <a href="#" class="btn btn-primary" id="theme5" class="theme0">Hacker attack 1990-2010 </a><br> 
-                            <!-- <div id="card-1980s" class="card text-center">
-                              <button onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">
-                              <div class="card-body">
-                                <a href="#" class="btn btn-primary">1980s design</a><br>
-                                <img src="/typetravel/images/icons/tv-card.png"><br>
-                                <a href="/typetravel/html/documentation.html#before-1980s" class="btn btn-primary btn-doc">See 1980s documentation</a>
-                              </div>
-                            </button>
-                            </div> -->
-                      </div>
-                      <div class="col-md-6">
-                        <div id="cw">
-                            <p class="c-right"> To be written 
-                            </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row" class="bann">
-                      <div class="col-md-6">
-                          <a href="#" class="btn btn-primary" id="theme6" class="theme0">Alien Invasion 2050+</a><br> 
-                          <!-- <div id="card-future" class="card text-center">
-                            <button onclick="changeThemeHome(this.id)" href="#" id="enable-future">
-                            <div class="card-body">
-                              <a href="#" class="btn btn-primary">Future</a><br>
-                              <img src="/typetravel/images/icons/future.png"><br>
-                              <a href="/typetravel/html/documentation.html#before-future" class="btn btn-primary btn-doc">See future documentation</a>
-                            </div>
-                          </button>
-                          </div> -->
-                      </div>
-                      <div class="col-md-6">
-                          <div id="alien">
-                            <p class="c-right">It&rsquo;s 2053. Pollution has destroyed the environment, men caused their own extinction. Earth has become … a new world. The richest people fled to Mars by shooting missiles, what was planet Earth good for? Intergalactic snails have found a good home, by eating corpses and toxic materials, their radioactivity even increased. Are you one of the remaining humans? Eat or be eaten!
-                            </p>
-                          </div>
-                      </div>
-                    </div>
-                
+                      <div class="polartext">2050+</div>
+                      <div class="polartextcomm">Alien Invasion</div>
                   </div>
                 </div>
               </div>
+          </div>
+        </section>    
+        <!-- END Themes Polaroid -->
                           
             <!-- <div class="d-grid gap-2 d-flex justify-content-center"> -->
                             <!-- <a class="btn btn-outline-info btn-lg justify-content-center btn-third" href="/typetravel/html/documentation.html">See full documentation</a> -->
@@ -356,7 +313,7 @@
                         </div> -->
           </div> 
         </div>
-        <!-- end fourth container -->
+        <!-- end third container -->
 
         <!-- footer -->
 
@@ -377,8 +334,10 @@
 
     <!-- SCRIPTS -->
         <!-- <script src="script/home/home.js">  </script> -->
-        
+          
+        <!-- commeted out by ginny because  
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="script/home/index.js"></script>
+             -->
   </body>
 </html>
