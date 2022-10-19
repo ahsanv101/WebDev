@@ -153,9 +153,9 @@
               </div>
               <div id="topp">
                   <a id="tue" href="#gothird"></a>
-                  <a class="btn  btn-outline-info btn-lg justify-content-center" id="btn-themes"  href="#gothird">Topics</a>
+                  <a class="btn  btn-outline-info btn-lg justify-content-center" id="btn-themes"  href="#gofourth">Topics</a>
                   <a id="me" href="#gofourth"></a>
-                  <a class="btn btn-outline-info btn-lg justify-content-center" id="btn-issues" href="#gofourth">Themes</a>
+                  <a class="btn btn-outline-info btn-lg justify-content-center" id="btn-issues" href="#gothird">Themes</a>
               </div>
             </div>
           </div>
@@ -172,13 +172,15 @@
               
                 <!-- <p id="issue-text">Are you ready to read? Dive into the issues to read captivating and entertaining articles. And the best part is... you can <b>do it your style!</b></p> -->
               <p id="issue-text">Select the topic you want to read from here</p>
-                <a href="#" class="btn btn-primary" id="theme5">Humanity Fails</a><br> 
+                <a href="html/Topic1/topic1.html" class="btn btn-primary" id="theme5">Humanity Fails</a><br> 
             </div>
           </div>
         </div>
+        <!-- end fourth container -->
 
+        <!-- start third container -->
         <div id="gothird">
-        </div>        
+        </div>    
         <div class="container-fluid" id="third">
           <div class="row" class="bann">
             <h2>Themes</h2>
@@ -188,65 +190,94 @@
             <p id="themes-text"> You can choose any of the themes present here to choose your style path on the project</p>
             </div>
                     
-                        <!-- ITEMS -->
-                        <section class="polaroid-container">
-                          <div class="container">
-                            <div class="row">
-                              <div class="col-sm">
-                              <div class="polaroid" >
-                                <a href="http://www.gettyimages.com/detail/3066353" target="blank" title="The Black Plague"><img src="images/blackpla.png" alt="The Black Plague" style="width:100%" class="polaroidimg">
-                                    <div class="polartext">1348</div>
-                                </a>
-                                <div class="polartextcomm">The Black Plague</div>
-                              </div>
-                              </div>
-                              <div class="col-sm">
-                                <div class="polaroid">
-                                  <a href="https://collection.sciencemuseumgroup.org.uk/objects/co35752/three-ring-enigma-cypher-machine-in-oak-wood-transit-case-cipher-machine" target="blank" title="Colonization"><img src="imgitems/enigma.jpg" alt="Colonization" style="width:100%" class="polaroidimg">
-                                      <div class="polartext">1800-1900</div>
-                                  </a>
-                                  <div class="polartextcomm">Colonization</div>
-                              </div>
-                              </div>
-                              <div class="col-sm">
-                                <div class="polaroid">
-                                  <a href="https://www.npg.org.uk/collections/search/portrait/mw165875/Alan-Turing?LinkID=mp18700&role=sit&rNo=0" target="blank" title="Wall Street Crash"><img src="imgitems/portrait.png" alt="Wall Street Crash" style="width:100%" class="polaroidimg">
-                                      <div class="polartext">1929</div>
-                                  </a>
-                                  <div class="polartextcomm">Wall Street Crash</div>
-                              </div>
-                              </div>
-                            </div>
-                           
-                            <div class="row">
-                              <div class="col-sm">
-                            <div class="polaroid">
-                                <a href="http://id.sbn.it/bid/MIL0885778" target="blank" title="The Cold War"><img src="imgitems/ost.jpg" alt="The Cold War" style="width:100%" class="polaroidimg">
-                                    <div class="polartext">1947-1991</div>
-                                </a>
-                                <div class="polartextcomm">The Cold War</div>
-                            </div>
-                          </div>
-                          <div class="col-sm">
-                            <div class="polaroid">
-                                <a href="https://www.google.com/doodles/alan-turings-100th-birthday" target="blank" title="Conspiracy Theory"><img src="imgitems/google.png" alt="Conspiracy Theory" style="width:100%" class="polaroidimg">
-                                    <div class="polartext">1950-2000</div>
-                                </a>
-                                <div class="polartextcomm">Conspiracy Theory</div>
-                            </div>
-                          </div>
-                          <div class="col-sm">
-                            <div class="polaroid">
-                                <a href="http://id.sbn.it/bid/UBO3973233" target="blank" title="Alien Invasion"><img src="images/aliens.jpg" alt="Alien Invasion" style="width:100%" class="polaroidimg">
-                                    <div class="polartext">2050+</div>
-                                </a>
-                                <div class="polartextcomm">Alien Invasion</div>
-                            </div>
-                          </div>
+        <!-- Themes Polaroid -->
+        <section class="polaroid-container">
+          <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="polaroid" >
+                    <a title="The Black Plague" data-bs-toggle="collapse" data-bs-target="#theblackplaguedesc">
+                      <img src="images/plague.jpg" alt="The Black Plague" style="width:100%" class="polaroidimg" >
+                    </a>
+                    <div id="theblackplaguedesc" class="collapse">
+                      <p>There are many frequently occurring plagues in 15th-16th century Florence.
+                        Bubonic plagues, like the Black Death, whose symptoms were fever, weakness, and blood loss.
+                        It results in the death of more than 20% of Florence’s inhabitants.
+                      </p>
+                      </div>
+                    <div class="polartext">1348</div>
+                    <div class="polartextcomm">The Black Plague</div>
+                  </div>
+                </div>              
+                <div class="col-sm">
+                  <div class="polaroid">
+                      <a title="Colonization" data-bs-toggle="collapse" data-bs-target="#colonizationdesc"><img src="images/colonitazion.jpg" alt="Colonization" style="width:100%" class="polaroidimg">
+                      </a>
+                      <div id="colonizationdesc" class="collapse">
+                        <p>New territories are being discovered daily and European powers become greedy for lands and precious materials.
+                          You have conquered this theme without colonising anyone, for now.
+                        </p>
                         </div>
-                        </section>    
-
-<!-- end items --> 
+                      <div class="polartext">1800-1900</div>
+                      <div class="polartextcomm">Colonization</div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="polaroid">
+                      <a title="Wall Street Crash" data-bs-toggle="collapse" data-bs-target="#wallstreetcrashdesc"><img src="images/wallstreet.jpg" alt="Wall Street Crash" style="width:100%" class="polaroidimg"></a>
+                      <div id="wallstreetcrashdesc" class="collapse">
+                        <p>To be written
+                        </p>
+                        </div>
+                      <div class="polartext">1929</div>
+                      <div class="polartextcomm">Wall Street Crash</div>
+                  </div>
+                </div>           
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="polaroid">
+                      <a title="The Cold War" data-bs-toggle="collapse" data-bs-target="#thecoldwardesc"><img src="images/coldwar.jpg" alt="The Cold War" style="width:100%" class="polaroidimg"></a>
+                      <div id="thecoldwardesc" class="collapse">
+                        <p>Brrr this war is really cold and scheming like a chess game.
+                          During WWII USA and URSS were allies, however, their relationshipg was tense.
+                          President Reagan fights communism till its end.
+                          The wall finally falls, and the Cold War ends.
+                        </p>
+                        </div>
+                      <div class="polartext">1947-1991</div>
+                      <div class="polartextcomm">The Cold War</div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="polaroid">
+                      <a  title="Conspiracy Theory" data-bs-toggle="collapse" data-bs-target="#conspiracytheorydesc"><img src="images/conspiracy.jpg" alt="Conspiracy Theory" style="width:100%" class="polaroidimg"></a>
+                      <div id="conspiracytheorydesc" class="collapse">
+                        <p>To be written
+                        </p>
+                        </div>
+                      <div class="polartext">1950-2000</div>
+                      <div class="polartextcomm">Conspiracy Theory</div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="polaroid">
+                      <a  title="Alien Invasion" data-bs-toggle="collapse" data-bs-target="#alieninvasiondesc"><img src="images/aliens.jpg" alt="Alien Invasion" style="width:100%" class="polaroidimg"></a>
+                              <div id="alieninvasiondesc" class="collapse">
+                                <p>It’s 2053. Pollution has destroyed the environment, men caused their own extinction.
+                                  Earth has become…a new world. The richest people fled to Mars by shooting missiles, what was planet Earth good for?
+                                  Intergalactic snails have found a good home, by eating corpses and toxic materials, their radioactivity even increased.
+                                  Are you one of the remaining humans? Eat or be eaten!
+                                </p>
+                                </div>
+                      <div class="polartext">2050+</div>
+                      <div class="polartextcomm">Alien Invasion</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>    
+        <!-- END Themes Polaroid -->
                           
             <!-- <div class="d-grid gap-2 d-flex justify-content-center"> -->
                             <!-- <a class="btn btn-outline-info btn-lg justify-content-center btn-third" href="/typetravel/html/documentation.html">See full documentation</a> -->
@@ -282,7 +313,7 @@
                         </div> -->
           </div> 
         </div>
-        <!-- end fourth container -->
+        <!-- end third container -->
 
         <!-- footer -->
 
