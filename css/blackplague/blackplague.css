@@ -845,22 +845,22 @@ text-align: center;
   height: 100%;
 }
 .fab-container:hover .sub-button:nth-child(2) {
-  transform: translateY(-10vh);
+  transform: translateY(-12vh);
 }
 .fab-container:hover .sub-button:nth-child(3) {
-  transform: translateY(-20vh);
+  transform: translateY(-24vh);
 }
 .fab-container:hover .sub-button:nth-child(4) {
-  transform: translateY(-30vh);
+  transform: translateY(-36vh);
 }
 .fab-container:hover .sub-button:nth-child(5) {
-  transform: translateY(-40vh);
+  transform: translateY(-48vh);
 }
 .fab-container:hover .sub-button:nth-child(6) {
-  transform: translateY(-50vh);
+  transform: translateY(-60vh);
 }
 .fab-container:hover .sub-button:nth-child(7) {
-  transform: translateY(-60vh);
+  transform: translateY(-72vh);
 }
 /* .fab-container:hover .sub-button:nth-child(6) {
   bottom: 1vh;
@@ -916,9 +916,8 @@ text-align: center;
 }
 
 .fab-content{
-  background-image: url("../../css/images/theme2.png");
+  background-image: url("../../css/images/theme.png");
   background-size: 8vh;
-  opacity:0.9;  
   background-repeat: no-repeat;
   background-position: center center !important;
  
@@ -929,7 +928,7 @@ text-align: center;
   background-size: 5vh;
   background-repeat: no-repeat;
   background-position: center;
-  filter: brightness(0) invert(1);
+
 }
 
 .sub-button:nth-child(3){
@@ -937,7 +936,6 @@ text-align: center;
   background-size: 5vh;
   background-repeat: no-repeat;
   background-position: center;
-  filter: brightness(0) invert(1);
 }
 
 .sub-button:nth-child(4){
@@ -945,7 +943,6 @@ text-align: center;
   background-size: 5vh;
   background-repeat: no-repeat;
   background-position: center;
-  filter: brightness(0) invert(1);
 }
 
 .sub-button:nth-child(5){
@@ -953,7 +950,6 @@ text-align: center;
   background-size: 5vh;
   background-repeat: no-repeat;
   background-position: center;
-  filter: brightness(0) invert(1);
 }
 
 .sub-button:nth-child(6){
@@ -961,14 +957,20 @@ text-align: center;
   background-size: 5vh;
   background-repeat: no-repeat;
   background-position: center;
-  filter: brightness(0) invert(1);
 }
 .sub-button:nth-child(7){
   background: url("../../css/images/alien.png");
   background-size: 5vh;
   background-repeat: no-repeat;
   background-position: center;
-  filter: brightness(0) invert(1);
+}
+
+.fab-content, .fab-shadow, .sub-button, .fab{
+  background-color: #ba4c43 !important;
+}
+
+.sub-button:hover{
+  background-color: #e2cb9c !important;
 }
 /* .fab-container #enable-future:hover{
   background: url("/typetravel/images/Future/g25.gif") !important;
