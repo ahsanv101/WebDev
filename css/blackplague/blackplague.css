@@ -897,14 +897,5 @@ main#main-doc {
   grid-area: mainContent;
 }
  
-header {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
- 
-code {
-  background-color: #CCC;
-  display: block;
-  padding: 20px;
-}
+
 /*END DOCUMENTATION*/
