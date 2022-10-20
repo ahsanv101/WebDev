@@ -13,9 +13,13 @@
   font-family: 'scribish';
   src: url(../fonts/scribish.ttf);
 }
-
+@font-face {
+  font-family: 'darklands';
+  src: url(fonts/Darklands.ttf);
+}
+/*body font*/
 body{
-  font-family: 'carolingia', sans-serif;                                
+  font-family: 'darklands', sans-serif;                                
 }
 /*Highers the Responsiveness of the web page*/
 * {
@@ -26,26 +30,15 @@ body{
   position: relative;
   display: block;
   }
-  
-.navbar-nav{
-  font-size: xx-large!important;
-}
-.glitch-bloc{
-  font-family: 'scribish', serif;
-}
-
-.d-grip{
-  font-family: 'scribish';
-}
-
-#disclaimer, #disclaim, #discl, #dis{
+  /*disclaimer style start*/
+#disclaimer{
   background-color:#260d0e;
 }
 .modal-dialog{
-  max-width: 100vh ;
+  max-width: 100vh;
 }
 .modal-title{
-  font-family: 'scribish';
+  font-family: 'darklands', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3rem;
@@ -61,31 +54,83 @@ body{
 .modbod:hover{
   background-color: white;
 }
-.modal-header, .discl-basic .modal-footer{
+.modal-header, .modal-footer{
   background-color: #9b3133;
 }
 .modal-footer, .btn{
-border: none;
-color:#000000;
+  border: none;
+  color:#260D0E;
 }
-  
-
-#refer, #refe, #ref, #refr{
+#model{ 
+  background-color: #260d0e;
+  color: #9b3139;
+  font-family: 'scribish';
+}
+#refer{
   font-family:'canterbury';
   color:#260d0e;
   font-size: x-large;
 }
-button{
-  cursor:pointer;
-}
-#butto, #butt, #but, #buttn{
-  font-family:'scribish' ;
+#butto{
+  font-family:'scribish';
   color: white;
   background-color: #000;
 }
-
-.container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover, #tett:hover, #metto:hover{
+/*disclaimer end*/
+/*navbar start*/
+#navbar{
+  font-family: 'canterbury', serif;
+    /* text-transform: lowercase; */
+    background-color:#9b3133;
+    width:100%;
+    cursor:pointer;
+    font-size: 30rem;
+}
+.navbar-nav{
+  font-size: xx-large!important;
+}
+.nav-item, .nav-link, #navbarDropdownMenuLink{
+  font-size: x-large;
+  color:#260d0e;
+} 
+#navbarDropdownMenuLink{
   background-color: #9b3139;
+  color:#260D0E;
+}
+.dropdown-item:hover{
+  background-color: #4c1a1b;
+  color:#9b3133;
+}
+.dropdown-menu:hover{
+  background-color: #9b3139;
+  border-color: #4c1a1b;
+  color:#260d0e;
+}
+.dropdown-menu{
+  background-color:#9b3133;
+  color: #260D0E;
+}
+.dropdown-item{
+  font-size: xx-large;
+  color:#260D0E;
+  cursor:pointer;
+}
+/*navbar end*/
+/*text;gate title font*/
+.glitch-bloc{
+  font-family: 'scribish', serif;
+}
+
+.link:hover{
+  color: #9b3133!important;
+}
+button{
+  cursor:pointer;
+}
+
+/*This is the theme core: how to render the peculiar visualization*/
+.container-fluid:hover, #butto:hover, .row:hover, #met:hover, #uno:hover, #tett:hover, #metto:hover{
+  background-color:#AD8C69;
   color:#260d0e;
 }
 .container-fluid{
@@ -127,9 +172,7 @@ h2{
 h2:hover, h3:hover{
   color:#260d0e;
 }
-.link{
-  color:#000;
-}
+
 
 /*LINKS, SELECTION, CODE*/
 
@@ -137,20 +180,6 @@ h2:hover, h3:hover{
   color:#9b3139;
 }
 
-/*NAVBAR*/
-#navbar, #navba, #navb, #navbi{
-  font-family: 'canterbury', serif;
-    /* text-transform: lowercase; */
-    background-color:#9b3133;
-    width:100%;
-    cursor:pointer;
-    font-size: 30rem;
-}
-
-.nav-item, .nav-link, #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL, #navbarDropdownM{
-  font-size: medium;
-  color:#260d0e;
-} 
 
 #pur{
   padding:2rem;
@@ -328,11 +357,7 @@ h2:hover, h3:hover{
     color: #9b3139;
     font-family: scribish;
 }
-#model, #mode, #mod{ 
-  background-color: #260d0e;
-  color: #9b3139;
-  font-family: scribish;
-}
+
 #theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover, #theme5:hover, #theme6:hover, #mod:hover, #model:hover, #mode:hover, .sort, .sub:hover{
   background-color: black;
   color: white;
@@ -589,31 +614,7 @@ footer p{
         padding-top: 1rem;
     }
 }
-#navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL, #navbarDropdownM{
-  background-color: #9b3139;
-  color:#260D0E;
-}
 
-.dropdown-item:hover{
-  background-color: #4c1a1b;
-  color:#9b3133;
-}
-
-.dropdown-menu:hover{
-  background-color: #9b3139;
-  border-color: #4c1a1b;
-  color:#260d0e;
-}
-.dropdown-menu{
-  background-color:#9b3133;
-  color: #260D0E;
-}
-
-.dropdown-item{
-  font-size: xx-large;
-  color:#260D0E;
-  cursor:pointer;
-}
 #doclist{
   margin-top: 0;
   text-align: center;
