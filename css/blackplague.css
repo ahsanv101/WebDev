@@ -337,7 +337,7 @@ color:#260d0e;
 
 /*THIRD*/
 #third:hover, #themes-text:hover{
-  color:#000000!important;
+  color:#000000;
 }
 
 #gothird{
@@ -405,6 +405,7 @@ font-size: x-large;
 
 #themes-text{
   margin-top: 1rem;
+  text-align: center;
 }
 
 .about-content{
@@ -427,7 +428,7 @@ font-size: x-large;
   background-color: black;
   color: white;
 }
-#humanity, .sort{
+#theme5, .sort{
   width: 10em;
   text-align: center;
   background-color: #260d0e;
