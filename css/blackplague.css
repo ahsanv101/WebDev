@@ -123,7 +123,7 @@ body{
 button{
   cursor:pointer;
 }
-
+/*index start*/
 /*First content row*/
 .container-fluid{
   padding-right:0;
@@ -164,11 +164,10 @@ button{
   color:#732627;
 }
 /*h1*/
-
 .prima:hover{
   background-color: #9b3133;
 }
-/*text;gate title font*/
+/*text;gate glitch animation*/
 .glitch-bloc{
   font-family: 'scribish', serif;
 }
@@ -201,7 +200,7 @@ button{
   animation: glitchAnim1 3s infinite;
 }
 /*end textgate*/
-
+/*start content description*/
 #project-description{
   font-size: 4vh;
   padding-top: 2vh;
@@ -212,26 +211,18 @@ button{
 #project-description:hover{
 color:#260d0e;
 }
+/*end content description*/
 .container-fluid:hover, #butto:hover, .row:hover, #met:hover, #uno:hover, #tett:hover, #metto:hover{
   background-color:#AD8C69;
   color:#260d0e;
 }
-
-
+/*end first row*/
+/*project text*/
 #tett{
   background-color: #732627;
   text-align: center;
   padding-top: 2rem;
   margin: 0;
-}
-#about-proj{
-  text-align: center;
-  font-size: 3.5vh;
-  color: white;
-}
-
-#about-proj:hover{
-color:#260d0e;
 }
 h2{
     font-family: 'scribish', serif;
@@ -246,8 +237,19 @@ h2{
 h2:hover, h3:hover{
   color:#260d0e;
 }
-
-
+#icon{
+  padding: 10vh;
+  margin: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center !important;
+  text-decoration: none;
+}
+#get-started-btn-1{
+padding-top: 4rem;
+display: none;
+}
+/*end first row*/
 /*LINKS, SELECTION, CODE*/
 
 .change:hover{
@@ -259,6 +261,29 @@ h2:hover, h3:hover{
   padding:2rem;
   margin-top:2rem;
 }
+
+
+
+
+
+
+/*start SECOND row*/
+#second, #gosecond{
+    background-color: #4c1a1b !important;
+}
+#second{
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+#about-proj{
+  text-align: center;
+  font-size: 3.5vh;
+  color: white;
+}
+#about-proj:hover{
+color:#260d0e;
+}
 #short{ 
   color:black;
   text-align:center;
@@ -268,27 +293,10 @@ h2:hover, h3:hover{
 #short:hover{
   color:#260D0E;
 }
-
-
-
-
-#icon{
-    padding: 10vh;
-    margin: 1rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center !important;
-    text-decoration: none;
+#topp{
+  text-align: center;
 }
-#get-started-btn-1{
-  padding-top: 4rem;
-  display: none;
-}
-/*SECOND*/
-#second, #gosecond{
-    background-color: #4c1a1b !important;
-}
-
+/*topics and themes buttons*/
 #btn-themes{
   background-color: #260D0E;
   color:white;
@@ -317,9 +325,7 @@ h2:hover, h3:hover{
     display: inline-flex;
     margin-left: auto;
   }
-#topp{
-  text-align: center;
-}
+/*end of second section*/
 .c-right {
  color:#732627;
  font-size: 1.8rem!important;
@@ -330,65 +336,83 @@ h2:hover, h3:hover{
 }
 
 /*THIRD*/
-#third{
-    background-color: #4c1a1b;
-    font-size: 5.5vh;
-    padding-top: 3rem;
+#third:hover, #themes-text:hover{
+  color:#000000!important;
 }
 
 #gothird{
-    background-color: #000000;
-    margin-left: 10rem;
+  color:#260D0E;
 }
+#third:hover{
+  color:#260d0e;
+}
+#third{
+  background-color:#4c1a1b;
+  padding-top: 3rem;
+}
+#third h2{
+  color: #732627;
+}
+#third h2:hover{
+  color:#260D0E;
+}
+#issue-text{
+  padding: 0 10rem 0 10rem;
+  text-align: center;
+  font-size: x-large;
+  color: #260D0E;
+  margin-top: 1rem;
+}
+#issue-text:hover{
+color: #000;
+}
+.bann{
+  padding: 1rem;
+  padding-top: 5rem;
+}
+/*end third section*/
+/*start fourth section*/
+#gofourth{
+  background-color: #000000;
+  margin-left: 10rem;
+}
+#fourth{
+background-color: #4c1a1b;
+font-size: 5.5vh;
+padding-top: 3rem;
+}
+#fourth p{
+/* padding: 0.5rem 2rem 0.5rem 2rem!important; */
+font-size: 2.5vh;
+text-align: center;
+}
+#fourth #themes-text{
+/* margin: 1rem 0 1rem 0; */
+color:#260d0e;
+font-size: x-large;
+}
+/*end fourth section*/
+/*start polaroid*/
+.polaroidimg{
+  width:100%;
+}
+
 #the:hover{
   background-color: white;
   color:#260d0e;
 }
 
-#second{
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-}
-#third p{
-    /* padding: 0.5rem 2rem 0.5rem 2rem!important; */
-    font-size: 2.5vh;
-    text-align: center;
-}
-.bann{
-  padding-top: 5rem;
-}
+
 #themes-text{
   margin-top: 1rem;
 }
-#third #themes-text{
-    /* margin: 1rem 0 1rem 0; */
-    color:#260d0e;
-    font-size: x-large;
-}
-#third:hover, #themes-text:hover{
-  color:#000000!important;
-}
 
-#gofourth{
-  color:#260D0E;
-}
 .about-content{
   padding-top: 8rem;
   padding-bottom: 5rem;
   background-color: #4c1a1b;
   margin-top: 0;
   display: flex;
-}
-#fourth{
-  background-color:#4c1a1b;
-  padding-top: 3rem;
-}
-
-#fourth h2{
-  color: #732627;
-}
-#fourth h2:hover{
-  color:#260D0E;
 }
 
 #theme1,#theme2,#theme3,#theme4, #theme6, .btn-close{
@@ -399,11 +423,11 @@ h2:hover, h3:hover{
     font-family: scribish;
 }
 
-#theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover, #theme5:hover, #theme6:hover, #mod:hover, #model:hover, #mode:hover, .sort, .sub:hover{
+#theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover, #humanity:hover, #theme6:hover, #mod:hover, #model:hover, #mode:hover, .sort, .sub:hover{
   background-color: black;
   color: white;
 }
-#theme5, .sort{
+#humanity, .sort{
   width: 10em;
   text-align: center;
   background-color: #260d0e;
@@ -415,19 +439,8 @@ h2:hover, h3:hover{
   font-family: 'scribish';
 }
 
-#issue-text{
-    padding: 0 10rem 0 10rem;
-    text-align: center;
-    font-size: x-large;
-    color: #260D0E;
-    margin-top: 1rem;
-}
-#issue-text:hover{
-  color: #000;
-}
-#fourth:hover{
-  color:#260d0e;
-}
+
+
 
 /* Glitch effect */
 
@@ -681,9 +694,7 @@ input[type="checkbox"]{
   background-color: #000;
   color:white;
 }
-.bann{
-  padding: 1rem;
-}
+
 .space{
   padding:2rem;
 }
