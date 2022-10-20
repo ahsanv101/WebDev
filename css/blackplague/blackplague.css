@@ -829,6 +829,172 @@ text-align: center;
   align-items: center;
 }
 
+/* SELECTOR */
+
+.fab-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  user-select: none;
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  
+}
+.fab-container:hover {
+  height: 100%;
+}
+.fab-container:hover .sub-button:nth-child(2) {
+  transform: translateX(-14vh);
+}
+.fab-container:hover .sub-button:nth-child(3) {
+  transform: translateX(-28vh);
+}
+.fab-container:hover .sub-button:nth-child(4) {
+  transform: translateX(-42vh);
+}
+.fab-container:hover .sub-button:nth-child(5) {
+  transform: translateX(-56vh);
+}
+.fab-container:hover .sub-button:nth-child(6) {
+  transform: translateX(-70vh);
+}
+.fab-container:hover .sub-button:nth-child(7) {
+  transform: translateX(-84vh);
+}
+/* .fab-container:hover .sub-button:nth-child(6) {
+  bottom: 1vh;
+  transform: translateX(-12vh);
+} */
+
+.fab-container .fab {
+  position: relative;
+  height: 12vh;
+  width: 12vh;
+  border-radius: 50%;
+  z-index: 2;
+}
+.fab-container .fab::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 6vh;
+  width: 6vh;
+  background-color: inherit;
+  
+ 
+  border-radius: 0 0 10px 0;
+  z-index: -1;
+}
+.fab-container .fab .fab-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.fab-container .sub-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  height: 12vh;
+  width: 12vh;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.fab-container .sub-button:hover {
+  cursor: pointer;
+}
+.fab-container .sub-button .material-icons {
+  padding-top: 6px;
+}
+
+.fab-content{
+  background-image: url("../../css/images/theme.png");
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  background-position: center center !important;
+ 
+}
+
+.sub-button:nth-child(2){
+  background: url("../../css/images/plague.png");
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.sub-button:nth-child(3){
+  background: url("../../css/images/colonization.png");
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sub-button:nth-child(4){
+  background: url("../../css/images/wallstreet.png");
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sub-button:nth-child(5){
+  background: url("../../css/images/coldwar.png");
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sub-button:nth-child(6){
+  background: url("../../css/images/cons.png");
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sub-button:nth-child(7){
+  background: url("../../css/images/alien.png");
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fab-content, .fab-shadow, .sub-button, .fab{
+  background-color: #ba4c43 !important;
+}
+
+.sub-button:hover{
+  background-color: #e2cb9c !important;
+}
+/* .fab-container #enable-future:hover{
+  background: url("/typetravel/images/Future/g25.gif") !important;
+  background-size: 12vh !important;
+} */
+
+/* .sub-button:nth-child(6){
+  background: url("/typetravel/images/icons/default-icon.png");
+  background-size: 5vh !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 6vh;
+  text-decoration: none !important;
+  height: 8vh !important;
+  width: 8vh !important;
+  right: 3vh !important;
+} */
+
+/* .fab-container:hover{
+  background-color: #83c0cf !important;
+}
+ */
+
 /* CSS polaroid ITEM */
 .polaroid-container {
   padding-left: 40px;
