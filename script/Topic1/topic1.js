@@ -184,7 +184,7 @@ function filltab(what,style,where) {
             style:style, 
             place: counts[x],
             wh: where_new,
-            content: (x + " count: "+ counts[x].length)
+            content: (x + " ( "+ counts[x].length+ " ) ")
         }) )
         }
 
