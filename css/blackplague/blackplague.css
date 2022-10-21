@@ -320,18 +320,12 @@ button{
 color:#260d0e;
 }
 /*end content description*/
-.container-fluid:hover, #butto:hover, .row:hover, #met:hover, #uno:hover, #tett:hover, #metto:hover{
+.container-fluid:hover, .row:hover{
   background-color:#AD8C69;
   color:#260d0e;
 }
 /*end first row*/
 /*project text*/
-#tett{
-  background-color: #732627;
-  text-align: center;
-  padding-top: 2rem;
-  margin: 0;
-}
 h2{
     font-family: 'scribish', serif;
     font-weight: bold;
@@ -362,12 +356,6 @@ display: none;
 
 .change:hover{
   color:#9b3139;
-}
-
-
-#pur{
-  padding:2rem;
-  margin-top:2rem;
 }
 
 /*start SECOND row*/
