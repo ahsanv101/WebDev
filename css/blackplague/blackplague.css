@@ -584,34 +584,19 @@ label:hover{
 }
 /*end metadata style*/
 
-#the:hover{
-  background-color: white;
-  color:#260d0e;
-}
-
-
-
-.about-content{
-  padding-top: 8rem;
-  padding-bottom: 5rem;
-  background-color: #4c1a1b;
-  margin-top: 0;
-  display: flex;
-}
-
-#theme1,#theme2,#theme3,#theme4, #theme6, .btn-close{
+.btn-close{
    
     text-align: left;
     background-color: #260d0e;
     color: #9b3139;
-    font-family: scribish;
+    font-family: 'scribish';
 }
 
-#theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover, #humanity:hover, #theme6:hover, #mod:hover, #model:hover, #mode:hover, .sort, .sub:hover{
+#theme5:hover #mod:hover, #model:hover, #mode:hover{
   background-color: black;
   color: white;
 }
-#theme5, .sort{
+#theme5{
   width: 10em;
   text-align: center;
   background-color: #260d0e;
@@ -751,22 +736,9 @@ h5{
   height: auto;
   text-align: center;
 }
-#ttx, #ttxt, #tutto, #nulla{
-  color: #9b3133;
-  font-size: xx-large;
-  cursor: all-scroll;
-  position: relative;
-}
-
-.documn{
-  color: #732627;
-  font-size: xx-large;
-}
 
 
-.carousel-inner{
-  padding-top:100rem;
-}
+
 @media (max-width: 992px){
     /*NAVBAR*/
     #navbar .collapse, #navba .collapse, #navb .collapse, #navbi .collapse{
