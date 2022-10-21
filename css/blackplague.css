@@ -519,7 +519,6 @@ color:#732627;
 .fabvit:active,.fabvit:hover{
 color: #260d0e;
 }
-
 footer p, #copia{
   font-size: 1.5rem ;
 }
@@ -534,11 +533,69 @@ footer p{
   width: 100% ;
   border: none;
 }
-
 #copia{
   text-align: center;
   padding-bottom: 1.5rem;
 }
+/*end footer*/
+/*end index*/
+/*start topic1*/
+/*document list*/
+#doclist{
+  margin-top: 0;
+  text-align: center;
+  width:100%;
+  size: fit-content;
+}
+/*end doc list*/
+/*start metadata*/
+.sticky-top{
+  padding-top:10px;
+}
+.white{
+  background-color: white;
+}
+.tess{
+  text-align:center;
+}
+.form-check-inline{
+  border-width:0.2rem dotted #260d0e;
+  padding-top: 3rem;
+}
+input[type="checkbox"]{
+  color:#732627;
+}
+label{
+  font-size: x-large;
+  font-family:'scribish';
+  color:#260D0E;
+}
+label:hover{
+  color:black;
+}
+#sti{
+  padding-top:100px;
+}
+#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
+  font-size: 18px;
+}
+.tab-content{
+  overflow-y:scroll;
+  height:250px;
+}
+.space{
+  padding:2rem;
+}
+#file{
+  overflow-y: scroll;
+  height: 800px;
+}
+#file2{
+  overflow-y: scroll;
+  height: 800px;
+}
+/*end metadata style*/
+
 #the:hover{
   background-color: white;
   color:#260d0e;
@@ -631,21 +688,8 @@ footer p{
     }
 }
 
-#doclist{
-  margin-top: 0;
-  text-align: center;
-  width:100%;
-  size: fit-content;
-}
-label{
-  font-size: x-large;
-  font-family:'scribish';
-  color:#260D0E;
-}
 
-label:hover{
-  color:black;
-}
+
 #uno{
   width:100%;
   text-align: center;
@@ -660,13 +704,6 @@ h3{
   color:#732627;
 }
 
-.form-check-inline{
-  border-width:0.2rem dotted #260d0e;
-  padding-top: 3rem;
-}
-input[type="checkbox"]{
-  color:#732627;
-}
 #met, #metto{
   text-align: center;
   background-color: #732627;
@@ -685,9 +722,7 @@ input[type="checkbox"]{
   color:white;
 }
 
-.space{
-  padding:2rem;
-}
+
 #frag, #fragm, h4, #fra, #fratm, #acca{
   border: 4mm ridge #732627;
   background-color: #000;
@@ -735,10 +770,6 @@ h5{
   position: relative;
 }
 
-
-.space{
-  padding-bottom:2rem;
-}
 .documn{
   color: #732627;
   font-size: xx-large;
@@ -821,35 +852,6 @@ h5{
   to { background-color: #cccc00; }
 }
 
-
-.sticky-top{
-  padding-top:10px;
-
-}
-
-#sti{
-  padding-top:100px;
-}
-
-.tab-content{
-  overflow-y:scroll;
-  height:250px;
-}
-
-
-#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
-  font-size: 18px;
-}
-
-#file{
-  overflow-y: scroll;
-  height: 800px;
-}
-
-#file2{
-  overflow-y: scroll;
-  height: 800px;
-}
 
 img {
   width: 100%;
