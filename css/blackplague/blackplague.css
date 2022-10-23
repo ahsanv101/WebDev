@@ -642,8 +642,21 @@ input[type="checkbox"]{
 }
 /*end metadata style*/
 
-
-
+/*start aboutus*/
+#teamsec{
+  padding: 3rem;
+}
+.us{
+  max-width:fit-content;
+  height: auto;
+  text-align: center;
+}
+.siamo{
+  padding-top: 0.1rem;
+}
+.thumbnail{
+  margin-bottom: 0rem;
+}
 button{
   cursor:pointer;
 }
