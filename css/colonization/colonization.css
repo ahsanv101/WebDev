@@ -158,15 +158,15 @@ h2{
     text-transform: uppercase;
     text-align: center;
     margin-top: 1em;
-    color: #732627;
+    color:black;
     font-size: 10vh;
     font-weight: 600;
 }
 h2:hover, h3:hover{
-  color:#260d0e;
+  color: #856d4b;
 }
 .link{
-  color:#000;
+  color: #856d4b;
 }
 
 /*LINKS, SELECTION, CODE*/
@@ -277,7 +277,7 @@ h2:hover, h3:hover{
 }
 #btn-themes:hover{
   /* background-color:#260D0E; */
-  color:white
+  color :black
 }
 #btn-issues{
   color:#260d0e;
@@ -285,7 +285,7 @@ h2:hover, h3:hover{
 }
 #btn-issues:hover{
   /* background-color: white; */
-  color:white
+  color :black
 }
 #btn-issues, #btn-themes{
    background-image : url(../images/stamp.png);
@@ -328,17 +328,20 @@ h2:hover, h3:hover{
   text-align: center;
 }
 .c-right {
- color:#732627;
+ color:black;
  font-size: 1.8rem!important;
  border-color: #260D0E;
 }
 .c-right:hover{
-  color:#000000;
+  color:white;
 }
 
 /*THIRD*/
 #third{
-    background-color: #4c1a1b;
+  background-image : url(../images/paper.jpg);
+  border-style:inset;
+  border-color: #856d4b;
+    /* background-color: #4c1a1b; */
     font-size: 5.5vh;
     padding-top: 3rem;
 }
@@ -377,6 +380,7 @@ h2:hover, h3:hover{
 }
 
 #gofourth{
+  
   color:#260D0E;
 }
 .about-content{
@@ -387,15 +391,19 @@ h2:hover, h3:hover{
   display: flex;
 }
 #fourth{
-  background-color:#4c1a1b;
-  padding-top: 3rem;
+  background-image : url(../images/paper.jpg);
+  border-style:inset;
+  border-color: #856d4b;
+    /* background-color: #4c1a1b; */
+    font-size: 5.5vh;
+    padding-top: 3rem;
 }
 
 #fourth h2{
-  color: #732627;
+  color: black
 }
 #fourth h2:hover{
-  color:#260D0E;
+  color:#856d4b;
 }
 
 #theme1,#theme2,#theme3,#theme4, #theme6, .btn-close{
@@ -410,12 +418,12 @@ h2:hover, h3:hover{
   color: #9b3139;
   font-family: scribish;
 }
-#theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover, #theme5:hover, #theme6:hover, #mod:hover, #model:hover, #mode:hover, .sort, .sub:hover{
+/* #theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover, #theme5:hover, #theme6:hover, #mod:hover, #model:hover, #mode:hover, .sort, .sub:hover{
   background-color: black;
   color: white;
-}
+} */
 #theme5, .sort{
-  width: 10em;
+  /* width: 10em;
   text-align: center;
   background-color: #260d0e;
   color: #9b3139;
@@ -423,7 +431,47 @@ h2:hover, h3:hover{
   margin-right: auto;
   margin-top: 2em;
   margin-bottom: 3em;
-  font-family: 'scribish';
+  font-family: 'scribish'; */
+
+  text-align: center;
+  background-image : url(../images/stamp.png);
+  background-size: 150px 140px;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 3em;
+
+   font-family: 'scribish', serif;
+    border-radius: 50%;
+  
+    text-transform: uppercase;
+     /* font-size: 4vh;
+    width: 10rem;
+    margin-top: 2rem;
+    text-align: center;
+    display: inline-flex;
+    margin-left: auto;  */
+
+  height: 150px;
+  width: 150px;
+  /* display: flex; */
+  border: none;
+  color: white;
+  /* padding: 15px;s */
+  /* text-align: center; */
+  /* text-decoration: none; */
+  /* display: inline-block; */
+  font-size: 15px;
+  padding-top: 45px;
+  padding-left: 20px;
+  /* margin: 6px 4px; */
+  
+}
+
+#theme5:hover{
+  color: black;
 }
 
 #issue-text{
@@ -433,12 +481,13 @@ h2:hover, h3:hover{
     color: #260D0E;
     margin-top: 1rem;
 }
-#issue-text:hover{
+
+/* #issue-text:hover{
   color: #000;
-}
-#fourth:hover{
+} */
+/* #fourth:hover{
   color:#260d0e;
-}
+} */
 
 
 #main-title{
@@ -601,25 +650,31 @@ h2:hover, h3:hover{
 
 /*FOOTER*/
 footer{
-    background-color: #260D0E;
+  background-image : url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-size: 1500px 200px;
+  /* background-color: #000; */
     font-family: 'canterbury';
-    color:#732627;
+    color:black;
     text-align: center;
     font-weight: 100;
     position:sticky;
 }  
 .fabvit{
-  color:#732627;
+  color:white;
 }
 .fabvit:active,.fabvit:hover{
-  color: #260d0e;
+  color: black
 }
 
 footer p, #cop, #copy, #copp{
-    font-size: 1.5rem ;
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+    font-size: 16px;
 }
 #form10, #form11{
-  background-color: #4c1a1b;
+  background-color: #856d4b;
   color: white;
   width:10rem;
   font-size: large;
@@ -633,7 +688,7 @@ footer p, #cop, #copy, #copp{
   display: inline-block;
 }
 .sub{
-  background-color: #260d0e;
+  background-color: #856d4b;
   color: #9b3139;
   size: 2rem;
 }
@@ -642,7 +697,7 @@ footer p, #cop, #copy, #copp{
   height: 3rem;
 }
 .md-form{
-  background-color: #732627;
+  background-color:  #856d4b;
   margin:none;
   padding: none;
 }
@@ -932,7 +987,9 @@ text-align: center;
 
 }
 
-
+.fab shadow{
+  background-color: black;
+}
 
 .fab-container {
   display: flex;
@@ -985,7 +1042,7 @@ text-align: center;
   right: 0;
   height: 6vh;
   width: 6vh;
-  background-color: inherit;
+
   
  
   border-radius: 0 0 10px 0;
@@ -998,6 +1055,7 @@ text-align: center;
   height: 100%;
   width: 100%;
   border-radius: 50%;
+  background-color:#886B41 !important;
 }
 
 .fab-container .sub-button {
@@ -1011,6 +1069,8 @@ text-align: center;
   width: 12vh;
   border-radius: 50%;
   transition: all 0.3s ease;
+  background-color:#886B41 !important;
+
 }
 .fab-container .sub-button:hover {
   cursor: pointer;
@@ -1107,9 +1167,13 @@ text-align: center;
 
 .polaroid {
   width: 80%;
-  background-color: white;
+  background-color:inherit;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
+  font-size: 16px;
+  filter: sepia(100%);
+  border-style: dotted;
+  /* filter: drop-shadow(8px 8px 10px #886B41 ); */
 }
 
 .polaroidimg {
@@ -1130,11 +1194,12 @@ text-align: center;
 
   font-family: "Merriweather", serif;
   font-weight: 900;
+  font-size: 16px;
 }
 
 .polartextcomm {
   text-align: center;
-  font-size: 24pt;
+  font-size: 16px;
 }
 
 /*END POLAROID*/
