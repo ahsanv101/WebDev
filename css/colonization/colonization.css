@@ -94,6 +94,7 @@ body{
   background-color: white;
 } */
 
+
 .modal-header, .discl-basic .modal-footer{
 
   background-image : url(../images/paper.jpg);
@@ -376,12 +377,25 @@ h2:hover, h3:hover{
 } */
 
 #bann{
-  border-style: dotted;
+  /* border-style: dotted; */
+  background-image : url(../images/paper.jpg);
+  border-style:inset;
+  border-color: #856d4b;
+  z-index: -1;
+  /* margin-top: 100px; */
+
 }
 
 #bann2{
-  border-style: dotted;
+  /* border-style: dotted; */
+  background-image : url(../images/paper.jpg);
+  border-style:inset;
+  border-color: #856d4b;
+  z-index: -1;
+
 }
+
+
 #themes-text{
   margin-top: 1rem;
 }
@@ -661,6 +675,24 @@ h2:hover, h3:hover{
   }
 } */
 
+
+/* ABOUT US */
+#team{
+background-image : url(../images/paper.jpg);
+border-style:inset;
+border-color: #856d4b;
+
+/* padding-top: 50px; */
+text-align: center;
+/* width:100%; */
+/* size: fit-content; */
+}
+
+#teamsec{
+  margin-top: 100px;
+}
+
+
 /*IMAGES*/
 
 /*FOOTER*/
@@ -789,13 +821,22 @@ footer p{
   cursor:pointer;
 }
 #doclist{
+  background-image : url(../images/paper.jpg);
+  border-style:inset;
+  border-color: #856d4b;
+
   padding-top: 50px;
   text-align: center;
   width:100%;
   size: fit-content;
   
 }
+/* #white{
+  background-image : url(../images/paper.jpg);
+  border-style:inset;
+  border-color: #856d4b;
 
+} */
 label{
   font-size: x-large;
   font-family:'scribish';
@@ -966,13 +1007,29 @@ h5{
 
 .sticky-top{
   padding-top:20px;
-  background-color: white;
   text-align: center;
+  width: 100%;
+  z-index: 0;
 }
 
 #sti{
   padding-top:100px;
   justify-content: center;
+  background-image : url(../images/paper.jpg);
+  border-style:dotted;
+  border-color: #856d4b;
+}
+
+#checkb{
+
+  background-image : url(../images/paper.jpg);
+  border-style:inset;
+  border-color: #856d4b;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+ ;
+  
 }
 
 .tab-content{
