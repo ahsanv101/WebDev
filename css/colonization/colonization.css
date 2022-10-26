@@ -692,6 +692,11 @@ text-align: center;
   margin-top: 100px;
 }
 
+.thumbnail{
+  border-style: dotted;
+  padding: 20px;
+}
+
 
 /*IMAGES*/
 
