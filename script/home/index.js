@@ -50,7 +50,7 @@ function changeThemeHome(id) {
 function changeThemeDoc(id,name) {
     const theme = document.getElementsByTagName('link')[1];
 
-    console.log(id,name);
+    // console.log(id,name);
     switch (id) {
 
     case "plag":

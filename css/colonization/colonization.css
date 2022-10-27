@@ -189,15 +189,15 @@ h2:hover, h3:hover{
     font-weight: 300;
     background-image : url(../images/kindpng_726689.png);
     background-repeat: no-repeat;
-    background-size: 1500px 70px;
+    background-size: 95em 100%;
     
     /* background-color:#d2a365; */
-    width:100%;
+    /* width:100%; */
     cursor:pointer;
 }
 
 .nav-item, .nav-link, #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL, #navbarDropdownM{
-  font-size: 25px;
+  font-size: 2rem;
   color:black !important;
 } 
 
@@ -230,7 +230,7 @@ h2:hover, h3:hover{
     /* color: #260d0e; */
     text-align: center;
     font-weight: 500;
-    font-size: 16vh;
+    /* font-size: 16vh; */
 }
 
 #first #travel{
@@ -238,7 +238,7 @@ h2:hover, h3:hover{
 }
 
 #first h2{
-    font-size: 5vh;
+    /* font-size: 5vh; */
     padding-bottom: 1rem;
     letter-spacing: 0.3rem;
     font-weight: 600;
@@ -296,7 +296,7 @@ h2:hover, h3:hover{
 }
 #btn-issues, #btn-themes{
    background-image : url(../images/stamp.png);
-  background-size: 150px 140px;
+  background-size: 100% 90%;
   background-repeat: no-repeat;
   background-color: inherit;
 
@@ -312,8 +312,8 @@ h2:hover, h3:hover{
     display: inline-flex;
     margin-left: auto;  */
 
-  height: 150px;
-  width: 150px;
+  height: 10rem;
+  width: 10rem;
   /* display: flex; */
   border: none;
   color: white;
@@ -321,13 +321,14 @@ h2:hover, h3:hover{
   /* text-align: center; */
   /* text-decoration: none; */
   /* display: inline-block; */
-  font-size: 16px;
-  margin: 6px 4px;
+  font-size: 1rem;
+  /* margin: 6px 4px; */
+  opacity: 0.9;
 
   }
 #btn-issues span, #btn-themes span {
     display: block !important;
-    padding-top: 50px;
+    padding-top: 3rem;
     text-align: center !important;
     line-height: 1em !important;
 }
@@ -464,13 +465,13 @@ h2:hover, h3:hover{
 
   text-align: center;
   background-image : url(../images/stamp.png);
-  background-size: 150px 140px;
+  background-size: 100% 90%;
   background-repeat: no-repeat;
   background-color: inherit;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
-  margin-bottom: 3em;
+  /* margin-top: 2em;
+  margin-bottom: 3em; */
 
    font-family: 'scribish', serif;
     border-radius: 50%;
@@ -483,8 +484,8 @@ h2:hover, h3:hover{
     display: inline-flex;
     margin-left: auto;  */
 
-  height: 150px;
-  width: 150px;
+    height: 10rem;
+    width: 10rem;
   /* display: flex; */
   border: none;
   color: white;
@@ -492,9 +493,9 @@ h2:hover, h3:hover{
   /* text-align: center; */
   /* text-decoration: none; */
   /* display: inline-block; */
-  font-size: 15px;
-  padding-top: 45px;
-  padding-left: 20px;
+  font-size: 1rem;
+  padding-top: 3rem;
+  padding-left: 1rem;
   /* margin: 6px 4px; */
   
 }
@@ -520,7 +521,7 @@ h2:hover, h3:hover{
 
 
 #main-title{
-  font-size: 150px;
+  font-size: 10em;
   font-weight: 400;
   line-height: 1.1;
   color: rgb(0, 0, 0);
@@ -689,12 +690,12 @@ text-align: center;
 }
 
 #teamsec{
-  margin-top: 100px;
+  margin-top: 3em;
 }
 
 .thumbnail{
   border-style: dotted;
-  padding: 20px;
+  padding: 1em;
 }
 
 
@@ -724,10 +725,11 @@ footer{
 }
 
 footer p, #cop, #copy, #copp{
-  margin-top: 50px;
+  font-size: 1em !important;
+  /* margin-top: 50px;
   padding-left: 30px;
   padding-right: 30px;
-    font-size: 16px;
+  font-size: 16px; */
 }
 #form10, #form11{
   background-color: #856d4b;
@@ -813,7 +815,8 @@ footer p{
 } */
 .dropdown-menu{
   background-image : url(../images/dropscroll.png);
-  background-size: 240px 45px;
+  /* background-size: 240px 45px; */
+  background-size: 15em 2.9em;
   background-repeat: repeat-y;
 
   background-color:#886B41;
@@ -825,12 +828,15 @@ footer p{
   color:#260D0E;
   cursor:pointer;
 }
+
+/* DOCUMENTAION PAGE */
+
 #doclist{
   background-image : url(../images/paper.jpg);
   border-style:inset;
   border-color: #856d4b;
 
-  padding-top: 50px;
+  padding-top: 4em;
   text-align: center;
   width:100%;
   size: fit-content;
@@ -942,7 +948,12 @@ h5{
     #navbar .collapse, #navba .collapse, #navb .collapse, #navbi .collapse{
         
         border-top: none;
+        
     }
+    #navbar{
+      background-image: none;
+    }
+   
     #first h1{
         font-size: 8vh !important;
     }
@@ -1031,20 +1042,20 @@ h5{
   border-style:inset;
   border-color: #856d4b;
   width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0em;
+  margin-right: 0em;
  ;
   
 }
 
 .tab-content{
   overflow-y:scroll;
-  height:250px;
+  height:8em;
 }
 
 
 #asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
-  font-size: 18px;
+  font-size: 0.5em;
 }
 
 #file{
@@ -1053,7 +1064,7 @@ h5{
   border-color: #856d4b;
 
   overflow-y: scroll;
-  height: 800px;
+  height:  50em;
 }
 
 #file2{
@@ -1061,19 +1072,19 @@ h5{
   border-style:inset;
   border-color: #856d4b;
   overflow-y: scroll;
-  height: 800px;
+  height:  50em;
 }
 
 img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 1em;
   filter: sepia(100%);
 }
 
 
 .btn-group-toggle{
 
-  padding-top: 10px;
+  padding-top: 1em;
 text-align: center;
 
 }
@@ -1251,7 +1262,7 @@ text-align: center;
 
 /* CSS polaroid ITEM */
 .polaroid-container {
-  padding-left: 40px;
+  padding-left: 3em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
@@ -1259,9 +1270,9 @@ text-align: center;
 .polaroid {
   width: 80%;
   background-color:inherit;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-  font-size: 16px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  margin-bottom: 2em;
+  font-size: 0.5em;
   filter: sepia(100%);
   border-style: dotted;
   /* filter: drop-shadow(8px 8px 10px #886B41 ); */
@@ -1271,9 +1282,9 @@ text-align: center;
 .polaroidimg {
   width: 100%;
   object-fit: cover;
-  height: 200px;
-  padding: 5px;
-  border-radius: 10px;
+  height: 12.5em;
+  padding: 0.31;
+  border-radius: 0.62em;
 }
 
 .polaroid-container .polaroidimg:hover {
@@ -1286,12 +1297,12 @@ text-align: center;
 
   font-family: "Merriweather", serif;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .polartextcomm {
   text-align: center;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 /*END POLAROID*/
@@ -1312,9 +1323,9 @@ nav#navbardoc {
  
 nav#navbardoc a {
   display: block;
-  border: 1px solid black;
-  padding: 5px;
-  margin: 10px 0;
+  border:  0.0625em solid black;
+  padding: 0.3125em;
+  margin: 0.62px 0;
   text-decoration: none;
   color: black;
 }
