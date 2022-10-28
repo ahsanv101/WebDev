@@ -1,3 +1,16 @@
+var i = 0;
+var txt = ' Text  ; Gate';
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("main-title").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+
 
 function changeThemeHome(id) {
     const theme = document.getElementsByTagName('link')[1];
@@ -187,3 +200,4 @@ if(localStorage.getItem('selectedTheme')){
    };
   
   
+typeWriter();

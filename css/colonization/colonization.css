@@ -3,14 +3,17 @@
 /* Button and footer */
 @font-face {
   font-family: 'canterbury';
-  src: url(../fonts/British_Script.ttf);
+  src: url(../fonts/MKBritishWriting.ttf);
+  /* src: url(../fonts/British_Script.ttf); */
 }
 
 
 /* body headings */
 @font-face {
   font-family: 'carolingia';
-  src: url(../fonts/British_Script.ttf);
+   src: url(../fonts/MKBritishWriting.ttf);
+   /* font-weight: bold; */
+  /* src: url(../fonts/British_Script.ttf); */
  
 }
 
@@ -19,9 +22,32 @@
 @font-face {
   font-family: 'scribish';
   src: url(../fonts/Lord_British.otf);
+ 
 }
 
 
+/* SIZE RELATIVE */
+@media (min-width: 768px) and (max-width: 992px){
+  #about-proj p{
+      font-size: 3vh;
+  }
+  .issue-description{
+      font-size: 2.5vh !important;
+      padding-bottom: 0.5rem !important;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px){
+  .issue-description{
+      font-size: 2.5vh !important;
+      padding-bottom: 0.5rem !important;
+  }
+}
+
+
+
+/* INDEX PAGE CSS */
 body{
   font-family: 'carolingia', sans-serif;                                
 }
@@ -377,24 +403,9 @@ h2:hover, h3:hover{
   padding-top: 5rem;
 } */
 
-#bann{
-  /* border-style: dotted; */
-  background-image : url(../images/paper.jpg);
-  border-style:inset;
-  border-color: #856d4b;
-  z-index: -1;
-  /* margin-top: 100px; */
 
-}
 
-#bann2{
-  /* border-style: dotted; */
-  background-image : url(../images/paper.jpg);
-  border-style:inset;
-  border-color: #856d4b;
-  z-index: -1;
 
-}
 
 
 #themes-text{
@@ -685,9 +696,15 @@ border-color: #856d4b;
 
 /* padding-top: 50px; */
 text-align: center;
+padding: 1em;
 /* width:100%; */
 /* size: fit-content; */
 }
+
+.img-fluid{
+  height: 25em;
+}
+
 
 #teamsec{
   margin-top: 3em;
@@ -696,7 +713,10 @@ text-align: center;
 .thumbnail{
   border-style: dotted;
   padding: 1em;
+  height: 40em;
+  /* height: 50px; */
 }
+
 
 
 /*IMAGES*/
@@ -716,6 +736,7 @@ footer{
     text-align: center;
     font-weight: 100;
     position:sticky;
+    padding: 0.5em;
 }  
 .fabvit{
   color:white;
@@ -725,7 +746,9 @@ footer{
 }
 
 footer p, #cop, #copy, #copp{
-  font-size: 1em !important;
+  font-size: 1.5em !important;
+  font-weight: 200;
+  
   /* margin-top: 50px;
   padding-left: 30px;
   padding-right: 30px;
@@ -816,7 +839,7 @@ footer p{
 .dropdown-menu{
   background-image : url(../images/dropscroll.png);
   /* background-size: 240px 45px; */
-  background-size: 15em 2.9em;
+  background-size: 12em 2.9em;
   background-repeat: repeat-y;
 
   background-color:#886B41;
@@ -966,28 +989,31 @@ h5{
 }  
 
 
-@media (min-width: 768px) and (max-width: 992px){
-    #about-proj p{
-        font-size: 3vh;
-    }
-    .issue-description{
-        font-size: 2.5vh !important;
-        padding-bottom: 0.5rem !important;
-    }
+
+
+
+/* TOPIC PAGE CSS added by ahsan */
+
+#bann{
+  /* border-style: dotted; */
+  background-image : url(../images/paper.jpg);
+  border-style:inset;
+  border-color: #856d4b;
+  /* z-index: -1; */
+  position: relative;
+  /* top: 50px; */
+
 }
 
+#bann2{
+  /* border-style: dotted; */
+  background-image : url(../images/paper.jpg);
+  border-style:inset;
+  border-color: #856d4b;
+  position: relative;
+  /* z-index: -1; */
 
-@media (min-width: 992px) and (max-width: 1200px){
-    .issue-description{
-        font-size: 2.5vh !important;
-        padding-bottom: 0.5rem !important;
-    }
 }
-
-
-/* Addded by ahsan */
-
-
 
 .text-people {
   background-color: #ffddff;
@@ -1088,6 +1114,12 @@ img {
 text-align: center;
 
 }
+
+/* END TOPIC PAGE CSS */
+
+/* 
+SELECTOR CSSS */
+
 
 .fab shadow{
   background-color: black;
@@ -1259,6 +1291,9 @@ text-align: center;
   background-color: #83c0cf !important;
 }
  */
+
+
+ /* END SELECTOR */
 
 /* CSS polaroid ITEM */
 .polaroid-container {
