@@ -6,7 +6,7 @@ String.prototype.tpl = function(o) {
     return r 
 }
 
-var listItemTpl = `<li class="nav-item"><a class="nav-link" href='#' onclick='load("$url")'>$label</a></li>`;
+var listItemTpl = `<li class="nav-item"><a class="nav-link" href='#' id="list_btn" onclick='load("$url")'>$label</a></li>`;
 var listItemTpl2 = `<li class="nav-item"><a class="nav-link" href='#' onclick='load2("$url")'>$label</a></li>`;
 
 $(document).ready(main);
