@@ -1118,13 +1118,15 @@ text-align: center;
 
 
 
-#list{
+#list_btn{
   background-image: url(../images/seal_horizontal.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-  width: 27em;
+
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 20em;
+
   /* font-size: 1.5rem; */
   
   /* margin-left: 10em; */
