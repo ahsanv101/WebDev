@@ -1081,9 +1081,35 @@ h5{
 }
 
 
-#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
+#peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
+  border:none;
+  background-image: url(../images/kindpng_726689.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 7em;
+
   font-size: 0.5em;
+
 }
+
+#peoples-tab:hover, #places-tab:hover ,#events-tab:hover ,#concepts-tab:hover,#opinions-tab:hover{
+  width: 10em;
+ border:none;
+ font-size: 0.5em;
+}
+
+/* #sentenceTab::active{
+  background-color: #000;
+} */
+/* #peoples-tab::aria-selected{
+background-color: #000;
+
+} */
+
+
 
 #file{
   background-image : url(../images/paper.jpg);
@@ -1117,48 +1143,24 @@ text-align: center;
 }
 
 
+#list_btn:hover{
+  width: 23em;
+ border:none;
+}
 
 #list_btn{
-  background-image: url(../images/seal_horizontal.png);
+  border:none;
+  background-image: url(../images/kindpng_726689.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
   margin-left: auto;
   margin-right: auto;
-  width: 20em;
+  width: 16em;
 
-  /* font-size: 1.5rem; */
-  
-  /* margin-left: 10em; */
-  
-
-  /* text-align: center;
- 
-  background-size: 100% 90%;
-  background-repeat: no-repeat;
-  background-color: inherit;
-  margin-left: auto;
-  margin-right: auto;
- 
-
-   font-family: 'scribish', serif;
-    border-radius: 50%;
-  
-    text-transform: uppercase;
-
-    height: 10rem;
-    width: 10rem;
-
-  border: none;
-  color: white;
-
-  font-size: 1rem;
-  padding-top: 3rem;
-  padding-left: 1rem; */
-
-  /* background-image : url(../images/seal_horizontal.png) !important; */
 
 }
+
 
 /* END TOPIC PAGE CSS */
 
