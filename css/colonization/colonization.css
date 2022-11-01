@@ -67,8 +67,6 @@ body{
   justify-content: center;
   text-align: center;
   
-
-
   
   /* background-color: #eeebcf; */
 }
@@ -151,8 +149,14 @@ button{
 }
 #butto, #butt, #but, #buttn{
   font-family:'scribish' ;
-  color: white;
-  background-color: #000;
+  color: black;
+ background-color:#886B41;
+
+  
+}
+#butto:hover, #butt:hover, #but:hover, #buttn:hover{
+
+  background-color:#cba672;
 }
 
 /* .container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover, #tett:hover, #metto:hover{
@@ -295,10 +299,11 @@ h2:hover, h3:hover{
   display: none;
 }
 /*SECOND*/
-#second, #gosecond{
+#second{
   background-image : url(../images/paper.jpg);
   border-style:inset;
   border-color: #856d4b;
+  /* padding-bottom: 25em; */
   
 }
 
@@ -308,20 +313,22 @@ h2:hover, h3:hover{
   background-color: white;
   /* border-radius: 50%; */
 }
-#btn-themes:hover{
-  /* background-color:#260D0E; */
-  color :black
-}
+
+
 #btn-issues{
   color:#260d0e;
   background-color: white;
 }
-#btn-issues:hover{
-  /* background-color: white; */
-  color :black
+#btn-issues:hover, #btn-themes:hover{
+  padding-top: 4rem;
+  /* color: black; */
+  height: 12rem;
+  width: 12rem;
+  font-size: 1.2rem;
+
 }
 #btn-issues, #btn-themes{
-   background-image : url(../images/stamp.png);
+   /* background-image : url(../images/stamp.png);
   background-size: 100% 90%;
   background-repeat: no-repeat;
   background-color: inherit;
@@ -331,33 +338,45 @@ h2:hover, h3:hover{
     border-radius: 50%;
   
     text-transform: uppercase;
-     /* font-size: 4vh;
-    width: 10rem;
-    margin-top: 2rem;
-    text-align: center;
-    display: inline-flex;
-    margin-left: auto;  */
+
 
   height: 10rem;
   width: 10rem;
-  /* display: flex; */
+
   border: none;
   color: white;
-  /* padding: 15px;s */
-  /* text-align: center; */
-  /* text-decoration: none; */
-  /* display: inline-block; */
+
   font-size: 1rem;
-  /* margin: 6px 4px; */
+
+  opacity: 0.9; */
+
+  text-align: center;
+  background-image : url(../images/stamp.png);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'scribish', serif;
+  border-radius: 50%;
+  text-transform: uppercase;
+  height: 10rem;
+  width: 10rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding-top: 3.5rem;
+  padding-left: 1.2rem;
   opacity: 0.9;
 
   }
-#btn-issues span, #btn-themes span {
+
+/* #btn-issues span, #btn-themes span {
     display: block !important;
     padding-top: 3rem;
     text-align: center !important;
     line-height: 1em !important;
-}
+} */
 #topp{
   text-align: center;
 }
@@ -464,15 +483,6 @@ h2:hover, h3:hover{
   color: white;
 } */
 #theme5, .sort{
-  /* width: 10em;
-  text-align: center;
-  background-color: #260d0e;
-  color: #9b3139;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-  margin-bottom: 3em;
-  font-family: 'scribish'; */
 
   text-align: center;
   background-image : url(../images/stamp.png);
@@ -481,45 +491,33 @@ h2:hover, h3:hover{
   background-color: inherit;
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 2em;
-  margin-bottom: 3em; */
-
-   font-family: 'scribish', serif;
-    border-radius: 50%;
-  
-    text-transform: uppercase;
-     /* font-size: 4vh;
-    width: 10rem;
-    margin-top: 2rem;
-    text-align: center;
-    display: inline-flex;
-    margin-left: auto;  */
-
-    height: 10rem;
-    width: 10rem;
-  /* display: flex; */
+  font-family: 'scribish', serif;
+  border-radius: 50%;
+  text-transform: uppercase;
+  height: 10rem;
+  width: 10rem;
   border: none;
   color: white;
-  /* padding: 15px;s */
-  /* text-align: center; */
-  /* text-decoration: none; */
-  /* display: inline-block; */
   font-size: 1rem;
-  padding-top: 3rem;
-  padding-left: 1rem;
-  /* margin: 6px 4px; */
+  padding-top: 3.2rem;
+  padding-left: 1.2rem;
+  opacity: 0.9;
   
 }
 
 #theme5:hover{
+  padding-top: 3.7rem;
   color: black;
+  height: 12rem;
+  width: 12rem;
+  font-size: 1.2rem;
 }
 
 #issue-text{
     padding: 0 10rem 0 10rem;
     text-align: center;
     font-size: x-large;
-    color: #260D0E;
+    /* color: #260D0E; */
     margin-top: 1rem;
 }
 
@@ -1130,7 +1128,7 @@ background-color: #000;
 
 img {
   width: 100%;
-  border-radius: 1em;
+  /* border-radius: 1em; */
   filter: sepia(100%);
 }
 
@@ -1347,6 +1345,7 @@ SELECTOR CSSS */
   padding-left: 3em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* padding: 2em; */
 }
 
 .polaroid {
@@ -1365,7 +1364,7 @@ SELECTOR CSSS */
   width: 100%;
   object-fit: cover;
   height: 12.5em;
-  padding: 0.31;
+  padding: 1em;
   border-radius: 0.62em;
 }
 
