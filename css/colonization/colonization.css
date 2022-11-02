@@ -231,7 +231,7 @@ h2:hover, h3:hover{
 
 .nav-item, .nav-link, #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL, #navbarDropdownM{
   font-size: 2rem;
-  /* color:black !important; */
+  color:black !important;
 } 
 
 
@@ -721,7 +721,8 @@ font-size: 1.2rem;
 }
 
 .img-fluid{
-  height: 25em;
+  height: 22em;
+  margin-bottom: 2em;
 }
 
 
@@ -1375,8 +1376,13 @@ SELECTOR CSSS */
 
 /* CSS polaroid ITEM */
 .polaroid-container {
-  padding-left: 3em;
-  display: grid;
+  /* align-items: center;
+  display: flex; */
+  padding-left: 2em;
+  /* padding-left: 2em;
+
+  padding-right: 2em; */
+  /* display: grid; */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   /* padding: 2em; */
 }
@@ -1390,6 +1396,10 @@ SELECTOR CSSS */
   filter: sepia(100%);
   border-style: dotted;
   /* filter: drop-shadow(8px 8px 10px #886B41 ); */
+}
+
+div{
+  cursor: url('../../css/images/pen.png'),auto;
 }
 
 
