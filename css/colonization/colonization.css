@@ -1119,7 +1119,7 @@ h5{
 
 /*  */
 
-#peoples-tab:hover,#peoples-tab:focus, #places-tab:hover,#places-tab:focus ,#events-tab:hover,#events-tab:focus ,#concepts-tab:hover#concepts-tab:focus,#opinions-tab:hover,#opinions-tab:focus{
+#peoples-tab:hover,#peoples-tab:focus, #places-tab:hover,#places-tab:focus ,#events-tab:hover,#events-tab:focus ,#concepts-tab:hover, #concepts-tab:focus,#opinions-tab:hover,#opinions-tab:focus{
   width: 10em;
  border:none;
  font-size: 0.5em;
@@ -1177,13 +1177,13 @@ text-align: center;
 
   margin-left: auto;
   margin-right: auto;
-  width: 16em;
+  width: 12em;
 
 
 }
 
 #list_btn:hover,#list_btn:focus {
-  width: 23em;
+  width: 14em;
  border:none;
 }
 
