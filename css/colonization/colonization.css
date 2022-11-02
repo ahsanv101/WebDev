@@ -226,10 +226,25 @@ h2:hover, h3:hover{
     cursor:pointer;
 }
 
+
+
+
 .nav-item, .nav-link, #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL, #navbarDropdownM{
   font-size: 2rem;
   color:black !important;
 } 
+
+
+/* #sentenceTab > li > a:active{
+  
+  background-color: #000 !important;
+
+} */
+
+
+/* .nav-link:active{
+  background-color: #000;
+} */
 
 #pur{
   padding:2rem;
@@ -1084,16 +1099,27 @@ h5{
   background-image: url(../images/kindpng_726689.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  margin: auto;
 
-  margin-left: auto;
-  margin-right: auto;
+
   width: 7em;
+  text-align: center;
 
   font-size: 0.5em;
+  /* font-size: 2rem; */
+  color:black !important;
+  text-decoration: none;
+ 
 
 }
 
-#peoples-tab:hover, #places-tab:hover ,#events-tab:hover ,#concepts-tab:hover,#opinions-tab:hover{
+.nav > span {
+ margin: auto;
+}
+
+/*  */
+
+#peoples-tab:hover,#peoples-tab:focus, #places-tab:hover,#places-tab:focus ,#events-tab:hover,#events-tab:focus ,#concepts-tab:hover#concepts-tab:focus,#opinions-tab:hover,#opinions-tab:focus{
   width: 10em;
  border:none;
  font-size: 0.5em;
@@ -1141,10 +1167,7 @@ text-align: center;
 }
 
 
-#list_btn:hover{
-  width: 23em;
- border:none;
-}
+
 
 #list_btn{
   border:none;
@@ -1157,6 +1180,11 @@ text-align: center;
   width: 16em;
 
 
+}
+
+#list_btn:hover,#list_btn:focus {
+  width: 23em;
+ border:none;
 }
 
 
