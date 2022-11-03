@@ -1086,6 +1086,10 @@ text-align: center;
 /*END POLAROID*/
 
 /*START DOCUMENTATIO*/
+.containerpaddin {
+padding-top: 50px;
+}
+
 div.main-body {
   display: grid;
   grid-template-columns: minmax(300px , auto)1fr;   
