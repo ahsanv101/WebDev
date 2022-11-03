@@ -2,6 +2,7 @@
 @import "/typetravel/styles/themes/components/sizingNavbar.css"; */
 /* @import "/typetravel/styles/home.css"; */
 
+/*FONTS*/
 @font-face {
   font-family: 'canterbury';
   src: url(../fonts/HotelDesArts1929.ttf);
@@ -17,7 +18,7 @@
   src: url(../fonts/HotelDesArts1929.ttf);
 }
 
-/* SIZE RELATIVE */
+/* SIZE RELATIVE !*/
 @media (min-width: 768px) and (max-width: 992px){
   #about-proj p{
       font-size: 3vh;
@@ -28,7 +29,6 @@
   }
 }
 
-
 @media (min-width: 992px) and (max-width: 1200px){
   .issue-description{
       font-size: 2.5vh !important;
@@ -36,9 +36,137 @@
   }
 }
 
+/*??*/
+@media (max-width: 992px){
+  /*NAVBAR*/
+  #navbar .collapse, #navba .collapse, #navb .collapse, #navbi .collapse{
+      
+      border-top: none;
+  }
+  #first h1{
+      font-size: 8vh !important;
+  }
+  #first #travel{
+      margin-left: -1rem !important;
+  }
+  #first h2{
+      font-size: 3.5vh;
+  }
+}  
 
-/*Index*/
 
+/*NAVBAR*/
+#navbar{
+  font-family: 'canterbury', serif;
+    /* text-transform: lowercase; */
+    /*font-weight: 300;*/
+    background-color:#aa8c4a;
+    /* width:100%; */
+    cursor:pointer;
+}
+
+.nav-item, .nav-link, #navbarDropdownMenuLink{
+  font-size: 25px;
+  color:#4b4635;
+}
+
+#navbarDropdownMenuLink{
+  background-color: #c8ac81;
+  color:#4b4635;
+}
+
+.dropdown-item:hover{
+  background-color: #4c1a1b;
+  color:#aa8c4a;
+}
+
+.dropdown-item{
+  font-size: 25px;
+  color:#4b4635;
+  cursor:pointer;
+}
+
+/* non esiste 
+#pur{
+  padding:2rem;
+  margin-top:2rem;
+}
+*/
+/*END NAVBAR*/
+
+/*DISCLAIMER*/
+#disclaimer{
+  background-color:#4b4635;
+  justify-content: center;
+  text-align: center;
+  
+}
+.modal-dialog{
+  max-width: 100vh ;
+}
+.modal-title{
+  font-family: 'scribish';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.modbod{
+  font-size: 2rem;
+  font-family: 'canterbury';
+  /* text-align: center; */
+  margin: 1rem;
+  font-weight: 100;
+  color:#4b4635;
+}
+
+.modal-header,.modal-footer{
+  background-color: #aa8c4a;
+}
+.modal-footer{
+border: none;
+color:#000000;
+}
+
+#refer{
+  font-family:'canterbury';
+  color:#4b4635;
+  font-size: x-large;
+}
+
+#butto, #butt, #but{  /*butto for index, but for doc and topic, butt for about*/
+  font-family:'scribish' ;
+  color: white;
+  background-color: #000;
+}
+
+.linkrefer{
+  color: black; 
+}
+
+.linkrefer:visited {
+  color: #4c1a1b;
+}
+
+.linkrefer:hover {
+  color: pink;
+}
+
+
+/*END DISCLAIMER*/
+
+/*generici*/
+button{
+  cursor:pointer;
+}
+
+.btn{
+  border: none;
+  color:#000000;
+  }
+
+/*gemerici*/
+
+/*INDEX PAGE*/
 #main-title{
   font-size: 10em;
   font-weight: 400;
@@ -67,54 +195,6 @@ body{
   font-family: 'scribish';
 }
 
-#disclaimer, #disclaim, #discl, #dis{
-  background-color:#4b4635;
-  justify-content: center;
-  text-align: center;
-  
-}
-.modal-dialog{
-  max-width: 100vh ;
-}
-.modal-title{
-  font-family: 'scribish';
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 3rem;
-}
-.modbod{
-  font-size: 2rem;
-  font-family: 'canterbury';
-  /* text-align: center; */
-  margin: 1rem;
-  font-weight: 100;
-  color:#4b4635;
-}
-
-
-
-.modal-header, .discl-basic .modal-footer{
-  background-color: #aa8c4a;
-}
-.modal-footer, .btn{
-border: none;
-color:#000000;
-}
-  
-
-#refer, #refe, #ref, #refr{
-  font-family:'canterbury';
-  color:#4b4635;
-  font-size: x-large;
-}
-button{
-  cursor:pointer;
-}
-#butto, #butt, #but, #buttn{
-  font-family:'scribish' ;
-  color: white;
-  background-color: #000;
-}
 
 
 /*ALL HOVERS
@@ -156,9 +236,6 @@ h2{
     font-weight: 600;
 }
 
-.link{
-  color:#000;
-}
 
 /*LINKS, SELECTION, CODE*/
 
@@ -168,40 +245,6 @@ h2{
 */
 
 
-/*NAVBAR*/
-#navbar, #navba, #navb, #navbi{
-  font-family: 'canterbury', serif;
-    /* text-transform: lowercase; */
-    font-weight: 300;
-    background-color:#aa8c4a;
-    /* width:100%; */
-    cursor:pointer;
-}
-
-.nav-item, .nav-link, #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL, #navbarDropdownM{
-  font-size: 25px;
-  color:#4b4635;
-} 
-
-#sentenceTab > .nav-item > .active {
-  background-color: transparent !important;
-  /* color:transparent !important; */
-}
-
-#pur{
-  padding:2rem;
-  margin-top:2rem;
-}
-#short{ 
-  color:black;
-  text-align:center;
-  margin-left:3rem;
-  margin-right: 3rem;
-}
-
-/*#short:hover{
-  color:#4b4635;
-}*/
 
 /*FIRST textgate*/
 #first{
@@ -254,6 +297,18 @@ h2{
   display: none;
 }
 /*SECOND topicsandthemes*/
+
+#short{ 
+  color:black;
+  text-align:center;
+  margin-left:3rem;
+  margin-right: 3rem;
+}
+
+/*#short:hover{
+  color:#4b4635;
+}*/
+
 #second, #gosecond{
     background-color: #aa8c4a !important;
 }
@@ -632,15 +687,7 @@ footer p{
         padding-top: 1rem;
     }
 }
-#navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL, #navbarDropdownM{
-  background-color: #c8ac81;
-  color:#4b4635;
-}
 
-.dropdown-item:hover{
-  background-color: #4c1a1b;
-  color:#aa8c4a;
-}
 
 .dropdown-menu:hover{
   background-color: #c8ac81;
@@ -652,11 +699,6 @@ footer p{
   color: #4b4635;
 }
 
-.dropdown-item{
-  font-size: xx-large;
-  color:#4b4635;
-  cursor:pointer;
-}
 #doclist{
   margin-top: 0;
   text-align: center;
@@ -758,22 +800,8 @@ h5{
 .col:hover{
   background-color: #aa8c4a;
 }
-@media (max-width: 992px){
-    /*NAVBAR*/
-    #navbar .collapse, #navba .collapse, #navb .collapse, #navbi .collapse{
-        
-        border-top: none;
-    }
-    #first h1{
-        font-size: 8vh !important;
-    }
-    #first #travel{
-        margin-left: -1rem !important;
-    }
-    #first h2{
-        font-size: 3.5vh;
-    }
-}  
+
+
 
 
 @media (min-width: 768px) and (max-width: 992px){
@@ -1085,7 +1113,7 @@ text-align: center;
 
 /*END POLAROID*/
 
-/*START DOCUMENTATIO*/
+/*START DOCUMENTATION*/
 .containerpaddin {
 padding-top: 50px;
 }
