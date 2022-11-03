@@ -69,15 +69,7 @@ body{
 }
 .modal-header, .modal-footer{
   background-color: #6d24ff;
-}
-.modal-footer, .btn{
-border: none;
-color:#000000;
-}
-#model{ 
-  background-color: #260d0e;
-  color: #9b3139;
-  font-family: scribish;
+  color:#00ff00;
 }
 
 #butto{
@@ -477,7 +469,7 @@ color:#260d0e;
 #third:hover, #themes-text:hover{
   color:#000000!important;
 }
-#theme5:hover, #mod:hover, #model:hover, #mode:hover{
+#theme5:hover, #model:hover, #mode:hover{
   background-color: black;
   color: white;
 }
