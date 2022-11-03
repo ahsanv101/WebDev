@@ -122,10 +122,10 @@
 .modal-header,.modal-footer{
   background-color: #aa8c4a;
 }
-.modal-footer{
-border: none;
-color:#000000;
-}
+.modal-footer, .btn{
+  border: none;
+  color:#000000;
+  }
 
 #refer{
   font-family:'canterbury';
@@ -139,19 +139,23 @@ color:#000000;
   background-color: #000;
 }
 
-.linkrefer{
+.linkrefer{ /*da rivedere*/
   color: black; 
 }
 
-.linkrefer:visited {
+.linkrefer:visited { /*da rivedere*/
   color: #4c1a1b;
 }
 
-.linkrefer:hover {
+.linkrefer:hover { /*da rivedere*/
   color: pink;
 }
 
-
+#mod{ 
+  background-color: #4b4635;
+  color: #c8ac81;
+  font-family: scribish;
+}
 /*END DISCLAIMER*/
 
 /*generici*/
@@ -159,14 +163,62 @@ button{
   cursor:pointer;
 }
 
-.btn{
-  border: none;
-  color:#000000;
-  }
+body{
+  font-family: 'carolingia', sans-serif; 
+  background-color:#c8ac81;                               
+}
 
-/*gemerici*/
+.container-fluid{ /*in navbar, footer, topic1, index, about us*/
+  padding-right:0;
+  padding-left:0;
+  margin-left: 0;
+  margin-right:0;
+}
 
-/*INDEX PAGE*/
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h2{
+  font-family: 'scribish', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
+  color: #732627;
+/* font-size: 10vh; */
+  font-weight: 600;
+}
+/*end generici*/
+
+/*ALL HOVERS
+
+.container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover, #tett:hover, #metto:hover{
+  background-color: #c8ac81;
+  color:#4b4635;
+}*/
+
+/*LINKS, SELECTION, CODE*/
+
+/*.change:hover{
+  color:#9b3139;
+}
+*/
+
+
+  /*INDEX PAGE*/
+
+/*.glitch-bloc{
+  font-family: 'scribish', serif;
+}*/
+
+/* non esiste
+.d-grip{
+  font-family: 'scribish';
+}*/
+
+  /*INDEX PAGE: FIRST textgate*/
 #main-title{
   font-size: 10em;
   font-weight: 400;
@@ -179,74 +231,6 @@ button{
   opacity: 0.7;
 }
 
-
-
-body{
-  font-family: 'carolingia', sans-serif; 
-  background-color:#c8ac81;                               
-}
-
-
-.glitch-bloc{
-  font-family: 'scribish', serif;
-}
-
-.d-grip{
-  font-family: 'scribish';
-}
-
-
-
-/*ALL HOVERS
-
-.container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover, #tett:hover, #metto:hover{
-  background-color: #c8ac81;
-  color:#4b4635;
-}*/
-
-.container-fluid{
-  padding-right:0;
-  padding-left:0;
-  margin-left: 0;
-  margin-right:0;
-}
-.row{
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#about-proj{
-  text-align: center;
-  font-size: 3.5vh;
-  color: white;
-}
-
-#about-proj:hover{
-color:#4b4635;
-}
-
-h2{
-    font-family: 'scribish', serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 1em;
-    color: #732627;
- /* font-size: 10vh; */
-    font-weight: 600;
-}
-
-
-/*LINKS, SELECTION, CODE*/
-
-/*.change:hover{
-  color:#9b3139;
-}
-*/
-
-
-
-/*FIRST textgate*/
 #first{
     background-color: #aa8c4a !important;
 }
@@ -260,9 +244,10 @@ h2{
     /* font-size: 16vh; */
 }
 
+/* non esiste travel
 #first #travel{
     margin-left: -1rem !important;
-}
+}*/
 
 #first h2{
     /* font-size: 5vh; */
@@ -284,6 +269,7 @@ h2{
   color:#4b4635;
 }*/
 
+/* to be deleted those refer to get started button
 #icon{
     padding: 10vh;
     margin: 1rem;
@@ -296,7 +282,18 @@ h2{
   padding-top: 4rem;
   display: none;
 }
+*/
+
 /*SECOND topicsandthemes*/
+#about-proj{
+  text-align: center;
+  font-size: 3.5vh;
+  color: white;
+}
+
+/*#about-proj:hover{
+color:#4b4635;
+}*/
 
 #short{ 
   color:black;
@@ -308,6 +305,11 @@ h2{
 /*#short:hover{
   color:#4b4635;
 }*/
+
+#second{
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
 
 #second, #gosecond{
     background-color: #aa8c4a !important;
@@ -343,17 +345,22 @@ h2{
     display: inline-flex;
     margin-left: auto;
   }
+
 #topp{
   text-align: center;
 }
+
+/*nnon esiste 
 .c-right {
  color:#732627;
  font-size: 1.8rem!important;
  border-color: #4b4635;
 }
+
 .c-right:hover{
   color:#000000;
 }
+*/
 
 /*THIRD topics*/
 #third{
@@ -366,15 +373,7 @@ h2{
     background-color: #000000;
     margin-left: 10rem;
 }
-#the:hover{
-  background-color: white;
-  color:#4b4635;
-}
 
-#second{
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-}
 #third p{
     /* padding: 0.5rem 2rem 0.5rem 2rem!important; */
     font-size: 2.5vh;
@@ -383,6 +382,14 @@ h2{
 .bann{
   padding-top: 5rem;
 }
+
+
+/*FOURTH themes*/
+
+#gofourth{
+  color:#4b4635;
+}
+
 #themes-text{
   margin-top: 1rem;
 }
@@ -391,22 +398,19 @@ h2{
     color:#4b4635;
     font-size: x-large;
 }
-#third:hover, #themes-text:hover{
+/*#third:hover, #themes-text:hover{
   color:#000000!important;
-}
+}*/
 
-/*FOURTH themes*/
-
-#gofourth{
-  color:#4b4635;
-}
+/*non esiste
 .about-content{
   padding-top: 8rem;
   padding-bottom: 5rem;
   background-color: #e1d6c9;
   margin-top: 0;
   display: flex;
-}
+}*/
+
 #fourth{
   background-color:#e1d6c9;
   padding-top: 3rem;
@@ -419,18 +423,14 @@ h2{
   color:#4b4635;
 }
 
-#theme1,#theme2,#theme3,#theme4, #theme6, .btn-close{
+/*#theme1,#theme2,#theme3,#theme4, #theme6, .btn-close{
    
     text-align: left;
     background-color: #4b4635;
     color: #c8ac81;
     font-family: scribish;
-}
-#model, #mode, #mod{ 
-  background-color: #4b4635;
-  color: #c8ac81;
-  font-family: scribish;
-}
+}*/
+
 #theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover, #theme5:hover, #theme6:hover, #mod:hover, #model:hover, #mode:hover, .sort, .sub:hover{
   background-color: black;
   color: white;
