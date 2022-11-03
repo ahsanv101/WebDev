@@ -4,22 +4,23 @@
 
 @font-face {
   font-family: 'canterbury';
-  src: url(../fonts/Canterbury.ttf);
+  src: url(../fonts/HotelDesArts1929.ttf);
 }
 
 @font-face {
   font-family: 'carolingia';
-  src: url(../fonts/carolingia.ttf);
+  src: url(../fonts/HotelDesArts1929.ttf);
 }
 
 @font-face {
   font-family: 'scribish';
-  src: url(../fonts/scribish.ttf);
+  src: url(../fonts/HotelDesArts1929.ttf);
 }
 
 
 body{
-  font-family: 'carolingia', sans-serif;                                
+  font-family: 'carolingia', sans-serif; 
+  background-color:#c8ac81;                               
 }
 
 
@@ -32,7 +33,7 @@ body{
 }
 
 #disclaimer, #disclaim, #discl, #dis{
-  background-color:#260d0e;
+  background-color:#4b4635;
 }
 .modal-dialog{
   max-width: 100vh ;
@@ -49,13 +50,13 @@ body{
   /* text-align: center; */
   margin: 1rem;
   font-weight: 100;
-  color:#260d0e;
+  color:#4b4635;
 }
 .modbod:hover{
   background-color: white;
 }
 .modal-header, .discl-basic .modal-footer{
-  background-color: #9b3133;
+  background-color: #aa8c4a;
 }
 .modal-footer, .btn{
 border: none;
@@ -65,7 +66,7 @@ color:#000000;
 
 #refer, #refe, #ref, #refr{
   font-family:'canterbury';
-  color:#260d0e;
+  color:#4b4635;
   font-size: x-large;
 }
 button{
@@ -78,8 +79,8 @@ button{
 }
 
 .container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover, #tett:hover, #metto:hover{
-  background-color: #9b3139;
-  color:#260d0e;
+  background-color: #c8ac81;
+  color:#4b4635;
 }
 
 .container-fluid{
@@ -105,7 +106,7 @@ button{
 }
 
 #about-proj:hover{
-color:#260d0e;
+color:#4b4635;
 }
 h2{
     font-family: 'scribish', serif;
@@ -117,32 +118,28 @@ h2{
     font-size: 10vh;
     font-weight: 600;
 }
-h2:hover, h3:hover{
-  color:#260d0e;
-}
+
 .link{
   color:#000;
 }
 
 /*LINKS, SELECTION, CODE*/
 
-.change:hover{
-  color:#9b3139;
-}
+
 
 /*NAVBAR*/
 #navbar, #navba, #navb, #navbi{
   font-family: 'canterbury', serif;
     /* text-transform: lowercase; */
     font-weight: 300;
-    background-color:#9b3133;
+    background-color:#aa8c4a;
     width:100%;
     cursor:pointer;
 }
 
 .nav-item, .nav-link, #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL, #navbarDropdownM{
   font-size: 25px;
-  color:#260d0e;
+  color:#4b4635;
 } 
 
 #pur{
@@ -156,17 +153,18 @@ h2:hover, h3:hover{
   margin-right: 3rem;
 }
 #short:hover{
-  color:#260D0E;
+  color:#4b4635;
 }
+
 /*FIRST*/
 #first{
-    background-color: #260d0e !important;
+    background-color: #aa8c4a !important;
 }
 
 #first h1{
     padding-top: 16vh ;
     text-transform: uppercase;
-    color: #260d0e;
+    color: #4b4635;
     text-align: center;
     font-weight: 500;
     font-size: 16vh;
@@ -188,11 +186,11 @@ h2:hover, h3:hover{
     font-size: 4vh;
     padding-top: 2vh;
     text-align: center;
-    color: #9b3139;
+    color: #c8ac81;
     padding-bottom: 2rem;
 }
 #project-description:hover{
-  color:#260d0e;
+  color:#4b4635;
 }
 
 #icon{
@@ -209,24 +207,24 @@ h2:hover, h3:hover{
 }
 /*SECOND*/
 #second, #gosecond{
-    background-color: #4c1a1b !important;
+    background-color: #aa8c4a !important;
 }
 
 #btn-themes{
-  background-color: #260D0E;
+  background-color: #4b4635;
   color:white;
 }
 #btn-themes:hover{
-  background-color:#260D0E;
-  color: #9b3139;
+  background-color:#4b4635;
+  color: #c8ac81;
 }
 #btn-issues{
-  color:#260d0e;
+  color:#4b4635;
   background-color: white;
 }
 #btn-issues:hover{
   background-color: white;
-  color: #9b3139;
+  color: #c8ac81;
 }
 #btn-issues, #btn-themes{
     font-family: 'scribish', serif;
@@ -246,7 +244,7 @@ h2:hover, h3:hover{
 .c-right {
  color:#732627;
  font-size: 1.8rem!important;
- border-color: #260D0E;
+ border-color: #4b4635;
 }
 .c-right:hover{
   color:#000000;
@@ -254,7 +252,7 @@ h2:hover, h3:hover{
 
 /*THIRD*/
 #third{
-    background-color: #4c1a1b;
+    background-color: #aa8c4a;
     font-size: 5.5vh;
     padding-top: 3rem;
 }
@@ -265,7 +263,7 @@ h2:hover, h3:hover{
 }
 #the:hover{
   background-color: white;
-  color:#260d0e;
+  color:#4b4635;
 }
 
 #second{
@@ -285,7 +283,7 @@ h2:hover, h3:hover{
 }
 #third #themes-text{
     /* margin: 1rem 0 1rem 0; */
-    color:#260d0e;
+    color:#4b4635;
     font-size: x-large;
 }
 #third:hover, #themes-text:hover{
@@ -293,17 +291,17 @@ h2:hover, h3:hover{
 }
 
 #gofourth{
-  color:#260D0E;
+  color:#4b4635;
 }
 .about-content{
   padding-top: 8rem;
   padding-bottom: 5rem;
-  background-color: #4c1a1b;
+  background-color: #e1d6c9;
   margin-top: 0;
   display: flex;
 }
 #fourth{
-  background-color:#4c1a1b;
+  background-color:#e1d6c9;
   padding-top: 3rem;
 }
 
@@ -311,19 +309,19 @@ h2:hover, h3:hover{
   color: #732627;
 }
 #fourth h2:hover{
-  color:#260D0E;
+  color:#4b4635;
 }
 
 #theme1,#theme2,#theme3,#theme4, #theme6, .btn-close{
    
     text-align: left;
-    background-color: #260d0e;
-    color: #9b3139;
+    background-color: #4b4635;
+    color: #c8ac81;
     font-family: scribish;
 }
 #model, #mode, #mod{ 
-  background-color: #260d0e;
-  color: #9b3139;
+  background-color: #4b4635;
+  color: #c8ac81;
   font-family: scribish;
 }
 #theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover, #theme5:hover, #theme6:hover, #mod:hover, #model:hover, #mode:hover, .sort, .sub:hover{
@@ -333,8 +331,8 @@ h2:hover, h3:hover{
 #theme5, .sort{
   width: 10em;
   text-align: center;
-  background-color: #260d0e;
-  color: #9b3139;
+  background-color: #4b4635;
+  color: #c8ac81;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
@@ -346,14 +344,14 @@ h2:hover, h3:hover{
     padding: 0 10rem 0 10rem;
     text-align: center;
     font-size: x-large;
-    color: #260D0E;
+    color: #4b4635;
     margin-top: 1rem;
 }
 #issue-text:hover{
   color: #000;
 }
 #fourth:hover{
-  color:#260d0e;
+  color:#4b4635;
 }
 
 /* Glitch effect */
@@ -498,7 +496,7 @@ h2:hover, h3:hover{
 
 /*FOOTER*/
 footer{
-    background-color: #260D0E;
+    background-color: #e1d6c9;
     font-family: 'canterbury';
     color:#732627;
     text-align: center;
@@ -509,7 +507,7 @@ footer{
   color:#732627;
 }
 .fabvit:active,.fabvit:hover{
-  color: #260d0e;
+  color: #4b4635;
 }
 
 footer p, #cop, #copy, #copp{
@@ -530,8 +528,8 @@ footer p, #cop, #copy, #copp{
   display: inline-block;
 }
 .sub{
-  background-color: #260d0e;
-  color: #9b3139;
+  background-color: #4b4635;
+  color: #c8ac81;
   size: 2rem;
 }
 .form-control{
@@ -583,28 +581,28 @@ footer p{
     }
 }
 #navbarDropdownMenuLink, #navbarDropdownMenuLi, #navbarDropdownMenuL, #navbarDropdownM{
-  background-color: #9b3139;
-  color:#260D0E;
+  background-color: #c8ac81;
+  color:#4b4635;
 }
 
 .dropdown-item:hover{
   background-color: #4c1a1b;
-  color:#9b3133;
+  color:#aa8c4a;
 }
 
 .dropdown-menu:hover{
-  background-color: #9b3139;
+  background-color: #c8ac81;
   border-color: #4c1a1b;
-  color:#260d0e;
+  color:#4b4635;
 }
 .dropdown-menu{
-  background-color:#9b3133;
-  color: #260D0E;
+  background-color:#aa8c4a;
+  color: #4b4635;
 }
 
 .dropdown-item{
   font-size: xx-large;
-  color:#260D0E;
+  color:#4b4635;
   cursor:pointer;
 }
 #doclist{
@@ -616,7 +614,7 @@ footer p{
 label{
   font-size: x-large;
   font-family:'scribish';
-  color:#260D0E;
+  color:#4b4635;
 }
 
 label:hover{
@@ -637,7 +635,7 @@ h3{
 }
 
 .form-check-inline{
-  border-width:0.2rem dotted #260d0e;
+  border-width:0.2rem dotted #4b4635;
   padding-top: 3rem;
 }
 input[type="checkbox"]{
@@ -671,8 +669,8 @@ input[type="checkbox"]{
   background-color: #000;
 }
 h4{
-  color: #260D0E;
-  background-color: #9b3133;
+  color: #4b4635;
+  background-color: #aa8c4a;
   font-size: xx-large;
   font-family: 'canterbury';
 }
@@ -688,7 +686,7 @@ h5{
 }
 
 #ttx, #ttxt, #tutto, #nulla{
-  color: #9b3133;
+  color: #aa8c4a;
   font-size: xx-large;
   cursor: all-scroll;
   position: relative;
@@ -706,7 +704,7 @@ h5{
 }
 
 .col:hover{
-  background-color: #9b3133;
+  background-color: #aa8c4a;
 }
 @media (max-width: 992px){
     /*NAVBAR*/
