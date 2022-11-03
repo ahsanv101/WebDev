@@ -63,20 +63,28 @@ body{
   color:#5b181f;
 }
 
-
 .btn-close{
   text-align: left;
-  background-color: #260d0e;
-  color: #9b3139;
+  background-color: #30302e;
+  color: #40171b;
   font-family: 'scribish';
+}
+.btn-close:hover{
+  background-color: #40171b;
+  color:#30302e;
 }
 .modal-header, .modal-footer{
   background-color:#5b181f;
-  color:
+  color: #bab1a0;
+  font-size: x-large;
 }
-.modal-footer, .btn{
-border: none;
-color:#000000;
+.btn-secondary{
+  background-color: #bab1a0;
+  color: #40171b;
+}
+.btn-secondary:hover{
+  background-color: #40171b;
+  color:#bab1a0;
 }
 #model{ 
   background-color: #260d0e;
@@ -481,7 +489,7 @@ color:#260d0e;
 #third:hover, #themes-text:hover{
   color:#000000!important;
 }
-#theme5:hover, #mod:hover, #model:hover, #mode:hover{
+#theme5:hover, #model:hover, #mode:hover{
   background-color: black;
   color: white;
 }
