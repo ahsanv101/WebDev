@@ -18,7 +18,7 @@
 }
 @font-face {
   font-family: 'darklands';
-  src: url(fonts/Darklands.ttf);
+  src: url(../fonts/Darklands.ttf);
 }
 /*Highers the Responsiveness of the web page*/
 * {
@@ -30,12 +30,10 @@
   display: block;
   }
 body{
-  font-family: 'carolingia', sans-serif;                                
+  font-family: 'darklands', sans-serif;                                
 }
 /*disclaimer style start*/
-#disclaimer{
-  background-color:#260d0e;
-}
+
 .modal-dialog{
   max-width: 100vh;
 }
@@ -45,26 +43,36 @@ body{
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3rem;
+  color: #bab1a0;
+
 }
 .modbod{
   font-size: 2rem;
   font-family: 'canterbury';
   /* text-align: center; */
-  margin: 1rem;
+  padding: 1rem;
   font-weight: 100;
-  color:#260d0e;
+  color:#5b181f;
+  background-color: #bab1a0;
 }
-.modbod:hover{
-  background-color: white;
+#disclaimer{
+  background-color:#40171b;
 }
+
+#refer li a{
+  color:#5b181f;
+}
+
+
 .btn-close{
   text-align: left;
   background-color: #260d0e;
   color: #9b3139;
-  font-family: scribish;
+  font-family: 'scribish';
 }
 .modal-header, .modal-footer{
-  background-color: #9b3133;
+  background-color:#5b181f;
+  color:
 }
 .modal-footer, .btn{
 border: none;
@@ -75,11 +83,7 @@ color:#000000;
   color: #9b3139;
   font-family: scribish;
 }
-#refer{
-  font-family:'canterbury';
-  color:#260d0e;
-  font-size: x-large;
-}
+
 #butto{
   font-family:'scribish' ;
   color: white;
@@ -131,9 +135,30 @@ color:#000000;
 
 /*start index.html*/
 /*first content row*/
-.container-fluid:hover,.row:hover{
-  background-color: #9b3139;
-  color:#260d0e;
+#main-title{
+  opacity: 0;
+  /* fade in */
+  -webkit-animation: fadeinout 6s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinout 6s;
+  /* Firefox < 16 */
+  -ms-animation: fadeinout 6s;
+  /* Internet Explorer */
+  -o-animation: fadeinout 6s;
+  /* Opera < 12.1 */
+  animation: fadeinout 6s;
+}
+.command:hover{
+  background-color: black!important;
+  color:#9b3139;
+}
+#first:hover{
+  background-color: black;
+  color:#9b3139;
+}
+#first{
+  background-color:#d1bdab;
+  color:#260D0E;
 }
 .container-fluid{
   padding-right:0;
@@ -149,13 +174,13 @@ color:#000000;
   margin-top: 0;
 }
 #first{
-  background-color: #260d0e !important;
+  background-color: #260d0e;
 }
 
 #first h1{
   padding-top: 16vh ;
   text-transform: uppercase;
-  color: #260d0e;
+  color: #d1bdab;
   text-align: center;
   font-weight: 500;
   font-size: 16vh;
@@ -337,9 +362,7 @@ color:#260d0e;
   color: #9b3139;
   padding-bottom: 2rem;
 }
-#project-description:hover{
-color:#260d0e;
-}
+
 /*end content description*/
 
 /*start project text*/
@@ -652,10 +675,11 @@ input[type="checkbox"]{
   text-align: center;
 }
 .siamo{
-  padding-top: 0.1rem;
+  padding-top: 0.1rem!important;
 }
 .thumbnail{
   margin-bottom: 0rem;
+  padding: 0.1rem;
 }
 button{
   cursor:pointer;
@@ -686,14 +710,12 @@ h3{
 
  h4{
   border: 4mm ridge #732627;
-  background-color: #000;
-}
-h4{
   color: #260D0E;
   background-color: #9b3133;
   font-size: xx-large;
   font-family: 'canterbury';
 }
+
 h4:hover{
   color:white;
   background-color: #000;
@@ -704,7 +726,8 @@ h5{
 }
 
 .col:hover{
-  background-color: #9b3133;
+  background-color: #000;
+  color:white;
 }
 @media (max-width: 992px){
     /*NAVBAR*/
@@ -966,10 +989,6 @@ text-align: center;
 }
 
 /*START DOCUMENTATIO*/
-.containerpaddin {
-  padding-top: 50px;
-  }
-  
 div.main-body {
   display: grid;
   grid-template-columns: minmax(300px , auto)1fr;   
@@ -979,8 +998,8 @@ div.main-body {
  
 nav#navbardoc {
   grid-area: navbardoc;
-
-  
+  position: fixed;   
+     
 }
  
 nav#navbardoc a {
