@@ -293,6 +293,9 @@ img {
   padding: 1rem;
 }
 
+.titlehidden {
+  display: none;
+  }
 /*.glitch-bloc{
   font-family: 'scribish', serif;
 }*/
