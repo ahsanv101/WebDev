@@ -258,7 +258,7 @@ h2{
   color: #bab1a0;
   /* font-size: 10vh; */
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 h3:hover{
 color:#40171b;
@@ -521,14 +521,18 @@ footer p{
 
 /*start metadata*/
 .sticky-top{
-  padding-top:20px;
-  background-color: white;
+  padding-top:2rem;
   text-align: center;
+}
+#checkb{
+  background-color: #40171b;
+  color:#bab1a0;
 }
 label{
   font-size: x-large;
   font-family:'scribish';
   color:#260D0E;
+  cursor: pointer;
 }
   
 label:hover{
@@ -539,10 +543,14 @@ label:hover{
 }
 .form-check-inline{
   border-width:0.2rem dotted #260d0e;
-  padding-top: 3rem;
+  padding-top: 2rem;
+  color:#bab1a0;
+}
+#peop{
+  color:#bab1a0;
 }
 input[type="checkbox"]{
-  color:#732627;
+  color:#bab1a0;
 }
 #sti{
   padding-top:100px;
