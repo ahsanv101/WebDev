@@ -543,13 +543,23 @@ label:hover{
 }
 .form-check-inline{
   border-width:0.2rem dotted #260d0e;
-  padding-top: 2rem;
+  padding-top: 1rem;
   color:#bab1a0;
 }
-#peop{
-  color:#bab1a0;
+#peop, #plac, #eve, #conce, #oppi{
+  background-color: #bab1a0;
+}
+#peop:hover, #plac:hover, #eve:hover, #conce:hover, #oppi:hover{
+  background-color: #5b181f;
+  border-color: #bab1a0;
 }
 input[type="checkbox"]{
+  color:#bab1a0;
+}
+.btn-default{
+  color:#bab1a0;
+}
+.btn-default:hover{
   color:#bab1a0;
 }
 #sti{

@@ -624,8 +624,18 @@ label:hover{
   border-width:0.2rem dotted #260d0e;
   padding-top: 3rem;
 }
+#peop, #plac, #eve, #conce, #oppi{
+  color:#bab1a0;
+}
 input[type="checkbox"]{
   color:#732627;
+}
+#peop:hover, #plac:hover, #eve:hover, #conce:hover, #oppi:hover{
+  background-color: #5b181f;
+  border-color: #bab1a0;
+}
+.btn-default{
+  color:#bab1a0;
 }
 #sti{
   padding-top:100px;
