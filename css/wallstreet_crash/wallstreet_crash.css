@@ -186,7 +186,7 @@
   color: black; 
 }
 
-.link:visited { 
+.link:visited { /*non funziona*/
   color: pink;
 }
 
