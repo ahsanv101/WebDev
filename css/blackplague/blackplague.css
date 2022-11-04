@@ -458,8 +458,10 @@ display: none;
   font-size: 24pt;
   color:#bab1a0;
 }
-.collapse{
+.show{
   color:#bab1a0;
+  font-size: 1.5rem;
+  text-align: center;
 }
 /*end polaroid*/
 
@@ -488,9 +490,9 @@ footer p{
     font-weight: 100;
     margin-bottom: 0.1vh;
     box-align:center;
+    padding-top: 0.8rem;
 }
 #footer{
-  padding-top: 0.1vh;
   position: sticky;
   width: 100% ;
   text-align: center;
