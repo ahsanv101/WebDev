@@ -182,7 +182,7 @@ button{
 }
 #about-proj{
   text-align: center;
-  font-size: 3.5vh;
+  font-size: 5vh;
   color: white;
 }
 
@@ -432,11 +432,7 @@ h2:hover, h3:hover{
   padding-bottom: 3rem;
   padding-top: 3rem;
 }
-#third p{
-    /* padding: 0.5rem 2rem 0.5rem 2rem!important; */
-    font-size: 2.5vh;
-    text-align: center;
-}
+
 /* .bann{
   border-style: dotted;
   padding-top: 5rem;
@@ -536,7 +532,7 @@ h2:hover, h3:hover{
 #issue-text{
     padding: 0 10rem 0 10rem;
     text-align: center;
-    font-size: x-large;
+    font-size: 2rem;
     /* color: #260D0E; */
     margin-top: 1rem;
 }

@@ -86,7 +86,7 @@ body{
   font-family: 'canterbury', serif;
     /* text-transform: lowercase; */
     font-weight: 300;
-    background-color:#9b3133;
+    background-color: #6d24ff;
     width:100%;
     cursor:pointer;
 }
@@ -95,12 +95,12 @@ body{
   color:#260d0e;
 } 
 #navbarDropdownMenuLink{
-  background-color: #9b3139;
-  color:#260D0E;
+  background-color: #6d24ff;
+  color:#00ff00;
 }
 .dropdown-item:hover{
-  background-color: #4c1a1b;
-  color:#9b3133;
+  background-color: #6d24ff;
+  color:#00ff00;
 }
 .dropdown-menu:hover{
   background-color: #9b3139;
@@ -108,12 +108,12 @@ body{
   color:#260d0e;
 }
 .dropdown-menu{
-  background-color:#9b3133;
-  color: #260D0E;
+  background-color:#6d24ff;
+  color: #00ff00;
 }
 .dropdown-item{
   font-size: xx-large;
-  color:#260D0E;
+  color:#00ff00;
   cursor:pointer;
 }
 /*navbar end*/
@@ -133,10 +133,7 @@ body{
   /* Opera < 12.1 */
   animation: fadeinout 6s;
 }
-.command:hover{
-  background-color: black!important;
-  color:#9b3139;
-}
+
 #first:hover{
   background-color: black;
   color:#9b3139;
@@ -157,9 +154,6 @@ body{
 }
 .row{} mt-4{
   margin-top: 0;
-}
-#first{
-  background-color: #260d0e;
 }
 
 #first h1{
@@ -375,7 +369,7 @@ display: none;
 }
 #about-proj{
   text-align: center;
-  font-size: 3.5vh;
+  font-size: 5vh;
   color: white;
 }
 
@@ -444,11 +438,6 @@ color:#260d0e;
   margin-left: 10rem;
 }
 
-#third p{
-  /* padding: 0.5rem 2rem 0.5rem 2rem!important; */
-  font-size: 2.5vh;
-  text-align: center;
-}
 .bann{
   padding-top: 5rem;
 }
@@ -484,7 +473,7 @@ color:#260d0e;
 #issue-text{
   padding: 0 10rem 0 10rem;
   text-align: center;
-  font-size: x-large;
+  font-size: 2rem;
   color: #260D0E;
   margin-top: 1rem;
 }
