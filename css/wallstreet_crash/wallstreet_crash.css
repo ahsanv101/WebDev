@@ -563,15 +563,9 @@ color: #000;
 
 .polaroid {
   width: 80%;
-<<<<<<< Updated upstream
-  background-color: #4c1a1b;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-=======
   background-color: white;
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.3rem 1.25rem 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 1.5rem;
->>>>>>> Stashed changes
 }
 
 .polaroidimg {
