@@ -185,23 +185,24 @@ body{
   font-family: 'canterbury';
 }
 .title {
-  font-weight: 900;
   font-size: 20vw;
   margin: 0;
-  filter: url(#goo);
   position: relative;
   letter-spacing: -.12em;
-  color: IndianRed;
+  color:#bab1a0;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+/*title effect*/
 .drop {
   width: .1em; height: .1em;
   border-radius: 0 100% 100% 100%;
-  background-color: currentColor;
+  background-color: #5b181f;
   position: absolute;
   top: 72%;
-  animation: drop 3s infinite both;
+  animation: drop 6s infinite both;
 
   &:nth-child(1) {
     left: 14%;
