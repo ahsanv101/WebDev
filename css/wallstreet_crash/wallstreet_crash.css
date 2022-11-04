@@ -182,16 +182,16 @@
   background-color: #000;
 }
 
-.linkrefer{ /*da rivedere*/
+.link{ 
   color: black; 
 }
 
-.linkrefer:visited { /*da rivedere*/
-  color: #4c1a1b;
+.link:visited { 
+  color: pink;
 }
 
-.linkrefer:hover { /*da rivedere*/
-  color: pink;
+.link:hover { 
+  color:  #0000FF;
 }
 
 #mod{ 
