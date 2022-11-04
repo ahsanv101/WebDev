@@ -95,7 +95,7 @@
 }
 
 .nav-item, .nav-link, #navbarDropdownMenuLink{
-  font-size: 25px;
+  font-size: 1.5rem;
   color:#4b4635;
 }
 
@@ -121,7 +121,7 @@
 }
 
 .dropdown-item{
-  font-size: 25px;
+  font-size: 1.5rem;
   color:#4b4635;
   cursor:pointer;
 }
@@ -170,7 +170,7 @@
 #refer{
   font-family:'canterbury';
   color:#4b4635;
-  font-size: x-large;
+  font-size: 1.5rem;
 }
 
 #butto, #butt, #but{  /*butto for index, but for doc and topic, butt for about*/
@@ -243,12 +243,12 @@ h3{
   color:#732627;
 }
 h5{
-  font-size: xx-large;
+  font-size: 2rem;
 }
 h4{
   color: #4b4635;
   background-color: #aa8c4a;
-  font-size: xx-large;
+  font-size: 2rem;
   font-family: 'canterbury';
 }
 h4:hover{
@@ -262,7 +262,7 @@ h4{
 
 img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0.6rem;
 }
 
 /*end generici*/
@@ -514,7 +514,7 @@ color: #000;
 #third #themes-text{
     /* margin: 1rem 0 1rem 0; */
     color:#4b4635;
-    font-size: x-large;
+    font-size: 1.5rem;
 }
 /*#third:hover, #themes-text:hover{
   color:#000000!important;
@@ -556,24 +556,30 @@ color: #000;
 
 /*INDEX PAGE: polaroid ITEM */
 .polaroid-container {
-  padding-left: 40px;
+  padding-left: 2.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .polaroid {
   width: 80%;
+<<<<<<< Updated upstream
   background-color: #4c1a1b;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
+=======
+  background-color: white;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.3rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1.5rem;
+>>>>>>> Stashed changes
 }
 
 .polaroidimg {
   width: 100%;
   object-fit: cover;
-  height: 200px;
-  padding: 5px;
-  border-radius: 10px;
+  height: 12.5rem;
+  padding: 0.3rem;
+  border-radius: 0.6rem;
 }
 
 .polaroid-container .polaroidimg:hover {
@@ -590,7 +596,7 @@ color: #000;
 
 .polartextcomm {
   text-align: center;
-  font-size: 24pt;
+  font-size: 2rem;
 }
 
 /*END INDEX PAGE*/
@@ -599,7 +605,7 @@ color: #000;
 /*TOPIC PAGE*/
 /*si potrebbe commentare da qui:*/
 label{
-  font-size: x-large;
+  font-size: 1.5rem;
   font-family:'scribish';
   color:#4b4635;
 }
@@ -625,7 +631,13 @@ label:hover{
   display: flex;
   margin-right: 0;
 }
-/*a qui ma chiedi Ahsan*/
+.btn-group-toggle{
+
+  padding-top: 0.6rem;
+text-align: center;
+
+}
+/*a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 
 /*non esistono
 #frag, #fragm, #fra, #fratm, #acca{
@@ -671,52 +683,48 @@ input[type="checkbox"]{
   padding-bottom:2rem;
 }
 
-
 /* Addded by ahsan */ 
-
 .text-people {
   background-color: #ffddff;
 }
-
 .text-place {
   background-color: #ddffdd;
 }
 .text-event {
   background-color: #ffffdd;
 }
-
 .text-concept {
   background-color: #4d4451;
 }
-
 .text-opinion {
   background-color: #377c50;
 }
-
 .sticky-top{
-  padding-top:10px;
-
+  padding-top: 0.6rem;
 }
-
 #sti{
-  padding-top:100px;
+  padding-top:6.25rem;
 }
 .tab-content{
   overflow-y:scroll;
-  height:250px;
+  height:12.5rem;
 }
 #file{
   overflow-y: scroll;
-  height: 800px;
+  height: 50rem;
 }
-
 #file2{
   overflow-y: scroll;
-  height: 800px;
+  height: 50rem;
+}
+#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
+  font-size: 1.125rem;
 }
 /*END TOPIC PAGE*/
 
-.animate { /*is this the selector?*/
+
+
+.animate { 
   animation-name: bgcolor ;
   animation-duration: 0.75s ; 
   animation-iteration-count: 3;
@@ -729,27 +737,62 @@ input[type="checkbox"]{
 }
 
 
+/*START DOCUMENTATION*/
+.containerpadding {
+padding-top: 1.5rem;
+}
 
-/*continua da qui*/
-#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
-  font-size: 18px;
+.containerpadding h2 {
+  padding-bottom: 1.5rem;
+  }
+div.main-body {
+  display: grid;
+  grid-template-columns: minmax(300px , auto)1fr;   
+  grid-template-areas: "navbardoc mainContent";
+  grid-gap: 1.25rem;
+}
+ 
+nav#navbardoc {
+  grid-area: navbardoc;
+   
+}
+ 
+nav#navbardoc a {
+  display: block;
+  border: 0.063rem solid black;
+  padding: 0.3rem;
+  margin: 0.625 0;
+  text-decoration: none;
+  color: black;
+}
+ 
+main#main-doc {
+  grid-area: mainContent;
+}
+/*END DOCUMENTATION*/
+
+/* ABOUT US */
+#teamsec{
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.siamo{
+  padding-top: 0.5rem;
+}
+
+.img-fluid{
+  height: 22em;
+}
+
+#team{
+  padding-bottom: 2em;
 }
 
 
-.btn-group-toggle{
+/* END ABOUT US */
 
-  padding-top: 10px;
-text-align: center;
-
-}
-
-/*.glitch-bloc{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
-
-/*FAB ??*/ /*is this the selector?*/
+/*SELECTOR THEMES*/
 .fab-container {
   display: flex;
   flex-direction: column;
@@ -782,6 +825,7 @@ text-align: center;
 .fab-container:hover .sub-button:nth-child(7) {
   transform: translateY(-72vh);
 }
+
 /* .fab-container:hover .sub-button:nth-child(6) {
   bottom: 1vh;
   transform: translateX(-12vh);
@@ -804,7 +848,7 @@ text-align: center;
   background-color: inherit;
   
  
-  border-radius: 0 0 10px 0;
+  border-radius: 0 0 0.625rem 0;
   z-index: -1;
 }
 .fab-container .fab .fab-content {
@@ -832,7 +876,7 @@ text-align: center;
   cursor: pointer;
 }
 .fab-container .sub-button .material-icons {
-  padding-top: 6px;
+  padding-top: 0.375rem;
 }
 
 .fab-content{
@@ -914,38 +958,7 @@ text-align: center;
 }
  */
 
-
-/*START DOCUMENTATION*/
-.containerpadding {
-padding-top: 50px;
-}
-
-div.main-body {
-  display: grid;
-  grid-template-columns: minmax(300px , auto)1fr;   
-  grid-template-areas: "navbardoc mainContent";
-  grid-gap: 20px;
-}
- 
-nav#navbardoc {
-  grid-area: navbardoc;
-   
-}
- 
-nav#navbardoc a {
-  display: block;
-  border: 1px solid black;
-  padding: 5px;
-  margin: 10px 0;
-  text-decoration: none;
-  color: black;
-}
- 
-main#main-doc {
-  grid-area: mainContent;
-}
-/*END DOCUMENTATION*/
-
+/*END SELECTOR THEMES*/
 
 /*FOOTER*/
 footer{

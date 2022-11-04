@@ -48,6 +48,10 @@
 
 
 /* INDEX PAGE CSS */
+.titlehidden {
+  display: none;
+  }
+
 body{
   font-family: 'carolingia', sans-serif;                                
 }
@@ -1429,7 +1433,7 @@ SELECTOR CSSS */
 
 /*START DOCUMENTATION*/
 .containerpadding {
-  padding-top: 50px;
+  padding-top: 1.5rem;
   }
   
 div.main-body {
