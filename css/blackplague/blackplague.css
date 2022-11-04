@@ -100,12 +100,13 @@ body{
   font-family: 'canterbury', serif;
     /* text-transform: lowercase; */
     font-weight: 300;
-    background-color:#5b181f;
+    background-color:#40171b;
     width:100%;
     cursor:pointer;
 }
 #navbarNavDropdown{
   color:#bab1a0;
+  background-color: #40171b;
 }
 .nav-item, .nav-link, #navbarDropdownMenuLink{
   font-size: 1.3em;
@@ -114,17 +115,15 @@ body{
 #navbarDropdownMenuLink{
   color:#bab1a0;
 }
-.dropdown-item:hover{
-  background-color: #4c1a1b;
-  color:#9b3133;
-}
+
 .dropdown-menu:hover{
-  background-color: #9b3139;
-  border-color: #4c1a1b;
-  color:#260d0e;
+  border-color: #5b181f;
+  color:#30302e;
+  background-color: #5b181f;
 }
 .dropdown-menu{
-  color: #260D0E;
+  color: #40171b;
+  background-color: #40171b;
 }
 .dropdown-item{
   font-size: xx-large;
@@ -167,19 +166,18 @@ body{
 }
 
 #first h1{
-  padding-top: 16vh ;
+  padding-top: 16vh;
   text-transform: uppercase;
   color: #5b181f;
   text-align: center;
   font-weight: 500;
-  font-size: 16vh;
+  font-size: 5rem;
   font-family: 'canterbury';
 }
 h1:hover{
   color: #40171b;
 }
 .title {
-  font-size: 20vw;
   margin: 0;
   position: relative;
   letter-spacing: -.12em;
@@ -435,7 +433,7 @@ display: none;
 }
 .polaroid {
   width: 80%;
-  background-color: white;
+  background-color: #4c1a1b;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
 }
@@ -452,30 +450,33 @@ display: none;
 }
 .polartext {
   text-align: center;
-
-  font-family: "Merriweather", serif;
   font-weight: 900;
+  color: #bab1a0;
 }
 .polartextcomm {
   text-align: center;
   font-size: 24pt;
+  color:#bab1a0;
+}
+.collapse{
+  color:#bab1a0;
 }
 /*end polaroid*/
 
 /*start footer*/
 footer{
-  background-color: #260D0E;
+  background-color: #40171b;
   font-family: 'canterbury';
-  color:#732627;
+  color:#bab1a0;
   text-align: center;
   font-weight: 100;
   position:sticky;
 }  
 .fabvit{
-color:#732627;
+color:#bab1a0;
 }
-.fabvit:active,.fabvit:hover{
-color: #260d0e;
+.fabvit:hover,.fabvit:active{
+  color: #bab1a0;
 }
 
 footer p, #cop, #copy, #copp{
