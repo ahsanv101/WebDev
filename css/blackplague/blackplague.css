@@ -452,6 +452,7 @@ display: none;
   text-align: center;
   font-weight: 900;
   color: #bab1a0;
+  font-family: 'canterbury';
 }
 .polartextcomm {
   text-align: center;
@@ -513,6 +514,8 @@ footer p{
   text-align: center;
   width:100%;
   size: fit-content;
+  padding-top:4rem;
+  background-image: url(original.gif);
 }
 /*end doclist*/
 

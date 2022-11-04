@@ -534,8 +534,8 @@ color: #000;
 }
 .polartext {
   text-align: center;
-
-  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-family: 'canterbury', serif;
   font-weight: 900;
 }
 .polartextcomm {
@@ -598,6 +598,7 @@ footer p{
   text-align: center;
   width:100%;
   size: fit-content;
+  padding-top: 4rem;
 }
 /*end doclist*/
 
