@@ -69,6 +69,7 @@ body{
   background-color: #30302e;
   color: #40171b;
   font-family: 'scribish';
+  border-color: #40171b;
 }
 .btn-close:hover{
   background-color: #40171b;
@@ -376,16 +377,15 @@ display: none;
 /*themes-text is in the 4th section, while third is in the 3rd, but they have common styles*/
 #themes-text{
   margin-top: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
+  font-size: 1.8rem;
 }
 #third #themes-text{
     /* margin: 1rem 0 1rem 0; */
-    color:#260d0e;
-    font-size: x-large;
+    color:#30302e;
 }
-#third:hover, #themes-text:hover{
-  color:#000000!important;
-}
+
 #theme5:hover, #model:hover, #mode:hover{
   background-color: black;
   color: white;
@@ -393,13 +393,14 @@ display: none;
 #theme5{
   width: 10em;
   text-align: center;
-  background-color: #260d0e;
-  color: #9b3139;
+  background-color: #40171b;
+  color: white;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
   margin-bottom: 3em;
   font-family: 'scribish';
+  border-color: #bab1a0;
 }
 #issue-text{
   padding: 0 10rem 0 10rem;
@@ -412,23 +413,18 @@ display: none;
 /*end third section*/
 
 /*start fourth section*/
-#gofourth{
-  color:#260D0E;
-}
 #fourth{
-  background-color:#4c1a1b;
+  background-color:#bab1a0;
   padding-top: 3rem;
 }
 
 #fourth h2{
-  color: #732627;
+  color: #40171b;
 }
 #fourth h2:hover{
-  color:#260D0E;
+  color:#5b181f;
 }
-#fourth:hover{
-  color:#260d0e;
-}
+
 /*end fourth section**/
 
 /*start polaroid*/
