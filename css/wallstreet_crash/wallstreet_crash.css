@@ -135,6 +135,9 @@
 /*END NAVBAR*/
 
 /*DISCLAIMER*/
+.btn-close{ /*nascondo x in alto perchè c'è già close in basso*/
+  display:none;
+}
 #disclaimer{
   background-color:#4b4635;
   justify-content: center;
