@@ -81,6 +81,7 @@ body{
 .btn-secondary{
   background-color: #bab1a0;
   color: #40171b;
+  font-family: 'scribish';
 }
 .btn-secondary:hover{
   background-color: #40171b;
@@ -91,35 +92,25 @@ body{
   color: #9b3139;
   font-family: scribish;
 }
-
-#butto{
-  font-family:'scribish' ;
-  color: white;
-  background-color: #000;
-}
-.link{
-  color:#000;
-}
-.link:hover, .link:active{
-  color: #260D0E;
-}
 /*disclaimer end*/
 /*navbar start*/
 #navbar{
   font-family: 'canterbury', serif;
     /* text-transform: lowercase; */
     font-weight: 300;
-    background-color:#9b3133;
+    background-color:#5b181f;
     width:100%;
     cursor:pointer;
 }
+#navbarNavDropdown{
+  color:#bab1a0;
+}
 .nav-item, .nav-link, #navbarDropdownMenuLink{
-  font-size: 25px;
-  color:#260d0e;
+  font-size: 1.3em;
+  color:#bab1a0;
 } 
 #navbarDropdownMenuLink{
-  background-color: #9b3139;
-  color:#260D0E;
+  color:#bab1a0;
 }
 .dropdown-item:hover{
   background-color: #4c1a1b;
@@ -131,12 +122,11 @@ body{
   color:#260d0e;
 }
 .dropdown-menu{
-  background-color:#9b3133;
   color: #260D0E;
 }
 .dropdown-item{
   font-size: xx-large;
-  color:#260D0E;
+  color:#bab1a0;
   cursor:pointer;
 }
 /*navbar end*/
@@ -192,7 +182,67 @@ body{
   text-align: center;
   font-weight: 500;
   font-size: 16vh;
+  font-family: 'canterbury';
 }
+.title {
+  font-weight: 900;
+  font-size: 20vw;
+  margin: 0;
+  filter: url(#goo);
+  position: relative;
+  letter-spacing: -.12em;
+  color: IndianRed;
+  text-transform: uppercase;
+}
+
+.drop {
+  width: .1em; height: .1em;
+  border-radius: 0 100% 100% 100%;
+  background-color: currentColor;
+  position: absolute;
+  top: 72%;
+  animation: drop 3s infinite both;
+
+  &:nth-child(1) {
+    left: 14%;
+  }
+
+  &:nth-child(2) {
+    left: 39%;
+    animation-delay: -.4s;
+  }
+
+  &:nth-child(3) {
+    left: 55%;
+    animation-delay: -1.5s;
+  }
+
+  &:nth-child(4) {
+    left: 82%;
+    animation-delay: -.8s;
+  }
+
+  &:nth-child(5) {
+    left: 95.5%;
+    animation-delay: -1.3s;
+  }
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0) scaleX(.85) rotate(45deg);
+    animation-timing-function: ease-out;
+  }
+  60% {
+    transform: translateY(120%) scaleX(.85) rotate(45deg);
+    animation-timing-function: ease-in;
+  }
+  80%, 100% {
+    transform: translateY(60vh) scaleX(.85) rotate(45deg);
+  }
+}
+
+
 
 #first #travel{
   margin-left: -1rem !important;

@@ -60,7 +60,6 @@ body{
   color:#00ff00;
 }
 
-
 .btn-close{
   text-align: left;
   background-color: #260d0e;
@@ -71,18 +70,16 @@ body{
   background-color: #6d24ff;
   color:#00ff00;
 }
-
-#butto{
+.btn-secondary{
+  background-color:black;
+  color: #00ff00;
   font-family:'scribish' ;
-  color: white;
-  background-color: #000;
 }
-.link{
-  color:#000;
+.btn-secondary:hover{
+  background-color: #00ff00;
+  color:black;
 }
-.link:hover, .link:active{
-  color: #260D0E;
-}
+
 /*disclaimer end*/
 /*navbar start*/
 #navbar{
