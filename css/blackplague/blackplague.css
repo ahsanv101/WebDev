@@ -25,7 +25,6 @@
   padding: 0;
   margin: 0;
   max-width: 100%;
-  overflow-x: hidden;
   position: relative;
   display: block;
 }
@@ -45,6 +44,7 @@ body{
   font-weight: bold;
   font-size: 3rem;
   color: #bab1a0;
+  margin-top: 0!important;
 
 }
 .modbod{
@@ -254,7 +254,7 @@ h2{
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 1em;
+  padding-top: 1em;
   color: #30302e;
   /* font-size: 10vh; */
   font-weight: 600;
@@ -512,6 +512,7 @@ footer p{
   padding-top:4rem;
   background-image: url(original.gif);
 }
+
 /*end doclist*/
 
 /*start matadata*/
@@ -595,7 +596,8 @@ input[type="checkbox"]{
 
 /*start aboutus*/
 #teamsec{
-  padding: 3rem;
+  padding-top: 7rem;
+  padding-bottom:4rem;
   background-image: url(original.gif);
 }
 .us{
@@ -626,7 +628,22 @@ button{
 .text-center{
   background-color: #30302e;
 }
-
+/*start documentation*/
+.containerpadding h2{
+  background-image:url('original.gif');
+  background-size:100%;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  height:100%;
+  width:100%;
+  padding-bottom: 4rem;
+  padding-top:7rem;
+}
+.containerpadding{
+  margin-top:0;
+  padding-top:0!important;
+  
+}
 /*general requirements*/
 :root{
     --time-color: black;
@@ -664,6 +681,10 @@ h4:hover{
 
 h5{
   font-size: xx-large;
+  text-align: center;
+  background-color:#5b181f;
+  color:#bab1a0;
+  margin:0;
 }
 
 .col:hover{
