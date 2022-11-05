@@ -260,9 +260,6 @@ h2{
   font-weight: 600;
   font-size: 3rem;
 }
-h3:hover{
-color:#40171b;
-}
 
 /*start content description*/
 #project-description{
@@ -599,6 +596,7 @@ input[type="checkbox"]{
 /*start aboutus*/
 #teamsec{
   padding: 3rem;
+  background-image: url(original.gif);
 }
 .us{
   max-width:fit-content;
@@ -611,11 +609,23 @@ input[type="checkbox"]{
 .thumbnail{
   margin-bottom: 0rem;
   padding: 0.1rem;
+  background-color: #5b181f;
+  border-width: 0.01rem;
+  text-align: center;
+}
+.thumbnail p{
+  color:#bab1a0;
+}
+.description{
+  font-size:1.5rem;
+  font
 }
 button{
   cursor:pointer;
 }
-
+.text-center{
+  background-color: #30302e;
+}
 
 /*general requirements*/
 :root{
@@ -636,7 +646,7 @@ button{
 
 h3{
   font-family:'scribish';
-  color:#732627;
+  color:#bab1a0;
 }
 
  h4{
@@ -737,7 +747,10 @@ img {
   width: 100%;
   border-radius: 10px;
 }
-
+.img-fluid{
+  height: 22em;
+  margin-bottom: 2em;
+}
 
 .btn-group-toggle{
 
