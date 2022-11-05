@@ -255,7 +255,7 @@ h2{
   text-transform: uppercase;
   text-align: center;
   margin-top: 1em;
-  color: #bab1a0;
+  color: #30302e;
   /* font-size: 10vh; */
   font-weight: 600;
   font-size: 3rem;
@@ -368,9 +368,7 @@ display: none;
   background-color: #000000;
   margin-left: 10rem;
 }
-.bann{
-  padding-top: 5rem;
-}
+
 
 /*themes-text is in the 4th section, while third is in the 3rd, but they have common styles*/
 #themes-text{
@@ -519,7 +517,7 @@ footer p{
 }
 /*end doclist*/
 
-/*start metadata*/
+/*start matadata*/
 .sticky-top{
   padding-top:2rem;
   text-align: center;
@@ -541,6 +539,7 @@ label:hover{
 .bann{
   padding: 1rem;
 }
+
 .form-check-inline{
   border-width:0.2rem dotted #260d0e;
   padding-top: 1rem;
@@ -549,7 +548,7 @@ label:hover{
 #peop, #plac, #eve, #conce, #oppi{
   background-color: #bab1a0;
 }
-#peop:hover, #plac:hover, #eve:hover, #conce:hover, #oppi:hover{
+#peop:hover, #plac:hover, #eve:hover, #conce:hover, #oppi:hover, #peop:active, #plac:active, #eve:active, #conce:active, #oppi:active{
   background-color: #5b181f;
   border-color: #bab1a0;
 }
@@ -565,15 +564,24 @@ input[type="checkbox"]{
 #sti{
   padding-top:100px;
 }
+
 .space{
   padding-bottom:2rem;
 }
-#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
-  font-size: 18px;
+#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab, #peoples-tab, #places-tab, #events-tab{
+  font-size: 1.3rem;
+  font-family:'canterbury';
+  border-color:#40171b;
+  border-style: double;
+  border-width: 0.3rem;
+  background-color: #260D0E;
 }
 .tab-content{
   overflow-y:scroll;
   height:250px;
+}
+#metado{
+  background-color: #bab1a0;
 }
 .space{
   padding:2rem;
