@@ -175,22 +175,18 @@
   border: none;
 }
 
-#refer{
+.link{
   font-family:'canterbury';
-  color:#4b4635;
   font-size: 1.5rem;
+  color:#4b4635;
 }
 
-.link{ 
-  color: black; 
+.link:hover{
+  color: #0645AD;
 }
 
-.link:visited { /*non funziona*/
-  color: pink;
-}
-
-.link:hover { 
-  color:  #0000FF;
+#refer:visited{ /*non funziona*/
+  color:#cccc00;
 }
 
 /*END DISCLAIMER*/
@@ -198,11 +194,12 @@
 /*generici*/
 button{
   cursor:pointer;
+  border-color: none;
 }
 
 body{
-  font-family: 'carolingia', sans-serif; 
-  background-color:#c8ac81;                               
+  font-family: 'caro ngia', sans-serif; 
+  background-color:#aa8c4a;                               
 }
 
 .container-fluid{ /*in navbar, footer, topic1, index, about us*/
@@ -219,9 +216,10 @@ body{
 .row{} mt-4{
   margin-top: 0;
 }
-.col:hover{
-  background-color: #aa8c4a;
-}
+
+/*.col:hover{
+  background-color: purple;
+}*/
 
 h2{
   font-family: 'scribish', serif;
@@ -231,36 +229,28 @@ h2{
   margin-top: 1em;
   color: #732627;
 /* font-size: 10vh; */
-  font-weight: 600;
-  font-size: 2rem;
 }
 
 h3{
   font-family:'scribish';
   color:#732627;
+  font-weight: bold;
 }
-h5{
-  font-size: 2rem;
-}
+
 h4{
-  color: #4b4635;
-  background-color: #aa8c4a;
-  font-size: 2rem;
   font-family: 'canterbury';
-}
-h4:hover{
-  color:white;
-  background-color: #000;
-}
-h4{
-  border: 4mm ridge #732627;
-  background-color: #000;
+  color: #4b4635;
+  text-align: center;
 }
 
 img {
   width: 100%;
-  border-radius: 0.6rem;
+  border: 1mm ridge black;
 }
+/*h4:hover{
+  color:white;
+  background-color: #000;
+}*/
 
 /*end generici*/
 
@@ -276,13 +266,6 @@ img {
   color: white;
 }*/
 
-
-/*LINKS, SELECTION, CODE*/
-
-/*.change:hover{
-  color:#9b3139;
-}
-*/
 
 
 /*INDEX PAGE*/
@@ -304,7 +287,7 @@ img {
 
 /*INDEX PAGE: FIRST textgate*/
 #main-title{
-  font-size: 10em;
+  font-size: 10rem;
   font-weight: 400;
   line-height: 1.1;
   color: rgb(0, 0, 0);
@@ -316,17 +299,17 @@ img {
 }
 
 #first{
-    background-color: #aa8c4a !important;
+    background-color: #aa8c4a;
 }
 
-#first h1{
+/*#first h1{
     padding-top: 16vh ;
     text-transform: uppercase;
     color: #4b4635;
     text-align: center;
     font-weight: 500;
-    /* font-size: 16vh; */
-}
+    font-size: 16vh;
+}*/
 
 /* non esiste travel
 #first #travel{
@@ -334,11 +317,9 @@ img {
 }*/
 
 #first h2{
-    /* font-size: 5vh; */
-    padding-bottom: 1rem;
+    padding: 0.5rem;
     letter-spacing: 0.3rem;
     font-weight: 600;
-    color:#732627;
 }
 
 #project-description{
@@ -571,6 +552,7 @@ color: #000;
   height: 12.5rem;
   padding: 0.3rem;
   border-radius: 0.6rem;
+  border: none;
 }
 
 .polaroid-container .polaroidimg:hover {
@@ -756,9 +738,13 @@ nav#navbardoc a {
   text-decoration: none;
   color: black;
 }
- 
+
 main#main-doc {
   grid-area: mainContent;
+}
+
+.main-section p{
+  text-align: center;
 }
 /*END DOCUMENTATION*/
 
