@@ -209,12 +209,12 @@ body{
   background-color:#aa8c4a;                               
 }
 
-.container-fluid{ /*in navbar, footer, topic1, index, about us*/
+/* male male .container-fluid{ in navbar, footer, topic1, index, about us
   padding-right:0;
   padding-left:0;
   margin-left: 0;
   margin-right:0;
-}
+}*/
 
 .row{
   margin-left: 0;
@@ -626,7 +626,7 @@ color: #000;
   }
 
   .main-section{
-    border-bottom: 0.3rem solid #262626;
+    border-bottom: 0.3rem solid #262626; /*or dotted*/
     padding-top: 1rem;
   }
 
@@ -661,7 +661,7 @@ color: #000;
   /* END ABOUT US */
 
 /*TOPIC PAGE*/
-/*si potrebbe commentare da qui:*/
+/*si potrebbe commentare da qui:
 label{
   font-size: 1.5rem;
   font-family:'scribish';
@@ -695,7 +695,7 @@ label:hover{
 text-align: center;
 
 }
-/*a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
+a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 
 /*non esistono
 #frag, #fragm, #fra, #fratm, #acca{
@@ -720,11 +720,18 @@ text-align: center;
 }*/
 
 #doclist{
-  margin-top: 0;
   text-align: center;
   width:100%;
   size: fit-content;
+  margin-top: 8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
+
+#doclist h2 {
+  padding-top: 80rem;
+  padding-bottom: 1.5rem;
+  }
 
 .form-check-inline{
   border-width:0.2rem dotted #4b4635;
