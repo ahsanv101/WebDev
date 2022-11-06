@@ -661,7 +661,7 @@ color: #000;
   /* END ABOUT US */
 
 /*TOPIC PAGE*/
-/*si potrebbe commentare da qui:
+si potrebbe commentare da qui:
 label{
   font-size: 1.5rem;
   font-family:'scribish';
@@ -729,14 +729,16 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 }
 
 #doclist h2 {
-  padding-top: 3rem;
+  padding-top: 3.5rem;
   padding-bottom: 1.5rem;
   }
 
 .form-check-inline{
   border-width:0.2rem dotted #4b4635;
   padding-top: 3rem;
+  align-items: center;
 }
+
 input[type="checkbox"]{
   color:#732627;
 }
