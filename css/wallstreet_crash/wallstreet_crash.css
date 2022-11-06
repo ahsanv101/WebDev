@@ -222,6 +222,8 @@ body{
 }*/
 
 h2{
+  letter-spacing: 0.3rem;
+  font-size: 2.5rem;
   font-family: 'scribish', serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -246,6 +248,7 @@ h4{
 img {
   width: 100%;
   border: 1mm ridge black;
+  opacity: 0.8;
 }
 /*h4:hover{
   color:white;
@@ -291,7 +294,7 @@ img {
   font-weight: 400;
   line-height: 1.1;
   color: rgb(0, 0, 0);
-  margin-top: 1.5em;
+  margin-top: 1em;
   justify-content: center;
   text-align: center;
   font-family:'scribish' ;
@@ -318,16 +321,15 @@ img {
 
 #first h2{
     padding: 0.5rem;
-    letter-spacing: 0.3rem;
     font-weight: 600;
+    font-size: 2.5rem;
 }
 
 #project-description{
-    font-size: 4vh;
-    padding-top: 2vh;
+    font-size: 1.5rem;
     text-align: center;
     color: #c8ac81;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 /*#project-description:hover{
@@ -350,34 +352,35 @@ img {
 */
 
 /*INDEX PAGE: SECOND topicsandthemes*/
-#about-proj{
-  text-align: center;
-  font-size: 5vh;
-  color: white;
-}
-
-/*#about-proj:hover{
-color:#4b4635;
-}*/
-
-#short{ 
-  color:black;
-  text-align:center;
-  margin-left:3rem;
-  margin-right: 3rem;
-}
-
-/*#short:hover{
-  color:#4b4635;
-}*/
-
 #second{
   padding-bottom: 3rem;
   padding-top: 3rem;
+  background-color: #c8ac81;
 }
 
-#second, #gosecond{
-    background-color: #aa8c4a !important;
+#short{ 
+  font-size: 1.5rem;
+  color:black;
+  opacity: 0.7;
+  text-align:center;
+  margin-left:3rem;
+  margin-right: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+#topp{
+  text-align: center;
+}
+
+#btn-issues, #btn-themes{
+  font-family: 'scribish', serif;
+  border-radius: 0;
+  border: 0.5mm ridge black;
+  opacity: 0.7;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  display: inline-flex;
 }
 
 #btn-themes{
@@ -398,69 +401,43 @@ color:#4b4635;
   color: #c8ac81;
 }
 
-#btn-issues, #btn-themes{
-    font-family: 'scribish', serif;
-    border-radius: 0;
-    border: none;
-    text-transform: uppercase;
-    font-size: 4vh;
-    width: 10rem;
-    margin-top: 2rem;
-    text-align: center;
-    display: inline-flex;
-    margin-left: auto;
-  }
-
-#topp{
-  text-align: center;
-}
-.btn-lg{
-  background-color: #4c1a1b;
-}
-.btn-lg:hover{
-  background-color: #000;
-  color:white;
-}
-
 /*non esiste 
 .c-right {
  color:#732627;
  font-size: 1.8rem!important;
  border-color: #4b4635;
 }
-
 .c-right:hover{
   color:#000000;
 }
 */
 
 /*INDEX PAGE: THIRD topics*/
+/*#third h2{
+  font-size: 3rem;
+}*/
 #third{
     background-color: #aa8c4a;
-    font-size: 5.5vh;
+    padding-bottom: 3rem;
     padding-top: 3rem;
 }
 
-#gothird{
+/*#gothird{
     background-color: #000000;
     margin-left: 10rem;
-}
-
-
-.bann{
-  padding-top: 5rem;
-}
+}*/
 
 #issue-text{
-  padding: 0 10rem 0 10rem;
-  text-align: center;
-  font-size: 2rem;
   color: #4b4635;
-  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align:center;
+  margin-top:1rem;
+  margin-right: 3rem;
 }
-#issue-text:hover{
+
+/*#issue-text:hover{
 color: #000;
-}
+}*/
 
 #theme5{ /*button humanity fails*/
   width: 10em;
@@ -469,31 +446,52 @@ color: #000;
   color: #c8ac81;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
-  margin-bottom: 3em;
   font-family: 'scribish';
+  border: none;
+  box-shadow: 3px 3px 3px #4b4635;
+  
 }
 
  #theme5:hover{
-  background-color: black;
-  color: white;
+  background-color: #c8ac81;
+  color: #4b4635;
 } 
 
 /*INDEX PAGE: FOURTH themes*/
+#fourth{
+  background-color:#e1d6c9;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+/*#fourth:hover{
+  color:#4b4635;
+}*/
 
-#gofourth{
+/*#fourth h2{
+  color: #732627;
+}
+#fourth h2:hover{
   color:#4b4635;
 }
+#gofourth{
+  color:#4b4635;
+}*/
+
+/*#fourth h2{
+  padding: 0.5rem;
+  letter-spacing: 0.3rem;
+  font-size: 3rem;
+}*/
 
 #themes-text{
-  margin-top: 1rem;
-  font-size: 1.8rem;
+  /* margin: 1rem 0 1rem 0; */
+  color:#4b4635;
+  font-size: 1.5rem;
+  text-align:center;
+  margin-top:1rem;
+  padding-bottom: 1.5rem;
 }
-#third #themes-text{
-    /* margin: 1rem 0 1rem 0; */
-    color:#4b4635;
-    font-size: 1.5rem;
-}
+
 /*#third:hover, #themes-text:hover{
   color:#000000!important;
 }*/
@@ -506,19 +504,6 @@ color: #000;
   margin-top: 0;
   display: flex;
 }*/
-
-#fourth{
-  background-color:#e1d6c9;
-  padding-top: 3rem;
-}
-
-#fourth h2{
-  color: #732627;
-}
-#fourth h2:hover{
-  color:#4b4635;
-}
-
 /*#theme1,#theme2,#theme3,#theme4, #theme6, .btn-close{
    
     text-align: left;
@@ -527,9 +512,6 @@ color: #000;
     font-family: scribish;
 }*/
 
-#fourth:hover{
-  color:#4b4635;
-}
 
 
 /*INDEX PAGE: polaroid ITEM */
@@ -562,12 +544,11 @@ color: #000;
 
 .polartext {
   text-align: center;
-
-  font-family: "Merriweather", serif;
-  font-weight: 900;
+  font-family: 'canterbury';
 }
 
 .polartextcomm {
+  font-family: 'scribish', serif;
   text-align: center;
   font-size: 2rem;
 }
