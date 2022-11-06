@@ -576,10 +576,11 @@ color: #000;
 .containerpadding {
   padding-top: 1.5rem;
   }
-  
-  .containerpadding h2 {
-    padding-bottom: 1.5rem;
-    }
+.containerpadding h2 {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  }
+
   div.main-body {
     display: grid;
     grid-template-columns: minmax(300px , auto)1fr;   
@@ -607,12 +608,17 @@ color: #000;
   
   .main-section p{
     text-align: center;
+    font-size: 1.3rem;
   }
   /*END DOCUMENTATION*/
   
   /* ABOUT US */
-  #teamsec{
-    padding-top: 3rem;
+  #team{
+    padding-bottom: 1.5rem;
+  }
+  
+  #teamsec{ /*meet our team*/
+    padding-top: 4rem;
     padding-bottom: 1.5rem;
   }
   
@@ -623,12 +629,11 @@ color: #000;
   .img-fluid{
     height: 22em;
   }
-  
-  #team{
-    padding-bottom: 2em;
+
+  .thumbnail p{
+    font-size: 1.3rem;
   }
-  
-  
+
   /* END ABOUT US */
 
 /*TOPIC PAGE*/
@@ -950,9 +955,9 @@ color:#732627;
 .fabvit:active,.fabvit:hover{
 color: #4b4635;
 }
-footer p{
-  font-size: 1.5rem ;
-}
+/*footer p{
+  font-size: 1rem ;
+}*/
 
 footer p{
 text-align: center;
@@ -960,6 +965,7 @@ padding-left: 0;
 font-weight: 100;
 margin-bottom: 0.1vh;
 box-align:center;
+/*word-wrap: break-word;*/
 }
 #footer-left, #footer, #foot, #footo{
 padding-top: 0.1vh;
