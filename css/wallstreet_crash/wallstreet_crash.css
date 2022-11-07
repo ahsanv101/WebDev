@@ -661,7 +661,113 @@ color: #000;
   /* END ABOUT US */
 
 /*TOPIC PAGE*/
-si potrebbe commentare da qui:
+#doclist{
+  text-align: center;
+  width:100%;
+  size: fit-content;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#doclist h2 {
+  padding-top: 3.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.sticky-top{
+  padding-top: 3rem;
+  background-color: #c8ac81;
+  position: sticky;
+}
+
+.form-check-inline {
+  display: inline-block;
+}
+
+#checkb{ /*non funziona*/
+  border-width: 10rem dotted purple;
+  padding-top: 3rem;
+  
+}
+
+.form-check input[type="checkbox"]{ /*non funziona*/
+  color:yellow;
+  border-radius: 0.25em;
+}
+
+[type=button] {
+  cursor: pointer;
+}
+
+.space{
+  padding:2rem;
+}
+
+
+/* Addded by ahsan */ 
+/*.text-people {
+  background-color: #6a206a;
+}
+.text-place {
+  background-color: #ddffdd;
+}
+.text-event {
+  background-color: #ffffdd;
+}
+.text-concept {
+  background-color: #4d4451;
+}
+.text-opinion {
+  background-color: #377c50;
+}*/
+
+#sti{
+  padding-top:6rem;
+  background-color: #377c50;
+  font-size: 2rem;
+}
+
+#sti  a {
+  display: block;
+  border: 0.3rem double black;
+  border-collapse: separate;
+  padding: 0.3rem;
+  margin: 0.625 0;
+  text-decoration: none;
+  color: black;
+  font-family: 'scribish', serif;
+  text-align: left;
+  font-size: 1.8rem;
+  opacity: 0.9;
+  border-radius: 0.5rem;
+}
+
+#sti  a:hover {
+  color: #c8ac81;
+  background-color:#4c1a1b;
+}
+
+.tab-content{
+  overflow-y:scroll;
+  height:12rem;
+  background-color: pink;
+}
+
+#file{
+  overflow-y: scroll;
+  height: 50rem;
+}
+#file2{
+  overflow-y: scroll;
+  height: 50rem;
+}
+#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
+  font-size: 1.125rem;
+}
+
+
+/*si potrebbe commentare da qui:
 label{
   font-size: 1.5rem;
   font-family:'scribish';
@@ -719,74 +825,6 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
   font-size: xx-large;
 }*/
 
-#doclist{
-  text-align: center;
-  width:100%;
-  size: fit-content;
-  margin-top: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-#doclist h2 {
-  padding-top: 3.5rem;
-  padding-bottom: 1.5rem;
-  }
-
-.form-check-inline{
-  border-width:0.2rem dotted #4b4635;
-  padding-top: 3rem;
-  align-items: center;
-}
-
-input[type="checkbox"]{
-  color:#732627;
-}
-
-.space{
-  padding:2rem;
-}
-.space{
-  padding-bottom:2rem;
-}
-
-/* Addded by ahsan */ 
-.text-people {
-  background-color: #ffddff;
-}
-.text-place {
-  background-color: #ddffdd;
-}
-.text-event {
-  background-color: #ffffdd;
-}
-.text-concept {
-  background-color: #4d4451;
-}
-.text-opinion {
-  background-color: #377c50;
-}
-.sticky-top{
-  padding-top: 0.6rem;
-}
-#sti{
-  padding-top:6.25rem;
-}
-.tab-content{
-  overflow-y:scroll;
-  height:12.5rem;
-}
-#file{
-  overflow-y: scroll;
-  height: 50rem;
-}
-#file2{
-  overflow-y: scroll;
-  height: 50rem;
-}
-#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
-  font-size: 1.125rem;
-}
 /*END TOPIC PAGE*/
 
 
