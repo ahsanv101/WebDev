@@ -2,6 +2,10 @@
 @import "/typetravel/styles/themes/components/sizingNavbar.css"; */
 /* @import "/typetravel/styles/home.css"; */
 
+#main-title-col{
+  visibility: hidden;
+}
+
 /*FONTS*/
 @font-face {
   font-family: 'canterbury';

@@ -2,6 +2,10 @@
 @import "/typetravel/styles/themes/components/sizingNavbar.css"; */
 /* @import "/typetravel/styles/home.css"; */
 /*Importing Black Plague fonts*/
+#main-title-col{
+  visibility: hidden;
+}
+
 @font-face {
   font-family: 'canterbury';
   src: url(../fonts/Canterbury.ttf);

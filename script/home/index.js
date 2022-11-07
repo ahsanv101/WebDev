@@ -200,4 +200,4 @@ if(localStorage.getItem('selectedTheme')){
    };
   
   
-typeWriter();
+// typeWriter();
