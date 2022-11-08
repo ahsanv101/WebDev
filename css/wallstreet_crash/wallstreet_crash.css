@@ -790,6 +790,19 @@ color: #000;
   font-size: 1.125rem;
 }
 
+.animate { 
+  animation-name: bgcolor ;
+  animation-duration: 0.75s ; 
+  animation-iteration-count: 3;
+  animation-fill-mode: backwards;
+}
+
+@keyframes bgcolor {
+  from { background-color: #ffffff;  }
+  to { background-color: #cccc00; }
+}
+
+
 
 /*si potrebbe commentare da qui:
 label{
@@ -850,20 +863,6 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 }*/
 
 /*END TOPIC PAGE*/
-
-
-
-.animate { 
-  animation-name: bgcolor ;
-  animation-duration: 0.75s ; 
-  animation-iteration-count: 3;
-  animation-fill-mode: backwards;
-}
-
-@keyframes bgcolor {
-  from { background-color: #ffffff;  }
-  to { background-color: #cccc00; }
-}
 
 
 /*SELECTOR THEMES*/
@@ -1004,11 +1003,11 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 }
 
 .fab-content, .fab-shadow, .sub-button, .fab{
-  background-color: #ba4c43 !important;
+  background-color: #aa8c4a !important;
 }
 
 .sub-button:hover{
-  background-color: #e2cb9c !important;
+  background-color: #c8ac81 !important;
 }
 /* .fab-container #enable-future:hover{
   background: url("/typetravel/images/Future/g25.gif") !important;
