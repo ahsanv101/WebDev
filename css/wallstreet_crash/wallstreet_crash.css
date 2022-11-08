@@ -759,6 +759,23 @@ color: #000;
   border-radius: 0.5rem;
 }
 
+#list_btn{
+  display: block;
+  border: 0.3rem double black;
+  border-collapse: separate;
+  padding: 0.3rem;
+  margin: 0.625 0;
+  text-decoration: none;
+  color: black;
+  font-family: 'scribish', serif;
+  text-align: left;
+  font-size: 1.8rem;
+  opacity: 0.9;
+  border-radius: 0.5rem;
+
+}
+
+
 
 #sti  a:hover {
   color: #c8ac81;
@@ -771,7 +788,7 @@ color: #000;
   background-color: pink;
 }
 
-.tab-content ul{
+.tab-content ul{ /*modifica*/
   color:yellow;
 }
 
@@ -780,46 +797,16 @@ color: #000;
   height: 50rem;
 }
 
-#file a{
-  display: block;
-  border: 0.3rem double black;
-  border-collapse: separate;
-  padding: 0.3rem;
-  margin: 0.625 0;
-  text-decoration: none;
-  color: black;
-  font-family: 'scribish', serif;
-  text-align: left;
-  font-size: 1.8rem;
-  opacity: 0.9;
-  border-radius: 0.5rem;
-
-}
-
 #file2{
   overflow-y: scroll;
   height: 50rem;
 }
 
-#file2 a{
-  display: block;
-  border: 0.3rem double black;
-  border-collapse: separate;
-  padding: 0.3rem;
-  margin: 0.625 0;
-  text-decoration: none;
-  color: black;
-  font-family: 'scribish', serif;
-  text-align: left;
-  font-size: 1.8rem;
-  opacity: 0.9;
-  border-radius: 0.5rem;
-
-}
 
 #asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
   font-size: 1.125rem;
 }
+
 
 .animate { 
   animation-name: bgcolor ;
