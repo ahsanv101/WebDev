@@ -114,13 +114,16 @@ body{
   background-color: #40171b;
 }
 .nav-item, .nav-link, #navbarDropdownMenuLink{
-  font-size: 1.3em;
+  font-size: 2rem;
   color:#bab1a0!important;
 } 
-#navbarDropdownMenuLink{
+#navbarDropdownMenuLink, #nav-active-link, .nav-item nav-link{
   color:#bab1a0;
 }
-
+.dropdown-toggle{
+  font-size: 1.3em;
+  color:#bab1a0;
+}
 .dropdown-menu:hover{
   border-color: #5b181f;
   color:#30302e;
@@ -128,9 +131,11 @@ body{
 }
 .dropdown-menu{
   background-color: #40171b;
+  background-size: 12em!important;
+  min-width:10em;
+  color:#bab1a0;
 }
 .dropdown-item{
-  font-size: xx-large;
   color:#bab1a0;
   cursor:pointer;
 }
@@ -460,7 +465,7 @@ display: none;
 }
 .show{
   color:#bab1a0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 /*end polaroid*/
@@ -672,8 +677,8 @@ h3{
 
  h4{
   border: 4mm ridge #732627;
-  color: #260D0E;
-  background-color: #9b3133;
+  color: #bab1a0;
+  background-color: #40171b;
   font-size: xx-large;
   font-family: 'canterbury';
 }
@@ -973,20 +978,27 @@ div.main-body {
 nav#navbardoc {
   grid-area: navbardoc;
   position: fixed;   
+  padding-bottom: 3rem;
      
 }
  
 nav#navbardoc a {
+  font-size: x-large;
+  font-weight: 800;
   display: block;
-  border: 1px solid black;
+  border: 0.07rem solid black;
   padding: 5px;
   margin: 10px 0;
-  text-decoration: none;
+  color:#bab1a0;
+  background-color: #40171b;
+  font-family: 'canterbury';
   color: black;
 }
  
 main#main-doc {
   grid-area: mainContent;
+  background-color: #bab1a0;
+  margin-bottom: 0;
 }
  
 
