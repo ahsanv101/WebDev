@@ -798,14 +798,16 @@ color: #000;
   border: 0.3rem double black;
   border-collapse: separate;
   padding: 0.3rem;
-  margin: 0.625 0;
+  margin-left: auto;
+  margin-right: auto;
   text-decoration: none;
   color: black;
   font-family: 'scribish', serif;
-  text-align: left;
+  text-align: center;
   font-size: 1.8rem;
   opacity: 0.9;
   border-radius: 0.5rem;
+
 
 }
 
@@ -837,6 +839,12 @@ color: #000;
   height: 50rem;
 }
 
+/*.btn-group-toggle{
+
+  padding-top: 1em;
+  text-align: center;
+  
+  }*/
 
 #asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
   font-size: 1.125rem;
