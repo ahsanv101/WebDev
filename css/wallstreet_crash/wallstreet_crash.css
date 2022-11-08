@@ -195,6 +195,10 @@
 /*END DISCLAIMER*/
 
 /*generici*/
+h1 {
+  font-family: 'scribish';
+}
+
 p{
   font-family: 'adobe';
 }
