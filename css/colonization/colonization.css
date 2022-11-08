@@ -819,8 +819,7 @@ visibility: hidden;
   max-width: 40ch;
   text-align: center; */
   /* transform: scale(0.94); */
-  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-
+  animation: scale 15s forwards cubic-bezier(0.5, 1, 0.89, 1);
   font-size: 10em;
   font-weight: 400;
   line-height: 1.1;
@@ -839,83 +838,20 @@ visibility: hidden;
   }
 }
 
-span {
+#main-title-col span {
   display: inline-block;
   opacity: 0;
   filter: blur(6px);
 }
 
-span:nth-child(1) {
+#main-title-col span:nth-child(1) {
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-span:nth-child(2) {
+#main-title-col span:nth-child(2) {
   animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-span:nth-child(3) {
-  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(4) {
-  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(5) {
-  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(6) {
-  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(7) {
-  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(8) {
-  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(9) {
-  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(10) {
-  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(11) {
-  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(12) {
-  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(13) {
-  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(14) {
-  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(15) {
-  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(16) {
-  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(17) {
-  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(18) {
-  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
 
 @keyframes fade-in {
   100% {
@@ -1372,6 +1308,18 @@ background-color: #000;
   color:black;
   font-weight: bold;
 }
+
+
+#file img {
+  padding: 1em;
+  border-style: dotted ;
+}
+
+#file2 img {
+  padding: 1em;
+  border-style: dotted ;
+}
+
 img {
   width: 100%;
   /* border-radius: 1em; */
@@ -1750,7 +1698,7 @@ display: none;
 
 
   .main-section p{
-    text-align: center;
+    /* text-align: center; */
     font-size: 1.3rem;
   }
 
