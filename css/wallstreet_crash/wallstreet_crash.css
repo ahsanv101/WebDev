@@ -72,6 +72,24 @@
   #first h2{
       font-size: 3.5vh;
   }
+  .fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-12vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-24vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-36vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-48vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(6) {
+    transform: translateY(-60vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(7) {
+    transform: translateY(-72vh) !important;
+  }
 }  
 
 @media (max-width: 768px){
@@ -540,20 +558,33 @@ color: #000;
 
 .polaroid {
   width: 80%;
-  background-color: white;
-  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.3rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+  background-color: none;
+  /*box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.3rem 1.25rem 0 rgba(0, 0, 0, 0.19);*/
   margin-bottom: 1.5rem;
 }
 
 .polaroidimg {
   width: 100%;
   object-fit: cover;
-  height: 12.5rem;
+  height: 14rem;
+  /*filter: sepia(100%);*/
+  filter: grayscale(40%);
   /*border: 0.063rem solid black;*/
-  border: none;
+  border: 1rem solid #fefee9;
   opacity: 0.9;
-  padding: 0.5rem
+  
+  --mask: 
+    linear-gradient(#000 0 0) 50%/calc(100% - 12px) calc(100% - 12px) no-repeat,
+    radial-gradient(6px,#0000 98%,#000) 0 -6px/11.10px 12px round no-repeat,
+    radial-gradient(6px,#0000 98%,#000) 0 calc(100% + 6px)/11.10px 12px round no-repeat,
+    radial-gradient(6px,#0000 98%,#000) -6px 0/12px 11.10px no-repeat round,
+    radial-gradient(6px,#0000 98%,#000) calc(100% + 6px) 0/12px 11.10px no-repeat round;
+  clip-path: polygon(12px 0,calc(100% - 12px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 12px) 100%,12px 100%,0 calc(100% - 12px),0 12px);
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 }
+
+
 
 /*.polaroid-container .polaroidimg:hover {
     opacity:0.2;
@@ -797,6 +828,7 @@ color: #000;
   height: 50rem;
 }
 
+
 #file2{
   overflow-y: scroll;
   height: 50rem;
@@ -899,22 +931,22 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
   height: 100%;
 }
 .fab-container:hover .sub-button:nth-child(2) {
-  transform: translateY(-12vh);
+  transform: translateX(-12vh);
 }
 .fab-container:hover .sub-button:nth-child(3) {
-  transform: translateY(-24vh);
+  transform: translateX(-24vh);
 }
 .fab-container:hover .sub-button:nth-child(4) {
-  transform: translateY(-36vh);
+  transform: translateX(-36vh);
 }
 .fab-container:hover .sub-button:nth-child(5) {
-  transform: translateY(-48vh);
+  transform: translateX(-48vh);
 }
 .fab-container:hover .sub-button:nth-child(6) {
-  transform: translateY(-60vh);
+  transform: translateX(-60vh);
 }
 .fab-container:hover .sub-button:nth-child(7) {
-  transform: translateY(-72vh);
+  transform: translateX(-72vh);
 }
 
 /* .fab-container:hover .sub-button:nth-child(6) {
