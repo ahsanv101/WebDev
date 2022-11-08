@@ -791,6 +791,19 @@ color: #000;
 }
 
 
+
+.animate { 
+  animation-name: bgcolor ;
+  animation-duration: 0.75s ; 
+  animation-iteration-count: 3;
+  animation-fill-mode: backwards;
+}
+
+@keyframes bgcolor {
+  from { background-color: #ffffff;  }
+  to { background-color: #cccc00; }
+}
+
 /*si potrebbe commentare da qui:
 label{
   font-size: 1.5rem;
@@ -852,20 +865,6 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 /*END TOPIC PAGE*/
 
 
-
-.animate { 
-  animation-name: bgcolor ;
-  animation-duration: 0.75s ; 
-  animation-iteration-count: 3;
-  animation-fill-mode: backwards;
-}
-
-@keyframes bgcolor {
-  from { background-color: #ffffff;  }
-  to { background-color: #cccc00; }
-}
-
-
 /*SELECTOR THEMES*/
 .fab-container {
   display: flex;
@@ -912,7 +911,7 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
   border-radius: 50%;
   z-index: 2;
 }
-.fab-container .fab::before {
+.fab-container .fab::before { /*The ::before selector inserts something before the content of each selected element(s).*/
   content: " ";
   position: absolute;
   bottom: 0;

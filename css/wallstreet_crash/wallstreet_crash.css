@@ -683,16 +683,24 @@ color: #000;
   padding-top: 3rem;
   background-color: #c8ac81;
   position: sticky;
+  width: 100%;
 }
 
 .form-check-inline {
   display: inline-block;
 }
 
-#checkb{ /*non funziona*/
-  border-width: 10rem dotted purple;
-  padding-top: 3rem;
-  
+#checkb{
+  text-align: center;
+  /*border-style:inset;
+  border-color: #856d4b;*/
+  padding-left: 8em;
+  padding-right:8em;
+  /* width: 100%; */
+  /* padding: 5em; */
+  /* margin-left: 0em;
+  margin-right: 0em; */
+  font-family: "adobe";
 }
 
 .form-check input[type="checkbox"]{ /*non funziona*/
@@ -710,8 +718,8 @@ color: #000;
 
 
 /* Addded by ahsan */ 
-/*.text-people {
-  background-color: #6a206a;
+.text-people {
+  background-color: #ffddff;
 }
 .text-place {
   background-color: #ddffdd;
@@ -724,7 +732,7 @@ color: #000;
 }
 .text-opinion {
   background-color: #377c50;
-}*/
+}
 
 #sti{
   padding-top:6rem;
@@ -747,7 +755,28 @@ color: #000;
   border-radius: 0.5rem;
 }
 
-#nav-item a{
+
+#sti  a:hover {
+  color: #c8ac81;
+  background-color:#4c1a1b;
+}
+
+.tab-content{
+  overflow-y:scroll;
+  height:8rem;
+  background-color: pink;
+}
+
+.tab-content ul{
+  color:yellow;
+}
+
+#file{
+  overflow-y: scroll;
+  height: 50rem;
+}
+
+#file a{
   display: block;
   border: 0.3rem double black;
   border-collapse: separate;
@@ -763,29 +792,27 @@ color: #000;
 
 }
 
-#sti  a:hover {
-  color: #c8ac81;
-  background-color:#4c1a1b;
-}
-
-.tab-content{
-  overflow-y:scroll;
-  height:12rem;
-  background-color: pink;
-}
-
-.tab-content ul{
-  color:yellow;
-}
-
-#file{
-  overflow-y: scroll;
-  height: 50rem;
-}
 #file2{
   overflow-y: scroll;
   height: 50rem;
 }
+
+#file2 a{
+  display: block;
+  border: 0.3rem double black;
+  border-collapse: separate;
+  padding: 0.3rem;
+  margin: 0.625 0;
+  text-decoration: none;
+  color: black;
+  font-family: 'scribish', serif;
+  text-align: left;
+  font-size: 1.8rem;
+  opacity: 0.9;
+  border-radius: 0.5rem;
+
+}
+
 #asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
   font-size: 1.125rem;
 }
@@ -911,7 +938,7 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
   border-radius: 50%;
   z-index: 2;
 }
-.fab-container .fab::before {
+.fab-container .fab::before { /*The ::before selector inserts something before the content of each selected element(s).*/
   content: " ";
   position: absolute;
   bottom: 0;
