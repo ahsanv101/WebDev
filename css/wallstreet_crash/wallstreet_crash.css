@@ -303,6 +303,9 @@ img {
 
 
 /*INDEX PAGE*/
+.cyberpunk{
+  display:none;}
+
 #main-title-col{
   visibility: hidden;
 }
@@ -340,6 +343,13 @@ img {
   font-family:'scribish' ;
   opacity: 0.7;
 }*/
+
+
+/*#main-title {
+	position: relative;
+}*/
+
+/*mirror
 #main-title-wall {
   margin: 0;
 	padding: 0;
@@ -352,13 +362,7 @@ img {
 	align-items: center;
 	justify-content: center;
 }
-
-/*#main-title {
-	position: relative;
-}*/
-
 #main-title-wall h1 {
-	/*color: #fff;*/
 	font-size: 10rem;
 	position: absolute;
   cursor: pointer;
@@ -396,8 +400,69 @@ img {
   100% {
     transform: rotateX(0deg);
   }
+}*/
+
+/*title wave*/
+#main-title-wall {
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	display: flex;
+	
+	height: 30rem;
+  margin-bottom: -9rem;
+	align-items: center;
+	justify-content: center;
 }
 
+
+#main-title-wall h1 {
+	font-size: 10em;
+	position: absolute;
+	
+}
+
+#main-title-wall h1:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px #262626;
+}
+
+#main-title-wall h1:nth-child(2) {
+	color: #262626;
+	animation: animatewall 4s ease-in-out infinite;
+}
+
+@keyframes animatewall {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
 
 #first{
     background-color: #aa8c4a;
@@ -838,7 +903,7 @@ color: #000;
 
 #sti{
   padding-top:6rem;
-  background-color: #377c50;
+  background-color: #c8ac81;
   font-size: 2rem;
 }
 
@@ -855,6 +920,14 @@ color: #000;
   font-size: 1.3rem;
   opacity: 0.9;
   border-radius: 0.5rem;
+}
+
+.tab-content ul a {
+  display: block;
+  color: yellow;
+  font-family: "adobe";
+  font-family: 'scribish', serif;
+  font-size: 0.3rem;
 }
 
 
@@ -889,12 +962,9 @@ color: #000;
 .tab-content{
   overflow-y:scroll;
   height:8rem;
-  background-color: pink;
+  background-color: #c8ac81;
 }
 
-.tab-content a{ 
-  font-family: "adobe";
-}
 
 #file{
   overflow-y: scroll;
