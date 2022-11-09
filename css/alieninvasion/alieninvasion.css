@@ -84,10 +84,17 @@ body{
     color: #00ff00;
     font-size: 2rem;
 }
+
 .nav-item, .nav-link, #navbarDropdownMenuLink{
   font-size: 2rem;
   color:#00ff00!important;
 } 
+.nav-item:hover{
+  box-shadow: 2px 5px 10px 5px #00ff00;
+  border-width: 0.5em;
+  border-color:#000;
+}
+
 #navbarDropdownMenuLink{
   background-color: #6d24ff;
   color:#00ff00;
