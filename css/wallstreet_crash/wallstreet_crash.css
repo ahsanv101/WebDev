@@ -2,9 +2,6 @@
 @import "/typetravel/styles/themes/components/sizingNavbar.css"; */
 /* @import "/typetravel/styles/home.css"; */
 
-#main-title-col{
-  visibility: hidden;
-}
 
 /*FONTS*/
 @font-face {
@@ -13,7 +10,7 @@
 }
 
 @font-face {
-  font-family: 'carolingia';
+  font-family: 'carolingia';/*non è usato*/
   src: url(../fonts/HotelDesArts1929.ttf);
 }
 
@@ -28,7 +25,7 @@
 }
 
 
-/* SIZE RELATIVE !*/
+/*px RELATIVE !*/
 @media (min-width: 768px) and (max-width: 992px){
   #about-proj p{
       font-size: 3vh;
@@ -60,7 +57,6 @@
 }
 
 
-/*??*/
 @media (max-width: 992px){
   /*NAVBAR*/
   #navbar .collapse, #navba .collapse, #navb .collapse, #navbi .collapse{
@@ -75,6 +71,24 @@
   }
   #first h2{
       font-size: 3.5vh;
+  }
+  .fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-12vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-24vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-36vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-48vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(6) {
+    transform: translateY(-60vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(7) {
+    transform: translateY(-72vh) !important;
   }
 }  
 
@@ -199,6 +213,10 @@
 /*END DISCLAIMER*/
 
 /*generici*/
+h1 {
+  font-family: 'scribish';
+}
+
 p{
   font-family: 'adobe';
 }
@@ -285,6 +303,14 @@ img {
 
 
 /*INDEX PAGE*/
+#main-title-col{
+  visibility: hidden;
+}
+
+#main-title{ /*questo con wall da mettere in altri css*/
+  display: none;
+}
+
 .bann{
   padding: 1rem;
 }
@@ -302,7 +328,8 @@ img {
 }*/
 
 /*INDEX PAGE: FIRST textgate*/
-#main-title{
+
+/*#main-title{
   font-size: 10rem;
   font-weight: 400;
   line-height: 1.1;
@@ -312,11 +339,70 @@ img {
   text-align: center;
   font-family:'scribish' ;
   opacity: 0.7;
+}*/
+#main-title-wall {
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	display: flex;
+	
+	height: 30rem;
+  margin-bottom: -9rem;
+	align-items: center;
+	justify-content: center;
 }
+
+/*#main-title {
+	position: relative;
+}*/
+
+#main-title-wall h1 {
+	/*color: #fff;*/
+	font-size: 10rem;
+	position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+  line-height: .8;
+}
+
+#main-title-wall h1:active {
+  animation: falling 1s ease-out;
+  transform-origin: bottom center;
+}
+
+@keyframes falling {
+  12% {
+    transform: rotateX(240deg);
+  }
+  
+  24% {
+    transform: rotateX(150deg);
+  }
+  
+  36% {
+    transform: rotateX(200deg);
+  }
+  
+  48% {
+    transform: rotateX(175deg);
+  }
+  
+  60%, 85% {
+    transform: rotateX(180deg);
+  }
+  
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
 
 #first{
     background-color: #aa8c4a;
 }
+
 
 /*#first h1{
     padding-top: 16vh ;
@@ -472,7 +558,7 @@ color: #000;
 
 /*INDEX PAGE: FOURTH themes*/
 #fourth{
-  background-color:#e1d6c9;
+  background-color:#4b4635;
   padding-bottom: 3rem;
   padding-top: 3rem;
 }
@@ -480,9 +566,11 @@ color: #000;
   color:#4b4635;
 }*/
 
-/*#fourth h2{
-  color: #732627;
+#fourth h2{
+  color: #aa8c4a;
 }
+
+/*
 #fourth h2:hover{
   color:#4b4635;
 }
@@ -498,7 +586,7 @@ color: #000;
 
 #themes-text{
   /* margin: 1rem 0 1rem 0; */
-  color:#4b4635;
+  color:#aa8c4a;
   font-size: 2rem;
   text-align:center;
   margin-top:1rem;
@@ -536,29 +624,41 @@ color: #000;
 
 .polaroid {
   width: 80%;
-  background-color: white;
-  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.3rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+  background-color: none;
+  /*box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.3rem 1.25rem 0 rgba(0, 0, 0, 0.19);*/
   margin-bottom: 1.5rem;
 }
 
 .polaroidimg {
   width: 100%;
   object-fit: cover;
-  height: 12.5rem;
+  height: 14rem;
+  /*filter: sepia(100%);*/
+  filter: grayscale(50%);
   /*border: 0.063rem solid black;*/
-  border: none;
+  border: 1rem solid #dbcc85;
   opacity: 0.9;
-  padding: 0.5rem
+  
+  --mask: 
+    linear-gradient(#000 0 0) 50%/calc(100% - 12px) calc(100% - 12px) no-repeat,
+    radial-gradient(6px,#0000 98%,#000) 0 -6px/11.10px 12px round no-repeat,
+    radial-gradient(6px,#0000 98%,#000) 0 calc(100% + 6px)/11.10px 12px round no-repeat,
+    radial-gradient(6px,#0000 98%,#000) -6px 0/12px 11.10px no-repeat round,
+    radial-gradient(6px,#0000 98%,#000) calc(100% + 6px) 0/12px 11.10px no-repeat round;
+  clip-path: polygon(12px 0,calc(100% - 12px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 12px) 100%,12px 100%,0 calc(100% - 12px),0 12px);
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 }
 
-/*.polaroid-container .polaroidimg:hover {
+.polaroidimg:hover {
     opacity:0.2;
     transition: .5s ease;
-}*/
+}
 
 .polartext {
   text-align: center;
   font-family: 'canterbury';
+  color: #aa8c4a; 
 }
 
 .polartextcomm {
@@ -566,11 +666,13 @@ color: #000;
   text-align: center;
   font-size: 2rem;
   opacity: 0.9;
+  color: #aa8c4a;
 }
 
 .collapse{
  text-align: center;
  padding: 0.5rem;
+ color: #aa8c4a; 
 }
 
 /*END INDEX PAGE*/
@@ -683,16 +785,24 @@ color: #000;
   padding-top: 3rem;
   background-color: #c8ac81;
   position: sticky;
+  width: 100%;
 }
 
 .form-check-inline {
   display: inline-block;
 }
 
-#checkb{ /*non funziona*/
-  border-width: 10rem dotted purple;
-  padding-top: 3rem;
-  
+#checkb{
+  text-align: center;
+  /*border-style:inset;
+  border-color: #856d4b;*/
+  padding-left: 8em;
+  padding-right:8em;
+  /* width: 100%; */
+  padding-top: 5em;
+  /* margin-left: 0em;
+  margin-right: 0em; */
+  font-family: "adobe";
 }
 
 .form-check input[type="checkbox"]{ /*non funziona*/
@@ -710,8 +820,8 @@ color: #000;
 
 
 /* Addded by ahsan */ 
-/*.text-people {
-  background-color: #6a206a;
+.text-people {
+  background-color: #ffddff;
 }
 .text-place {
   background-color: #ddffdd;
@@ -724,7 +834,7 @@ color: #000;
 }
 .text-opinion {
   background-color: #377c50;
-}*/
+}
 
 #sti{
   padding-top:6rem;
@@ -738,14 +848,38 @@ color: #000;
   border-collapse: separate;
   padding: 0.3rem;
   margin: 0.625 0;
-  text-decoration: none;
+   /*text-decoration: none;*/
   color: black;
   font-family: 'scribish', serif;
-  text-align: left;
-  font-size: 1.8rem;
+  text-align: center;
+  font-size: 1.3rem;
   opacity: 0.9;
   border-radius: 0.5rem;
 }
+
+
+#list_btn{
+  display: block;
+  border: 0.3rem double black;
+  border-collapse: separate;
+  padding: 0.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  /*text-decoration: none;*/
+  color: black;
+  font-family: 'scribish', serif;
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0.9;
+  border-radius: 0.5rem;
+}
+
+
+#lst_btn:hover {
+  color: #c8ac81;
+  background-color:#4c1a1b;
+}
+
 
 #sti  a:hover {
   color: #c8ac81;
@@ -754,21 +888,52 @@ color: #000;
 
 .tab-content{
   overflow-y:scroll;
-  height:12rem;
+  height:8rem;
   background-color: pink;
+}
+
+.tab-content a{ 
+  font-family: "adobe";
 }
 
 #file{
   overflow-y: scroll;
   height: 50rem;
 }
+
+
 #file2{
   overflow-y: scroll;
   height: 50rem;
 }
+
+/*.btn-group-toggle{
+
+  padding-top: 1em;
+  text-align: center;
+  
+  }*/
+
+
 #asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
-  font-size: 1.125rem;
+  font-size: 11.25rem; /*what is this?*/
 }
+
+
+
+
+.animate { 
+  animation-name: bgcolor ;
+  animation-duration: 0.75s ; 
+  animation-iteration-count: 3;
+  animation-fill-mode: backwards;
+}
+
+@keyframes bgcolor {
+  from { background-color: #ffffff;  }
+  to { background-color: #cccc00; }
+}
+
 
 
 /*si potrebbe commentare da qui:
@@ -832,20 +997,6 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 /*END TOPIC PAGE*/
 
 
-
-.animate { 
-  animation-name: bgcolor ;
-  animation-duration: 0.75s ; 
-  animation-iteration-count: 3;
-  animation-fill-mode: backwards;
-}
-
-@keyframes bgcolor {
-  from { background-color: #ffffff;  }
-  to { background-color: #cccc00; }
-}
-
-
 /*SELECTOR THEMES*/
 .fab-container {
   display: flex;
@@ -862,22 +1013,22 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
   height: 100%;
 }
 .fab-container:hover .sub-button:nth-child(2) {
-  transform: translateY(-12vh);
+  transform: translateX(-12vh);
 }
 .fab-container:hover .sub-button:nth-child(3) {
-  transform: translateY(-24vh);
+  transform: translateX(-24vh);
 }
 .fab-container:hover .sub-button:nth-child(4) {
-  transform: translateY(-36vh);
+  transform: translateX(-36vh);
 }
 .fab-container:hover .sub-button:nth-child(5) {
-  transform: translateY(-48vh);
+  transform: translateX(-48vh);
 }
 .fab-container:hover .sub-button:nth-child(6) {
-  transform: translateY(-60vh);
+  transform: translateX(-60vh);
 }
 .fab-container:hover .sub-button:nth-child(7) {
-  transform: translateY(-72vh);
+  transform: translateX(-72vh);
 }
 
 /* .fab-container:hover .sub-button:nth-child(6) {
@@ -892,7 +1043,7 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
   border-radius: 50%;
   z-index: 2;
 }
-.fab-container .fab::before {
+.fab-container .fab::before { /*The ::before selector inserts something before the content of each selected element(s).*/
   content: " ";
   position: absolute;
   bottom: 0;
@@ -984,11 +1135,11 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 }
 
 .fab-content, .fab-shadow, .sub-button, .fab{
-  background-color: #ba4c43 !important;
+  background-color: #aa8c4a !important;
 }
 
 .sub-button:hover{
-  background-color: #e2cb9c !important;
+  background-color: #c8ac81 !important;
 }
 /* .fab-container #enable-future:hover{
   background: url("/typetravel/images/Future/g25.gif") !important;

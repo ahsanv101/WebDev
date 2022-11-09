@@ -3,33 +3,24 @@
 /* @import "/typetravel/styles/home.css"; */
 /*Importing Black Plague fonts*/
 @font-face {
-  font-family: 'canterbury';
-  src: url(../fonts/Canterbury.ttf);
+  font-family: 'advent';
+  src: url(../fonts/advent.ttf);
 }
 
 @font-face {
-  font-family: 'carolingia';
-  src: url(../fonts/carolingia.ttf);
+  font-family: 'tomorrow';
+  src: url(../fonts/tomorrow.ttf);
 }
 
-@font-face {
-  font-family: 'scribish';
-  src: url(../fonts/scribish.ttf);
-}
-@font-face {
-  font-family: 'darklands';
-  src: url(../fonts/Darklands.ttf);
-}
 /*Highers the Responsiveness of the web page*/
 * {
   padding: 0;
   margin: 0;
-  max-width: 100%;
   position: relative;
   display: block;
   }
 body{
-  font-family: 'darklands', sans-serif;                                
+  font-family: 'advent', sans-serif;                                
 }
 /*disclaimer style start*/
 
@@ -38,14 +29,14 @@ body{
 }
 
 .modal-title{
-  font-family: 'scribish';
+  font-family: 'tomorrow';
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3rem;
 }
 .modbod{
   font-size: 2rem;
-  font-family: 'canterbury';
+  font-family: 'advent';
   /* text-align: center; */
   padding: 1rem;
   font-weight: 100;
@@ -61,9 +52,11 @@ body{
 
 .btn-close{
   text-align: left;
-  background-color: #260d0e;
-  color: #9b3139;
-  font-family: scribish;
+  background-color: #6d24ff;
+  color: #266206;
+  font-family: 'tomorrow';
+  border:#00ff00;
+  text-decoration: wavy;
 }
 .modal-header, .modal-footer{
   background-color: #6d24ff;
@@ -72,7 +65,7 @@ body{
 .btn-secondary{
   background-color:black;
   color: #00ff00;
-  font-family:'scribish' ;
+  font-family:'tomorrow' ;
 }
 .btn-secondary:hover{
   background-color: #00ff00;
@@ -88,30 +81,32 @@ body{
     background-color: #6d24ff;
     width:100%;
     cursor:pointer;
+    color: #00ff00;
+    font-size: 2rem;
 }
 .nav-item, .nav-link, #navbarDropdownMenuLink{
-  font-size: 25px;
-  color:#260d0e;
+  font-size: 2rem;
+  color:#00ff00!important;
 } 
 #navbarDropdownMenuLink{
   background-color: #6d24ff;
   color:#00ff00;
 }
-.dropdown-item:hover{
+.dropdown-item:hover, .dropdown-item:active{
   background-color: #6d24ff;
   color:#00ff00;
 }
-.dropdown-menu:hover{
-  background-color: #9b3139;
-  border-color: #4c1a1b;
-  color:#260d0e;
+.dropdown-item:hover{
+  background-color: #00ff00;
+  border-color: #266206;
+  color:#6d24ff;
 }
 .dropdown-menu{
   background-color:#6d24ff;
   color: #00ff00;
 }
 .dropdown-item{
-  font-size: xx-large;
+  font-size: 2rem;
   color:#00ff00;
   cursor:pointer;
 }
@@ -132,14 +127,9 @@ body{
   /* Opera < 12.1 */
   animation: fadeinout 6s;
 }
-
-#first:hover{
-  background-color: black;
-  color:#9b3139;
-}
 #first{
-  background-color:#d1bdab;
-  color:#260D0E;
+  background-color:black;
+  color:#00ff00;
 }
 .container-fluid{
   padding-right:0;
@@ -154,16 +144,49 @@ body{
 .row{} mt-4{
   margin-top: 0;
 }
-
-#first h1{
-  padding-top: 16vh ;
-  text-transform: uppercase;
-  color: #d1bdab;
-  text-align: center;
-  font-weight: 500;
-  font-size: 16vh;
+.titlehidden.title{
+  display:none;
 }
-
+#main-title-wall{ 
+  display: none;
+}
+#main-title-col{
+  display:none;
+}
+.cyberpunk{
+  padding-top: 16vh ;
+  text-align: center;
+  font-size: 16vh;
+  font-family: 'tomorrow';
+}
+.neon {
+  text-shadow: 0 0 3vw #6d24ff;
+  animation: neon 2s ease-in-out infinite;
+}
+.flux {
+  text-shadow: 0 0 3vw #179E05;
+  animation: flux 2s linear infinite;
+}
+@keyframes neon {
+  0%, 100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FFFC00;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+@keyframes flux {
+  0%, 100% {
+    text-shadow: 0 0 1vw #10ff4c, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #03C03C;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #024218, 0 0 1.5vw #024713, 0 0 5vw #023812, 0 0 5vw #012707, 0 0 .2vw #022201, .5vw .5vw .1vw #011a06;
+    color: #179E05;
+  }
+}
 #first #travel{
   margin-left: -1rem !important;
 }
