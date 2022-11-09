@@ -151,7 +151,7 @@ body{
 .row{} mt-4{
   margin-top: 0;
 }
-.titlehidden.title{
+.titlehidden{
   display:none;
 }
 #main-title-wall{ 
@@ -163,7 +163,7 @@ body{
 .cyberpunk{
   padding-top: 16vh ;
   text-align: center;
-  font-size: 16vh;
+  font-size: 10rem;
   font-family: 'tomorrow';
 }
 /*alien invasion title neon effect*/
@@ -239,26 +239,16 @@ h2{
   font-size: 3rem;
 }
 #introd{
-  display: none;
-}
-.box{
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 35%;
-  left: 35%;
-  color: #6d24ff;
+  /*display: none;*/
+  animation: caret 1s steps(1) infinite;
   font-family: 'tomorrow';
-  padding top:1rem;
-  padding bottom:10rem;
-  margin-top:0;
-  display:flex;
-
 }
+
 /*start content description*/
 #project-description{
   font-size: 4vh;
   padding-top: 6rem;
-  word-spacing: 0.6em;
+  letter-spacing: 0.6em;
   text-align: center;
   color: #00ff00;
   padding-bottom: 2rem;
