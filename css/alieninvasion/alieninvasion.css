@@ -3,23 +3,15 @@
 /* @import "/typetravel/styles/home.css"; */
 /*Importing Black Plague fonts*/
 @font-face {
-  font-family: 'canterbury';
-  src: url(../fonts/Canterbury.ttf);
+  font-family: 'advent';
+  src: url(../fonts/advent.ttf);
 }
 
 @font-face {
-  font-family: 'carolingia';
-  src: url(../fonts/carolingia.ttf);
+  font-family: 'tomorrow';
+  src: url(../fonts/tomorrow.ttf);
 }
 
-@font-face {
-  font-family: 'scribish';
-  src: url(../fonts/scribish.ttf);
-}
-@font-face {
-  font-family: 'darklands';
-  src: url(../fonts/Darklands.ttf);
-}
 /*Highers the Responsiveness of the web page*/
 * {
   padding: 0;
@@ -88,30 +80,31 @@ body{
     width:100%;
     cursor:pointer;
     color: #00ff00;
+    font-size: 2rem;
 }
 .nav-item, .nav-link, #navbarDropdownMenuLink{
-  font-size: 25px;
+  font-size: 2rem;
   color:#00ff00!important;
 } 
 #navbarDropdownMenuLink{
   background-color: #6d24ff;
   color:#00ff00;
 }
-.dropdown-item:hover{
+.dropdown-item:hover, .dropdown-item:active{
   background-color: #6d24ff;
   color:#00ff00;
 }
-.dropdown-menu:hover{
-  background-color: #9b3139;
+.dropdown-item:hover{
+  background-color: #00ff00;
   border-color: #4c1a1b;
-  color:#260d0e;
+  color:#6d24ff;
 }
 .dropdown-menu{
   background-color:#6d24ff;
   color: #00ff00;
 }
 .dropdown-item{
-  font-size: xx-large;
+  font-size: 2rem;
   color:#00ff00;
   cursor:pointer;
 }
