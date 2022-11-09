@@ -158,10 +158,9 @@ body{
   text-align: center;
   font-size: 16vh;
   font-family: 'tomorrow';
-  }
 }
 .neon {
-  text-shadow: 0 0 3vw #F4BD0A;
+  text-shadow: 0 0 3vw #6d24ff;
   animation: neon 2s ease-in-out infinite;
 }
 .flux {
