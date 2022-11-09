@@ -20,7 +20,7 @@
   display: block;
   }
 body{
-  font-family: 'darklands', sans-serif;                                
+  font-family: 'advent', sans-serif;                                
 }
 /*disclaimer style start*/
 
@@ -29,14 +29,14 @@ body{
 }
 
 .modal-title{
-  font-family: 'scribish';
+  font-family: 'tomorrow';
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3rem;
 }
 .modbod{
   font-size: 2rem;
-  font-family: 'canterbury';
+  font-family: 'advent';
   /* text-align: center; */
   padding: 1rem;
   font-weight: 100;
@@ -52,9 +52,11 @@ body{
 
 .btn-close{
   text-align: left;
-  background-color: #260d0e;
-  color: #9b3139;
-  font-family: scribish;
+  background-color: #6d24ff;
+  color: #266206;
+  font-family: 'tomorrow';
+  border:#00ff00;
+  text-decoration: wavy;
 }
 .modal-header, .modal-footer{
   background-color: #6d24ff;
@@ -63,7 +65,7 @@ body{
 .btn-secondary{
   background-color:black;
   color: #00ff00;
-  font-family:'scribish' ;
+  font-family:'tomorrow' ;
 }
 .btn-secondary:hover{
   background-color: #00ff00;
@@ -96,7 +98,7 @@ body{
 }
 .dropdown-item:hover{
   background-color: #00ff00;
-  border-color: #4c1a1b;
+  border-color: #266206;
   color:#6d24ff;
 }
 .dropdown-menu{
@@ -125,14 +127,9 @@ body{
   /* Opera < 12.1 */
   animation: fadeinout 6s;
 }
-
-#first:hover{
-  background-color: black;
-  color:#9b3139;
-}
 #first{
-  background-color:#d1bdab;
-  color:#260D0E;
+  background-color:black;
+  color:#00ff00;
 }
 .container-fluid{
   padding-right:0;
@@ -151,12 +148,18 @@ body{
 #first h1{
   padding-top: 16vh ;
   text-transform: uppercase;
-  color: #d1bdab;
+  color: #00ff00;
   text-align: center;
   font-weight: 500;
   font-size: 16vh;
+  font-family: 'tomorrow';
 }
-
+#main-title-wall{ 
+  display: none;
+}
+#main-title-col{
+  display:none;
+}
 #first #travel{
   margin-left: -1rem !important;
 }
