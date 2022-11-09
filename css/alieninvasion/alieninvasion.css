@@ -24,7 +24,6 @@
 * {
   padding: 0;
   margin: 0;
-  max-width: 100%;
   position: relative;
   display: block;
   }
@@ -88,10 +87,11 @@ body{
     background-color: #6d24ff;
     width:100%;
     cursor:pointer;
+    color: #00ff00;
 }
 .nav-item, .nav-link, #navbarDropdownMenuLink{
   font-size: 25px;
-  color:#260d0e;
+  color:#00ff00!important;
 } 
 #navbarDropdownMenuLink{
   background-color: #6d24ff;
