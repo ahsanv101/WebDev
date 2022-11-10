@@ -907,8 +907,8 @@ color: #000;
   font-size: 2rem;
 }
 
-#sti  a {
-  display: block;
+#asides-tab, #speeches-tab, #quotes-tab, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab {
+  
   border: 0.3rem double black;
   border-collapse: separate;
   padding: 0.3rem;
@@ -922,7 +922,7 @@ color: #000;
   border-radius: 0.5rem;
 }
 
-.tab-content ul a {
+.tab-content a{
   display: block;
   color: yellow;
   font-family: "adobe";
@@ -984,12 +984,10 @@ color: #000;
   
   }*/
 
-
+/*what is this?
 #asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
-  font-size: 11.25rem; /*what is this?*/
-}
-
-
+  font-size: 11.25rem; 
+}*/
 
 
 .animate { 
