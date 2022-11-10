@@ -33,7 +33,9 @@
 }
 
 body{
-  font-family: 'darklands', sans-serif;                              
+  font-family: 'darklands', sans-serif;   
+  max-width: fit-content;
+  min-width: fit-content;                           
 }
 /*disclaimer style start*/
 
