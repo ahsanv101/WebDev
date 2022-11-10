@@ -609,6 +609,7 @@ h2{
 }
 #btn-issues:hover, #btn-themes:hover{
   padding-top: 4rem;
+  /* color:#260d0e; */
   /* color: black; */
   height: 12rem;
   width: 12rem;
@@ -792,7 +793,7 @@ h2{
 
 #theme5:hover{
   padding-top: 3.7rem;
-  color: black;
+  /* color: black; */
   height: 12rem;
   width: 12rem;
   font-size: 1.2rem;
