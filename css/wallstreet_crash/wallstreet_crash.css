@@ -923,11 +923,9 @@ color: #000;
 }
 
 .tab-content a{
-  display: block;
-  color: yellow;
+  color: black;
   font-family: "adobe";
-  font-family: 'scribish', serif;
-  font-size: 0.3rem;
+  font-size: 0.7rem;
 }
 
 
@@ -969,12 +967,47 @@ color: #000;
 #file{
   overflow-y: scroll;
   height: 50rem;
+  background-color: #e3d9d2;
 }
 
 
 #file2{
   overflow-y: scroll;
   height: 50rem;
+  background-color: #e3d9d2;
+}
+
+#file img{
+  filter: grayscale(50%);
+  border: 1mm ridge black;
+  opacity: 0.9;
+}
+
+#file2 img{
+  filter: grayscale(50%);
+  border: 1mm ridge black;
+  opacity: 0.9;
+}
+
+figcaption{
+  font-family: 'adobe';
+  font-size: 0.5rem;
+}
+
+#file h2{
+text-transform: lowercase;
+  text-align: center;
+  color: black;
+}
+
+#file h1{
+  text-transform: uppercase;
+  text-align: justify;
+
+}
+
+#file p{
+  border: 1rem black;
 }
 
 /*.btn-group-toggle{
