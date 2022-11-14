@@ -303,7 +303,13 @@ img {
 
 
 /*INDEX PAGE*/
+#main-title-col2{
+  display:none;
+}
+
 .cyberpunk{
+  display:none;}
+.box{
   display:none;}
 
 #main-title-col{
@@ -808,6 +814,9 @@ color: #000;
   /*END DOCUMENTATION*/
   
   /* ABOUT US */
+  .surv{
+    display: none;
+  }
   #team{
     padding-bottom: 1.5rem;
   }
@@ -832,6 +841,15 @@ color: #000;
   /* END ABOUT US */
 
 /*TOPIC PAGE*/
+#bann{ /*La proprietà z-index nei CSS specifica la posizione di un elemento rispetto ad un altro. un elemento davanti all'altro*/
+  z-index: 1;
+}
+
+#bann2{
+
+  z-index: 1;
+}
+
 #doclist{
   text-align: center;
   width:100%;
@@ -995,7 +1013,7 @@ figcaption{
 }
 
 #file h2{
-text-transform: lowercase;
+ /* text-transform: lowercase;*/
   text-align: center;
   color: black;
 }
@@ -1007,8 +1025,27 @@ text-transform: lowercase;
 }
 
 #file p{
-  border: 1rem black;
+ text-align: justify;
+
 }
+
+#file2 h2{
+ /* text-transform: lowercase;*/
+    text-align: center;
+    color: black;
+  }
+  
+  #file2 h1{
+    text-transform: uppercase;
+    text-align: justify;
+  
+  }
+  
+  #file2 p{
+   text-align: justify;
+  
+  }
+  
 
 /*.btn-group-toggle{
 
@@ -1151,7 +1188,7 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
   right: 0;
   height: 6vh;
   width: 6vh;
-  background-color: inherit;
+  /*background-color: inherit;*/
   
  
   border-radius: 0 0 0.625rem 0;
