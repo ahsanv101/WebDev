@@ -8,21 +8,22 @@
   font-family: 'korolev';
   src: url(../fonts/KorolevMilitaryStencil.ttf);
 }
-
+ 
 @font-face {
   font-family: 'carolingia'; /*non è usato*/
   src: url(../fonts/HotelDesArts1929.ttf);
 }
-
+ 
 @font-face {
   font-family: 'military';
   src: url(../fonts/Cold\ Warm.otf);
 }
-
+ 
 @font-face {/*for body-text*/
   font-family: 'bignoodle';
   src: url(../fonts/BigNoodleTitling.ttf);
 }
+
 
 
 /*px RELATIVE !*/
@@ -71,6 +72,24 @@
   }
   #first h2{
       font-size: 3.5vh;
+  }
+  .fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-12vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-24vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-36vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-48vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(6) {
+    transform: translateY(-60vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(7) {
+    transform: translateY(-72vh) !important;
   }
 }  
 
@@ -285,9 +304,72 @@ img {
 
 
 /*INDEX PAGE*/
+/*animation title */
+
+
+.text-copy {
+  margin-bottom: -9rem; /*controlla qui*/
+  font-size: 5rem;
+  font-family: 'military';
+  fill: #e8d6c0;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+stroke: #a1281c;
+animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+stroke: black;
+animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+stroke: #a1281c;
+animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+stroke: black;
+animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+stroke: black;
+animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+100% {stroke-dashoffset: -35%;}
+}
+
+/*hideen titles*/
+#main-title-wall{
+  display:none;
+}
+#main-title-col2{
+  display:none;
+}
+
+.cyberpunk{
+  display:none;}
+.box{
+  display:none;}
+
 #main-title-col{
   visibility: hidden;
 }
+
+#main-title{ /*questo con wall da mettere in altri css*/
+  display: none;
+}
+
+
 
 .bann{
   padding: 1rem;
@@ -306,7 +388,8 @@ img {
 }*/
 
 /*INDEX PAGE: FIRST textgate*/
-#main-title{
+
+/*#main-title{
   font-size: 10rem;
   font-weight: 400;
   line-height: 1.1;
@@ -316,11 +399,133 @@ img {
   text-align: center;
   font-family:'military' ;
   opacity: 0.7;
+}*/
+
+
+/*#main-title {
+	position: relative;
+}*/
+
+/*mirror
+#main-title-wall {
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	display: flex;
+	
+	height: 30rem;
+  margin-bottom: -9rem;
+	align-items: center;
+	justify-content: center;
 }
+#main-title-wall h1 {
+	font-size: 10rem;
+	position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+  line-height: .8;
+}
+
+#main-title-wall h1:active {
+  animation: falling 1s ease-out;
+  transform-origin: bottom center;
+}
+
+@keyframes falling {
+  12% {
+    transform: rotateX(240deg);
+  }
+  
+  24% {
+    transform: rotateX(150deg);
+  }
+  
+  36% {
+    transform: rotateX(200deg);
+  }
+  
+  48% {
+    transform: rotateX(175deg);
+  }
+  
+  60%, 85% {
+    transform: rotateX(180deg);
+  }
+  
+  100% {
+    transform: rotateX(0deg);
+  }
+}*/
+
+/*title wave
+#main-title-wall {
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	display: flex;
+	
+	height: 30rem;
+  margin-bottom: -9rem;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#main-title-wall h1 {
+	font-size: 10em;
+	position: absolute;
+	
+}
+
+#main-title-wall h1:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px #262626;
+}
+
+#main-title-wall h1:nth-child(2) {
+	color: #262626;
+	animation: animatewall 4s ease-in-out infinite;
+}
+
+@keyframes animatewall {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+*/
 
 #first{
     background-color: #92938d;
 }
+
 
 /*#first h1{
     padding-top: 16vh ;
@@ -476,7 +681,7 @@ color: #000;
 
 /*INDEX PAGE: FOURTH themes*/
 #fourth{
-  background-color:#e1d6c9;
+  background-color:#4b4635;
   padding-bottom: 3rem;
   padding-top: 3rem;
 }
@@ -484,9 +689,11 @@ color: #000;
   color:#4b4635;
 }*/
 
-/*#fourth h2{
-  color: #e8d6c0;
+#fourth h2{
+  color: #92938d;
 }
+
+/*
 #fourth h2:hover{
   color:#4b4635;
 }
@@ -502,7 +709,7 @@ color: #000;
 
 #themes-text{
   /* margin: 1rem 0 1rem 0; */
-  color:#4b4635;
+  color:#92938d;
   font-size: 2rem;
   text-align:center;
   margin-top:1rem;
@@ -540,29 +747,41 @@ color: #000;
 
 .polaroid {
   width: 80%;
-  background-color: white;
-  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.3rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+  background-color: none;
+  /*box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.3rem 1.25rem 0 rgba(0, 0, 0, 0.19);*/
   margin-bottom: 1.5rem;
 }
 
 .polaroidimg {
   width: 100%;
   object-fit: cover;
-  height: 12.5rem;
+  height: 14rem;
+  /*filter: sepia(100%);*/
+  filter: grayscale(50%);
   /*border: 0.063rem solid black;*/
-  border: none;
+  border: 1rem solid #dbcc85;
   opacity: 0.9;
-  padding: 0.5rem
+  
+  --mask: 
+    linear-gradient(#000 0 0) 50%/calc(100% - 12px) calc(100% - 12px) no-repeat,
+    radial-gradient(6px,#0000 98%,#000) 0 -6px/11.10px 12px round no-repeat,
+    radial-gradient(6px,#0000 98%,#000) 0 calc(100% + 6px)/11.10px 12px round no-repeat,
+    radial-gradient(6px,#0000 98%,#000) -6px 0/12px 11.10px no-repeat round,
+    radial-gradient(6px,#0000 98%,#000) calc(100% + 6px) 0/12px 11.10px no-repeat round;
+  clip-path: polygon(12px 0,calc(100% - 12px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 12px) 100%,12px 100%,0 calc(100% - 12px),0 12px);
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 }
 
-/*.polaroid-container .polaroidimg:hover {
+.polaroidimg:hover {
     opacity:0.2;
     transition: .5s ease;
-}*/
+}
 
 .polartext {
   text-align: center;
   font-family: 'korolev';
+  color: #92938d; 
 }
 
 .polartextcomm {
@@ -570,11 +789,13 @@ color: #000;
   text-align: center;
   font-size: 2rem;
   opacity: 0.9;
+  color: #92938d;
 }
 
 .collapse{
  text-align: center;
  padding: 0.5rem;
+ color: #92938d; 
 }
 
 /*END INDEX PAGE*/
@@ -645,6 +866,9 @@ color: #000;
   /*END DOCUMENTATION*/
   
   /* ABOUT US */
+  .surv{
+    display: none;
+  }
   #team{
     padding-bottom: 1.5rem;
   }
@@ -669,6 +893,15 @@ color: #000;
   /* END ABOUT US */
 
 /*TOPIC PAGE*/
+#bann{ /*La proprietà z-index nei CSS specifica la posizione di un elemento rispetto ad un altro. un elemento davanti all'altro*/
+  z-index: 1;
+}
+
+#bann2{
+
+  z-index: 1;
+}
+
 #doclist{
   text-align: center;
   width:100%;
@@ -687,16 +920,24 @@ color: #000;
   padding-top: 3rem;
   background-color: #a1281c;
   position: sticky;
+  width: 100%;
 }
 
 .form-check-inline {
   display: inline-block;
 }
 
-#checkb{ /*non funziona*/
-  border-width: 10rem dotted purple;
-  padding-top: 3rem;
-  
+#checkb{
+  text-align: center;
+  /*border-style:inset;
+  border-color: #856d4b;*/
+  padding-left: 8em;
+  padding-right:8em;
+  /* width: 100%; */
+  padding-top: 5em;
+  /* margin-left: 0em;
+  margin-right: 0em; */
+  font-family: "bignoodle";
 }
 
 .form-check input[type="checkbox"]{ /*non funziona*/
@@ -714,8 +955,8 @@ color: #000;
 
 
 /* Addded by ahsan */ 
-/*.text-people {
-  background-color: #6a206a;
+.text-people {
+  background-color: #ffddff;
 }
 .text-place {
   background-color: #ddffdd;
@@ -728,44 +969,61 @@ color: #000;
 }
 .text-opinion {
   background-color: #377c50;
-}*/
+}
 
 #sti{
   padding-top:6rem;
-  background-color: #377c50;
+  background-color: #a1281c;
   font-size: 2rem;
 }
 
-#sti  a {
-  display: block;
+#asides-tab, #speeches-tab, #quotes-tab, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab {
+  
   border: 0.3rem double black;
   border-collapse: separate;
   padding: 0.3rem;
   margin: 0.625 0;
-  text-decoration: none;
+   /*text-decoration: none;*/
   color: black;
   font-family: 'military', serif;
-  text-align: left;
-  font-size: 1.8rem;
+  text-align: center;
+  font-size: 1.3rem;
   opacity: 0.9;
   border-radius: 0.5rem;
 }
 
-#nav-item a{
+.tab-content a{
+  color: black;
+  font-family: "bignoodle";
+  font-size: 0.9rem;
+}
+.tab-content ul a{
+  font-size: 0.9rem;
+}
+
+
+#list_btn{
   display: block;
   border: 0.3rem double black;
   border-collapse: separate;
   padding: 0.3rem;
-  margin: 0.625 0;
-  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  /*text-decoration: none;*/
   color: black;
   font-family: 'military', serif;
-  text-align: left;
-  font-size: 1.8rem;
+  text-align: center;
+  font-size: 1.5rem;
   opacity: 0.9;
   border-radius: 0.5rem;
-
 }
+
+
+#lst_btn:hover {
+  color: #a1281c;
+  background-color:#4c1a1b;
+}
+
 
 #sti  a:hover {
   color: #a1281c;
@@ -774,26 +1032,87 @@ color: #000;
 
 .tab-content{
   overflow-y:scroll;
-  height:12rem;
-  background-color: pink;
+  height:8rem;
+  background-color: #a1281c;
 }
 
-.tab-content ul{
-  color:yellow;
-}
 
 #file{
   overflow-y: scroll;
   height: 50rem;
+  background-color: #e3d9d2;
 }
+
+
 #file2{
   overflow-y: scroll;
   height: 50rem;
-}
-#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
-  font-size: 1.125rem;
+  background-color: #e3d9d2;
 }
 
+#file img{
+  filter: grayscale(50%);
+  border: 1mm ridge black;
+  opacity: 0.9;
+}
+
+#file2 img{
+  filter: grayscale(50%);
+  border: 1mm ridge black;
+  opacity: 0.9;
+}
+
+figcaption{
+  font-family: 'bignoodle';
+  font-size: 0.5rem;
+}
+
+#file h2{
+ /* text-transform: lowercase;*/   /*controlla h2*/
+  text-align: center;
+  color: black;
+}
+
+#file h1{
+  text-transform: uppercase;
+  text-align: justify;
+
+}
+
+#file p{
+ text-align: justify;
+
+}
+
+#file2 h2{
+ /* text-transform: lowercase;*/
+    text-align: center;
+    color: black;
+  }
+  
+  #file2 h1{
+    text-transform: uppercase;
+    text-align: justify;
+  
+  }
+  
+  #file2 p{
+   text-align: justify;
+  
+  }
+  
+
+/*.btn-group-toggle{
+
+  padding-top: 1em;
+  text-align: center;
+  
+  }*/
+
+/*what is this?
+#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
+  font-size: 11.25rem; 
+}*/
 
 
 .animate { 
@@ -807,6 +1126,8 @@ color: #000;
   from { background-color: #ffffff;  }
   to { background-color: #cccc00; }
 }
+
+
 
 /*si potrebbe commentare da qui:
 label{
@@ -885,22 +1206,22 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
   height: 100%;
 }
 .fab-container:hover .sub-button:nth-child(2) {
-  transform: translateY(-12vh);
+  transform: translateX(-12vh);
 }
 .fab-container:hover .sub-button:nth-child(3) {
-  transform: translateY(-24vh);
+  transform: translateX(-24vh);
 }
 .fab-container:hover .sub-button:nth-child(4) {
-  transform: translateY(-36vh);
+  transform: translateX(-36vh);
 }
 .fab-container:hover .sub-button:nth-child(5) {
-  transform: translateY(-48vh);
+  transform: translateX(-48vh);
 }
 .fab-container:hover .sub-button:nth-child(6) {
-  transform: translateY(-60vh);
+  transform: translateX(-60vh);
 }
 .fab-container:hover .sub-button:nth-child(7) {
-  transform: translateY(-72vh);
+  transform: translateX(-72vh);
 }
 
 /* .fab-container:hover .sub-button:nth-child(6) {
@@ -922,7 +1243,7 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
   right: 0;
   height: 6vh;
   width: 6vh;
-  background-color: inherit;
+  /*background-color: inherit;*/
   
  
   border-radius: 0 0 0.625rem 0;
@@ -1007,11 +1328,11 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 }
 
 .fab-content, .fab-shadow, .sub-button, .fab{
-  background-color: #ba4c43 !important;
+  background-color: #92938d !important;
 }
 
 .sub-button:hover{
-  background-color: #e2cb9c !important;
+  background-color: #a1281c !important;
 }
 /* .fab-container #enable-future:hover{
   background: url("/typetravel/images/Future/g25.gif") !important;

@@ -306,6 +306,9 @@ img {
 #main-title-col2{
   display:none;
 }
+#main-title-cold{
+  display:none;
+}
 
 .cyberpunk{
   display:none;}
@@ -943,7 +946,10 @@ color: #000;
 .tab-content a{
   color: black;
   font-family: "adobe";
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+}
+.tab-content ul a{
+  font-size: 0.9rem;
 }
 
 
@@ -1013,7 +1019,7 @@ figcaption{
 }
 
 #file h2{
- /* text-transform: lowercase;*/
+ /* text-transform: lowercase;*/   /*controlla h2*/
   text-align: center;
   color: black;
 }
