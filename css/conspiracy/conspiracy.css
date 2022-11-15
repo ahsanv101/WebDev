@@ -543,7 +543,7 @@ h2{
   text-align:center;
   padding-left:4em;
   padding-right:4em;
- font-size: 0.6em;
+ font-size: 0.6em !important;
 }
 #short:hover{
   color:#260D0E;
@@ -738,6 +738,7 @@ h2{
     /* font-family: c; */
     padding-top: 3rem;
     color: black;
+    height: 20em;
 }
 
 #gothird{
@@ -778,6 +779,9 @@ h2{
   /* color:#000000!important; */
 }
 
+ #fourth h2{
+  color: white !important;
+ }
 #gofourth{
   
   color:#260D0E;
@@ -858,7 +862,7 @@ h2{
 #issue-text{
     padding: 0 10rem 0 10rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1em;
     /* color: #260D0E; */
     margin-top: 1rem;
 }
@@ -874,6 +878,12 @@ h2{
 #main-title{
 display: none;
 }
+#main-title-cold{
+  display:none;
+}
+
+
+
 #main-title-wall{ 
   display: none;
 }
@@ -885,6 +895,8 @@ display: none;
   display: none;
 
 }
+
+
 
 
 
@@ -1619,7 +1631,8 @@ SELECTOR CSSS */
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  background-color:#886B41 !important;
+  background-color:#F7EEDC !important;
+  filter: invert(100%);
 }
 
 .fab-container .sub-button {
@@ -1633,7 +1646,8 @@ SELECTOR CSSS */
   width: 12vh;
   border-radius: 50%;
   transition: all 0.3s ease;
-  background-color:#886B41 !important;
+  background-color:#F7EEDC!important;
+  filter: invert(100%);
 
 }
 .fab-container .sub-button:hover {
@@ -1698,7 +1712,7 @@ SELECTOR CSSS */
 }
 
 .sub-button:hover{
-  background-color: #e2cb9c !important;
+  background-color: #d24848 !important;
 }
 /* .fab-container #enable-future:hover{
   background: url("/typetravel/images/Future/g25.gif") !important;
@@ -1744,12 +1758,20 @@ SELECTOR CSSS */
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   margin-bottom: 2em;
   font-size: 0.5em;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   /* box-shadow: 0 0 0 1em rgb(220, 8, 8) ; */
   /* border-style: dotted; */
   padding: 1em;
   color: white
+  
   /* filter: drop-shadow(8px 8px 10px #886B41 ); */
+}
+
+.polaroid:hover{
+  background-image: url(../images/red.png) !important;
+  background-repeat: no-repeat;
+  background-position: 1em 2em;
+ 
 }
 
 /* {
@@ -1761,11 +1783,17 @@ SELECTOR CSSS */
   height: 12.5em;
   padding: 1em;
   border-radius: 0.62em;
+  filter: grayscale(100%);
+
 }
 
+
 .polaroid-container .polaroidimg:hover {
-    opacity:0.2;
+    opacity:0.4;
     transition: .5s ease;
+    
+    /* filter: invert(100%); */
+
 }
 
 .collapse{
@@ -1776,7 +1804,7 @@ SELECTOR CSSS */
 .polartext {
   text-align: center;
 
-  font-family: "Merriweather", serif;
+  /* font-family: "Merriweather", serif; */
   font-weight: 900;
   font-size: 1em;
   color: white
@@ -1848,6 +1876,7 @@ display: none;
   
     width: 10em;
     text-align: center;
+
   
   
   }

@@ -818,6 +818,15 @@ h2{
 #main-title{
 display: none;
 }
+
+#main-title-cold{
+  display:none;
+}
+
+#main-title-col2{
+  display: none;
+}
+
 #main-title-wall{ 
   display: none;
 }
@@ -1648,7 +1657,7 @@ SELECTOR CSSS */
 .polartext {
   text-align: center;
 
-  font-family: "Merriweather", serif;
+  /* font-family: "Merriweather", serif; */
   font-weight: 900;
   font-size: 1em;
   /* padding-left: 3em; */
