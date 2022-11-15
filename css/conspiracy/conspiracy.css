@@ -1280,6 +1280,7 @@ footer p{
 
 #doclist h2{
   color: red;
+  font-size: 3em;
   font-family:'canterbury'
 }
 #doclist{
@@ -1470,12 +1471,17 @@ h4:hover{
 #sti{
   padding-top:100px;
   /* justify-content: center; */
-  /* background-image : url(../images/paper.jpg);
-  border-style:dotted;
-  border-color: #856d4b; */
+  background-image : url(../images/olddd2.png);
+  background-repeat: no-repeat;
+  background-size: 15em 20em;
+  background-position-y: 2em;
+  /* border-style:dotted; */
+  /* padding-bottom:00px; */
+  /* border-color: #856d4b; */
 
   background-color: #000;
   color: white;
+  border: none;
 }
 
 #checkb{
@@ -1510,7 +1516,7 @@ h4:hover{
 
 
 #peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
-  border:none;
+  border:none !important;
   background-image: url(../images/red.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -1521,10 +1527,10 @@ h4:hover{
   text-align: center;
 
   font-size: 0.5em;
-  color:rgb(255, 255, 255) !important;
+  /* color:rgb(255, 255, 255) !important; */
   text-decoration: none;
-  background-color: #000;
-  color: white;
+  /* background-color: #000; */
+  color: rgb(0, 0, 0) !important;
  
 }
 
@@ -1553,15 +1559,22 @@ background-color: #000;
 
 
 #file{
-  /* background-image : url(../images/paper.jpg);
-  border-style:inset;
+  background-image : url(../images/olddd3.png);
+  /* border-style:inset;
   border-color: #856d4b; */
   background-color: #000;
-  color: white;
+  color: rgb(0, 0, 0);
 
   overflow-y: scroll;
   height:  50em;
 }
+
+/* .col-sm ul{
+  background-image:url(../images/file.png);
+  background-repeat: no-repeat;
+background-size: 40em 15em;
+
+} */
 
 #file a{
   color:rgb(255, 0, 0);
@@ -1569,11 +1582,12 @@ background-color: #000;
 }
 
 #file2{
+  background-image : url(../images/olddd3.png);
    /* background-image : url(../images/paper.jpg);
   border-style:inset;
   border-color: #856d4b; */
   background-color: #000;
-  color: white;
+  color: rgb(0, 0, 0);
   overflow-y: scroll;
   height:  50em;
 }
@@ -1597,7 +1611,7 @@ background-color: #000;
   /* padding: 1em; */
   /* border-style: dotted ; */
   width: 100%;
-  filter: invert(100%);
+  filter: grayscale(100%);
   box-shadow: 0 0 0 1em white inset;
 }
 
@@ -1626,16 +1640,19 @@ text-align: center;
 
   margin-left: auto;
   margin-right: auto;
-  width: 12em;
+  width: 14em;
+  font-size:0.8em;
+  color:black !important;
 
 
 }
 
 
 #list_btn:hover,#list_btn:focus {
-  width: 14em;
+  width: 16em;
  border:none;
 }
+
 
 
 .list {
