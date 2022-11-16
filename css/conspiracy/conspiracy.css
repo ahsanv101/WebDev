@@ -1642,7 +1642,7 @@ text-align: center;
   margin-right: auto;
   width: 14em;
   font-size:0.8em;
-  color:black !important;
+  color:rgb(254, 254, 254) !important;
 
 
 }
@@ -1986,6 +1986,8 @@ display: none;
   #main-doc a{
     color: rgb(255, 255, 255);
   }
+  #eyes{
+    display:none;}
 
   #navbardoc a{
     /* border:solid; */
