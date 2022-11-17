@@ -350,7 +350,7 @@ a:hover {
 .row{} mt-4{
   margin-top: 0;
 }
-.titlehidden, #main-title-col, #main-title-col2, #main-title-wall, #main-title{
+.titlehidden, #main-title-col, #main-title-col2, #main-title-wall, #main-title, .walls{
   display:none;
 }
 .cyberpunk{
@@ -358,6 +358,8 @@ a:hover {
   text-align: center;
   font-size: 10rem;
   font-family: 'tomorrow';
+  padding-bottom: 0;
+  background-image: url(../../images/galaxy.gif);
 }
 /*alien invasion title neon effect*/
 .neon {
@@ -392,21 +394,12 @@ a:hover {
   margin-left: -1rem !important;
 }
 
-#first h2{
-  font-size: 10vh;
-  padding-top: 10rem;
-  letter-spacing: 0.3rem;
-  font-weight: 600;
-  color:#6d24ff;
-  border-width: 3rem ;
-  display:flex;
-}
 h2{
   font-family: 'tomorrow', serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 10rem;
+  padding-top: 8rem;
   color: #00ff00;
   /* font-size: 10vh; */
   font-weight: 600;
@@ -414,11 +407,8 @@ h2{
 }
 #title2{
   padding-top:0;
-  padding bottom: 2em,!important;;
 }
-#title2:hover{
-  color:yellow;
-}
+
 #first-text{
   padding-top: 8rem;
 }
@@ -426,7 +416,11 @@ h2{
   /*display: none;*/
   animation: caret 1s steps(1) infinite;
   font-family: 'tomorrow';
-  
+  font-weight: 600;
+  color: #6d24ff !important;;
+  border-width: 3rem ;
+  display:flex;
+  justify-content: center;
 }
 .cyberpunk2:root {
   --color-primary: #f6aca2;
@@ -451,18 +445,17 @@ h2{
 .cyberpunk2 {
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
     9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-  font-family: bungee, sans-serif;
+  font-family: 'tomorrow';
   font-weight: 400;
   text-transform: uppercase;
-  font-size: calc(2rem + 5vw);
+  font-size: xx-large;
   text-align: center;
   margin: 0;
-  color: var(--color-primary);
-  //color: transparent;
-  //background-color: white;
-  //background-clip: text;
   animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
   letter-spacing: 0.4rem;
+}
+.cyberpunk2:hover{
+  color:yellow;
 }
 
 @keyframes shadows {
@@ -550,8 +543,8 @@ body {
 }
 /*start content description*/
 #project-description{
+  padding-top: 2rem;
   font-size: 4vh;
-  padding-top: 6rem;
   letter-spacing: 0.6em;
   text-align: center;
   color: #00ff00;
@@ -827,7 +820,7 @@ a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before {
 
 /*start of third section*/
 #third{
-  background-color: #6d24ff;
+  background-image: url(../../images/galaxy.gif);
   padding-bottom: 2rem;
   padding-top: 0;
 
@@ -869,7 +862,7 @@ a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before {
 }
 
 #fourth h2{
-  color: #6d24ff;
+  color: #00ff00;
 }
 #fourth h2:hover{
   color:yellow;
@@ -1393,7 +1386,7 @@ text-align: center;
 #mainheader{
   background-image: url(../../images/galaxy.gif);
 }
-#mainheader h2, #theme5, #fourth h2, #plu h2, #main-doc h3{
+#mainheader h2, #theme5, #main-doc h3{
   background-color: #000!important;
     color:#6d24ff;
     padding: 35px 75px;
@@ -1411,10 +1404,24 @@ text-align: center;
     outline: none;
 
   }
-#plu h2{
+#plu h2, #fourth h2{
   color: #00ff00;
+  background-color: #000!important;
+  padding: 35px 75px;
+    position: relative;
+    border-right: 3px solid #8ae66e;
+    clip-path: polygon(
+      -15px 0%,
+      calc(100% + 15px) 0%,
+      calc(100% + 15px) 100%,
+      20px 100%,
+      -15px calc(100% - 35px)
+    );
+    cursor: pointer;
+    background-color: var(--background-color);
+    outline: none;
 }
-  #mainheader h2:hover, #theme5:hover, #fourth h2:hover, #plu h2:hover, #main-doc h3:hover{
+  #mainheader h2:hover, #theme5:hover, #fourth h2:hover, #plu h2:hover, #main-doc h3:hover, #fourth h2:hover, #plu h2:hover{
     color:yellow;
   }
 #mainheader h5{
@@ -1448,7 +1455,9 @@ nav#navbardoc a {
   box-shadow: 2px 5px 10px 5px #00ff00;
   color:#6d24ff!important;
   background-color: #00ff00;
-
+}
+.nav-link:hover{
+  border-color: #6d24ff;
 }
 main#main-doc {
   grid-area: mainContent;
