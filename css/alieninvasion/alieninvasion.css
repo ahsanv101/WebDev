@@ -1117,7 +1117,6 @@ h5{
   font-size: xx-large;
   margin-top: 0;
   font-family: 'advent';
-  background-color: #00ff00;
 }
 
 .col:hover{
@@ -1391,10 +1390,9 @@ text-align: center;
   padding-top: 1.5rem;
 }
 #mainheader{
-  background-color: yellow;
+  background-color: #00ff00;
 }
-#mainheader h2, #theme5, #fourth h2{
-  background-color: yellow;
+#mainheader h2, #theme5, #fourth h2, #plu h2{
   background-color: #000!important;
     color:#6d24ff;
     padding: 35px 75px;
@@ -1412,8 +1410,10 @@ text-align: center;
     outline: none;
 
   }
-
-  #mainheader h2:hover, #theme5:hover, #fourth h2:hover{
+#plu h2{
+  color: #00ff00;
+}
+  #mainheader h2:hover, #theme5:hover, #fourth h2:hover, #plu h2:hover{
     color:yellow;
   }
 div.main-body {
