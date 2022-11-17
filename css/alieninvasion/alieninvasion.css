@@ -385,12 +385,13 @@ a:hover {
 }
 
 #first h2{
-  font-size: 5vh;
+  font-size: 10vh;
   padding-top: 10rem;
   letter-spacing: 0.3rem;
   font-weight: 600;
   color:#6d24ff;
   border-width: 3rem ;
+  display:flex;
 }
 h2{
   font-family: 'tomorrow', serif;
@@ -406,6 +407,9 @@ h2{
 #title2{
   padding-top:0;
   padding bottom: 2em,!important;;
+}
+#title2:hover{
+  color:yellow;
 }
 #first-text{
   padding-top: 8rem;
@@ -640,6 +644,9 @@ display: none;
     outline: none;
 
   }
+  .row h2:hover{
+    color: yellow;
+  }
   #btn-issues:hover, #btn-themes:hover, #btn-issues:focus, #btn-themes:focus, #theme5:hover, #theme5:focus{
     color: #f9f002;
     box-shadow: 2px 5px 10px 5px #00ff00;
@@ -856,6 +863,9 @@ a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before {
 #fourth h2{
   color: #6d24ff;
 }
+#fourth h2:hover{
+  color:yellow;
+}
 
 /*end fourth section**/
 
@@ -867,7 +877,7 @@ a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before {
 }
 .polaroid {
   width: 80%;
-  background-color: #6d24ff;
+  background-color: black;
   color:#00ff00;
   font-family: 'tomorrow';
   box-shadow: 0 4px 8px 0 #6d24ff, 0 6px 20px 0 #6d24ff;
@@ -902,19 +912,19 @@ a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before {
 
 /*start footer*/
 footer{
-  background-color: #260D0E;
-  font-family: 'canterbury';
-  color:#732627;
+  background-color: #6d24ff;
+  font-family: 'tomorrow';
+  color:#00ff00;
   text-align: center;
   font-weight: 100;
   position:sticky;
   z-index: 1;
 }  
 .fabvit{
-color:#732627;
+color:#00ff00;
 }
 .fabvit:active,.fabvit:hover{
-color: #260d0e;
+color: #00ff00;
 }
 
 footer p, #cop, #copy, #copp{
@@ -1106,6 +1116,8 @@ h4:hover{
 h5{
   font-size: xx-large;
   margin-top: 0;
+  font-family: 'advent';
+  background-color: #00ff00;
 }
 
 .col:hover{
@@ -1207,7 +1219,9 @@ text-align: center;
 } */
 
 /* SELECTOR */
-
+.fab shadow{
+  background-color: #00ff00;
+}
 .fab-container {
   display: flex;
   flex-direction: column;
@@ -1259,7 +1273,6 @@ text-align: center;
   right: 0;
   height: 6vh;
   width: 6vh;
-  background-color: inherit;
   
  
   border-radius: 0 0 10px 0;
@@ -1272,6 +1285,8 @@ text-align: center;
   height: 100%;
   width: 100%;
   border-radius: 50%;
+  background-color: #00ff00;
+  filter: invert(100%);
 }
 
 .fab-container .sub-button {
@@ -1285,6 +1300,8 @@ text-align: center;
   width: 12vh;
   border-radius: 50%;
   transition: all 0.3s ease;
+  background-color:#00ff00;
+  filter: invert(90%);
 }
 
 .fab-container .sub-button .material-icons {
@@ -1342,7 +1359,7 @@ text-align: center;
 }
 
 .fab-content, .fab-shadow, .sub-button, .fab{
-  background-color: #ba4c43 !important;
+  background-color: #6d24ff !important;
 }
 
 .sub-button:hover{
@@ -1372,9 +1389,33 @@ text-align: center;
 /*START DOCUMENTATIO*/
 .containerpadding {
   padding-top: 1.5rem;
-  }
-  
+}
+#mainheader{
+  background-color: yellow;
+}
+#mainheader h2, #theme5, #fourth h2{
+  background-color: yellow;
+  background-color: #000!important;
+    color:#6d24ff;
+    padding: 35px 75px;
+    position: relative;
+    border-right: 3px solid #8ae66e;
+    clip-path: polygon(
+      -15px 0%,
+      calc(100% + 15px) 0%,
+      calc(100% + 15px) 100%,
+      20px 100%,
+      -15px calc(100% - 35px)
+    );
+    cursor: pointer;
+    background-color: var(--background-color);
+    outline: none;
 
+  }
+
+  #mainheader h2:hover, #theme5:hover, #fourth h2:hover{
+    color:yellow;
+  }
 div.main-body {
   display: grid;
   grid-template-columns: minmax(300px , auto)1fr;   
