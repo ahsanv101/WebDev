@@ -46,21 +46,29 @@ html{
   background-color: black;
 }
 #disclaimer{
-  background-color: #266206;
+  background-image: url(../../images/galaxy.gif);
 }
 #refer li a{
   color:#00ff00;
 }
-
-
+.btn-close{
+  color:#00ff00;
+}
+.btn-close:hover{
+  box-shadow: 2px 5px 10px 5px #00ff00;
+}
 .modal-header, .modal-footer{
   background-color: #6d24ff;
   color:#00ff00;
 }
-
-.btn-secondary:hover{
+#but{
+  font-family: 'tomorrow';
   background-color: #00ff00;
-  color:black;
+  color:#6d24ff;
+}
+#but:hover{
+  box-shadow: 2px 5px 10px 5px #00ff00;
+
 }
 
 /*disclaimer end*/
@@ -609,7 +617,7 @@ display: none;
   display: block;
 
 }
-#btn-issues, #btn-themes, #theme5{
+#btn-issues, #btn-themes, #theme5, #doc-list h2{
     font-family: 'tomorrow', serif;
     border-radius: 0;
     border: none;
@@ -647,13 +655,13 @@ display: none;
   .row h2:hover{
     color: yellow;
   }
-  #btn-issues:hover, #btn-themes:hover, #btn-issues:focus, #btn-themes:focus, #theme5:hover, #theme5:focus{
+  #btn-issues:hover, #btn-themes:hover, #btn-issues:focus, #btn-themes:focus, #theme5:hover, #theme5:focus, #mainheader h2:focus{
     color: #f9f002;
     box-shadow: 2px 5px 10px 5px #00ff00;
     border-width: 0.5em;
     border-color:#000;
   }
-  #btn-issues:after, #btn-themes:after, #theme5:after{
+  #btn-issues:after, #btn-themes:after, #theme5:after, #main-doc h3:after, #mainheader h2:after{
     content: "R-25";
     display: block;
     position: absolute;
@@ -667,7 +675,7 @@ display: none;
     border-left: 2px solid #8ae66e;
   }
 
-  button#btn-issues:before,#btn-themes:before, #theme5:before {
+  button#btn-issues:before,#btn-themes:before, #theme5:before, #main-doc h3:before, #mainheader h2:before {
   --outside: 4px;
   content: "";
   position: absolute;
@@ -1101,16 +1109,9 @@ h3{
 }
 
  h4{
-  border: 4mm ridge #732627;
-  color: #260D0E;
-  background-color: #9b3133;
   font-size: xx-large;
-  font-family: 'canterbury';
-}
-
-h4:hover{
-  color:white;
-  background-color: #000;
+  font-family: 'tomorrow';
+  color:#6d24ff;
 }
 
 h5{
@@ -1390,9 +1391,9 @@ text-align: center;
   padding-top: 1.5rem;
 }
 #mainheader{
-  background-color: #00ff00;
+  background-image: url(../../images/galaxy.gif);
 }
-#mainheader h2, #theme5, #fourth h2, #plu h2{
+#mainheader h2, #theme5, #fourth h2, #plu h2, #main-doc h3{
   background-color: #000!important;
     color:#6d24ff;
     padding: 35px 75px;
@@ -1413,9 +1414,14 @@ text-align: center;
 #plu h2{
   color: #00ff00;
 }
-  #mainheader h2:hover, #theme5:hover, #fourth h2:hover, #plu h2:hover{
+  #mainheader h2:hover, #theme5:hover, #fourth h2:hover, #plu h2:hover, #main-doc h3:hover{
     color:yellow;
   }
+#mainheader h5{
+  padding-bottom: 1.5rem;
+  text-align: center;
+  color:black;
+}
 div.main-body {
   display: grid;
   grid-template-columns: minmax(300px , auto)1fr;   
@@ -1425,8 +1431,6 @@ div.main-body {
  
 nav#navbardoc {
   grid-area: navbardoc;
-  position: fixed;   
-     
 }
  
 nav#navbardoc a {
@@ -1437,10 +1441,28 @@ nav#navbardoc a {
   text-decoration: none;
   color: black;
 }
- 
+#navbardoc .nav-link, a .nav-link{
+  background-color: #6d24ff;
+}
+#navbardoc .nav-link:hover, a .nav-link:hover{
+  box-shadow: 2px 5px 10px 5px #00ff00;
+  color:#6d24ff!important;
+  background-color: #00ff00;
+
+}
 main#main-doc {
   grid-area: mainContent;
 }
- 
-
+#main-doc h3{
+  font-size: 3rem;
+}
+.main-section{
+  background-color: #00ff00;
+}
+.main-section p, .main-section blockquote{
+  color: #6d24ff;
+}
+.breakdoc{
+  display:none;
+}
 /*END DOCUMENTATION*/
