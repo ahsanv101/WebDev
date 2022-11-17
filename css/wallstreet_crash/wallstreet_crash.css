@@ -5,22 +5,17 @@
 
 /*FONTS*/
 @font-face {
-  font-family: 'canterbury';
+  font-family: 'hotel';
   src: url(../fonts/HotelDesArts1929.ttf);
 }
 
 @font-face {
-  font-family: 'carolingia';/*non è usato*/
-  src: url(../fonts/HotelDesArts1929.ttf);
-}
-
-@font-face {
-  font-family: 'scribish';
+  font-family: 'hotel';
   src: url(../fonts/HotelDesArts1929.ttf);
 }
 
 @font-face {/*for body-text*/
-  font-family: 'adobe';
+  font-family: 'bembo';
   src: url(../fonts/ajensonpro-regular.otf);
 }
 
@@ -107,7 +102,7 @@
 
 /*NAVBAR*/
 #navbar{
-  font-family: 'canterbury', serif;
+  font-family: 'hotel', serif;
     /* text-transform: lowercase; */
     /*font-weight: 300;*/
     background-color:#c8ac81;
@@ -157,7 +152,7 @@
 /*#mod{ 
   background-color: #4b4635;
   color: #c8ac81;
-  font-family: scribish;
+  font-family: hotel;
 }*/
 
 #disclaimer{
@@ -167,7 +162,7 @@
 
 .modbod{
   font-size: 1.5rem;
-  font-family: 'canterbury';
+  font-family: 'hotel';
   /* text-align: center; */
   margin: 1rem;
   /*font-weight: 100;*/
@@ -179,7 +174,7 @@
 }
 
 .modal-title{
-  font-family: 'scribish';
+  font-family: 'hotel';
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3rem;
@@ -190,14 +185,14 @@
 }
 
 #butto, #butt, #but{  /*CLOSE butto for index, but for doc and topic, butt for about*/
-  font-family:'scribish' ;
+  font-family:'hotel' ;
   color: white;
   background-color: #000;
   border: none;
 }
 
 .link{
-  font-family:'canterbury';
+  font-family:'hotel';
   font-size: 1.5rem;
   color:#4b4635;
 }
@@ -213,12 +208,21 @@
 /*END DISCLAIMER*/
 
 /*generici*/
+h2::after{
+    content: url("../../images/artdeco.jpeg");
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 3px;
+padding-bottom: 2rem;
+}
+
 h1 {
-  font-family: 'scribish';
+  font-family: 'hotel';
 }
 
 p{
-  font-family: 'adobe';
+  font-family: 'bembo';
 }
 
 button{
@@ -253,7 +257,7 @@ body{
 h2{
   letter-spacing: 0.3rem;
   font-size: 2.5rem;
-  font-family: 'scribish', serif;
+  font-family: 'hotel', serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -263,18 +267,18 @@ h2{
 }
 
 h3{
-  font-family:'scribish';
+  font-family:'hotel';
   color:#732627;
   font-weight: bold;
 }
 
 h4{
-  font-family: 'canterbury';
+  font-family: 'hotel';
   color: #262626;
   text-align: center;
 }
 h5{
-  font-family: 'adobe';
+  font-family: 'bembo';
 }
 img {
   width: 100%;
@@ -303,10 +307,11 @@ img {
 
 
 /*INDEX PAGE*/
-#main-title-col2{
+  /*hideen titles*/
+#main-title-cold{
   display:none;
 }
-#main-title-cold{
+#main-title-col2{
   display:none;
 }
 
@@ -323,6 +328,8 @@ img {
   display: none;
 }
 
+
+
 .bann{
   padding: 1rem;
 }
@@ -331,12 +338,12 @@ img {
   display: none;
   }
 /*.glitch-bloc{
-  font-family: 'scribish', serif;
+  font-family: 'hotel', serif;
 }*/
 
 /* non esiste
 .d-grip{
-  font-family: 'scribish';
+  font-family: 'hotel';
 }*/
 
 /*INDEX PAGE: FIRST textgate*/
@@ -349,7 +356,7 @@ img {
   margin-top: 1em;
   justify-content: center;
   text-align: center;
-  font-family:'scribish' ;
+  font-family:'hotel' ;
   opacity: 0.7;
 }*/
 
@@ -546,7 +553,7 @@ img {
 }
 
 #btn-issues, #btn-themes{
-  font-family: 'scribish', serif;
+  font-family: 'hotel', serif;
   border-radius: 0;
   border: 0.5mm ridge black;
   opacity: 0.7;
@@ -619,7 +626,7 @@ color: #000;
   color: #c8ac81;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'scribish';
+  font-family: 'hotel';
   border: none;
   box-shadow: 3px 3px 3px #4b4635;
   
@@ -684,7 +691,7 @@ color: #000;
     text-align: left;
     background-color: #4b4635;
     color: #c8ac81;
-    font-family: scribish;
+    font-family: hotel;
 }*/
 
 
@@ -731,12 +738,12 @@ color: #000;
 
 .polartext {
   text-align: center;
-  font-family: 'canterbury';
+  font-family: 'hotel';
   color: #aa8c4a; 
 }
 
 .polartextcomm {
-  font-family: 'scribish', serif;
+  font-family: 'hotel', serif;
   text-align: center;
   font-size: 2rem;
   opacity: 0.9;
@@ -789,7 +796,7 @@ color: #000;
     margin: 0.625 0;
     text-decoration: none;
     color: black;
-    font-family: 'scribish', serif;
+    font-family: 'hotel', serif;
     text-align: left;
     font-size: 1.8rem;
     opacity: 0.9;
@@ -817,6 +824,10 @@ color: #000;
   /*END DOCUMENTATION*/
   
   /* ABOUT US */
+  #eyes{
+    display:none;
+  }
+
   .surv{
     display: none;
   }
@@ -844,14 +855,19 @@ color: #000;
   /* END ABOUT US */
 
 /*TOPIC PAGE*/
-#bann{ /*La proprietà z-index nei CSS specifica la posizione di un elemento rispetto ad un altro. un elemento davanti all'altro*/
-  z-index: 1;
-}
+ /*La proprietà z-index nei CSS specifica la posizione di un elemento rispetto ad un altro. un elemento davanti all'altro*/
+  #bann{
+    z-index: 1;
+  }
+  
+  #bann2{
+    z-index: 1;
+  }
+  
+  footer{
+    z-index:1;
+  }
 
-#bann2{
-
-  z-index: 1;
-}
 
 #doclist{
   text-align: center;
@@ -888,7 +904,7 @@ color: #000;
   padding-top: 5em;
   /* margin-left: 0em;
   margin-right: 0em; */
-  font-family: "adobe";
+  font-family: "bembo";
 }
 
 .form-check input[type="checkbox"]{ /*non funziona*/
@@ -936,7 +952,7 @@ color: #000;
   margin: 0.625 0;
    /*text-decoration: none;*/
   color: black;
-  font-family: 'scribish', serif;
+  font-family: 'hotel', serif;
   text-align: center;
   font-size: 1.3rem;
   opacity: 0.9;
@@ -945,7 +961,7 @@ color: #000;
 
 .tab-content a{
   color: black;
-  font-family: "adobe";
+  font-family: "bembo";
   font-size: 0.9rem;
 }
 .tab-content ul a{
@@ -962,7 +978,7 @@ color: #000;
   margin-right: auto;
   /*text-decoration: none;*/
   color: black;
-  font-family: 'scribish', serif;
+  font-family: 'hotel', serif;
   text-align: center;
   font-size: 1.5rem;
   opacity: 0.9;
@@ -1014,7 +1030,7 @@ color: #000;
 }
 
 figcaption{
-  font-family: 'adobe';
+  font-family: 'bembo';
   font-size: 0.5rem;
 }
 
@@ -1083,7 +1099,7 @@ figcaption{
 /*si potrebbe commentare da qui:
 label{
   font-size: 1.5rem;
-  font-family:'scribish';
+  font-family:'hotel';
   color:#4b4635;
 }
 label:hover{
@@ -1312,7 +1328,7 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 /*FOOTER*/
 footer{
   background-color: #c8ac81;
-  font-family: 'canterbury';
+  font-family: 'hotel';
   color:#732627;
   text-align: center;
   font-weight: 100;
