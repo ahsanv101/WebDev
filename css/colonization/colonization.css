@@ -512,6 +512,10 @@ h2{
   background-color: transparent !important;
 }
 
+#sentenceTab{
+  border:none;
+}
+
 /* #sentenceTab > li > a:active{
   
   background-color: #000 !important;
@@ -818,6 +822,9 @@ h2{
   color:#260d0e;
 } */
 
+#eyes{
+  display:none;}
+
 
 #main-title{
 display: none;
@@ -914,7 +921,7 @@ border-color: #856d4b;
 /* padding-top: 50px; */
 text-align: center;
 padding: 1em;
-font-size: 1.2rem;
+font-size: 1.5rem;
 /* width:100%; */
 /* size: fit-content; */
 }
@@ -1211,6 +1218,7 @@ h4:hover{
   border-color: #856d4b;
   z-index: 1;
   position: relative;
+  font-size: 1.2rem;
 
   /* top: 50px; */
 
@@ -1223,6 +1231,7 @@ h4:hover{
   border-color: #856d4b;
   position: relative;
   z-index: 1;
+  font-size: 1.2rem;
 
 }
 
@@ -1371,6 +1380,10 @@ background-color: #000;
   border-style: dotted ;
   box-shadow: 0 0 0 1em white inset;
 }
+
+#file p,#file2 {
+  font-size: 1.2rem;
+ }
 
 #file2 img {
   padding: 1em;
@@ -1687,10 +1700,16 @@ SELECTOR CSSS */
   }
 
   #mainheader{
-    padding-top: 1.5rem;
+    padding-top: 5em;
+    /* font-size: 1.5rem !important; */
   }
   h4{
     text-align: center;
+  }
+
+  #mainheader h5{
+    /* padding-top: 5em; */
+    font-size: 1.5rem !important;
   }
 /* .containerpadding h2 {
   padding-top: 1rem;
@@ -1771,17 +1790,26 @@ display: none;
 
   .main-section p{
     /* text-align: center; */
-    font-size: 1.3rem;
+    /* font-size: 1.5rem; */
   }
 
   .main-section{
     border: 0.3rem dotted #262626; 
     margin: 1rem;
     padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+  .main-section h5{
+    font-size: 1.5rem;
+    /* font-family:'scribish' !important; */
+    /* color: black; */
+
   }
 
   .main-section h3{
     margin: 0;
+    /* font-size: 1.5rem; */
+      /* font-size: 1.5rem; */
   }
 
 

@@ -3,7 +3,7 @@
 
 body {
 
-  cursor: url(../../css/images/icons8-pen-32.png) 15 10,auto !important;
+  cursor: url(../../css/images/glass.png) 15 10,auto !important;
 }
 
 /* Track */
@@ -397,7 +397,7 @@ padding:0; margin:0; height: 100%;
   /* margin: 1rem; */
   font-weight: 100;
  
-  color:#260d0e;
+  color:#000000;
   background-image : url(../images/olddd3.png);
   
   /* background-image : url(../images/dropscroll.png); */
@@ -438,7 +438,7 @@ padding:0; margin:0; height: 100%;
   background-color: #05061B;
   display:flex;
   justify-content:center;
-  backface-visibility: visible;
+  /* backface-visibility: visible; */
   /* opacity: 0.2; */
 
   /* opacity: 0.5; */
@@ -531,7 +531,7 @@ h2{
   color: #856d4b; */
 /* } */
 .link{
-  color: #494847;
+  color:red;
 }
 .link:hover{
   color:red;
@@ -548,6 +548,11 @@ h2{
   font-family: 'canterbury', serif;
     /* text-transform: lowercase; */
     font-weight: 300;
+    /* height: 15em; */
+    background-image : url(../images/terror-eye.gif);
+  background-repeat: no-repeat;
+  background-size: 8em 8em;
+  background-position: 0 -1em;
     /* background-image : url(../images/kindpng_726689.png); */
     /* background-repeat: no-repeat; */
     /* background-size: 95em 100%; */
@@ -568,6 +573,9 @@ h2{
 
 #sentenceTab > .nav-item > .active {
   background-color: transparent !important;
+}
+#sentenceTab{
+  border:none;
 }
 
 /* #sentenceTab > li > a:active{
@@ -1098,7 +1106,7 @@ color: rgb(0, 0, 0);
 .img-fluid{
   height: 18em;
   margin-bottom: 2em;
-  width: 100% !important;
+  width: 80% !important;
   
 }
 
@@ -1288,7 +1296,7 @@ footer p{
   background-repeat: no-repeat;
   background-size: 5em 5em;
   /* background-position-x: 3em; */
-  background-position-y: 10.2em;
+  background-position: left bottom;
   background-color: #000;
   color: white !important;
   /* background-image : url(../images/paper.jpg);
@@ -1956,9 +1964,10 @@ SELECTOR CSSS */
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: black;
-  background-image : url(../images/terror-eye.gif);
-  background-repeat: repeat-y;
-  background-position: 5rem 100rem;
+  /* background-image : url(../images/terror-eye.gif);
+  background-repeat: no-repeat;
+  background-position-y: 40rem; */
+  /* background-position: 5rem 100rem; */
   
   /* border-style: inset; */
   }
