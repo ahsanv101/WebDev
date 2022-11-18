@@ -54,7 +54,7 @@ body{
   font-size: 4rem;
   color: #bab1a0;
   margin-top: 0!important;
-
+  background-color: inherit;
 }
 .modbod{
   font-size: 2rem;
@@ -66,7 +66,7 @@ body{
   background-color: #bab1a0;
 }
 #disclaimer{
-  background-color:#40171b;
+  background-image: url(../../images/peste.png);
 }
 
 #refer li a{
@@ -175,8 +175,7 @@ li .dropdown-item{
 .container-fluid{
   padding-right:0;
   padding-left:0;
-  margin-left: 0;
-  margin-right:0;
+  margin: 0;
 }
 .row{
   margin: 0;
@@ -634,7 +633,10 @@ input[type="checkbox"]{
 #teamsec{
   padding-top: 7rem;
   padding-bottom:4rem;
-  background-image: url(original.gif);
+  background-image: url(../../images/peste.png);
+}
+.surv{
+  background-color: #30302e;
 }
 .us{
   max-width:fit-content;
@@ -643,6 +645,11 @@ input[type="checkbox"]{
 }
 .siamo{
   padding-top: 0.1rem!important;
+  color:#bab1a0;
+}
+.slideanim{
+  background-image: linear-gradient(transparent,rgba(0,0,0,0.8));
+
 }
 .thumbnail{
   margin-bottom: 0rem;
@@ -679,6 +686,9 @@ button{
   margin-top:0;
   padding-top:0!important;
   
+}
+.main-body{
+  background-image: linear-gradient(transparent,rgba(0,0,0,0.8));
 }
 /*general requirements*/
 :root{
@@ -722,7 +732,7 @@ h4:hover{
 h5{
   font-size: xx-large;
   text-align: center;
-  background-color:#5b181f;
+  background-color:#260D0E;
   color:#bab1a0;
   margin:0;
 }
@@ -1009,7 +1019,7 @@ div.main-body {
 nav#navbardoc {
   grid-area: navbardoc; 
   padding-bottom: 3rem;
-  background-color: #30302e;
+  background-image:url(../../images/peste.png);
      
 }
 #mainheader h2{
@@ -1031,6 +1041,12 @@ nav#navbardoc a {
   background-color: #40171b;
   font-family: 'canterbury';
   color: black;
+}
+.main-body{
+  margin:0;
+}
+nav#navbardoc a:hover{
+  background-color: #000;
 }
 #navbardoc p{
   font-size: 2rem;
