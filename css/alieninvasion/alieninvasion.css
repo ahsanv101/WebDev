@@ -61,12 +61,12 @@ html{
   background-color: #6d24ff;
   color:#00ff00;
 }
-#but{
+#butt{
   font-family: 'tomorrow';
   background-color: #00ff00;
   color:#6d24ff;
 }
-#but:hover{
+#butt:hover{
   box-shadow: 2px 5px 10px 5px #00ff00;
 
 }
@@ -344,8 +344,7 @@ a:hover {
   margin-right:0;
 }
 .row{
-  margin-left: 0;
-  margin-right: 0;
+  margin:0;
 }
 .row{} mt-4{
   margin-top: 0;
@@ -405,7 +404,7 @@ h2{
   font-size: 3rem;
 }
 #title2{
-  padding-top:0;
+  padding-top:8rem;
 }
 
 #first-text{
