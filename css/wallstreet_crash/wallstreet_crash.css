@@ -105,7 +105,7 @@
   font-family: 'hotel', serif;
     /* text-transform: lowercase; */
     /*font-weight: 300;*/
-    background-color:#c8ac81;
+    background-color:#f3efe2;
     /* width:100%; */
     cursor:pointer;
 }
@@ -116,12 +116,12 @@
 
 #navbarDropdownMenuLink, #navbarDropdownMenuL, #navbarDropdownMenuLi, #navbarDrop, #navbarDropp{ /*topic and themes*/
   font-size: 1.5rem;
-  background-color: #c8ac81;
+  background-color: #f3efe2;
   color:black;
 }
 
 .dropdown-menu{
-  background-color:#c8ac81;
+  background-color:#f3efe2;
   color: black;
   border-radius: 0.5rem;
 }
@@ -134,7 +134,7 @@
 
 .dropdown-item:hover{
   background-color: #4c1a1b;
-  color:#aa8c4a;
+  color:#c3b281;
 }
 
 /* non esiste 
@@ -151,7 +151,7 @@
 }
 /*#mod{ 
   background-color: #4b4635;
-  color: #c8ac81;
+  color: #f3efe2;
   font-family: hotel;
 }*/
 
@@ -180,7 +180,7 @@
 }
 
 .modal-header,.modal-footer{
-  background-color: #aa8c4a;
+  background-color: #c3b281;
 }
 
 #butto, #butt, #but{  /*CLOSE butto for index, but for doc and topic, butt for about*/
@@ -231,7 +231,7 @@ button{
 
 body{
   font-family: 'caro ngia', sans-serif; 
-  background-color:#aa8c4a;                               
+  background-color:#c3b281;                               
 }
 
 /* male male .container-fluid{ in navbar, footer, topic1, index, about us
@@ -292,7 +292,7 @@ img {
 /*ALL HOVERS
 
 .container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover, #tett:hover, #metto:hover{
-  background-color: #c8ac81;
+  background-color: #f3efe2;
   color:#4b4635;
 }
 
@@ -478,7 +478,7 @@ img {
 }
 
 #first{
-    background-color: #aa8c4a;
+    background-color: #c3b281;
 }
 
 
@@ -505,7 +505,7 @@ img {
 #project-description{
     font-size: 2rem;
     text-align: center;
-    color: #c8ac81;
+    color: #f3efe2;
     padding-bottom: 1.5rem;
 }
 
@@ -532,7 +532,7 @@ img {
 #second{
   padding-bottom: 3rem;
   padding-top: 3rem;
-  background-color: #c8ac81;
+  background-color: #f3efe2;
 }
 
 #short{ 
@@ -562,20 +562,22 @@ img {
 
 #btn-themes{
   background-color: #262626;
+  /*background-image: url("../../images/artdecowallpaper.jpg");*/
   color:white;
 }
 #btn-themes:hover{
   background-color:#262626;
-  color: #c8ac81;
+  color: #f3efe2;
 }
 
 #btn-issues{
   color:#262626;
+  /*background-image: url("../../images/artdecowallpaper.jpg");*/
   background-color: white;
 }
 #btn-issues:hover{
   background-color: white;
-  color: #c8ac81;
+  color: #f3efe2;
 }
 
 /*non esiste 
@@ -594,7 +596,7 @@ img {
   font-size: 3rem;
 }*/
 #third{
-    background-color: #aa8c4a;
+    background-color: #c3b281;
     padding-bottom: 3rem;
     padding-top: 3rem;
 }
@@ -620,7 +622,7 @@ color: #000;
   width: 10em;
   text-align: center;
   background-color: #262626;
-  color: #c8ac81;
+  color: #f3efe2;
   margin-left: auto;
   margin-right: auto;
   font-family: 'hotel';
@@ -630,7 +632,7 @@ color: #000;
 }
 
  #theme5:hover{
-  background-color: #c8ac81;
+  background-color: #f3efe2;
   color: #4b4635;
 } 
 
@@ -645,7 +647,7 @@ color: #000;
 }*/
 
 #fourth h2{
-  color: #aa8c4a;
+  color: #c3b281;
 }
 
 /*
@@ -664,7 +666,7 @@ color: #000;
 
 #themes-text{
   /* margin: 1rem 0 1rem 0; */
-  color:#aa8c4a;
+  color:#c3b281;
   font-size: 2rem;
   text-align:center;
   margin-top:1rem;
@@ -687,7 +689,7 @@ color: #000;
    
     text-align: left;
     background-color: #4b4635;
-    color: #c8ac81;
+    color: #f3efe2;
     font-family: hotel;
 }*/
 
@@ -736,7 +738,7 @@ color: #000;
 .polartext {
   text-align: center;
   font-family: 'hotel';
-  color: #aa8c4a; 
+  color: #c3b281; 
 }
 
 .polartextcomm {
@@ -744,13 +746,13 @@ color: #000;
   text-align: center;
   font-size: 2rem;
   opacity: 0.9;
-  color: #aa8c4a;
+  color: #c3b281;
 }
 
 .collapse{
  text-align: center;
  padding: 0.5rem;
- color: #aa8c4a; 
+ color: #c3b281; 
 }
 
 /*END INDEX PAGE*/
@@ -778,6 +780,7 @@ color: #000;
   }
    
   #navbardoc {
+    background-image: url("../../images/artdecowallpaper.jpg");
     grid-area: navbardoc;
      
   }
@@ -786,6 +789,7 @@ color: #000;
   }
   
   #navbardoc a {
+    background:#f5f2df;
     display: block;
     border: 0.3rem double black;
     border-collapse: separate;
@@ -801,7 +805,7 @@ color: #000;
   }
 
   #navbardoc a:hover {
-    color: #c8ac81;
+    color: #f3efe2;
     background-color:#4c1a1b;
   }
   .main-section p{
@@ -882,7 +886,7 @@ color: #000;
 
 .sticky-top{
   padding-top: 3rem;
-  background-color: #c8ac81;
+  background-color: #f3efe2;
   position: sticky;
   width: 100%;
 }
@@ -937,7 +941,7 @@ color: #000;
 
 #sti{
   padding-top:6rem;
-  background-color: #c8ac81;
+  background-color: #f3efe2;
   font-size: 2rem;
 }
 
@@ -984,20 +988,20 @@ color: #000;
 
 
 #lst_btn:hover {
-  color: #c8ac81;
+  color: #f3efe2;
   background-color:#4c1a1b;
 }
 
 
 #sti  a:hover {
-  color: #c8ac81;
+  color: #f3efe2;
   background-color:#4c1a1b;
 }
 
 .tab-content{
   overflow-y:scroll;
   height:8rem;
-  background-color: #c8ac81;
+  background-color: #f3efe2;
 }
 
 
@@ -1140,7 +1144,7 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 }
 
 #ttx, #ttxt, #tutto, #nulla{
-  color: #aa8c4a;
+  color: #c3b281;
   font-size: xx-large;
   cursor: all-scroll;
   position: relative;
@@ -1292,11 +1296,11 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 }
 
 .fab-content, .fab-shadow, .sub-button, .fab{
-  background-color: #aa8c4a !important;
+  background-color: #c3b281 !important;
 }
 
 .sub-button:hover{
-  background-color: #c8ac81 !important;
+  background-color: #f3efe2 !important;
 }
 /* .fab-container #enable-future:hover{
   background: url("/typetravel/images/Future/g25.gif") !important;
@@ -1324,7 +1328,7 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 
 /*FOOTER*/
 footer{
-  background-color: #c8ac81;
+  background-color: #f3efe2;
   font-family: 'hotel';
   color:#732627;
   text-align: center;
@@ -1381,7 +1385,7 @@ display: inline-block;
 
 /*.sub{
 background-color: #4b4635;
-color: #c8ac81;
+color: #f3efe2;
 size: 2rem;
 }*/
 
