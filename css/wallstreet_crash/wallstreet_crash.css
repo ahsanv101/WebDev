@@ -176,7 +176,6 @@
 .modal-title{
   font-family: 'hotel';
   text-transform: uppercase;
-  font-weight: bold;
   font-size: 3rem;
 }
 
@@ -258,7 +257,6 @@ h2{
   letter-spacing: 0.3rem;
   font-size: 2.5rem;
   font-family: 'hotel', serif;
-  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   margin-top: 1em;
@@ -269,7 +267,6 @@ h2{
 h3{
   font-family:'hotel';
   color:#732627;
-  font-weight: bold;
 }
 
 h4{
