@@ -83,11 +83,11 @@ html{
     font-size: 2rem;
 }
 
-.nav-item, .nav-link, #navbarDropdownMenuLink{
+.nav-item, .nav-link, #navbarDropdownMenuLink, li .nav-item{
   font-size: 2rem;
   color:#00ff00!important;
 } 
-.nav-item:hover{
+.nav-item:hover, a .dropdown-item:hover{
   box-shadow: 2px 5px 10px 5px #00ff00;
   border-width: 0.5em;
   border-color:#000;
@@ -147,7 +147,7 @@ body {
 }
 
 /* CUSTOMIZABLE / hyperlink styling */
-a {
+#nav-active-link .nav-link.active, a .dropdown-item:hover, .dropdown-toggle.show:hover{
   text-decoration: none;
   color: var(--grey1);
   padding: 5px 2%;
@@ -648,13 +648,13 @@ display: none;
   .row h2:hover{
     color: yellow;
   }
-  #btn-issues:hover, #btn-themes:hover, #btn-issues:focus, #btn-themes:focus, #theme5:hover, #theme5:focus, #mainheader h2:focus{
+  #btn-issues:hover, #btn-themes:hover, #btn-issues:focus, #btn-themes:focus, #theme5:hover, #theme5:focus, #mainheader h2:focus, #doclist h2:focus{
     color: #f9f002;
     box-shadow: 2px 5px 10px 5px #00ff00;
     border-width: 0.5em;
     border-color:#000;
   }
-  #btn-issues:after, #btn-themes:after, #theme5:after, #main-doc h3:after, #mainheader h2:after{
+  #btn-issues:after, #btn-themes:after, #theme5:after, #main-doc h3:after, #mainheader h2:after, #doclist h2:after{
     content: "R-25";
     display: block;
     position: absolute;
@@ -668,7 +668,7 @@ display: none;
     border-left: 2px solid #8ae66e;
   }
 
-  button#btn-issues:before,#btn-themes:before, #theme5:before, #main-doc h3:before, #mainheader h2:before {
+  button#btn-issues:before,#btn-themes:before, #theme5:before, #main-doc h3:before, #mainheader h2:before, #doclist h2:before{
   --outside: 4px;
   content: "";
   position: absolute;
@@ -685,7 +685,7 @@ display: none;
 button.#btn-themes:hover:before,
 a.#btn-issues:hover:before,
 button.#btn-themes:focus:before,
-a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before {
+a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before, #doclist h2:before {
   display: block;
   animation-name: hoverbefore;
   animation-duration: var(--glitched-duration);
@@ -960,42 +960,52 @@ footer p{
   margin-top: 0;
   text-align: center;
   width:100%;
-  size: fit-content;
-  padding-top: 4rem;
+  padding-top: 3.8rem;
+  background-image: url(../../images/galaxy.gif);
 }
 /*end doclist*/
 
 /*start metadata*/
+#checkb{
+  background-color: #000;
+}
 .sticky-top{
   padding-top:20px;
-  background-color: white;
   text-align: center;
+  font-family: 'tomorrow';
 }
-label{
+.btn-default{
   font-size: x-large;
-  font-family:'scribish';
-  color:#260D0E;
+  font-family:'tomorrow';
+  color:#00ff00;
 }
-  
-label:hover{
-  color:black;
+.btn-default:hover{
+  color: #00ff00;
+  text-shadow: 0 0 3vw #179E05;
 }
-.bann{
+#bann{
   padding: 1rem;
+  background-image: url(../../images/galaxy.gif);
+}
+#bann2{
+  background-image: url(../../images/galaxy.gif);
 }
 .form-check-inline{
-  border-width:0.2rem dotted #260d0e;
   padding-top: 3rem;
 }
-#peop, #plac, #eve, #conce, #oppi{
-  color:#bab1a0;
+#input .form-check-input:focus{
+  color:#00ff00;
 }
-input[type="checkbox"]{
-  color:#732627;
+.col-4{
+  background-color: #00ff00;
+  margin-bottom: 0;
 }
 #peop:hover, #plac:hover, #eve:hover, #conce:hover, #oppi:hover{
-  background-color: #5b181f;
-  border-color: #bab1a0;
+  background-color: #6d24ff;
+}
+#peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab {
+  font-size: 1.8rem;
+  background-color: #6d24ff;
 }
 
 #sti{
@@ -1004,9 +1014,7 @@ input[type="checkbox"]{
 .space{
   padding-bottom:2rem;
 }
-#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab {
-  font-size: 18px;
-}
+
 .tab-content{
   overflow-y:scroll;
   height:250px;
@@ -1046,7 +1054,7 @@ input[type="checkbox"]{
 #eyes{
   background-color: #6d24ff;
   margin:0;
-  height:45vh;
+  padding: 0;
 }
 .eye{
   width: 33%!important;
@@ -1386,7 +1394,7 @@ text-align: center;
 #mainheader{
   background-image: url(../../images/galaxy.gif);
 }
-#mainheader h2, #theme5, #main-doc h3{
+#theme5, #main-doc h3{
   background-color: #000!important;
     color:#6d24ff;
     padding: 35px 75px;
@@ -1404,7 +1412,7 @@ text-align: center;
     outline: none;
 
   }
-#plu h2, #fourth h2{
+#plu h2, #fourth h2, #mainheader h2, #doclist h2{
   color: #00ff00;
   background-color: #000!important;
   padding: 35px 75px;
@@ -1421,8 +1429,11 @@ text-align: center;
     background-color: var(--background-color);
     outline: none;
 }
-  #mainheader h2:hover, #theme5:hover, #fourth h2:hover, #plu h2:hover, #main-doc h3:hover, #fourth h2:hover, #plu h2:hover{
+  #mainheader h2:hover, #theme5:hover, #fourth h2:hover, #plu h2:hover, #main-doc h3:hover, #fourth h2:hover, #plu h2:hover, #doclist h2:hover{
     color:yellow;
+  }
+  #mainheader h2{
+    padding-top: 4rem;
   }
 #mainheader h5{
   padding-bottom: 1.5rem;
@@ -1440,25 +1451,47 @@ nav#navbardoc {
   grid-area: navbardoc;
 }
  
-nav#navbardoc a {
+nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab, a .dropdown-item, .dropdown-toggle.show{
   display: block;
   border: 1px solid black;
   padding: 5px;
   margin: 10px 0;
   text-decoration: none;
   color: black;
+  padding: 5px 2%;
+  border: 2px solid var(--grey2);
+  border-radius: 50px;
+  
+  align-self: center;
+  text-align: center;
+  
+  transition: all ease-out 0.5s; /* for smooth transitions when cursor leaves the button */
+ 
+  width: 100%;
+  max-width: 100%;
 }
 #navbardoc .nav-link, a .nav-link{
   background-color: #6d24ff;
+  color:#00ff00;
 }
-#navbardoc .nav-link:hover, a .nav-link:hover{
+.nav-item .nav-link{
+  color:black;
+}
+.col-sm h3{
+  color:#6d24ff!important;
+  background-color: #00ff00;
+  border-color: #6d24ff;
+}
+.col-sm h3:hover{
+  box-shadow: 2px 5px 10px 5px #00ff00;
+}
+#navbardoc .nav-link:hover, a .nav-link:hover, .col-sm h3:hover, li .nav-item:hover{
   box-shadow: 2px 5px 10px 5px #00ff00;
   color:#6d24ff!important;
   background-color: #00ff00;
-}
-.nav-link:hover{
   border-color: #6d24ff;
 }
+
 main#main-doc {
   grid-area: mainContent;
 }
