@@ -161,6 +161,9 @@ body{
   background-color:#d1bdab;
   color:#5b181f;
 }
+.cyberpunk, .walls, #main-title-col, #main-title-col2{
+  display:none;
+}
 .container-fluid{
   padding-right:0;
   padding-left:0;
