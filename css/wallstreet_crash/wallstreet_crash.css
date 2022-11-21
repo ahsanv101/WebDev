@@ -255,7 +255,7 @@ body{
 
 h2{
   letter-spacing: 0.3rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: 'hotel', serif;
   text-transform: uppercase;
   text-align: center;
@@ -533,13 +533,13 @@ img {
 #second{
   padding-bottom: 3rem;
   padding-top: 3rem;
-  background-color: #f3efe2;
+  /*background-color: #f3efe2;*/
+    background-image: url("../../images/artdecowallpaperopacity.jpg");
 }
 
 #short{ 
   font-size: 2rem;
   color:black;
-  opacity: 0.7;
   text-align:center;
   margin-left:3rem;
   margin-right: 3rem;
@@ -554,7 +554,7 @@ img {
   font-family: 'hotel', serif;
   border-radius: 0;
   border: 0.5mm ridge black;
-  opacity: 0.7;
+  
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
@@ -833,6 +833,7 @@ color: #000;
   .surv{
     display: none;
   }
+
   #team{
     padding-bottom: 1.5rem;
   }
@@ -873,6 +874,7 @@ color: #000;
   height:100%;
 }
 
+
   .thumbnail p{
     font-size: 1.3rem;
   }
@@ -899,8 +901,6 @@ color: #000;
   width:100%;
   size: fit-content;
   margin-top: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 #doclist h2 {
@@ -920,6 +920,7 @@ color: #000;
 }
 
 #checkb{
+  background-image: url("../../images/artdecowallpaperopacity.jpg");
   text-align: center;
   /*border-style:inset;
   border-color: #856d4b;*/
@@ -939,6 +940,7 @@ color: #000;
 
 [type=button] {
   cursor: pointer;
+  font-weight: 800;
 }
 
 .space{
@@ -964,7 +966,7 @@ color: #000;
 }
 
 #sti{
-  padding-top:6rem;
+  padding-top:  7.5rem;
   background-color: #f3efe2;
   font-size: 2rem;
 }
