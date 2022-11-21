@@ -830,6 +830,10 @@ h2{
 display: none;
 }
 
+.overlay{
+  display: none;
+}
+
 #main-title-cold{
   display:none;
 }

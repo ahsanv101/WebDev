@@ -937,6 +937,10 @@ display: none;
   display:none;
 }
 
+.overlay{
+  display: none;
+}
+
 
 
 #main-title-wall{ 
