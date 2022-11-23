@@ -102,7 +102,12 @@ body {
    
   }
   #navbardoc{
+    
     display: none !important;
+}
+#main-doc {
+  /* grid-area: mainContent; */
+  padding-left: 0em !important;
 }
 .navbar-toggler{
   /* color: #377c50 !important; */
@@ -1128,7 +1133,7 @@ color: rgb(0, 0, 0);
   background-size: 20em 20em;
   
   background-repeat:no-repeat;
-  background-position: 2em 20em;
+  background-position: 0.5em 20em;
   /* background-position: 3 0; */
   
   
@@ -1168,11 +1173,13 @@ footer{
     padding: 0.5em;
     z-index: 1;
 }  
+
+
 .fabvit{
   color:white;
 }
 .fabvit:active,.fabvit:hover{
-  color: black
+  color: rgb(255, 0, 0)
 }
 
 footer p, #cop, #copy, #copp{
@@ -1910,7 +1917,7 @@ SELECTOR CSSS */
 .polaroid:hover{
   background-image: url(../images/red.png) !important;
   background-repeat: no-repeat;
-  background-position: 1em 2em;
+  background-position: 0em 2em;
  
 }
 
@@ -1977,9 +1984,14 @@ SELECTOR CSSS */
   }
 
   #mainheader{
-    padding-top: 1.5rem;
-    color: white;
+    padding-top: 5em;
+    color: white ;
   }
+  #mainheader h2{
+    color: red ;
+    font-family: 'canterbury';
+  }
+
   h4{
     text-align: center;
   }
@@ -2004,12 +2016,17 @@ display: none;
   }
    
   #navbardoc {
-    grid-area: navbardoc;
+    position: fixed;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    /* font-size: 0.5em; */
+    /* grid-area: navbardoc; */
     /* padding-right: 2rem; */
      
   }
   #main-doc {
     grid-area: mainContent;
+    padding-left: 17em;
   }
   #main-doc a{
     color: rgb(255, 255, 255);
@@ -2026,6 +2043,7 @@ display: none;
   
     width: 10em;
     text-align: center;
+    font-size: 1.5em;
 
   
   
