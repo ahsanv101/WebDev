@@ -783,6 +783,7 @@ color: #000;
 .containerpadding h2 {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
+  padding-left: 17rem;
   }
 
   .containerpadding h5 {
@@ -795,15 +796,22 @@ color: #000;
     grid-gap: 1rem;
   }
 
-  #navbardoc {
-    background-image: url("../../images/artdecowallpaper.jpg");
-    /*grid-area: navbardoc;*/
-     
-  }
   #main-doc {
     grid-area: mainContent;
+    padding-left: 17em;
   }
   
+  #navbardoc {
+    background-image: url("../../images/artdecowallpaper.jpg");
+    grid-area: navbardoc;
+    position: fixed;
+    margin-top: -8rem;
+    padding-top: 8rem;
+    padding-left: 0.5em;
+    padding-bottom: 7.5rem;
+    padding-right: 0.5em;
+  }
+
   #navbardoc a {
     background:#f5f2df;
     display: block;
@@ -996,6 +1004,7 @@ color: #000;
 }
 
 #sti{
+  background-image: url("../../images/artdecowallpaperopacity.jpg");
   padding-top:  7.5rem;
   background-color: #f3efe2;
   font-size: 2rem;
@@ -1003,7 +1012,7 @@ color: #000;
 }
 
 #asides-tab, #speeches-tab, #quotes-tab, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab {
-  
+  background: #f5f2df;
   border: 0.3rem double black;
   border-collapse: separate;
   padding: 0.3rem;

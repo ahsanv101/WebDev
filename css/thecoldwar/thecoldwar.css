@@ -797,6 +797,18 @@ color: #000;
 
 
 /*START DOCUMENTATION*/
+
+.doc-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+  align-items: center;
+  text-align: center;
+  /* width: 45em; */
+  height: 20em;
+}
+
 .containerpadding {
   padding-top: 1.5rem;
   margin-left: 1rem;
@@ -805,6 +817,7 @@ color: #000;
 .containerpadding h2 {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
+  padding-left: 17rem;
   }
 
   .containerpadding h5 {
@@ -817,25 +830,35 @@ color: #000;
     grid-gap: 1rem;
   }
    
-  #navbardoc {
-    grid-area: navbardoc;
-     
-  }
   #main-doc {
     grid-area: mainContent;
+    padding-left: 17em;
   }
+
+  #navbardoc {
+    background-image: url("../../images/bomb.jpg");
+    background-repeat: repeat;
+    grid-area: navbardoc;
+    position: fixed;
+  
+    padding-top: 8rem;
+    padding-left: 0.5em;
+    padding-bottom: 7.5rem;
+    padding-right: 0.5em;
+  }
+
   
   #navbardoc a {
     display: block;
-    border: 0.3rem double black;
-    border-collapse: separate;
+   /* border: 0.3rem double black;
+    border-collapse: separate;*/
     padding: 0.3rem;
     margin: 0.625 0;
     text-decoration: none;
     color: black;
     font-family: 'military', serif;
     text-align: left;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     opacity: 0.9;
     border-radius: 0.5rem;
   }
@@ -861,6 +884,10 @@ color: #000;
   /*END DOCUMENTATION*/
   
   /* ABOUT US */
+  .overlay{
+    display: none;
+  }
+
   #eyes{
     display:none;
   }
@@ -874,8 +901,26 @@ color: #000;
   
   #teamsec{ /*meet our team*/
     padding-top: 4rem;
-    padding-bottom: 1.5rem;
+    /*padding-bottom: 1.5rem;*/
   }
+
+  .wewantbeer{
+    background-image: url("../../images/nuclear.jpg");
+    padding-top: 6.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.7;
+  }
+  /*
+  .prob{
+    background-image: url("../../images/prob.jpg");
+    padding-top: 7rem;
+    margin-bottom: 1.5rem;
+  }
+  .end{
+    background-image: url("../../images/end.jpg");
+    padding-top: 7rem;
+    margin-bottom: 1.5rem;
+  }*/
   
   .siamo{
     padding-top: 0.5rem;
