@@ -3,7 +3,7 @@
 
 body {
 
-  cursor: url(../../css/images/glass.png) 15 10,auto !important;
+  cursor: url(../../css/images/icons8-target-30.png) 15 10,auto !important;
 }
 
 /* Track */
@@ -2019,6 +2019,9 @@ display: none;
     position: fixed;
     padding-top: 1em;
     padding-left: 0.5em;
+    /* z-index: 5; */
+    /* padding-bottom: 20em; */
+    /* margin-bottom: 50em !important; */
     /* font-size: 0.5em; */
     /* grid-area: navbardoc; */
     /* padding-right: 2rem; */
