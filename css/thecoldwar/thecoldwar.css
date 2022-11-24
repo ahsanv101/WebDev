@@ -127,20 +127,22 @@ html {
 }
 
 .dropdown-menu{
-  background-color:#a1281c;
+  background-color:#f3b21a;
   color: black;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
 }
 
 .dropdown-item{
   font-size: 1.5rem;
+  text-align: center;
   color:black;
   cursor:pointer;
 }
 
 .dropdown-item:hover{
-  background-color: #4c1a1b;
-  color:#92938d;
+  background-color: black;
+  color:#f3b21a;
+  border-radius: 0.8rem;
 }
 
 /* non esiste 
@@ -788,7 +790,7 @@ color: #000;
 .polaroidimg {
   width: 100%;
   object-fit: cover;
-  height: 14rem;
+  height: 8rem;
   border: none;
 
 }
@@ -865,32 +867,31 @@ color: #000;
     background-repeat: repeat;
     grid-area: navbardoc;
     position: fixed;
-  
+    margin-top: -5rem;
     padding-top: 8rem;
     padding-left: 0.5em;
-    padding-bottom: 7.5rem;
+    padding-bottom: 9rem;
     padding-right: 0.5em;
   }
 
   
   #navbardoc a {
+    background-color: #f3b21a;
     display: block;
-   /* border: 0.3rem double black;
-    border-collapse: separate;*/
+    border: 0.2rem solid black;
     padding: 0.3rem;
-    margin: 0.625 0;
-    text-decoration: none;
+    margin: 0.3rem;
     color: black;
     font-family: 'military', serif;
-    text-align: left;
+    text-align: center;
     font-size: 1.5rem;
     opacity: 0.9;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
   }
 
   #navbardoc a:hover {
-    color: #a1281c;
-    background-color:#4c1a1b;
+    color: #f3b21a;
+    background-color:black;
   }
   .main-section p{
     text-align: center;
@@ -898,7 +899,7 @@ color: #000;
   }
 
   .main-section{
-    border-bottom: 0.3rem solid #262626; /*or dotted*/
+    border-bottom: 0.3rem dotted #262626; /*or dotted*/
     padding-top: 1rem;
   }
 
@@ -1400,11 +1401,11 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 }
 
 .fab-content, .fab-shadow, .sub-button, .fab{
-  background-color: #92938d !important;
+  background-color: #f3b21a !important;
 }
 
 .sub-button:hover{
-  background-color: #a1281c !important;
+  background-color: #92938d !important;
 }
 /* .fab-container #enable-future:hover{
   background: url("/typetravel/images/Future/g25.gif") !important;
