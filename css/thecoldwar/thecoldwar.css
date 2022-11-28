@@ -180,16 +180,29 @@ html {
   max-width: 100vh ; /*vh	Relative to 1% of the height of the viewport*/
 }
 
+.modal-header,.modal-footer{
+  background-color: #92938d;
+  position: relative;
+}
+
 .modal-title{
   font-family: 'military';
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3rem;
+  margin-top: -4rem;
+  margin-bottom: -1rem;
 }
 
-.modal-header,.modal-footer{
-  background-color: #92938d;
+.modal-title::after{
+ content: url(../../images/bombgif.gif);
 }
+.modal-title::before{
+  content: url(../../images/bombgif.gif);
+  margin-right:-3rem;
+  padding-left: 2rem;
+ }
+ 
 
 #butto, #butt, #but{  /*CLOSE butto for index, but for doc and topic, butt for about*/
   font-family:'military' ;

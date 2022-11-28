@@ -774,6 +774,12 @@ color: #000;
   height: 20em;
  
 }
+.gifwine{
+  content : url(../../images/wine.gif);
+ align-content: center;
+ height: 6rem;
+ padding-left: 52rem;
+}
 .containerpadding {
   padding-top: 1.5rem;
   margin-left: 1rem;
