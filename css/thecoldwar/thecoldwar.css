@@ -610,9 +610,10 @@ animation-delay: -5s;
 }
 
 #btn-issues, #btn-themes{
+  content: url("../../images/nuclearbut.png");
   font-family: 'military', serif;
-  border-radius: 0;
-  border: 0.5mm ridge black;
+  border-radius: 3rem;
+  border: 0.5rem ridge black;
   opacity: 0.7;
   text-transform: uppercase;
   font-size: 2rem;
@@ -620,19 +621,11 @@ animation-delay: -5s;
   display: inline-flex;
 }
 
-#btn-themes{
-  background-color: #262626;
-  color:#6b965a;
-}
 #btn-themes:hover{
   background-color:#262626;
   color: #a1281c;
 }
 
-#btn-issues{
-  color:#262626;
-  background-color: #6b965a;
-}
 #btn-issues:hover{
   background-color: #6b965a;
   color: #a1281c;
