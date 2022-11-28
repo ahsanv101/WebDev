@@ -613,12 +613,13 @@ animation-delay: -5s;
   content: url("../../images/nuclearbut.png");
   font-family: 'military', serif;
   border-radius: 3rem;
-  border: 0.5rem ridge black;
+  border: none;
   opacity: 0.7;
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
   display: inline-flex;
+  padding: 0;
 }
 
 #btn-themes:hover{
