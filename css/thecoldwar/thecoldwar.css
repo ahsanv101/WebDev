@@ -610,26 +610,47 @@ animation-delay: -5s;
 }
 
 #btn-issues, #btn-themes{
-  content: url("../../images/nuclearbut.png");
-  font-family: 'military', serif;
-  border-radius: 3rem;
-  border: none;
-  opacity: 0.7;
-  text-transform: uppercase;
-  font-size: 2rem;
   text-align: center;
-  display: inline-flex;
-  padding: 0;
+  background-image: url(../../images/nuclearbut.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'military', serif;
+  border-radius: 3.5rem;
+  text-transform: uppercase;
+  height: 7rem;
+  width: 7em;
+  border: none;
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  box-shadow: 0 10px black;
+  padding: -1rem;
+  opacity: 0.8;
+  color: #a1281c;
 }
 
 #btn-themes:hover{
-  background-color:#262626;
-  color: #a1281c;
+  box-shadow: 0 10px black;
+  background-color:#a1281c;
+  opacity: 1;
+  color:white;
 }
 
 #btn-issues:hover{
-  background-color: #6b965a;
-  color: #a1281c;
+  box-shadow: 0 10px black;
+  background-color:#a1281c;
+  opacity: 1;
+  color:white;
+}
+
+#btn-themes:active{
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+#btn-issues:active{
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
 }
 
 /*non esiste 
@@ -700,7 +721,7 @@ color: #000;
 }*/
 
 #fourth h2{
-  color: #92938d;
+  color: #ff5c07;
 }
 
 /*
@@ -719,11 +740,12 @@ color: #000;
 
 #themes-text{
   /* margin: 1rem 0 1rem 0; */
-  color:#92938d;
+  color:black;
   font-size: 2rem;
   text-align:center;
   margin-top:1rem;
   padding-bottom: 1.5rem;
+  font-weight: 900;
 }
 
 /*#third:hover, #themes-text:hover{
@@ -809,7 +831,7 @@ color: #000;
 .polartext {
   text-align: center;
   font-family: 'korolev';
-  color: #92938d; 
+  color: #f3961c; 
 }
 
 .polartextcomm {
@@ -817,13 +839,13 @@ color: #000;
   text-align: center;
   font-size: 2rem;
   opacity: 0.9;
-  color: #92938d;
+  color: #f3961c;
 }
 
 .collapse{
  text-align: center;
  padding: 0.5rem;
- color: #92938d; 
+ color: #f3961c; 
 }
 
 /*END INDEX PAGE*/
