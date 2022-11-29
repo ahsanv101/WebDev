@@ -1,7 +1,8 @@
 /* @import "/typetravel/styles/themes/components/dropdown.css";
 @import "/typetravel/styles/themes/components/sizingNavbar.css"; */
 /* @import "/typetravel/styles/home.css"; */
-
+@import url('https://fonts.cdnfonts.com/css/pop-art');
+                
 html {
 
   cursor: crosshair ;
@@ -722,6 +723,7 @@ color: #000;
 
 #fourth h2{
   color: #ff5c07;
+  font-family: 'Pop Art', sans-serif;
 }
 
 /*
@@ -740,12 +742,13 @@ color: #000;
 
 #themes-text{
   /* margin: 1rem 0 1rem 0; */
+  font-family: 'Pop Art', sans-serif;                                 
   color:black;
   font-size: 2rem;
   text-align:center;
   margin-top:1rem;
   padding-bottom: 1.5rem;
-  font-weight: 900;
+  /*font-weight: 900;*/
 }
 
 /*#third:hover, #themes-text:hover{
