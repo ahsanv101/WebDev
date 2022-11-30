@@ -1036,6 +1036,10 @@ content: "!";
   /* END ABOUT US */
 
 /*TOPIC PAGE*/
+.filtro{
+  display:none;
+}
+
  /*La proprietà z-index nei CSS specifica la posizione di un elemento rispetto ad un altro. un elemento davanti all'altro*/
  #bann{
   z-index: 1;
@@ -1086,6 +1090,7 @@ footer{
   /* margin-left: 0em;
   margin-right: 0em; */
   font-family: "bignoodle";
+  z-index: 1;
 }
 
 .form-check input[type="checkbox"]{ /*non funziona*/
