@@ -1,7 +1,7 @@
-/* @import "/typetravel/styles/themes/components/dropdown.css";
-@import "/typetravel/styles/themes/components/sizingNavbar.css"; */
-/* @import "/typetravel/styles/home.css"; */
+
 @import url('https://fonts.cdnfonts.com/css/pop-art');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
                 
 html {
 
@@ -279,13 +279,13 @@ h2{
 }
 
 h3{
-  font-family:'military';
+  font-family:'korolev';
   color:#e8d6c0;
   font-weight: bold;
 }
 
 h4{
-  font-family: 'korolev';
+  font-family: 'military';
   color: #262626;
   text-align: center;
 }
@@ -617,17 +617,18 @@ animation-delay: -5s;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'military', serif;
+  font-family: 'bignoodle', serif;
   border-radius: 3.5rem;
   text-transform: uppercase;
   height: 7rem;
-  width: 7em;
+  width: 7rem;
   border: none;
-  font-size: 1.1rem;
-  padding-top: 1rem;
+  font-size: 2rem;
+  padding-top: 2rem;
   box-shadow: 0 10px black;
   padding: -1rem;
   opacity: 0.8;
+  width: bold;
   color: #a1281c;
 }
 
@@ -722,9 +723,26 @@ color: #000;
 }*/
 
 #fourth h2{
-  color: #ff5c07;
-  font-family: 'Pop Art', sans-serif;
+  padding-bottom: 1rem;
+	font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #ff5c07;
+  text-shadow: 
+						2px 2px #f3b21a,
+						8px 8px #000000;
 }
+
+#fourth h2::after{
+content: "!";
+}
+#fourth h2::before{
+  content: url("../../images/wow.png");
+  }
+  
 
 /*
 #fourth h2:hover{
@@ -748,7 +766,10 @@ color: #000;
   text-align:center;
   margin-top:1rem;
   padding-bottom: 1.5rem;
-  /*font-weight: 900;*/
+
+  text-shadow: 
+						1px 1px #f3b21a,
+						2px 2px #f3b21a;
 }
 
 /*#third:hover, #themes-text:hover{
@@ -838,17 +859,21 @@ color: #000;
 }
 
 .polartextcomm {
-  font-family: 'military', serif;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   opacity: 0.9;
-  color: #f3961c;
+  font-family: 'Pop Art', sans-serif;                                 
+  color:black;
+  letter-spacing:0;
+  text-shadow: 
+						1px 1px #f3b21a,
+						2px 2px #f3b21a;
 }
 
 .collapse{
  text-align: center;
  padding: 0.5rem;
- color: #f3961c; 
+ color: black; 
 }
 
 /*END INDEX PAGE*/
@@ -941,6 +966,21 @@ color: #000;
   /*END DOCUMENTATION*/
   
   /* ABOUT US */
+  #andy1{
+    margin-top:8rem;
+    content: url("../../images/andy1.jpg");
+    margin-left: 1.5rem;
+  }
+  #andy2{
+    margin-top:8rem;
+    content: url("../../images/andy2.jpg");
+    margin-left: 1.5rem;
+  }
+  #andy3{
+    margin-top:8rem;
+    content: url("../../images/andy3.jpg");
+    margin-left: 1.5rem;
+  }
   .overlay{
     display: none;
   }
@@ -962,10 +1002,7 @@ color: #000;
   }
 
   .wewantbeer{
-    background-image: url("../../images/nuclear.jpg");
-    padding-top: 6.2rem;
-    margin-bottom: 1.5rem;
-    opacity: 0.7;
+    display: none;
   }
   /*
   .prob{
