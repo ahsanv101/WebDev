@@ -931,7 +931,7 @@ content: "!";
     margin-top: -5rem;
     padding-top: 8rem;
     padding-left: 0.5em;
-    padding-bottom: 7.5rem;
+    padding-bottom: 5.5rem;
     padding-right: 0.5em;
   }
 
@@ -940,9 +940,8 @@ content: "!";
     background-color: #f3b21a;
     display: block;
     border: 0.2rem solid black;
+    margin: 0.6rem;
     padding: 0.3rem;
-    margin-left: auto;
-    margin-right: auto;
     color: black;
     font-family: 'korolev', serif;
     text-align: center;
@@ -1056,6 +1055,7 @@ footer{
   width:100%;
   size: fit-content;
   margin-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 #doclist h2 {
@@ -1128,16 +1128,14 @@ footer{
 }
 
 #asides-tab, #speeches-tab, #quotes-tab, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab {
-
-  padding: 0.3rem;
-  margin: 0.625 0;
+  margin: 0.1rem;
    /*text-decoration: none;*/
   color: black;
   font-family: 'korolev', serif;
   text-align: center;
   font-size: 1.3rem;
   opacity: 0.9;
-  border-radius: 2rem;
+  border-radius: 9rem;
 
     background-color: #f3b21a;
     display: block;
@@ -1147,11 +1145,10 @@ footer{
 .tab-content a{
   color: black;
   font-family: "bignoodle";
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
-.tab-content ul a{
-  font-size: 0.9rem;
-}
+
 
 
 #list_btn{
@@ -1160,23 +1157,19 @@ footer{
     width: 10em;
     text-align: center;
     border-collapse: separate;
-    background-color: #a1281c;;
+    /*background-color: black;*/
     color: #a1281c;
     margin-left: auto;
     margin-right: auto;
     font-family: 'korolev';
     font-size: 1.2rem;
     border: none;
-    box-shadow: 3px 3px 3px #4b4635;
+    box-shadow: 3px 3px 3px 3px #4b4635;
 }
   
 
-
-
 #lst_btn:hover {
-  color: black;
-  background-color:#a1281c;
-  
+opacity: 0.9;
 }
 
 
@@ -1362,22 +1355,22 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
   height: 100%;
 }
 .fab-container:hover .sub-button:nth-child(2) {
-  transform: translateX(-12vh);
+  transform: translateX(-14vh);
 }
 .fab-container:hover .sub-button:nth-child(3) {
-  transform: translateX(-24vh);
+  transform: translateX(-28vh);
 }
 .fab-container:hover .sub-button:nth-child(4) {
-  transform: translateX(-36vh);
+  transform: translateX(-42vh);
 }
 .fab-container:hover .sub-button:nth-child(5) {
-  transform: translateX(-48vh);
+  transform: translateX(-56vh);
 }
 .fab-container:hover .sub-button:nth-child(6) {
-  transform: translateX(-60vh);
+  transform: translateX(-70vh);
 }
 .fab-container:hover .sub-button:nth-child(7) {
-  transform: translateX(-72vh);
+  transform: translateX(-84vh);
 }
 
 /* .fab-container:hover .sub-button:nth-child(6) {

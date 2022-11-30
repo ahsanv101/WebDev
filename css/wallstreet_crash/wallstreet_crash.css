@@ -944,6 +944,7 @@ color: #000;
   width:100%;
   size: fit-content;
   margin-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 #doclist h2 {
@@ -1034,10 +1035,7 @@ color: #000;
 .tab-content a{
   color: black;
   font-family: "bembo";
-  font-size: 0.9rem;
-}
-.tab-content ul a{
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 
@@ -1247,22 +1245,22 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
   height: 100%;
 }
 .fab-container:hover .sub-button:nth-child(2) {
-  transform: translateX(-12vh);
+  transform: translateX(-14vh);
 }
 .fab-container:hover .sub-button:nth-child(3) {
-  transform: translateX(-24vh);
+  transform: translateX(-28vh);
 }
 .fab-container:hover .sub-button:nth-child(4) {
-  transform: translateX(-36vh);
+  transform: translateX(-42vh);
 }
 .fab-container:hover .sub-button:nth-child(5) {
-  transform: translateX(-48vh);
+  transform: translateX(-56vh);
 }
 .fab-container:hover .sub-button:nth-child(6) {
-  transform: translateX(-60vh);
+  transform: translateX(-70vh);
 }
 .fab-container:hover .sub-button:nth-child(7) {
-  transform: translateX(-72vh);
+  transform: translateX(-84vh);
 }
 
 /* .fab-container:hover .sub-button:nth-child(6) {
