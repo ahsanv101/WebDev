@@ -293,13 +293,12 @@ h4{
 h5{
   font-family: 'bignoodle';
 }
+
 img { /*da cambiare*/
+  filter: url('#red-sunset');
   width: 100%;
-  border: 1rem solid #da0102;
-  opacity: 0.7;
-  padding: 0.3rem;
-  background-color: white;
 }
+
 /*h4:hover{
   color:white;
   background-color: #000;
@@ -895,6 +894,7 @@ content: "!";
   text-align: center;
   /* width: 45em; */
   height: 20em;
+  filter: url('#red-sunset');
 }
 
 .containerpadding {
@@ -1189,26 +1189,22 @@ opacity: 0.9;
 #file{
   overflow-y: scroll;
   height: 50rem;
-  background-color: #e3d9d2;
+  /*background-color: #e3d9d2;*/
 }
 
 
 #file2{
   overflow-y: scroll;
   height: 50rem;
-  background-color: #e3d9d2;
+  /*background-color: #e3d9d2;*/
 }
 
 #file img{
-  filter: grayscale(50%);
-  border: 1mm ridge black;
-  opacity: 0.9;
+  filter: url('#red-sunset');
 }
 
 #file2 img{
-  filter: grayscale(50%);
-  border: 1mm ridge black;
-  opacity: 0.9;
+  filter: url('#red-sunset');
 }
 
 figcaption{
