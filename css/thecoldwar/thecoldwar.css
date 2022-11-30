@@ -160,7 +160,7 @@ html {
 /*#mod{ 
   background-color: #4b4635;
   color: #a1281c;
-  font-family: military;
+  font-family: korolev;
 }*/
 
 #disclaimer{
@@ -187,7 +187,7 @@ html {
 }
 
 .modal-title{
-  font-family: 'military';
+  font-family: 'korolev';
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3rem;
@@ -206,7 +206,7 @@ html {
  
 
 #butto, #butt, #but{  /*CLOSE butto for index, but for doc and topic, butt for about*/
-  font-family:'military' ;
+  font-family:'korolev' ;
   color: white;
   background-color: #000;
   border: none;
@@ -230,7 +230,7 @@ html {
 
 /*generici*/
 h1 {
-  font-family: 'military';
+  font-family: 'korolev';
 }
 
 p{
@@ -269,7 +269,7 @@ body{
 h2{
   letter-spacing: 0.3rem;
   font-size: 2.5rem;
-  font-family: 'military', serif;
+  font-family: 'korolev', serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -285,7 +285,7 @@ h3{
 }
 
 h4{
-  font-family: 'military';
+  font-family: 'korolev';
   color: #262626;
   text-align: center;
 }
@@ -395,12 +395,12 @@ animation-delay: -5s;
   display: none;
   }
 /*.glitch-bloc{
-  font-family: 'military', serif;
+  font-family: 'korolev', serif;
 }*/
 
 /* non esiste
 .d-grip{
-  font-family: 'military';
+  font-family: 'korolev';
 }*/
 
 /*INDEX PAGE: FIRST textgate*/
@@ -413,7 +413,7 @@ animation-delay: -5s;
   margin-top: 1em;
   justify-content: center;
   text-align: center;
-  font-family:'military' ;
+  font-family:'korolev' ;
   opacity: 0.7;
 }*/
 
@@ -671,9 +671,10 @@ animation-delay: -5s;
   font-size: 3rem;
 }*/
 #third{
-    background-color: #92938d;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
+    background-color: #ff5c07;
+    opacity: 0.8;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 /*#gothird{
@@ -685,8 +686,7 @@ animation-delay: -5s;
   color: #4b4635;
   font-size: 2rem;
   text-align:center;
-  margin-top:1rem;
-  margin-right: 3rem;
+  
 }
 
 /*#issue-text:hover{
@@ -694,28 +694,29 @@ color: #000;
 }*/
 
 #theme5{ /*button humanity fails*/
-  width: 10em;
+  width: 15em;
   text-align: center;
-  background-color: #262626;
+  background-color: black;
   color: #a1281c;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'military';
+  font-family: 'korolev';
+  font-size: 1.2rem;;
   border: none;
   box-shadow: 3px 3px 3px #4b4635;
-  
+  opacity: 1 !important;
 }
 
  #theme5:hover{
   background-color: #a1281c;
-  color: #4b4635;
+  color: white;
 } 
 
 /*INDEX PAGE: FOURTH themes*/
 #fourth{
   /*background-color:#4b4635;*/
   padding-bottom: 3rem;
-  padding-top: 3rem;
+  
   background-image: url("../../images/dots.jpg");
 }
 /*#fourth:hover{
@@ -723,10 +724,10 @@ color: #000;
 }*/
 
 #fourth h2{
-  padding-bottom: 1rem;
 	font-family: 'Raleway', sans-serif;
   font-style: italic;
   font-size: 3rem;
+  margin-right: 1rem;
 	letter-spacing:0.1em;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
@@ -740,7 +741,8 @@ color: #000;
 content: "!";
 }
 #fourth h2::before{
-  content: url("../../images/wow.png");
+  content: url("../../images/boom.png");
+  margin: -6rem;
   }
   
 
@@ -768,8 +770,8 @@ content: "!";
   padding-bottom: 1.5rem;
 
   text-shadow: 
-						1px 1px #f3b21a,
-						2px 2px #f3b21a;
+						1px 1px #f3961c,
+						2px 2px #f3961c;
 }
 
 /*#third:hover, #themes-text:hover{
@@ -789,7 +791,7 @@ content: "!";
     text-align: left;
     background-color: #4b4635;
     color: #a1281c;
-    font-family: military;
+    font-family: korolev;
 }*/
 
 
@@ -829,9 +831,9 @@ content: "!";
 .polaroid:after {
   content:"";
   position:absolute;
-  bottom:-15px; /* valore = - border-top-width - border-bottom-width */
+  bottom:-25px; /* valore = - border-top-width - border-bottom-width */
   left:50px; /* posizionamento orizzontale */
-  border-width:15px 15px 0; 
+  border-width:25px 25px 0; 
   border-style:solid;
   border-color:#a1281c transparent;
   /* FF3.0 fix */
@@ -840,6 +842,9 @@ content: "!";
 }
 
 .polaroidimg {
+  background-image: url("../../images/bubble.png");
+  padding:0;
+  border-radius: 12px;
   width: 100%;
   object-fit: cover;
   height: 8rem;
@@ -866,8 +871,8 @@ content: "!";
   color:black;
   letter-spacing:0;
   text-shadow: 
-						1px 1px #f3b21a,
-						2px 2px #f3b21a;
+						1px 1px #f3961c,
+						2px 2px #f3961c;
 }
 
 .collapse{
@@ -926,7 +931,7 @@ content: "!";
     margin-top: -5rem;
     padding-top: 8rem;
     padding-left: 0.5em;
-    padding-bottom: 9rem;
+    padding-bottom: 7.5rem;
     padding-right: 0.5em;
   }
 
@@ -938,9 +943,9 @@ content: "!";
     padding: 0.3rem;
     margin: 0.3rem;
     color: black;
-    font-family: 'military', serif;
+    font-family: 'korolev', serif;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     opacity: 0.9;
     border-radius: 2rem;
   }
@@ -1088,6 +1093,7 @@ footer{
 
 [type=button] {
   cursor: pointer;
+  font-weight: 800;
 }
 
 .space{
@@ -1113,7 +1119,7 @@ footer{
 }
 
 #sti{
-  padding-top:6rem;
+  padding-top:  7.5rem;
   background-color: #a1281c;
   font-size: 2rem;
 }
@@ -1126,7 +1132,7 @@ footer{
   margin: 0.625 0;
    /*text-decoration: none;*/
   color: black;
-  font-family: 'military', serif;
+  font-family: 'korolev', serif;
   text-align: center;
   font-size: 1.3rem;
   opacity: 0.9;
@@ -1152,7 +1158,7 @@ footer{
   margin-right: auto;
   /*text-decoration: none;*/
   color: black;
-  font-family: 'military', serif;
+  font-family: 'korolev', serif;
   text-align: center;
   font-size: 1.5rem;
   opacity: 0.9;
@@ -1273,7 +1279,7 @@ figcaption{
 /*si potrebbe commentare da qui:
 label{
   font-size: 1.5rem;
-  font-family:'military';
+  font-family:'korolev';
   color:#4b4635;
 }
 label:hover{
