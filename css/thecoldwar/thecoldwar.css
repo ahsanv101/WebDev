@@ -1149,12 +1149,14 @@ footer{
   line-height: 1.2;
 }
 
-
+.tab-content ul{
+  line-height: 1.2;
+}
 
 #list_btn{
   display: block;
     
-    width: 10em;
+    width: 13em;
     text-align: center;
     border-collapse: separate;
     /*background-color: black;*/
@@ -1164,12 +1166,13 @@ footer{
     font-family: 'korolev';
     font-size: 1.2rem;
     border: none;
-    box-shadow: 3px 3px 3px 3px #4b4635;
+    box-shadow: 3px 3px 3px #4b4635;
 }
   
 
 #lst_btn:hover {
 opacity: 0.9;
+font-size: 1.3rem;
 }
 
 
