@@ -941,7 +941,8 @@ content: "!";
     display: block;
     border: 0.2rem solid black;
     padding: 0.3rem;
-    margin: 0.3rem;
+    margin-left: auto;
+    margin-right: auto;
     color: black;
     font-family: 'korolev', serif;
     text-align: center;
@@ -1125,9 +1126,7 @@ footer{
 }
 
 #asides-tab, #speeches-tab, #quotes-tab, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab {
-  
-  border: 0.3rem double black;
-  border-collapse: separate;
+
   padding: 0.3rem;
   margin: 0.625 0;
    /*text-decoration: none;*/
@@ -1136,7 +1135,11 @@ footer{
   text-align: center;
   font-size: 1.3rem;
   opacity: 0.9;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
+
+    background-color: #f3b21a;
+    display: block;
+    border: 0.2rem solid black;
 }
 
 .tab-content a{
@@ -1151,9 +1154,7 @@ footer{
 
 #list_btn{
   display: block;
-  border: 0.3rem double black;
-  border-collapse: separate;
-  padding: 0.3rem;
+
   margin-left: auto;
   margin-right: auto;
   /*text-decoration: none;*/
@@ -1162,19 +1163,25 @@ footer{
   text-align: center;
   font-size: 1.5rem;
   opacity: 0.9;
-  border-radius: 0.5rem;
-}
+  border-radius: 2rem;
+
+    background-color: #f3b21a;
+    display: block;
+    border: 0.2rem solid black;
+    padding: 0.3rem;
+  }
+
 
 
 #lst_btn:hover {
-  color: #a1281c;
-  background-color:#4c1a1b;
+  color: #f3b21a;
+  background-color:black;
 }
 
 
 #sti  a:hover {
-  color: #a1281c;
-  background-color:#4c1a1b;
+  color: #f3b21a;
+  background-color:black;
 }
 
 .tab-content{
