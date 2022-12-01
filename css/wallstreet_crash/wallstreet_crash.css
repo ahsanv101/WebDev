@@ -105,7 +105,7 @@
   font-family: 'hotel', serif;
     /* text-transform: lowercase; */
     /*font-weight: 300;*/
-    background-color:#f3efe2;
+    background-color:#d8ccba;
     /* width:100%; */
 }
 
@@ -115,12 +115,12 @@
 
 #navbarDropdownMenuLink, #navbarDropdownMenuL, #navbarDropdownMenuLi, #navbarDrop, #navbarDropp{ /*topic and themes*/
   font-size: 1.5rem;
-  background-color: #f3efe2;
+  background-color: #d8ccba;
   color:black;
 }
 
 .dropdown-menu{
-  background-color:#f3efe2;
+  background-color:#d8ccba;
   color: black;
   border-radius: 0.5rem;
 }
@@ -133,7 +133,7 @@
 
 .dropdown-item:hover{
   background-color: #4c1a1b;
-  color:#c3b281;
+  color:#c9b080;
 }
 
 /* non esiste 
@@ -149,8 +149,8 @@
   display:none;
 }
 /*#mod{ 
-  background-color: #4b4635;
-  color: #f3efe2;
+  background-color: #242222;
+  color: #d8ccba;
   font-family: hotel;
 }*/
 
@@ -165,7 +165,7 @@
   /* text-align: center; */
   margin: 1rem;
   /*font-weight: 100;*/
-  color:#4b4635;
+  color:#242222;
 }
 
 .modal-dialog{
@@ -179,7 +179,7 @@
 }
 
 .modal-header,.modal-footer{
-  background-color: #c3b281;
+  background-color: #c9b080;
 }
 
 #butto, #butt, #but{  /*CLOSE butto for index, but for doc and topic, butt for about*/
@@ -192,7 +192,7 @@
 .link{
   font-family:'hotel';
   font-size: 1.5rem;
-  color:#4b4635;
+  color:#242222;
 }
 
 .link:hover{
@@ -230,7 +230,7 @@ button{
 
 body{
   font-family: 'caro ngia', sans-serif; 
-  background-color:#c3b281;                               
+  background-color:#c9b080;                               
 }
 
 /* male male .container-fluid{ in navbar, footer, topic1, index, about us
@@ -292,8 +292,8 @@ img {
 /*ALL HOVERS
 
 .container-fluid:hover, #butto:hover, #but:hover, #butt:hover, #buttn.hover, .row:hover, #met:hover, #uno:hover, #tett:hover, #metto:hover{
-  background-color: #f3efe2;
-  color:#4b4635;
+  background-color: #d8ccba;
+  color:#242222;
 }
 
 #mod:hover, #model:hover, #mode:hover, .sort, .sub:hover{
@@ -478,7 +478,7 @@ img {
 }
 
 #first{
-   /* background-color: #c3b281;*/
+   /* background-color: #c9b080;*/
     background-image: url("../../images/sfondowall.jpg");
     background-position: 5rem 0rem;
 }
@@ -487,7 +487,7 @@ img {
 /*#first h1{
     padding-top: 16vh ;
     text-transform: uppercase;
-    color: #4b4635;
+    color: #242222;
     text-align: center;
     font-weight: 500;
     font-size: 16vh;
@@ -507,13 +507,13 @@ img {
 #project-description{
     font-size: 2rem;
     text-align: center;
-    /*color: #f3efe2;*/
-    color: #4b4635;
+    /*color: #d8ccba;*/
+    color: #242222;
     padding-bottom: 1.5rem;
 }
 
 /*#project-description:hover{
-  color:#4b4635;
+  color:#242222;
 }*/
 
 /* to be deleted those refer to get started button
@@ -535,7 +535,7 @@ img {
 #second{
   padding-bottom: 3rem;
   padding-top: 3rem;
-  background-color: #c3b281;
+  background-color: #c9b080; /*#c3b281;*/
     /*background-image: url("../../images/artdecowallpaperopacity.jpg");*/
 }
 
@@ -570,7 +570,7 @@ img {
 }
 #btn-themes:hover{
   background-color:#262626;
-  color: #c3b281;
+  color: #c9b080;
 }
 
 #btn-issues{
@@ -580,14 +580,14 @@ img {
 }
 #btn-issues:hover{
   background-color: white;
-  color: #c3b281;
+  color: #c9b080;
 }
 
 /*non esiste 
 .c-right {
  color:#732627;
  font-size: 1.8rem!important;
- border-color: #4b4635;
+ border-color: #242222;
 }
 .c-right:hover{
   color:#000000;
@@ -599,7 +599,7 @@ img {
   font-size: 3rem;
 }*/
 #third{
-    background-color:#f3efe2;
+    background-color:#d8ccba;
     padding-bottom: 3rem;
     padding-top: 3rem;
 }
@@ -610,7 +610,7 @@ img {
 }*/
 
 #issue-text{
-  color: #4b4635;
+  color: #242222;
   font-size: 2rem;
   text-align:center;
   margin-top:1rem;
@@ -625,40 +625,40 @@ color: #000;
   width: 10em;
   text-align: center;
   background-color: #262626;
-  color: #f3efe2;
+  color: #d8ccba;
   margin-left: auto;
   margin-right: auto;
   font-family: 'hotel';
   border: none;
-  box-shadow: 3px 3px 3px #4b4635;
+  box-shadow: 3px 3px 3px #242222;
   
 }
 
  #theme5:hover{
-  background-color: #f3efe2;
-  color: #4b4635;
+  background-color: #d8ccba;
+  color: #242222;
 } 
 
 /*INDEX PAGE: FOURTH themes*/
 #fourth{
-  background-color:#4b4635;
+  background-color:#242222;
   padding-bottom: 3rem;
   padding-top: 3rem;
 }
 /*#fourth:hover{
-  color:#4b4635;
+  color:#242222;
 }*/
 
 #fourth h2{
-  color: #c3b281;
+  color: #c9b080;
 }
 
 /*
 #fourth h2:hover{
-  color:#4b4635;
+  color:#242222;
 }
 #gofourth{
-  color:#4b4635;
+  color:#242222;
 }*/
 
 /*#fourth h2{
@@ -669,7 +669,7 @@ color: #000;
 
 #themes-text{
   /* margin: 1rem 0 1rem 0; */
-  color:#c3b281;
+  color:#c9b080;
   font-size: 2rem;
   text-align:center;
   margin-top:1rem;
@@ -691,8 +691,8 @@ color: #000;
 /*#theme1,#theme2,#theme3,#theme4, #theme6, .btn-close{
    
     text-align: left;
-    background-color: #4b4635;
-    color: #f3efe2;
+    background-color: #242222;
+    color: #d8ccba;
     font-family: hotel;
 }*/
 
@@ -741,7 +741,7 @@ color: #000;
 .polartext {
   text-align: center;
   font-family: 'hotel';
-  color: #c3b281; 
+  color: #c9b080; 
 }
 
 .polartextcomm {
@@ -749,13 +749,13 @@ color: #000;
   text-align: center;
   font-size: 2rem;
   opacity: 0.9;
-  color: #c3b281;
+  color: #c9b080;
 }
 
 .collapse{
  text-align: center;
  padding: 0.5rem;
- color: #c3b281; 
+ color: #c9b080; 
 }
 
 /*END INDEX PAGE*/
@@ -834,7 +834,7 @@ color: #000;
   }
 
   #navbardoc a:hover {
-    color: #f3efe2;
+    color: #d8ccba;
     background-color:#4c1a1b;
   }
   .main-section p{
@@ -957,7 +957,7 @@ color: #000;
 
 .sticky-top{
   padding-top: 3rem;
-  background-color: #f3efe2;
+  background-color: #d8ccba;
   position: sticky;
   width: 100%;
 }
@@ -1016,7 +1016,7 @@ color: #000;
 #sti{
   background-image: url("../../images/artdecowallpaperopacity.jpg");
   padding-top:  7.5rem;
-  background-color: #f3efe2;
+  background-color: #d8ccba;
   font-size: 2rem;
   border-radius: 1rem;
 }
@@ -1061,13 +1061,13 @@ color: #000;
 
 
 #lst_btn:hover {
-  color: #f3efe2;
+  color: #d8ccba;
   background-color:#4c1a1b;
 }
 
 
 #sti  a:hover {
-  color: #f3efe2;
+  color: #d8ccba;
   background-color:#4c1a1b;
 }
 
@@ -1075,7 +1075,7 @@ color: #000;
   border-radius: 1rem;
   overflow-y:scroll;
   height:8rem;
-  /*background-color: #f3efe2;*/
+  /*background-color: #d8ccba;*/
   background-image: url("../../images/artdecowallpaperopacity.jpg");
 }
 
@@ -1176,7 +1176,7 @@ figcaption{
 label{
   font-size: 1.5rem;
   font-family:'hotel';
-  color:#4b4635;
+  color:#242222;
 }
 label:hover{
   color:black;
@@ -1219,7 +1219,7 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 }
 
 #ttx, #ttxt, #tutto, #nulla{
-  color: #c3b281;
+  color: #c9b080;
   font-size: xx-large;
   cursor: all-scroll;
   position: relative;
@@ -1371,11 +1371,11 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 }
 
 .fab-content, .fab-shadow, .sub-button, .fab{
-  background-color: #f3efe2 !important;
+  background-color: #d8ccba !important;
 }
 
 .sub-button:hover{
-  background-color: #c3b281 !important;
+  background-color: #c9b080 !important;
 }
 /* .fab-container #enable-future:hover{
   background: url("/typetravel/images/Future/g25.gif") !important;
@@ -1403,7 +1403,7 @@ a qui ma chiedi Ahsan. Sono cose che ci sono ma commeted out o non esistono*/
 
 /*FOOTER*/
 footer{
-  background-color: #f3efe2;
+  background-color: #d8ccba;
   font-family: 'hotel';
   color:#732627;
   text-align: center;
@@ -1415,7 +1415,7 @@ footer{
 color:#732627;
 }
 .fabvit:active,.fabvit:hover{
-color: #4b4635;
+color: #242222;
 }
 /*footer p{
   font-size: 1rem ;
@@ -1459,8 +1459,8 @@ display: inline-block;
 }*/
 
 /*.sub{
-background-color: #4b4635;
-color: #f3efe2;
+background-color: #242222;
+color: #d8ccba;
 size: 2rem;
 }*/
 
