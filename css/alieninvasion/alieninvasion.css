@@ -24,7 +24,7 @@ body {
 /*Importing Black Plague fonts*/
 @font-face {
   font-family: 'advent';
-  src: url(../fonts/advent.ttf);
+  src: url(../fonts/AdventPro-Medium.ttf);
 }
 
 @font-face {
@@ -632,6 +632,10 @@ display: none;
     outline: none;
     background-color: #000;
   }
+  .main-body h5{
+    color:#6d24ff;
+    
+  }
   .row h2:hover{
     color: yellow;
   }
@@ -953,6 +957,15 @@ footer p{
   padding-top: 5rem;
   background-image: url(../../images/galaxy.gif);
 }
+.doc-img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 20em;
+  align-items: center;
+  text-align: center;
+  height:20em;
+}
 /*end doclist*/
 
 /*start metadata*/
@@ -1048,7 +1061,7 @@ footer p{
 #teamsec{
   font-family: 'tomorrow';
   padding-bottom: 0.3em;
-  padding-top: 6rem!important;
+  padding-top: 8rem!important;
   margin-bottom: 0;
 }
 
@@ -1058,8 +1071,8 @@ footer p{
 .surv{
   background-color: #00ff00;
   color: #6d24ff;
-  padding-bottom: 0.3em;
-  padding-top:2rem;
+  padding-bottom: 1.2rem;
+  padding-top:4rem;
   margin-bottom: 0;
 }
 .surv:hover{
@@ -1508,9 +1521,10 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
   background-color: #00ff00;
   border-color: #6d24ff;
 }
-.col-sm h3:hover{
+.col-sm h3:hover, .modal-title:hover{
   box-shadow: 2px 5px 10px 5px #00ff00;
 }
+
 #navbardoc .nav-link:hover, a .nav-link:hover, .col-sm h3:hover, li .nav-item:hover{
   box-shadow: 2px 5px 10px 5px #00ff00;
   color:#6d24ff!important;

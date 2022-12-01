@@ -71,7 +71,12 @@ body{
 #refer li a{
   color:#5b181f;
 }
-
+a{
+  color:#30302e;
+}
+a:hover{
+  color:#40171b;
+}
 .btn-close{
   text-align: left;
   background-color: #30302e;
@@ -688,6 +693,15 @@ button{
   margin-top:0;
   padding-top:0!important;
   
+}
+.doc-img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 20em;
+  align-items: center;
+  text-align: center;
+  height:20em;
 }
 .main-body{
   background-image: linear-gradient(transparent,rgba(0,0,0,0.8));
