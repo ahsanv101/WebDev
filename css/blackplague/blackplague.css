@@ -280,9 +280,7 @@ h2{
   font-weight: 600;
   font-size: 3rem;
 }
-h2:hover{
-  color: #260D0E;
-}
+
 /*start content description*/
 #project-description{
   font-size: 4vh;
@@ -402,11 +400,9 @@ display: none;
   margin-bottom: 1rem;
   text-align: center;
   font-size: 1.8rem;
+  color:#bab1a0;
 }
-#third #themes-text{
-    /* margin: 1rem 0 1rem 0; */
-    color:#30302e;
-}
+
 
 #theme5:hover, #model:hover, #mode:hover{
   background-color: black;
@@ -427,7 +423,6 @@ display: none;
 #issue-text{
   padding: 0 10rem 0 10rem;
   text-align: center;
-  font-size: 2rem;
   color: #bab1a0;
   margin-top: 1rem;
 }
@@ -600,7 +595,7 @@ input[type="checkbox"]{
 .space{
   padding-bottom:2rem;
 }
-#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab, #peoples-tab, #places-tab, #events-tab, #short{
+#asides-tab, #speeches-tab ,#quotes-tab ,#concepts-tab,#opinions-tab, #peoples-tab, #places-tab, #events-tab, #short, #issue-text, #themes-text{
   font-size: 1.3rem;
   font-family:'canterbury';
   border-color:#40171b;
@@ -638,6 +633,9 @@ input[type="checkbox"]{
   padding-top: 7rem;
   padding-bottom:4rem;
   background-image: url(../../images/peste.png);
+}
+.overlay{
+  display:none;
 }
 .surv{
   background-color: #30302e;
@@ -709,7 +707,7 @@ button{
         margin-left: 1rem !important;
         padding-top: 1rem;
     }
-}
+  }
 
 h3{
   font-family:'scribish';
@@ -1032,9 +1030,7 @@ nav#navbardoc {
   background-image: url(../../images/peste.png);
   margin:0;
 }
-#mainheader h2:hover{
-  color:#260D0E;
-}
+
 nav#navbardoc a {
   font-size: x-large;
   font-weight: 800;

@@ -1,6 +1,6 @@
 body {
 
-  cursor: url(../images/snail);
+  cursor: url(../images/snails.png);
 }
 
 ::-webkit-scrollbar-track {
@@ -35,7 +35,6 @@ body {
 /*Highers the Responsiveness of the web page*/
 * {
   margin: 0;
-
   box-sizing: border-box;
   }
 body{
@@ -212,7 +211,7 @@ a:hover {
   opacity: 100%;
 }
 
-/* OPTIONAL / keeps menu width fixed so the buttons can have a smooth transition back and forth */
+/* keeps menu width fixed so the buttons can have a smooth transition back and forth */
 .menu {
   flex-direction: row;
   justify-content: space-between;
@@ -276,28 +275,6 @@ a:hover {
   gap: 1em;
 }
 
-
-/* OPTIONAL / just an example button */
-.example {
-  align-self: center;
-  max-width: 100%;
-  width: 80%;
-}
-
-.example:hover {
-  max-width: 100%;
-  width: 100%;
-  padding: 5px 0;
-  
-}
-
-/* OPTIONAL / HUD effects */
-.hud__effects {
-  flex-direction: row;
-  gap: 10px;
-  margin: 1em 3em;
-}
-
 .effect__long {
   height: 10px;
   width: 30px;
@@ -313,8 +290,12 @@ a:hover {
   border-radius: 100%;
 }
 
-
-/* OPTIONAL / for device responsiveness */
+.hud__effects {
+  flex-direction: row;
+  gap: 10px;
+  margin: 1em 3em;
+}
+/* for device responsiveness */
 @media only screen and (max-width: 850px) {
   .nav {
     flex-direction: column;
@@ -325,6 +306,7 @@ a:hover {
     width: 100%;
   }
 }
+
 /*start index.html*/
 /*first content row*/
 #main-title{
@@ -533,8 +515,6 @@ h2{
 /*stars background*/
 body {
   margin: 0;
-  max-width: fit-content;
-  min-width: fit-content;
   letter-spacing: 0.2rem;
 }
 
@@ -1068,10 +1048,13 @@ footer p{
 #teamsec{
   font-family: 'tomorrow';
   padding-bottom: 0.3em;
-  padding-top: 8rem;
+  padding-top: 6rem!important;
   margin-bottom: 0;
 }
 
+.overlay{
+  display:none;
+}
 .surv{
   background-color: #00ff00;
   color: #6d24ff;
@@ -1150,6 +1133,7 @@ h5{
         
         border-top: none;
     }
+    
     #first h1{
         font-size: 8vh !important;
     }
@@ -1179,9 +1163,6 @@ h5{
         padding-bottom: 0.5rem !important;
     }
 }
-
-
-/* Addded by ahsan */
 
 
 
@@ -1430,9 +1411,12 @@ text-align: center;
 /*START DOCUMENTATIO*/
 .containerpadding {
   padding-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 #mainheader{
   background-image: url(../../images/galaxy.gif);
+  padding-top: 5em;
 }
 #theme5, #main-doc h3{
   background-color: #000!important;
@@ -1481,12 +1465,11 @@ text-align: center;
   color:black;
 }
 div.main-body {
-  display: grid;
-  grid-template-columns: minmax(300px , auto)1fr;   
+  display: grid;  
   grid-template-areas: "navbardoc mainContent";
-  grid-gap: 20px;
+  grid-gap: 1rem;
 }
- 
+
 nav#navbardoc {
   grid-area: navbardoc;
 }
