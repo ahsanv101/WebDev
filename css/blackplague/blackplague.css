@@ -30,10 +30,9 @@
 }
 /*Highers the Responsiveness of the web page*/
 * {
-  padding: 0;
+  box-sizing: border-box;
   margin: 0;
   position: relative;
-  display: block;
 }
 
 body{
@@ -108,31 +107,31 @@ body{
 #navbar{
   font-family: 'canterbury', serif;
     /* text-transform: lowercase; */
-    font-weight: 300;
     background-color:#40171b;
     color:#bab1a0;
     width:100%;
     cursor:pointer;
+    list-style: none;
 }
 #navbarNavDropdown{
   color:#bab1a0;
   background-color: #40171b;
+  text-align: center;
 }
-.nav-item, .nav-link, #navbarDropdownMenuLink{
+.nav-item, .nav-link, #navbarDropdownMenuLink, li .nav-item{
   font-size: 2rem;
   color:#bab1a0!important;
+  border: 2px 2px ridge #bab1a0;
 } 
 #navbarDropdownMenuLink, #nav-active-link, .nav-item nav-link{
   color:#bab1a0;
 }
 .dropdown-toggle{
-  font-size: 1.3em;
   color:#bab1a0;
 }
 .dropdown-menu:hover{
   border-color: #5b181f;
   color:#30302e;
-  background-color: #5b181f;
 }
 .dropdown-menu{
   background-color: #40171b;
@@ -309,7 +308,9 @@ padding-top: 4rem;
 display: none;
 }
 /*end first row*/
-
+.filtro{
+  display:none;
+}
 /*start second row*/
 #second{
   padding-bottom: 3rem;
@@ -451,7 +452,7 @@ display: none;
 
 /*start polaroid*/
 .polaroid-container {
-  padding-left: 40px;
+  padding-left: 2em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
@@ -460,7 +461,9 @@ display: none;
   background-color: #4c1a1b;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
+  border: 2px 2px ridge #bab1a0;
 }
+
 .polaroidimg {
   width: 100%;
   object-fit: cover;
@@ -553,6 +556,7 @@ footer p{
 #checkb{
   background-color: #40171b;
   color:#bab1a0;
+  z-index:1;
 }
 label{
   font-size: x-large;
@@ -976,12 +980,13 @@ text-align: center;
 }
 
 .fab-content, .fab-shadow, .sub-button, .fab{
-  background-color: #ba4c43 !important;
+  background-color: #260D0E!important;
 }
 
 .sub-button:hover{
-  background-color: #e2cb9c !important;
+  background-color: #40171b !important;
 }
+
 /* .fab-container #enable-future:hover{
   background: url("/typetravel/images/Future/g25.gif") !important;
   background-size: 12vh !important;

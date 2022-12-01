@@ -4,7 +4,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 0.4em grey; 
+  box-shadow: inset 0 0 0.4em #00ff00; 
   border-radius: 2em;
 }
  
@@ -13,7 +13,7 @@ body {
   width: 0.5em;
 }
 ::-webkit-scrollbar-thumb { 
-  background:#856d4b;
+  background:#00ff00;
   border-radius: 10em;
 }
 
@@ -35,7 +35,7 @@ body {
 /*Highers the Responsiveness of the web page*/
 * {
   margin: 0;
-  position: relative;
+
   box-sizing: border-box;
   }
 body{
@@ -74,12 +74,21 @@ html{
 .btn-close{
   color:#00ff00;
 }
-.btn-close:hover{
+.btn-secondary:hover{
+  background-color: #000;
+  color:#00ff00;
+}
+.btn-secondary{
+  color:#000;
+  background-color: #00ff00;
+}
+.btn-close:hover, .btn-secondary:hover{
   box-shadow: 2px 5px 10px 5px #00ff00;
 }
 .modal-header, .modal-footer{
   background-color: #6d24ff;
   color:#00ff00;
+  font-family: 'tomorrow';
 }
 #butt{
   font-family: 'tomorrow';
@@ -187,12 +196,8 @@ a:hover {
 
 
 /* OPTIONAL */
-.container {
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  max-height: 100%;
-
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -354,12 +359,15 @@ a:hover {
 .titlehidden, #main-title-col, #main-title-col2, #main-title-wall, #main-title, .walls{
   display:none;
 }
+#first-text{
+  line-height: 2;
+}
 .cyberpunk{
   padding-top: 16vh ;
   text-align: center;
   font-size: 10rem;
   font-family: 'tomorrow';
-  padding-bottom: 0;
+  padding-bottom: 20vh;
   background-image: url(../../images/galaxy.gif);
 }
 /*alien invasion title neon effect*/
@@ -411,9 +419,7 @@ h2{
   background-image: url(../images/galaxy.gif);
 }
 
-#first-text{
-  padding-top: 8rem;
-}
+
 .cyberpunk2{
   /*display: none;*/
   animation: caret 1s steps(1) infinite;
@@ -588,6 +594,7 @@ display: none;
 #about-proj{
   text-align: center;
   font-size: 4vh;
+  line-height: 2;
 }
 
 #short{ 
@@ -595,10 +602,9 @@ display: none;
   text-align:center;
   margin-left:3rem;
   margin-right: 3rem;
+  font-style: bold;
 }
-#short:hover{
-  color:#260D0E;
-}
+
 #topp{
   text-align: center;
 }
@@ -644,18 +650,18 @@ display: none;
     cursor: pointer;
     background-color: var(--background-color);
     outline: none;
-
+    background-color: #000;
   }
   .row h2:hover{
     color: yellow;
   }
-  #btn-issues:hover, #btn-themes:hover, #btn-issues:focus, #btn-themes:focus, #theme5:hover, #theme5:focus, #mainheader h2:focus, #doclist h2:focus, #teamsec:focus, #teamsec:hover{
+  #btn-issues:hover, #btn-themes:hover, #btn-issues:focus, #btn-themes:focus, #theme5:hover, #theme5:focus, #mainheader h2:focus, #doclist h2:focus, #teamsec:focus, #teamsec:hover, #plu h2:hover, #plu h2:focus, #fourth h2:hover, #fourth h2:focus #mainheader h2:hover, #mainheader h2:focus, #doclist h2:hover, #doclist:focus, #teamsec:hover, #teamsec:focus{
     color: #f9f002;
     box-shadow: 2px 5px 10px 5px #00ff00;
     border-width: 0.5em;
     border-color:#000;
   }
-  #btn-issues:after, #btn-themes:after, #theme5:after, #main-doc h3:after, #mainheader h2:after, #doclist h2:after, #teamsec:after{
+  #btn-issues:after, #btn-themes:after, #theme5:after, #main-doc h3:after, #mainheader h2:after, #doclist h2:after, #teamsec:after, #plu h2:after, #fourth h2:after, #mainheader h2:after, #doclist h2:after, #teamsec:after{
     content: "R-25";
     display: block;
     position: absolute;
@@ -836,7 +842,8 @@ a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before, #doclist
 
 /*themes-text is in the 4th section, while third is in the 3rd, but they have common styles*/
 #themes-text{
-  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom:2rem;
   text-align: center;
   font-size: 1.8rem;
   font-family: 'advent';
@@ -852,6 +859,7 @@ a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before, #doclist
 #issue-text{
   text-align: center;
   font-size: 2rem;
+  padding-top:2rem;
 }
 
 /*end third section*/
@@ -873,7 +881,7 @@ a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before, #doclist
 
 /*start polaroid*/
 .polaroid-container {
-  padding-left: 40px;
+  padding-left: 2em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
@@ -921,6 +929,7 @@ footer{
   font-weight: 100;
   position:sticky;
   z-index: 1;
+  padding: 0.5em;
 }  
 .fabvit{
 color:#00ff00;
@@ -961,7 +970,7 @@ footer p{
   margin-top: 0;
   text-align: center;
   width:100%;
-  padding-top: 3.8rem;
+  padding-top: 5rem;
   background-image: url(../../images/galaxy.gif);
 }
 /*end doclist*/
@@ -969,11 +978,18 @@ footer p{
 /*start metadata*/
 #checkb{
   background-color: #000;
+  z-index:1;
+}
+#metado{
+  background-image: url(../images/galaxy.gif);
+  padding:0;
+  margin:0;
 }
 .sticky-top{
   padding-top:20px;
   text-align: center;
   font-family: 'tomorrow';
+  z-index: 1020;
 }
 .btn-default{
   font-size: x-large;
@@ -984,16 +1000,24 @@ footer p{
   color: #00ff00;
   text-shadow: 0 0 3vw #179E05;
 }
+.flex-column{
+  flex-direction: column;
+}
 #bann{
   padding: 1rem;
   background-image: url(../../images/galaxy.gif);
+  position:relative;
+  z-index:1;
 }
 #bann2{
   background-image: url(../../images/galaxy.gif);
+  position:relative;
+  z-index:1;
 }
 .form-check-inline{
   padding-top: 3rem;
 }
+
 #input .form-check-input:focus{
   color:#00ff00;
 }
@@ -1011,6 +1035,8 @@ footer p{
 
 #sti{
   padding-top:100px;
+  background-size:15em 20em;
+  background-position-y: 2em;
 }
 .space{
   padding-bottom:2rem;
@@ -1090,7 +1116,13 @@ footer p{
         padding-top: 1rem;
     }
 }
-
+col-sm h3{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 h3{
   font-family:'tomorrow';
   color:#6d24ff;
@@ -1225,6 +1257,24 @@ text-align: center;
   height: 100%;
 }
 .fab-container:hover .sub-button:nth-child(2) {
+  transform: translateY(-12vh) !important;
+}
+.fab-container:hover .sub-button:nth-child(3) {
+  transform: translateY(-24vh) !important;
+}
+.fab-container:hover .sub-button:nth-child(4) {
+  transform: translateY(-36vh) !important;
+}
+.fab-container:hover .sub-button:nth-child(5) {
+  transform: translateY(-48vh) !important;
+}
+.fab-container:hover .sub-button:nth-child(6) {
+  transform: translateY(-60vh) !important;
+}
+.fab-container:hover .sub-button:nth-child(7) {
+  transform: translateY(-72vh) !important;
+}
+.fab-container:hover .sub-button:nth-child(2) {
   transform: translateX(-14vh);
 }
 .fab-container:hover .sub-button:nth-child(3) {
@@ -1241,6 +1291,9 @@ text-align: center;
 }
 .fab-container:hover .sub-button:nth-child(7) {
   transform: translateX(-84vh);
+}
+.filtro{
+  display:none;
 }
 /* .fab-container:hover .sub-button:nth-child(6) {
   bottom: 1vh;
@@ -1273,7 +1326,7 @@ text-align: center;
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  background-color: #00ff00;
+  color:#000;
   filter: invert(100%);
 }
 
@@ -1399,10 +1452,11 @@ text-align: center;
     outline: none;
 
   }
+
 #plu h2, #fourth h2, #mainheader h2, #doclist h2, #teamsec{
   color: #00ff00;
   background-color: #000!important;
-  
+  padding:1.4rem;
     position: relative;
     border-right: 3px solid #8ae66e;
     clip-path: polygon(
@@ -1462,6 +1516,9 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
 }
 .nav-item .nav-link{
   color:black;
+}
+.col-sm{
+  padding:1.5rem;
 }
 .col-sm h3{
   color:#6d24ff!important;
