@@ -1,6 +1,6 @@
 body {
 
-  cursor: url(../images/snails.png);
+  cursor: url(../../css/images/snails.png) 15 10,auto!important;
 }
 
 ::-webkit-scrollbar-track {
@@ -8,9 +8,8 @@ body {
   border-radius: 2em;
 }
  
-
 ::-webkit-scrollbar {
-  width: 0.5em;
+  width: 0.4em;
 }
 ::-webkit-scrollbar-thumb { 
   background:#00ff00;

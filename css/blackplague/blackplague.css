@@ -656,7 +656,8 @@ input[type="checkbox"]{
 }
 .slideanim{
   background-image: linear-gradient(transparent,rgba(0,0,0,0.8));
-
+  margin:0;
+  padding-bottom: 1rem;
 }
 .thumbnail{
   margin-bottom: 0rem;
@@ -834,10 +835,7 @@ img {
   width: 100%;
   border-radius: 10px;
 }
-.img-fluid{
-  height: 22em;
-  margin-bottom: 2em;
-}
+
 
 .btn-group-toggle{
 
