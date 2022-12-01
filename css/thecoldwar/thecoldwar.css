@@ -594,6 +594,7 @@ animation-delay: -5s;
   padding-bottom: 3rem;
   padding-top: 3rem;
   background-color: #a1281c;
+  opacity: 0.9;
 }
 
 #short{ 
@@ -1036,6 +1037,9 @@ content: "!";
   /* END ABOUT US */
 
 /*TOPIC PAGE*/
+.alertspeak{
+  display:none;
+}
 .filtro{
   display:none;
 }

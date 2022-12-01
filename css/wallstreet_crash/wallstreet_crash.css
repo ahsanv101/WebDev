@@ -181,8 +181,8 @@
 .modal-title::after{
   content: url(../../images/wine.gif);
     margin: auto;
-    width: 10px;
-    height: 3px;
+    width: 10%;
+    height: 10%;
  }
 
 .modal-header,.modal-footer{
@@ -660,6 +660,10 @@ color: #000;
   color: #c9b080;
 }
 
+#fourth h2::after{
+  display: none;
+}
+
 /*
 #fourth h2:hover{
   color:#242222;
@@ -930,6 +934,52 @@ color: #000;
 .filtro{
   display:none;
 }
+
+.customAlert{
+  
+  display: none;
+  position: fixed;
+  min-width: 250px !important;
+  min-height: 20%;
+  height: 18rem;
+  width: 50rem;
+  left: 25%;
+  right:25%;
+  top: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #242222;
+  z-index: 2;
+  
+}
+  .message{
+    padding: 10px;
+    color: #c9b080;
+    font-size: 28px;
+    /*line-height: 20px;*/
+    text-align: center;
+  }
+    
+  input[type='button']{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 50%;
+    height: 36px;
+    margin-top: -45px;
+    margin-left: -25%;
+    outline: 0;
+    border: 0.3rem double #c9b080;
+    background: #d8ccba;
+    color: white;
+  } 
+  
+  input[type='button']:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 0 0 5px #732627;
+  }
+
  /*La proprietà z-index nei CSS specifica la posizione di un elemento rispetto ad un altro. un elemento davanti all'altro*/
   #bann{
     z-index: 1;
