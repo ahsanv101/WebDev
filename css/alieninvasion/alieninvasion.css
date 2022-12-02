@@ -826,8 +826,8 @@ a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before, #doclist
 
 /*themes-text is in the 4th section, while third is in the 3rd, but they have common styles*/
 #themes-text{
-  padding-top: 2rem;
-  padding-bottom:6rem!important;
+  padding-top: 4rem;
+  padding-bottom:2rem;
   text-align: center;
   font-size: 1.8rem;
   font-family: 'advent';
@@ -1511,6 +1511,9 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
   background-color: #6d24ff;
   color:#00ff00;
 }
+#navbardoc.nav-link:hover{
+  box-shadow: 2px 5px 10px 5px #6d24ff;
+}
 .nav-item .nav-link{
   color:black;
 }
@@ -1546,6 +1549,9 @@ main#main-doc {
   color: #6d24ff;
 }
 .breakdoc{
+  display:none;
+}
+.alertspeak{
   display:none;
 }
 /*END DOCUMENTATION*/

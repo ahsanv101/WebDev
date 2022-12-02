@@ -401,8 +401,6 @@ display: none;
 
 /*themes-text is in the 4th section, while third is in the 3rd, but they have common styles*/
 #themes-text{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   text-align: center;
   font-size: 1.8rem;
   color:#bab1a0;
@@ -443,6 +441,7 @@ display: none;
 
 #fourth h2{
   color: #40171b;
+  padding-bottom: 2rem;
 }
 #fourth h2:hover{
   color:#5b181f;
