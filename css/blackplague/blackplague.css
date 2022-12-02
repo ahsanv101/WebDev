@@ -937,6 +937,7 @@ text-align: center;
 }
 .fab-container .sub-button .material-icons {
   padding-top: 6px;
+  color: #bab1a0!important;
 }
 
 .fab-content{
@@ -990,11 +991,13 @@ text-align: center;
 }
 
 .fab-content, .fab-shadow, .sub-button, .fab{
-  background-color: #260D0E!important;
+  background-color: white!important;
+  filter:contrast(100%);
+  filter: invert(100%);
 }
 
 .sub-button:hover{
-  background-color: #40171b !important;
+  background-color: #bfe8e4!important;
 }
 
 /* .fab-container #enable-future:hover{
@@ -1069,6 +1072,8 @@ main#main-doc {
   background-color: #bab1a0;
   margin-bottom: 0;
 }
- 
+.alertspeak{
+  display:none;
+}
 
 /*END DOCUMENTATION*/
