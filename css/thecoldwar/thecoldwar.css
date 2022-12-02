@@ -292,6 +292,7 @@ h4{
 }
 h5{
   font-family: 'bignoodle';
+  font-size: 1.5rem;
 }
 
 img { /*da cambiare*/
@@ -956,7 +957,7 @@ content: "!";
     background-color:black;
   }
   .main-section p{
-    text-align: center;
+    text-align: justify;
     font-size: 1.3rem;
   }
 

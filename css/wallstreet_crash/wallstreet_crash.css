@@ -9,11 +9,6 @@
   src: url(../fonts/HotelDesArts1929.ttf);
 }
 
-@font-face {
-  font-family: 'hotel';
-  src: url(../fonts/HotelDesArts1929.ttf);
-}
-
 @font-face {/*for body-text*/
   font-family: 'bembo';
   src: url(../fonts/ajensonpro-regular.otf);
@@ -283,6 +278,7 @@ h4{
 }
 h5{
   font-family: 'bembo';
+  font-size: 1.5rem;
 }
 img {
   filter:brightness(70%) contrast(150%) saturate(0%) brightness(150%);
@@ -817,8 +813,8 @@ color: #000;
     background-image: url("../../images/artdecowallpaper.jpg");
     grid-area: navbardoc;
     position: fixed;
-    margin-top: -8rem;
-    padding-top: 8rem;
+    margin-top: -6.5rem;
+    padding-top: 7rem;
     padding-left: 0.5em;
     padding-bottom: 7.5rem;
     padding-right: 0.5em;
@@ -845,7 +841,7 @@ color: #000;
     background-color:#4c1a1b;
   }
   .main-section p{
-    text-align: center;
+    text-align: justify;
     font-size: 1.3rem;
   }
 
