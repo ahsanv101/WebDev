@@ -90,6 +90,10 @@ body {
   #navbardoc{
     display: none !important;
 }
+#main-doc {
+  grid-area: mainContent !important;
+  padding-left: 0em !important;
+}
 
 
 
@@ -1738,26 +1742,26 @@ SELECTOR CSSS */
   .main-body {
     display: grid;
     grid-template-areas: "navbardoc mainContent";
-    grid-gap: 1rem;
+    grid-gap: 1rem;  
   }
 
   .breakdoc{
 display: none;
   }
+
   #navbardoc {
+    /* width: 2em; */
     position: fixed;
     padding-top: 1em;
-    padding-left: 0.5em;
-    /* z-index: 5; */
-    /* margin-bottom: 50em !important; */
-    /* font-size: 0.5em; */
-    /* grid-area: navbardoc; */
-    /* padding-right: 2rem; */
-     
+    /* padding-left: 0.5em; */
+    grid-area: navbardoc;
+   
   }
   #main-doc {
     grid-area: mainContent;
-    padding-left: 22em;
+    padding-left: 13em;
+    /* padding-right: 0em; */
+  
   }
    
   /* #navbardoc {
@@ -1778,14 +1782,18 @@ display: none;
     background-repeat: no-repeat;
   
   
-    width: 10em;
+    width: 12em;
     text-align: center;
+    font-size: 1.2em;
   
   
   }
+  #main-doc h5{
+    padding-left: 2em;
+  }
   
   #navbardoc a:hover ,#navbardoc a:focus {
-    width:11em;
+    width:13em;
    border:none;
 
 

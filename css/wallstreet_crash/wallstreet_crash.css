@@ -80,6 +80,14 @@
   .fab-container:hover .sub-button:nth-child(7) {
     transform: translateY(-72vh) !important;
   }
+  #navbardoc{
+    
+    display: none !important;
+}
+#main-doc {
+  /* grid-area: mainContent; */
+  padding-left: 0em !important;
+}
 }  
 
 @media (max-width: 768px){

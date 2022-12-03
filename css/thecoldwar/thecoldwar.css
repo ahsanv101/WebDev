@@ -92,6 +92,7 @@ html {
   .fab-container:hover .sub-button:nth-child(7) {
     transform: translateY(-72vh) !important;
   }
+
 }  
 
 @media (max-width: 768px){
