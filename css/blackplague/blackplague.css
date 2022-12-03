@@ -15,10 +15,7 @@
   font-family: 'scribish';
   src: url(../fonts/scribish.ttf);
 }
-@font-face {
-  font-family: 'darklands';
-  src: url(../fonts/Darklands.ttf);
-}
+
 @font-face {
   font-family: 'old';
   src: url(../fonts/OldeEnglish.ttf);
