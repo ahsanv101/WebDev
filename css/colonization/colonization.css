@@ -1365,7 +1365,8 @@ background-color: #000;
   border-color: #856d4b;
 
   overflow-y: scroll;
-  height:  50em;
+  height:  35em; 
+
 }
 
 #file a{
@@ -1378,7 +1379,7 @@ background-color: #000;
   border-style:inset;
   border-color: #856d4b;
   overflow-y: scroll;
-  height:  50em;
+  height:  29.09em;
 }
 
 #file2 a{
