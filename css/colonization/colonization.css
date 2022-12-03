@@ -830,6 +830,14 @@ h2{
 display: none;
 }
 
+.alertspeak{
+  display:none;
+}
+
+.filtro{
+  display:none;
+}
+
 .overlay{
   display: none;
 }
@@ -1296,6 +1304,7 @@ h4:hover{
   border-color: #856d4b;
   padding-left: 8em;
   padding-right:8em;
+  z-index: 1; 
   /* width: 100%; */
   /* padding: 5em; */
   /* margin-left: 0em;

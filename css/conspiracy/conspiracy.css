@@ -942,6 +942,14 @@ display: none;
   display:none;
 }
 
+.alertspeak{
+  display:none;
+}
+
+.filtro{
+  display:none;
+}
+
 .overlay{
   display: none;
 }
@@ -1523,6 +1531,7 @@ h4:hover{
   padding-right:8em;
   background-color: #000;
   color: white !important;
+  z-index: 1; 
   
   /* color: white !important; */
   /* width: 100%; */
