@@ -1536,6 +1536,7 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
   border-color: #6d24ff;
 }
 
+
 main#main-doc {
   grid-area: mainContent;
 }
