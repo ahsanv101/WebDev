@@ -12,11 +12,6 @@
 }
 
 @font-face {
-  font-family: 'carolingia';
-  src: url(../fonts/carolingia.ttf);
-}
-
-@font-face {
   font-family: 'scribish';
   src: url(../fonts/scribish.ttf);
 }
@@ -36,7 +31,7 @@
 }
 
 body{
-  font-family: 'darklands', sans-serif;   
+  font-family: 'old', sans-serif;   
   max-width: fit-content;
   min-width: fit-content;                           
 }
