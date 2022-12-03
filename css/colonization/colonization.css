@@ -485,9 +485,9 @@ h2{
 
 /*LINKS, SELECTION, CODE*/
 
-.change:hover{
+/* .change:hover{
   color:#9b3139;
-}
+} */
 
 /*NAVBAR*/
 #navbar, #navba, #navb, #navbi{
@@ -1217,10 +1217,6 @@ h4:hover{
 .documn{
   color: #732627;
   font-size: xx-large;
-}
-
-.col:hover{
-  background-color: #9b3133;
 }
 
 

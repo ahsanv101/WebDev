@@ -28,13 +28,14 @@
    /*documentation*/
 @media (max-width: 680px){
   #navbardoc{
-      display: none;
+      display: none !important;
   }
   #main-doc{
-        grid-area: main-body;
+        grid-area: main-body !important;
+        padding-left: 1em !important;
   }
   .main-body {
-        display: none;
+        /* display: none !important; */
   }
   }
 
@@ -80,14 +81,7 @@
   .fab-container:hover .sub-button:nth-child(7) {
     transform: translateY(-72vh) !important;
   }
-  #navbardoc{
-    
-    display: none !important;
-}
-#main-doc {
-  /* grid-area: mainContent; */
-  padding-left: 0em !important;
-}
+
 }  
 
 @media (max-width: 768px){
