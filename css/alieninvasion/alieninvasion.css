@@ -1300,7 +1300,7 @@ text-align: center;
   height: 12vh;
   width: 12vh;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 1;
 }
 .fab-container .fab::before {
   content: " ";
