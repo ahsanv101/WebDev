@@ -1781,12 +1781,12 @@ display: none;
   
     width: 12em;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
   
   
   }
   #main-doc h5{
-    padding-left: 2em;
+    /* padding-left: 2em; */
   }
   
   #navbardoc a:hover ,#navbardoc a:focus {

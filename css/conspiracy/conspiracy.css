@@ -1425,9 +1425,9 @@ h4:hover{
   font-size: xx-large;
 }
 
-.col:hover{
+/* .col:hover{
   background-color: #9b3133;
-}
+} */
 
 
 
@@ -2056,7 +2056,7 @@ display: none;
     font-size: 1em;
   }
   #main-doc h5{
-    padding-left: 2em;
+    padding-left: 1em;
   }
 
   #main-doc .main-section h3{
