@@ -1192,14 +1192,14 @@ font-size: 1.3rem;
 }
 
 
-#sti  a:hover {
-  color: #f3b21a;
-  background-color:black;
-}
 .list a{
   font-size: 1.2rem;
   color: #f3b21a;
   background-color:black;
+  text-decoration: none;
+}
+.list a:hover{
+  text-decoration: underline;
 }
 
 .tab-content{

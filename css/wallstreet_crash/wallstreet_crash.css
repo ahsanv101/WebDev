@@ -1109,9 +1109,11 @@ color: #000;
   font-size: 1.2rem;
   color: #d8ccba;
   background-color:#4c1a1b;
+  text-decoration: none;
 }
-
-
+.list a:hover{
+  text-decoration: underline;
+}
 
 #list_btn{
   display: block;
@@ -1200,6 +1202,7 @@ figcaption{
 #file h1{
   text-transform: uppercase;
   text-align: justify;
+  font-style: bold;
 
 }
 
@@ -1217,7 +1220,7 @@ figcaption{
   #file2 h1{
     text-transform: uppercase;
     text-align: justify;
-  
+    font-style: bold;
   }
   
   #file2 p{
