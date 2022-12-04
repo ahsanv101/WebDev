@@ -1196,6 +1196,10 @@ font-size: 1.3rem;
   color: #f3b21a;
   background-color:black;
 }
+.list a{
+  color: #f3b21a;
+  background-color:black;
+}
 
 .tab-content{
   background-image: url("../../images/dots.jpg");
