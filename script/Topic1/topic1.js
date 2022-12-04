@@ -50,15 +50,15 @@ var listItemTpl2 = `<li class="nav-item"><a class="nav-link" href='#' id="list_b
 
 $(document).ready(main);
 
-function main() {
-    $.ajax({
-        type: 'GET',
+function main() { 
+    $.ajax({    // ajax to load the doc on the page and making due lists 
+        type: 'GET', 
         dataType: 'json',
-        url: 'filelist.json',
+        url: 'filelist.json', //jsonfile where articles are listed
         success: function(d) {
             for (var i=0; i<d.length; i++) {
                 // alert(d)
-                $('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
+                $('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label})) // here the load funcion to select the article and display it on the file section
                 $('#list2').append(listItemTpl2.tpl({url:d[i].url, label: d[i].label}))
             }	
 
@@ -72,7 +72,7 @@ function main() {
     $('#peop').click(function() {
         if (this.checked)
 
-            $('.people').addClass('text-people')
+            $('.people').addClass('text-people')  //for checkbox to compare metadata and color in css 
         else
             $('.people').removeClass('text-people')
     })
@@ -112,10 +112,10 @@ function main() {
 
 }
 
-function load(file) {
+function load(file) { //load function when ypu click on the article to display it on th file section 
     $.ajax({
         method: 'GET',
-        url: file,
+        url: file, //file is the section on topic page 
         success: function(d) {
             // alert(file)
             $('#file').html(d)
@@ -139,8 +139,8 @@ function load2(file) {
             $('#file2').html(d)
             $('#title2').html($('#file2 h4'))
             $('.show').prop("checked", false)
-            addIds()
-            filltabs2()
+            addIds() //function one
+            filltabs2() //function two
         },
         error: function() {
             alert('Could not load file '+file)
@@ -148,10 +148,10 @@ function load2(file) {
     });
 }
 
-function addIds() {
+function addIds() { //function one 
 
 
-    addId('.people','people')
+    addId('.people','people') //adds ids to the annotations 
     addId('.place', 'place')
     addId('.event', 'event')
     addId('.concept', 'concept')
@@ -162,15 +162,15 @@ function addIds() {
 function addId(what, prefix) {
     var id = '0'
     var elements = $(what); 
-    for (var i=0; i<elements.length; i++) {
+    for (var i=0; i<elements.length; i++) { //adding numbered ids 
         elements[i].id = prefix + "-" + id++
     }
 }
 
-function filltabs(){
+function filltabs(){ //function two 
 
 
-    filltab("#file .people","list-people","#peoples")
+    filltab("#file .people","list-people","#peoples") //adds metadata in the tabs 
     filltab("#file .place","list-place","#places")
     filltab("#file .event","list-event","#events")
     filltab("#file .concept","list-concept","#concepts")
@@ -188,11 +188,11 @@ function filltabs2(){
 }
 
 
-function filltab(what,style,where) {
+function filltab(what,style,where) { //what is #file2 .people,  style is "list-people2", where is #peoples2
 
     var where_new = what.split(' ');
     where_new = where_new[0];
-    var list = `<li class="list $style"><a href="#" onclick="goto('$place','$content','$wh')">$content</a></li>`
+    var list = `<li class="list $style"><a href="#" onclick="goto('$place','$content','$wh')">$content</a></li>` //goto + the count funtion 
     var elements = $(what); 
     $(where+' ul').empty(); 
     
@@ -223,7 +223,7 @@ function filltab(what,style,where) {
             style:style, 
             place: counts[x],
             wh: where_new,
-            content: (x + " count: "+ counts[x].length)
+            content: (x + " count: "+ counts[x].length) //saving the counts on the ids
         }) )
         }
 
@@ -238,7 +238,7 @@ var data = new Array();
 // console.log(data);
 
 
-function goto(id,con,wh) {
+function goto(id,con,wh) { //if you click one time is hightlight one two time the next one 
     
 
     if (data.length!= 0)

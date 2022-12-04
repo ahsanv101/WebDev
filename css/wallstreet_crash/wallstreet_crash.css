@@ -2,6 +2,8 @@
 @import "/typetravel/styles/themes/components/sizingNavbar.css"; */
 /* @import "/typetravel/styles/home.css"; */
 
+list-people2
+
 
 /*FONTS*/
 @font-face {
@@ -856,6 +858,11 @@ color: #000;
     margin: 0;
   }
 
+  .g{
+    font-size: 1.4rem;
+    font-family: 'bembo';
+    display: inline;
+  }
   /*END DOCUMENTATION*/
   
   /* ABOUT US */
