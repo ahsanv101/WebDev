@@ -843,6 +843,7 @@ h5{
 img {
   width: 100%;
   border-radius: 10px;
+  filter:sepia(200%);
 }
 
 

@@ -1179,6 +1179,7 @@ h5{
 img {
   width: 100%;
   border-radius: 10px;
+  filter:saturate(300%);
 }
 
 
