@@ -2,8 +2,6 @@
 @import "/typetravel/styles/themes/components/sizingNavbar.css"; */
 /* @import "/typetravel/styles/home.css"; */
 
-list-people2
-
 
 /*FONTS*/
 @font-face {
@@ -1143,6 +1141,17 @@ color: #000;
   /*background-color: #d8ccba;*/
   background-image: url("../../images/artdecowallpaperopacity.jpg");
 }
+
+#file a{
+  color: #c9b080;
+  font-style: italic;
+
+ }
+ 
+ #file2 a{
+  color: #c9b080;
+  font-style: italic;
+ } 
 
 
 #file{
