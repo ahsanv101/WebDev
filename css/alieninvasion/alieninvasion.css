@@ -1469,9 +1469,9 @@ nav#navbardoc {
   padding-top: 2rem;
   padding-left: 0.7em;
   padding-right: 1.4em;
-  padding-bottom: 7rem; 
+  padding-bottom: 40rem; 
   margin-top: -0.5rem;
-  margin-bottom: 10rem;
+  margin-bottom: -10rem;
   font-family: 'tomorrow';
 }
  
