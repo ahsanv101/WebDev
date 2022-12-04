@@ -583,6 +583,7 @@ img {
   background-color: #262626;
   /*background-image: url("../../images/artdecowallpaper.jpg");*/
   color:white;
+  box-shadow: 0.2rem 0.2rem black;
 }
 #btn-themes:hover{
   background-color:#262626;
@@ -593,10 +594,18 @@ img {
   color:#262626;
   /*background-image: url("../../images/artdecowallpaper.jpg");*/
   background-color: white;
+  box-shadow: 0.2rem 0.2rem black;
 }
 #btn-issues:hover{
   background-color: white;
   color: #c9b080;
+}
+
+#btn-themes:active{
+  box-shadow: 0.2rem 0.2rem black;
+}
+#btn-issues:active{
+  box-shadow: 0.2rem 0.2rem black;
 }
 
 /*non esiste 
@@ -1202,7 +1211,7 @@ figcaption{
 #file h1{
   text-transform: uppercase;
   text-align: justify;
-  font-style: bold;
+  font-weight: bold;
 
 }
 
@@ -1220,7 +1229,7 @@ figcaption{
   #file2 h1{
     text-transform: uppercase;
     text-align: justify;
-    font-style: bold;
+    font-weight: bold;
   }
   
   #file2 p{
