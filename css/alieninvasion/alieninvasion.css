@@ -515,7 +515,7 @@ display: none;
 #second{
   padding-bottom: 3rem;
   padding-top: 3rem;
-  background-color:#00ff00;
+  background-image:url(../../images/vomit.webp);
   font-family: 'advent';
   font-weight: 500;
 }
@@ -533,7 +533,7 @@ display: none;
 }
 
 #short{ 
-  color: #6d24ff;
+  color: black;
   text-align:center;
   margin-left:3rem;
   margin-right: 3rem;
@@ -1392,9 +1392,12 @@ text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
 #mainheader{
   background-image: url(../../images/galaxy.gif);
-  padding-top: 5em;
+}
+#mainheader h2{
+  padding-left: 17rem!important;
 }
 #theme5, #main-doc h3{
   background-color: #000!important;
@@ -1436,6 +1439,7 @@ text-align: center;
   }
   #mainheader h2{
     padding-top: 4rem;
+    margin-top: 0;
   }
 .main-section p{
   padding: 1rem;
@@ -1459,7 +1463,16 @@ div.main-body {
 }
 
 nav#navbardoc {
-  grid-area: navbardoc;
+  grid-area: navbardoc/navbardoc/navbardoc/navbardoc;
+  background-repeat: repeat;
+  position: fixed;
+  padding-top: 2rem;
+  padding-left: 0.7em;
+  padding-right: 1.4em;
+  padding-bottom: 7rem; 
+  margin-top: -0.5rem;
+  margin-bottom: 10rem;
+  font-family: 'tomorrow';
 }
  
 nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab, a .dropdown-item, .dropdown-toggle.show{
@@ -1485,10 +1498,10 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
   background-color: #6d24ff;
   color:#00ff00;
 }
-#navbardoc.nav-link:hover{
-  box-shadow: 2px 5px 10px 5px #6d24ff;
+#navbardoc .nav-link{
+  font-size: 1.4em;
 }
-
+#nav
 .col-sm{
   padding:1.5rem;
 }
@@ -1515,6 +1528,7 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
 }
 main#main-doc {
   grid-area: mainContent;
+  padding-left: 17em;
 }
 #main-doc h3{
   font-size: 3rem;

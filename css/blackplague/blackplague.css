@@ -717,7 +717,22 @@ button{
         padding-top: 1rem;
     }
   }
-
+  @media(max-width: 680px){
+    #navbardoc{
+      display: none;
+    }
+  }
+  nav#navbardoc {
+    grid-area: navbardoc/navbardoc/navbardoc/navbardoc;
+    background-repeat: repeat;
+    position: fixed;
+    
+    padding-top: 3rem;
+    padding-left: 2em;
+    padding-right: 15em;
+    padding-bottom: 25em; 
+    padding-right: 0.5em;
+  }
 h3{
   font-family:'scribish';
   color:#30302e;
@@ -1034,7 +1049,6 @@ div.main-body {
  
 nav#navbardoc {
   grid-area: navbardoc; 
-  padding-bottom: 3rem;
   background-image:url(../../images/peste.png);
      
 }
@@ -1042,6 +1056,7 @@ nav#navbardoc {
   color:#bab1a0;
   background-image: url(../../images/peste.png);
   margin:0;
+  padding-left:17rem;
 }
 
 nav#navbardoc a {
@@ -1070,6 +1085,8 @@ main#main-doc {
   grid-area: mainContent;
   background-color: #bab1a0;
   margin-bottom: 0;
+  padding-left: 17em;
+  padding-bottom: 44em;
 }
 .alertspeak{
   display:none;
