@@ -247,23 +247,6 @@ a:hover {
   transition: height 0.5s, width 0.5s, filter 0.5s;
 }
 
-/* REQUIRED / some styling is necessary for hover effect */
-.hover__big {
-  height: 100px;
-  width: 100px;
-  filter: drop-shadow(0 0 5px var(--green)) drop-shadow(0 0 20px var(--green)) drop-shadow(0 0 40px var(--green));
-  
-  transition: height 0.5s, width 0.5s, filter 0.5s;
-}
-
-/* REQUIRED / some styling is necessary for hover effect */
-.hover__small {
-  height: 8px;
-  width: 8px;
-  
-  transition: height 0.2s, width 0.2s;
-}
-
 /* OPTIONAL */
 .hero {
   margin: 3em;
