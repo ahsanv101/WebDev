@@ -155,6 +155,13 @@ html {
 /*END NAVBAR*/
 
 /*DISCLAIMER*/
+#disclaimer, #disclaim, #discl, #dis{
+  background-size: 20em 15em;
+  background-image:  url(../../images/bombgif.gif);
+	background-repeat: 20px/20px repeat;
+  background-color: #000;
+}
+
 .btn-close{ /*nascondo x in alto perchè c'è già close in basso*/
   display:none;
 }
@@ -177,7 +184,9 @@ html {
   /*font-weight: 100;*/
   color:#4b4635;
 }
-
+.modal-content {
+  background-color: #ff5c07;
+}
 .modal-dialog{
   max-width: 100vh ; /*vh	Relative to 1% of the height of the viewport*/
 }
@@ -192,10 +201,9 @@ html {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3rem;
-  margin-top: -4rem;
-  margin-bottom: -1rem;
 }
 
+/*
 .modal-title::after{
  content: url(../../images/bombgif.gif);
 }
@@ -203,7 +211,7 @@ html {
   content: url(../../images/bombgif.gif);
   margin-right:-3rem;
   padding-left: 2rem;
- }
+ }*/
  
 
 #butto, #butt, #but{  /*CLOSE butto for index, but for doc and topic, butt for about*/

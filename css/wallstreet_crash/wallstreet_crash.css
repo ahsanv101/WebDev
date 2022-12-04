@@ -144,6 +144,16 @@ list-people2
 /*END NAVBAR*/
 
 /*DISCLAIMER*/
+
+#disclaimer, #disclaim, #discl, #dis{
+
+  background-image:  url(../../images/disclaimerwall.jpg);
+
+}
+.modal-content {
+  background-color: #d8ccba;
+}
+
 .btn-close{ /*nascondo x in alto perchè c'è già close in basso*/
   display:none;
 }
