@@ -844,8 +844,21 @@ img {
   width: 100%;
   border-radius: 10px;
   filter:sepia(200%);
+  border-image: url(../../images/bordo3.png) 40 stretch;
 }
-
+img:active:after{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  box-shadow: -3px  0  2px rgba(0,0,0,0.20), 
+  -3px  -3px  2px rgba(0,0,0,0.10), 
+  -3px  3px  2px rgba(0,0,0,0.10);
+  /*-blur, parent width, parent height+blur, -blur*/
+  clip: rect(-8px, 100px, 108px, -8px);
+}
 
 .btn-group-toggle{
 
