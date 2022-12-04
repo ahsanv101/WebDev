@@ -1084,6 +1084,7 @@ h3{
   font-size: xx-large;
   font-family: 'tomorrow';
   color:#6d24ff;
+  text-align: center;
 }
 
 h5{
@@ -1428,6 +1429,16 @@ text-align: center;
   #mainheader h2{
     padding-top: 4rem;
   }
+.main-section p{
+  padding: 1rem;
+}
+.boccaccio{
+  color:#6d24ff;
+}
+.boccaccio:hover{
+  color:#00ff00;
+  background-color: #6d24ff;
+}
 #mainheader h5{
   padding-bottom: 1.5rem;
   text-align: center;
@@ -1488,10 +1499,12 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
   background-color: #00ff00;
   border-color: #6d24ff;
 }
-#list-btn{
-  background-image: url(../../images/cyber.jpg);
+.col-sm#list, .main-body #navbardoc{
+  background-image: url(../../images/vomit.webp);
 }
-
+#main-doc a{
+  color:#6d24ff;
+}
 main#main-doc {
   grid-area: mainContent;
 }

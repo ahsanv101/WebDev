@@ -622,6 +622,9 @@ input[type="checkbox"]{
   overflow-y: scroll;
   height: 800px;
 }
+.main-section p{
+  padding: 1rem;
+}
 /*end metadata style*/
 
 /*start aboutus*/
@@ -1014,9 +1017,14 @@ text-align: center;
 /*START DOCUMENTATIO*/
 .containerpadding {
   padding-top: 1.5rem;
+}
+.boccaccio{
+  color:#6d24ff;
+}
+.boccaccio:hover{
+  color:#00ff00;
+  background-color: #6d24ff;
   }
-  
-
 div.main-body {
   display: grid;
   grid-template-columns: minmax(300px , auto)1fr;   
