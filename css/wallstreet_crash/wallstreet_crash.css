@@ -865,7 +865,14 @@ color: #000;
     text-align: justify;
     font-size: 1.3rem;
   }
-
+  .main-section a{
+    color: #d8ccba;
+    font-style: italic;
+    }
+  .main-section a:hover{
+      color: #0645AD;
+    }
+ 
   .main-section{
     border-bottom: 0.3rem solid #262626; /*or dotted*/
     padding-top: 1rem;
@@ -1170,6 +1177,13 @@ color: #000;
   color: #c9b080;
   font-style: italic;
  } 
+
+ #file a:hover{
+  color: #0645AD;
+}
+#file2 a:hover{
+  color: #0645AD;
+}
 
 
 #file{
