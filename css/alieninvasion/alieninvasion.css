@@ -921,10 +921,7 @@ footer p{
   text-align: center;
   height:20em;
 }
-#list-btn{
-  color:#6d24ff!important;
 
-}
 /*end doclist*/
 
 /*start metadata*/
@@ -1491,7 +1488,9 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
   background-color: #00ff00;
   border-color: #6d24ff;
 }
-
+#list-btn{
+  background-image: url(../../images/cyber.jpg);
+}
 
 main#main-doc {
   grid-area: mainContent;
