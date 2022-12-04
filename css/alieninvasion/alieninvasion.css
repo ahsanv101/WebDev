@@ -904,7 +904,6 @@ footer p{
 /*end footer*/
 /*end index*/
 
-/*start topic1*/
 /*start document list*/
 #doclist{
   margin-top: 0;
@@ -921,6 +920,10 @@ footer p{
   align-items: center;
   text-align: center;
   height:20em;
+}
+#list-btn{
+  color:#6d24ff!important;
+
 }
 /*end doclist*/
 
@@ -1469,9 +1472,7 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
 #navbardoc.nav-link:hover{
   box-shadow: 2px 5px 10px 5px #6d24ff;
 }
-.nav-item .nav-link{
-  color:black;
-}
+
 .col-sm{
   padding:1.5rem;
 }
