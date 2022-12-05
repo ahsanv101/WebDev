@@ -606,6 +606,8 @@ input[type="checkbox"]{
 .tab-content{
   overflow-y:scroll;
   height:250px;
+  color:#260D0E;
+  padding-top: 1rem;
 }
 #metado{
   background-color: #bab1a0;
