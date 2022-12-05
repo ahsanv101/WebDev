@@ -112,8 +112,11 @@ html{
 
 .nav-item, .nav-link, #navbarDropdownMenuLink, li .nav-item{
   
-  color:#00ff00!important;
+  color:#00ff00;
 } 
+#list-btn{
+  color:#000!important;
+}
 .nav-item:hover, a .dropdown-item:hover{
   box-shadow: 2px 5px 10px 5px #00ff00;
   border-width: 0.5em;
