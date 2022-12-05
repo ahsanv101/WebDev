@@ -1242,7 +1242,7 @@ label{
 .space{
   padding:2rem;
 }
-#file{
+#file, #file2{
   overflow-y: scroll;
   height: 800px;
 }
@@ -1254,10 +1254,7 @@ label{
   text-align: justify;
   color:#6d24ff;
 }
-#file2{
-  overflow-y: scroll;
-  height: 800px;
-}
+
 #file2 h1, #file h1{
   padding-top:3em!important;
   color:#6d24ff;
