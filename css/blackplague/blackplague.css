@@ -439,7 +439,7 @@ display: none;
 #fourth{
   background-color:#bab1a0;
   padding-top: 3rem;
-  background-image: linear-gradient(transparent,rgba(0,0,0,0.8));
+  background-image: url(../../images/peste3.jpg)
 }
 
 #fourth h2{
@@ -664,6 +664,15 @@ figcaption{
 }
 .main-section p{
   padding: 1rem;
+  font-size: 1.5em;
+}
+.nope{
+  display:none;
+}
+.main-section{
+  border: 4mm ridge #732627;
+  color: #bab1a0;
+  background-color: #40171b;
 }
 /*end metadata style*/
 
@@ -742,7 +751,7 @@ button{
   display: inline;
 }
 .main-body{
-  background-image: linear-gradient(transparent,rgba(0,0,0,0.8));
+  background-image: url(../../images/peste3.jpg)
 }
 /*general requirements*/
 :root{
@@ -764,17 +773,12 @@ button{
   nav#navbardoc {
     grid-area: navbardoc/navbardoc/navbardoc/navbardoc;
     background-repeat: repeat;
-    position: fixed;
-    background-image: url(../../images/horro.png);
-    padding-top: 3rem;
-    padding-left: 2em;
-    padding-right: 15em;
-    padding-bottom: 25em; 
-    padding-right: 0.5em;
-  }
+    position: fixed;}
+  
+    
 h3{
   font-family:'scribish';
-  color:#30302e;
+  color:#bab1a0;
   padding-top:1rem;
 }
 .col-sm h3:hover{
@@ -1266,12 +1270,10 @@ text-align: center;
 .containerpadding {
   padding-top: 1.5rem;
 }
-.boccaccio{
-  color:#6d24ff;
-}
+
 .boccaccio:hover{
-  color:#00ff00;
-  background-color: #6d24ff;
+  color:#bab1a0;
+  background-color: #40171b;
   }
 div.main-body {
   display: grid;
@@ -1282,8 +1284,11 @@ div.main-body {
  
 nav#navbardoc {
   grid-area: navbardoc; 
-  background-image:url(../../images/horro.png);
-     
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 37em;
+  margin-top: -0.5rem;
+  margin-left: -2.9em;
 }
 #mainheader h2{
   color:#bab1a0;
@@ -1316,10 +1321,8 @@ nav#navbardoc a:hover{
 
 main#main-doc {
   grid-area: mainContent;
-  background-color: #bab1a0;
   margin-bottom: 0;
-  padding-left: 17em;
-  padding-bottom: 44em;
+  padding-left: 3em;
 }
 .alertspeak{
   display:none;
