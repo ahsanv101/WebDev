@@ -140,6 +140,12 @@ a:hover{
   cursor:pointer;
   text-align: center;
 }
+#plag:hover, #colo:hover, #crash:hover, #cold:hover, #cons:hover, #ali:hover{
+  background-color: #5b181f;
+}
+#plag, #colo, #crash, #cold, #cons, #ali{
+  background-color: #30302e;
+}
 .dropdown-item:hover{
   color:#000000;
   border-color: #5b181f!important;
@@ -1103,8 +1109,8 @@ text-align: center;
   position: fixed;
   bottom: 5vh;
   right: 5vh;
-  
 }
+
 .fab-container:hover {
   height: 100%;
 }
@@ -1231,9 +1237,7 @@ text-align: center;
   filter:sepia(100%);
   background-color: #30302e;
 }
-#plag:hover, #colo:hover, #crash:hover, #cold:hover, #cons:hover, #ali:hover{
-  background-color: #5b181f!important;
-}
+
 
 
 
