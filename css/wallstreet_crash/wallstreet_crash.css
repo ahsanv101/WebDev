@@ -803,6 +803,16 @@ color: #000;
   height: 20em;
  
 }
+#imgplus{
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+  align-items: center;
+  text-align: center;
+  /* width: 45em; */
+  height: 20em;
+}
 
 .containerpadding {
   padding-top: 1.5rem;

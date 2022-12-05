@@ -1,6 +1,6 @@
 
 @import url('https://fonts.cdnfonts.com/css/pop-art');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap'); /*font pop art*/
 
                 
 html {
@@ -11,12 +11,12 @@ html {
 
 /*FONTS*/
 @font-face {
-  font-family: 'korolev';
+  font-family: 'korolev'; /*main title*/
   src: url(../fonts/KorolevMilitaryStencil.ttf);
 }
  
 @font-face {
-  font-family: 'military';
+  font-family: 'military'; 
   src: url(../fonts/Cold\ Warm.otf);
 }
  
@@ -38,8 +38,8 @@ html {
   }
 }
    /*documentation*/
-@media (max-width: 680px){
-  #navbardoc{
+@media (max-width: 680px){ /*fino a*/
+ /* #navbardoc{
       display: none;
   }
   #main-doc{
@@ -47,7 +47,14 @@ html {
   }
   .main-body {
         display: none;
-  }
+  }*/
+  #navbardoc{
+    
+    display: none !important;
+}
+#main-doc {
+  padding-left: 0em !important;
+}
   }
 
 
@@ -898,6 +905,18 @@ content: "!";
 
 .doc-img{
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+  align-items: center;
+  text-align: center;
+  /* width: 45em; */
+  height: 20em;
+  filter: url('#red-sunset');
+}
+
+#imgplus{
+  display: inline;
   margin-left: auto;
   margin-right: auto;
   width: 20em;
