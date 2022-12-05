@@ -765,7 +765,7 @@ button{
     grid-area: navbardoc/navbardoc/navbardoc/navbardoc;
     background-repeat: repeat;
     position: fixed;
-    
+    background-image: url(../../images/horro.png);
     padding-top: 3rem;
     padding-left: 2em;
     padding-right: 15em;
@@ -1282,7 +1282,7 @@ div.main-body {
  
 nav#navbardoc {
   grid-area: navbardoc; 
-  background-image:url(../../images/peste.png);
+  background-image:url(../../images/horro.png);
      
 }
 #mainheader h2{
