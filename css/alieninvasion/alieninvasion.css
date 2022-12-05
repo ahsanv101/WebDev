@@ -461,6 +461,7 @@ a:hover {
   font-size: 0.5em !important;
 }
 
+
 .list {
   font-size: 0.6em !important;
   line-height: 1; 
@@ -1138,19 +1139,23 @@ footer p{
 
 /*start metadata*/
 #checkb{
-  background-color: #000;
+  background-image: url(../../images/vomit.webp);
   z-index:1;
+  text-align: center;
+  padding-top: 4em;
+  padding-left:8em ;
+  padding-right: 8em;
 }
+
 #metado{
   background-image: url(../images/galaxy.gif);
   padding:0;
   margin:0;
 }
 .sticky-top{
-  padding-top:20px;
   text-align: center;
   font-family: 'tomorrow';
-  z-index: 1020;
+  position: sticky;
 }
 .btn-default{
   font-size: x-large;
@@ -1316,6 +1321,7 @@ h5{
 
 
 
+
 @media (min-width: 992px) and (max-width: 1200px){
     .issue-description{
         font-size: 2.5vh !important;
@@ -1365,7 +1371,7 @@ h5{
 }
 
 
-img {
+img, figure {
   width: 100%;
   border-radius: 10px;
   filter:saturate(300%);
@@ -1650,7 +1656,7 @@ nav#navbardoc {
   font-family: 'tomorrow';
 }
  
-nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab, a .dropdown-item, .dropdown-toggle.show{
+nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab, a .dropdown-item, .dropdown-toggle.show, .form-check-label{
   display: block;
   border: 1px solid black;
   padding: 5px;
@@ -1669,7 +1675,7 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
   width: 100%;
   max-width: 100%;
 }
-#navbardoc .nav-link, a .nav-link{
+#navbardoc .nav-link, a .nav-link, #list .nav-item{
   background-color: #6d24ff;
   color:#00ff00;
 }
