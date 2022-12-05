@@ -1203,16 +1203,15 @@ text-align: center;
   background-position: center;
 }
 
-.fab-content, .fab-shadow, .fab, .sub-button{
+.fab-content, #plag, #colo, #crash, #cold, #cons, #ali{
   filter:sepia(100%);
   background-color: #30302e;
 }
-
-
-.sub-button:hover, .fab shadow:hover, .fab-container .sub-button{
-  background-color: #40171b!important;
-  filter: sepia(100%);
+#plag:hover, #colo:hover, #crash:hover, #cold:hover, #cons:hover, #ali:hover{
+  background-color: #5b181f!important;
 }
+
+
 
 /* .fab-container #enable-future:hover{
   background: url("/typetravel/images/Future/g25.gif") !important;
