@@ -609,6 +609,15 @@ input[type="checkbox"]{
   color:#260D0E;
   padding-top: 1rem;
 }
+#file2 h1{
+  padding-top:8rem;
+}
+#concept-0{
+  padding-top: 10rem;
+}
+#file2 h2, #fil2 p{
+  color:#260D0E!important;
+}
 #metado{
   background-color: #bab1a0;
   background-image: linear-gradient(transparent,rgba(0,0,0,0.8));
@@ -1025,7 +1034,7 @@ h5{
 }
 
 
-img {
+img,figure {
   width: 100%;
   border-radius: 10px;
   filter:sepia(200%);
