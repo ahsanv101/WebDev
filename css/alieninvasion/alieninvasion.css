@@ -1161,7 +1161,7 @@ footer p{
 /*start metadata*/
 #checkb{
   background-image: url(../../images/vomit.webp);
-  z-index:1;
+  z-index: 1;
   text-align: center;
   padding-left:8em ;
   padding-right: 8em;
@@ -1482,7 +1482,7 @@ text-align: center;
   height: 12vh;
   width: 12vh;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
 }
 .fab-container .fab::before {
   content: " ";
