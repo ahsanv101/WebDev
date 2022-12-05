@@ -111,7 +111,6 @@ html{
 }
 
 .nav-item, .nav-link, #navbarDropdownMenuLink, li .nav-item{
-  
   color:#00ff00;
 } 
 #list-btn{
@@ -1709,7 +1708,7 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
 }
 #navbardoc .nav-link, a .nav-link{
   background-color: #6d24ff;
-  color:#00ff00;
+  color:#00ff00!important;
 }
 #list .nav-item, #list2 .nav-item{
   color:#000;
