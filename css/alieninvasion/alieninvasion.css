@@ -436,7 +436,7 @@ a:hover {
 }
 
 .sub-button:hover{
-  background-color: #00ff00 !important;
+  background-color: yellow !important;
 }
 
 #peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
@@ -1420,7 +1420,7 @@ text-align: center;
 
 /* SELECTOR */
 .fab shadow{
-  background-color: #00ff00;
+  background-color: yellow;
 }
 .fab-container {
   display: flex;
@@ -1504,7 +1504,7 @@ text-align: center;
   width: 12vh;
   border-radius: 50%;
   transition: all 0.3s ease;
-  background-color:#00ff00;
+  background-color:yellow;
   filter: saturate(300%);
 }
 
@@ -1567,7 +1567,7 @@ text-align: center;
 }
 
 .sub-button:hover{
-  background-color: #00ff00 !important;
+  background-color: yellow!important;
   filter: saturate(300%);
 }
 /* .fab-container #enable-future:hover{
