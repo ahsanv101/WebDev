@@ -448,7 +448,7 @@ a:hover {
   width: 7em !important;
 }
 
-.nav-item{
+.nav-item, .dropdown-item{
   font-size: 1rem !important;
 } 
 
@@ -1225,7 +1225,6 @@ label{
   background-color: #6d24ff;
 }
 #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab {
-  font-size: 1.8rem;
   background-color: #6d24ff;
 }
 
