@@ -292,9 +292,7 @@ a:hover {
   }
 
   
-.fab shadow{
-  background-color: black;
-}
+
 
 .fab-container {
   display: flex;
@@ -1492,7 +1490,7 @@ text-align: center;
   width: 100%;
   border-radius: 50%;
   color:white;
-  filter: invert(100%);
+  filter: saturate(300%);
 }
 
 .fab-container .sub-button {
@@ -1507,7 +1505,7 @@ text-align: center;
   border-radius: 50%;
   transition: all 0.3s ease;
   background-color:#00ff00;
-  filter: invert(90%);
+  filter: saturate(300%);
 }
 
 .fab-container .sub-button .material-icons {
@@ -1569,7 +1567,8 @@ text-align: center;
 }
 
 .sub-button:hover{
-  background-color: #e2cb9c !important;
+  background-color: #00ff00 !important;
+  filter: saturate(300%);
 }
 /* .fab-container #enable-future:hover{
   background: url("/typetravel/images/Future/g25.gif") !important;
@@ -1708,6 +1707,9 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
 }
 #navbardoc .nav-link, a .nav-link{
   background-color: #6d24ff;
+  color:#00ff00!important;
+}
+#navbar-nav .nav-item{
   color:#00ff00!important;
 }
 #list .nav-item, #list2 .nav-item{
