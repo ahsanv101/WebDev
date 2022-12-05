@@ -111,7 +111,7 @@ html{
 }
 
 .nav-item, .nav-link, #navbarDropdownMenuLink, li .nav-item{
-  font-size: 1.5rem;
+  
   color:#00ff00!important;
 } 
 .nav-item:hover, a .dropdown-item:hover{
@@ -132,13 +132,14 @@ html{
   background-color: #00ff00;
   border-color: #266206;
   color:#6d24ff;
+  border-radius: 50px;
 }
 .dropdown-menu{
   background-color:#6d24ff;
   color: #00ff00;
 }
 .dropdown-item{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color:#00ff00;
 }
 /*navbar end*/
@@ -1088,7 +1089,6 @@ a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before, #doclist
   font-size: 24pt;
 }
 .show{
-  font-size: 1.5rem;
   text-align: center;
 }
 /*end polaroid*/
@@ -1337,7 +1337,7 @@ h3{
 }
 
 h5{
-  font-size: xx-large;
+  font-size: 1.8em;
   margin-top: 0;
   font-family: 'advent';
 }
