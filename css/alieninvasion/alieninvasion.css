@@ -453,14 +453,14 @@ a:hover {
 
 
 #btn_1{
-  font-size: 0.1em !important;
+  font-size: 0.5em !important;
 }
 
 
 .form-check-input{
   font-size: 0.5em !important;
+  color:#000;
 }
-
 
 .list {
   font-size: 0.6em !important;
@@ -841,6 +841,26 @@ display: none;
   border-right: 2px solid #8ae66e;
 }
 
+#btn_1{
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #00ff00;
+  padding: 7px 2%;
+  border: 2px solid var(--grey2);
+  border-radius: 50px;
+  align-self: center;
+  text-align: center;
+  transition: all ease-out 0.5s; /* for smooth transitions when cursor leaves the button */
+  width: 100%;
+  max-width: 100%;
+  background-color: #6d24ff;
+}
+#btn_1:hover{
+  box-shadow: 2px 5px 10px 5px #00ff00;
+}
+
 button.#btn-themes:hover:before,
 a.#btn-issues:hover:before,
 button.#btn-themes:focus:before,
@@ -1142,7 +1162,6 @@ footer p{
   background-image: url(../../images/vomit.webp);
   z-index:1;
   text-align: center;
-  padding-top: 4em;
   padding-left:8em ;
   padding-right: 8em;
 }
@@ -1156,14 +1175,12 @@ footer p{
   text-align: center;
   font-family: 'tomorrow';
   position: sticky;
+  padding-top:20px;
+  top:0;
+  width:100%;
 }
-.btn-default{
-  font-size: x-large;
-  font-family:'tomorrow';
-  color:#00ff00;
-}
+
 .btn-default:hover{
-  color: #00ff00;
   text-shadow: 0 0 3vw #179E05;
 }
 .flex-column{
@@ -1180,12 +1197,23 @@ footer p{
   position:relative;
   z-index:1;
 }
+
 .form-check-inline{
   padding-top: 3rem;
+  display: inline-block;
+  margin-right: 1rem;
+  color:#000;
 }
-
-#input .form-check-input:focus{
-  color:#00ff00;
+label{
+  color: #000;
+  font-family: 'tomorrow';
+  display: inline-block;
+  font-size: x-large;
+}
+.form-check{
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0.125rem;
 }
 .col-4{
   background-color: #00ff00;
@@ -1656,7 +1684,7 @@ nav#navbardoc {
   font-family: 'tomorrow';
 }
  
-nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab, a .dropdown-item, .dropdown-toggle.show, .form-check-label{
+nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinions-tab, a .dropdown-item, .dropdown-toggle.show{
   display: block;
   border: 1px solid black;
   padding: 5px;
