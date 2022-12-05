@@ -128,7 +128,6 @@ a:hover{
 }
 .dropdown-menu:hover{
   border-color: #5b181f;
-  color:#30302e;
 }
 .dropdown-menu{
   background-color: #40171b;
@@ -139,6 +138,12 @@ a:hover{
 .dropdown-item{
   color:#bab1a0;
   cursor:pointer;
+  text-align: center;
+}
+.dropdown-item:hover{
+  color:#000000;
+  border-color: #5b181f!important;
+  background-color: #bab1a0!important;
 }
 li .dropdown-item{
   font-size: 2rem;
@@ -562,10 +567,10 @@ label:hover{
 }
 .bann{
   padding: 1rem;
-  z-index:2;
+  z-index:1;
 }
 .bann2{
-  z-index:2;
+  z-index:1;
 }
 .form-check-inline{
   border-width:0.2rem dotted #260d0e;
@@ -1222,7 +1227,7 @@ text-align: center;
   background-position: center;
 }
 
-.fab-content, #plag, #colo, #crash, #cold, #cons, #ali{
+.fab-content{
   filter:sepia(100%);
   background-color: #30302e;
 }
