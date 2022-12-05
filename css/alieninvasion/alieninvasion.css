@@ -1704,9 +1704,12 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
   width: 100%;
   max-width: 100%;
 }
-#navbardoc .nav-link, a .nav-link, #list .nav-item{
+#navbardoc .nav-link, a .nav-link{
   background-color: #6d24ff;
   color:#00ff00;
+}
+#list .nav-item, #list2 .nav-item{
+  color:#000;
 }
 #navbardoc .nav-link{
   font-size: 1.4em;
