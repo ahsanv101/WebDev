@@ -54,7 +54,7 @@ body {
 
 
 /* SIZE RELATIVE */
-@media (min-width: 768px) and (max-width: 992px){
+/* @media (min-width: 768px) and (max-width: 992px){
   #about-proj p{
       font-size: 3vh;
   }
@@ -63,14 +63,14 @@ body {
       padding-bottom: 0.5rem !important;
   }
 }
+ */
 
-
-@media (min-width: 992px) and (max-width: 1200px){
+/* @media (min-width: 992px) and (max-width: 1200px){
   .issue-description{
       font-size: 2.5vh !important;
       padding-bottom: 0.5rem !important;
   }
-}
+} */
 
 @media (max-width: 992px){
 
@@ -103,6 +103,15 @@ body {
   height: 10em !important;
  
 }
+
+.thumbnail p{
+  font-size: 1rem;
+
+}
+.thumbnail {
+height: 30em !important;
+}
+
 
 
 
@@ -309,7 +318,7 @@ body {
 
 }  
 
-
+/* 
 @media (max-width: 768px){
 
   
@@ -323,7 +332,7 @@ body {
       margin-left: 1rem !important;
       padding-top: 1rem;
   }
-}
+} */
 
 /* 
 GENERAL END */
@@ -969,7 +978,7 @@ font-size: 1.5rem;
 .thumbnail{
   border-style: dotted;
   padding: 1em;
-  height: 40em;
+  height: 35em;
   box-shadow: 0 0 0 1em white inset;
   filter: sepia(100%);
   
