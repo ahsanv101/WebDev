@@ -609,13 +609,13 @@ input[type="checkbox"]{
   color:#260D0E;
   padding-top: 1rem;
 }
-#file2 h1{
+#file2 h1, #file1 h1{
   padding-top:8rem;
 }
 #concept-0{
   padding-top: 10rem;
 }
-#file2 h2, #fil2 p{
+#file2 h2, #file2 p, #file1 h2, #file1 p{
   color:#260D0E!important;
 }
 #metado{
