@@ -864,7 +864,7 @@ display: none;
 button.#btn-themes:hover:before,
 a.#btn-issues:hover:before,
 button.#btn-themes:focus:before,
-a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before, #doclist h2:before {
+a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before, #doclist h2:before, #mainheader h2:before {
   display: block;
   animation-name: hoverbefore;
   animation-duration: var(--glitched-duration);
@@ -1270,14 +1270,14 @@ label{
   display:none;
 }
 .surv{
-  background-color: #00ff00;
+  background-image:url(../../images/vomit.webp);
   color: #6d24ff;
   padding-bottom: 1.2rem;
   padding-top:4rem;
   margin-bottom: 0;
 }
 .surv:hover{
-  color:yellow;
+  color:black;
 }
 .us{
   max-width:fit-content;
@@ -1342,10 +1342,6 @@ h5{
   font-family: 'advent';
 }
 
-.col:hover{
-  background-color: #000;
-  color:white;
-}
 
 
 
@@ -1405,7 +1401,7 @@ img, figure {
   filter:saturate(300%);
 }
 #imgplus{
-  display: inline;
+  text-align: center;
 }
 
 .btn-group-toggle{
@@ -1660,14 +1656,14 @@ text-align: center;
   color:#00ff00;
   background-color: #6d24ff;
 }
-#mainheader h5{
+#mainheader h5, #mainheader h4{
   padding-bottom: 1.5rem;
   text-align: center;
   color:#6d24ff;
   background-color: #00ff00;
   border-radius: 50px;
 }
-#mainheader h5:hover{
+#mainheader h5:hover, #mainheader h4:hover{
   box-shadow: 2px 5px 10px 5px #6d24ff;
 
 }
@@ -1725,7 +1721,7 @@ nav#navbardoc a, #peoples-tab, #places-tab, #events-tab, #concepts-tab, #opinion
   background-color: #00ff00;
   border-color: #6d24ff;
 }
-.col-sm h3:hover, .modal-title:hover{
+.col-sm h3:hover, .modal-title:hover, #navbardoc .nav-link:hover{
   box-shadow: 2px 5px 10px 5px #00ff00;
 }
 
