@@ -698,6 +698,9 @@ button{
   text-align: center;
   height:20em;
 }
+#imgplus{
+  display: inline;
+}
 .main-body{
   background-image: linear-gradient(transparent,rgba(0,0,0,0.8));
 }
@@ -717,11 +720,7 @@ button{
         padding-top: 1rem;
     }
   }
-  @media(max-width: 680px){
-    #navbardoc{
-      display: none;
-    }
-  }
+ 
   nav#navbardoc {
     grid-area: navbardoc/navbardoc/navbardoc/navbardoc;
     background-repeat: repeat;
@@ -782,6 +781,190 @@ h5{
     #first h2{
         font-size: 3.5vh;
     }
+    #navbar{
+      background-image: none !important;
+     
+    }
+    #navbardoc{
+      display: none !important;
+  }
+  #main-doc {
+    grid-area: mainContent !important;
+    padding-left: 0em !important;
+  }
+  fab shadow{
+    background-color: black;
+  }
+  
+  .fab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: none;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    
+  }
+  .fab-container:hover {
+    height: 100%;
+  }
+  .fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-12vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-24vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-36vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-48vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(6) {
+    transform: translateY(-60vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(7) {
+    transform: translateY(-72vh) !important;
+  }.fab-container .fab {
+    position: relative;
+    height: 12vh;
+    width: 12vh;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .fab-container .fab::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 6vh;
+    width: 6vh;
+  
+    
+   
+    border-radius: 0 0 10px 0;
+    z-index: -1;
+  }
+  .fab-container .fab .fab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .fab-container .sub-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+    height: 12vh;
+    width: 12vh;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  
+  }
+  .fab-container .sub-button:hover {
+    cursor: pointer;
+  }
+  .fab-container .sub-button .material-icons {
+    padding-top: 6px;
+  }
+  
+  .fab-content{
+    background-image: url("../../css/images/theme.png");
+    background-size: 8vh;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+   
+  }
+  
+  .sub-button:nth-child(2){
+    background: url("../../css/images/plague.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+  
+  .sub-button:nth-child(3){
+    background: url("../../css/images/colonization.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .sub-button:nth-child(4){
+    background: url("../../css/images/wallstreet.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .sub-button:nth-child(5){
+    background: url("../../css/images/coldwar.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .sub-button:nth-child(6){
+    background: url("../../css/images/cons.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .sub-button:nth-child(7){
+    background: url("../../css/images/alien.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .fab-content, .fab-shadow, .sub-button, .fab{
+  }
+  
+  .sub-button:hover{
+    background-color: #e2cb9c !important;
+  }
+  
+  #peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
+    background-image: none !important;
+  
+  }
+  
+  #peoples-tab:hover,#peoples-tab:focus, #places-tab:hover,#places-tab:focus ,#events-tab:hover,#events-tab:focus ,#concepts-tab:hover, #concepts-tab:focus,#opinions-tab:hover,#opinions-tab:focus{
+    width: 7em !important;
+  }
+  
+  .nav-item{
+    font-size: 1rem !important;
+  } 
+  
+  
+  #btn_1{
+    font-size: 0.1em !important;
+  }
+  
+  
+  .form-check-input{
+    font-size: 0.5em !important;
+  }
+  
+  .list {
+    font-size: 0.6em !important;
+    line-height: 1; 
+    list-style-type: none;
+  /* 			margin: 0;  */
+  /* 			white-space: nowrap;  */
+  /* 			overflow-x: hidden; */
+  /* 			list-style-position:inside;   */
+  }  
 }  
 
 
@@ -859,7 +1042,9 @@ img:active:after{
   /*-blur, parent width, parent height+blur, -blur*/
   clip: rect(-8px, 100px, 108px, -8px);
 }
-
+#imgplus{
+  display: inline;
+}
 .btn-group-toggle{
 
   padding-top: 10px;
