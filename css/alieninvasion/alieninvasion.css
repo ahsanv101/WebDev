@@ -107,11 +107,11 @@ html{
     background-color: #6d24ff;
     width:100%;
     color: #00ff00;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .nav-item, .nav-link, #navbarDropdownMenuLink, li .nav-item{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color:#00ff00!important;
 } 
 .nav-item:hover, a .dropdown-item:hover{
@@ -1144,6 +1144,7 @@ footer p{
   width:100%;
   padding-top: 5rem;
   background-image: url(../../images/galaxy.gif);
+  padding-bottom: 1rem;
 }
 .doc-img{
   display:block;
@@ -1662,7 +1663,13 @@ text-align: center;
 #mainheader h5{
   padding-bottom: 1.5rem;
   text-align: center;
-  color:black;
+  color:#6d24ff;
+  background-color: #00ff00;
+  border-radius: 50px;
+}
+#mainheader h5:hover{
+  box-shadow: 2px 5px 10px 5px #6d24ff;
+
 }
 div.main-body {
   display: grid;  
@@ -1675,11 +1682,11 @@ nav#navbardoc {
   background-repeat: repeat;
   position: fixed;
   padding-top: 2rem;
-  padding-left: 0.7em;
-  padding-right: 1.4em;
-  padding-bottom: 50rem; 
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 37em; 
   margin-top: -0.5rem;
-  
+  margin-left: -2.9em;
   font-family: 'tomorrow';
 }
  
