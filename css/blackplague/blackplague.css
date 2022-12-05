@@ -940,9 +940,6 @@ h5{
   .fab-content, .fab-shadow, .sub-button, .fab{
   }
   
-  .sub-button:hover{
-    background-color: #e2cb9c !important;
-  }
   
   #peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
     background-image: none !important;
@@ -1151,9 +1148,7 @@ text-align: center;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
-.fab-container .sub-button:hover {
-  cursor: pointer;
-}
+
 .fab-container .sub-button .material-icons {
   padding-top: 6px;
 }
@@ -1208,14 +1203,15 @@ text-align: center;
   background-position: center;
 }
 
-.fab-content, .fab-shadow, .sub-button, .fab{
-  background-color: white!important;
-  filter:contrast(100%);
-  filter: invert(100%);
+.fab-content, .fab-shadow, .fab, .sub-button{
+  filter:sepia(100%);
+  background-color: #30302e;
 }
 
-.sub-button:hover{
-  background-color: #bfe8e4!important;
+
+.sub-button:hover, .fab shadow:hover, .fab-container .sub-button{
+  background-color: #40171b!important;
+  filter: sepia(100%);
 }
 
 /* .fab-container #enable-future:hover{
