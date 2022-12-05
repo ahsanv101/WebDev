@@ -111,7 +111,7 @@ html{
 }
 
 .nav-item, .nav-link, #navbarDropdownMenuLink, li .nav-item{
-  color:#00ff00;
+  color:#00ff00!important;
 } 
 #list-btn{
   color:#000!important;
