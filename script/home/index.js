@@ -202,4 +202,3 @@ if(localStorage.getItem('selectedTheme')){
   
 // typeWriter();
 //
-

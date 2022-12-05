@@ -973,7 +973,7 @@ color: #000;
   display:none;
 }
 
-#lol{
+.customAlert{
   
   display: none;
   position: fixed;
