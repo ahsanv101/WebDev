@@ -878,6 +878,7 @@ color: #000;
   .main-section a{
     color: #d8ccba;
     font-style: italic;
+    font-size: 1rem;
     }
   .main-section a:hover{
       color: #0645AD;
