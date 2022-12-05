@@ -1187,15 +1187,16 @@ footer p{
   flex-direction: column;
 }
 #bann{
-  padding: 1rem;
   background-image: url(../../images/galaxy.gif);
   position:relative;
   z-index:1;
+  font-size: 1.2rem;
 }
 #bann2{
   background-image: url(../../images/galaxy.gif);
   position:relative;
   z-index:1;
+  font-size: 1.2rem;
 }
 
 .form-check-inline{
@@ -1229,8 +1230,6 @@ label{
 
 #sti{
   padding-top:100px;
-  background-size:15em 20em;
-  background-position-y: 2em;
 }
 .space{
   padding-bottom:2rem;
@@ -1238,7 +1237,7 @@ label{
 
 .tab-content{
   overflow-y:scroll;
-  height:250px;
+  height:8em;
 }
 .space{
   padding:2rem;
