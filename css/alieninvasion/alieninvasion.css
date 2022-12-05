@@ -808,13 +808,13 @@ display: none;
   .row h2:hover{
     color: yellow;
   }
-  #btn-issues:hover, #btn-themes:hover, #btn-issues:focus, #btn-themes:focus, #theme5:hover, #theme5:focus, #mainheader h2:focus, #doclist h2:focus, #teamsec:focus, #teamsec:hover, #plu h2:hover, #plu h2:focus, #fourth h2:hover, #fourth h2:focus #mainheader h2:hover, #mainheader h2:focus, #doclist h2:hover, #doclist:focus, #teamsec:hover, #teamsec:focus{
+  #btn-issues:hover, #btn-themes:hover, #btn-issues:focus, #btn-themes:focus, #theme5:hover, #theme5:focus, #mainheader h2:focus, #doclist h2:focus, #teamsec:focus, #teamsec:hover, #plu h2:hover, #plu h2:focus, #fourth h2:hover, #fourth h2:focus #mainheader h2:hover, #mainheader h2:focus, #mainheader h2:hover, #doclist h2:hover, #doclist h2:focus, #teamsec:hover, #teamsec:focus, #main-doc h2:hover, #main-doc h2:focus, .main-section h3:hover, .main-section h3:focus{
     color: #f9f002;
     box-shadow: 2px 5px 10px 5px #00ff00;
     border-width: 0.5em;
     border-color:#000;
   }
-  #btn-issues:after, #btn-themes:after, #theme5:after, #main-doc h3:after, #mainheader h2:after, #doclist h2:after, #teamsec:after, #plu h2:after, #fourth h2:after, #mainheader h2:after, #doclist h2:after, #teamsec:after{
+  #btn-issues:after, #btn-themes:after, #theme5:after, #main-doc h2:after, #mainheader h2:after, #doclist h2:after, #teamsec:after, #plu h2:after, #fourth h2:after, #mainheader h2:after, #doclist h2:after, #teamsec:after, #main-doc h2:after, .main-section h2:after, .main-section h3:after{
     content: "R-25";
     display: block;
     position: absolute;
@@ -828,7 +828,7 @@ display: none;
     border-left: 2px solid #8ae66e;
   }
 
-  button#btn-issues:before,#btn-themes:before, #theme5:before, #main-doc h3:before, #mainheader h2:before, #doclist h2:before{
+  button#btn-issues:before,#btn-themes:before, #theme5:before, #main-doc h2:before, #mainheader h2:before, #doclist h2:before, .main-section h3:before, #teamsec h3:before, .main-section h3:before{
   --outside: 4px;
   content: "";
   position: absolute;
@@ -865,7 +865,7 @@ display: none;
 button.#btn-themes:hover:before,
 a.#btn-issues:hover:before,
 button.#btn-themes:focus:before,
-a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:before, #doclist h2:before, #mainheader h2:before {
+a.#btn-issues:focus:before, #theme5:hover:before, #theme5:focus:hover:before, #doclist h2:hover:before, #mainheader h2:hover:before, #main-doc h2:hover:before, #teamsec:hover:before, .main-section h3:hover:before, #fourth h2:hover:before, .main-section h3:hover:before{
   display: block;
   animation-name: hoverbefore;
   animation-duration: var(--glitched-duration);
@@ -1622,7 +1622,7 @@ text-align: center;
 
   }
 
-#plu h2, #fourth h2, #mainheader h2, #doclist h2, #teamsec{
+#plu h2, #fourth h2, #mainheader h2, #doclist h2, #teamsec, #main-doc h2{
   color: #00ff00;
   background-color: #000!important;
   padding:1.4rem;
@@ -1638,7 +1638,7 @@ text-align: center;
     background-color: var(--background-color);
     outline: none;
 }
-  #mainheader h2:hover, #theme5:hover, #fourth h2:hover, #plu h2:hover, #main-doc h3:hover, #fourth h2:hover, #doclist h2:hover, #teamsec:hover{
+  #mainheader h2:hover, #theme5:hover, #fourth h2:hover, #plu h2:hover, #main-doc h2:hover, #doclist h2:hover, #teamsec:hover, .main-section h3:hover{
     color:yellow;
   }
   #mainheader h2{
