@@ -113,7 +113,7 @@ html{
 .nav-item, .nav-link, #navbarDropdownMenuLink, li .nav-item{
   color:#00ff00!important;
 } 
-#list-btn{
+#list_btn{
   color:#000!important;
 }
 .nav-item:hover, a .dropdown-item:hover{
@@ -1246,9 +1246,26 @@ label{
   overflow-y: scroll;
   height: 800px;
 }
+#file h2, #file2 h2{
+  color:yellow;
+  font-size:1.5em;
+}
+#file p, #file2 p{
+  text-align: justify;
+  color:#6d24ff;
+}
 #file2{
   overflow-y: scroll;
   height: 800px;
+}
+#file2 h1, #file h1{
+  padding-top:3em!important;
+  color:#6d24ff;
+  font-family: 'tomorrow';
+}
+figcaption{
+  color:#6d24ff;
+  text-align: center;
 }
 /*end metadata style*/
 

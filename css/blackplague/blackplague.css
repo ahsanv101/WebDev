@@ -609,14 +609,28 @@ input[type="checkbox"]{
   color:#260D0E;
   padding-top: 1rem;
 }
-#file2 h1, #file1 h1{
-  padding-top:8rem;
+#file2 h1, #file h1{
+  padding-top:3em!important;
+  font-family: 'old';
+  font-size:3em;
+}
+#file2 h2, #file h2{
+  font-size:1em;
+}
+figcaption{
+  font-size: 1em;
+  text-align: center;
 }
 #concept-0{
   padding-top: 10rem;
 }
-#file2 h2, #file2 p, #file1 h2, #file1 p{
+ #file2 p, #file p{
   color:#260D0E!important;
+  text-align: justify;
+}
+.list-people2{
+  font-family:'scribish';
+  color:#5b181f;
 }
 #metado{
   background-color: #bab1a0;
