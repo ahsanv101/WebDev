@@ -27,47 +27,97 @@ html {
 
 
 
-/*px RELATIVE !*/
 @media (max-width: 992px){
-  
   /*INDEX RELA*/
+
 #first h1{
   font-size: 7.5rem !important;
 }
+/*ABOUT US RELA*/
+/* non funziona .thumbnail p{
+  font-size: 0.7rem;
+}*/
 
 
-
-
-/*SELECTOR RELA*/
-.fab-container:hover .sub-button:nth-child(2) {
-  transform: translateY(-12vh) !important;
-}
-.fab-container:hover .sub-button:nth-child(3) {
-  transform: translateY(-24vh) !important;
-}
-.fab-container:hover .sub-button:nth-child(4) {
-  transform: translateY(-36vh) !important;
-}
-.fab-container:hover .sub-button:nth-child(5) {
-  transform: translateY(-48vh) !important;
-}
-.fab-container:hover .sub-button:nth-child(6) {
-  transform: translateY(-60vh) !important;
-}
-.fab-container:hover .sub-button:nth-child(7) {
-  transform: translateY(-72vh) !important;
+  /*DOCUMENTATION RELA*/
+#navbardoc{
+    display: none !important;
 }
 
-.btn-third{
-    font-size: 3vh !important;
-    margin-left: 1rem !important;
-}
-.btn-third:first-child{
-    margin-left: 1rem !important;
-    padding-top: 1rem;
+#main-doc {
+  /* grid-area: mainContent; */
+  padding-left: 0em !important;
 }
 
+.doc-img{
+  width: 10em !important;
+  height: 10em !important;
 }
+
+#main-doc p{
+  font-size:0.5em;
+}
+#main-doc h5{
+  font-size:0.8em;
+}
+#mainheader h2{
+  margin-left: 0;
+}
+
+
+/*TOPIC RELA */
+#btn_1{
+  font-size: 0.7rem !important;
+}
+
+#peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
+  background-image: none !important;
+  font-size: 1rem !important;
+}
+
+.nav-item{
+  font-size: 0.9rem !important;
+} 
+
+.form-check-input{
+  font-size: 0.5em !important;
+}
+
+.list_btn {
+  font-size: 1rem !important;
+}
+
+  /*SELECTOR RELA*/
+  .fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-12vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-24vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-36vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-48vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(6) {
+    transform: translateY(-60vh) !important;
+  }
+  .fab-container:hover .sub-button:nth-child(7) {
+    transform: translateY(-72vh) !important;
+  }
+
+  .btn-third{
+      font-size: 3vh !important;
+      margin-left: 1rem !important;
+  }
+  .btn-third:first-child{
+      margin-left: 1rem !important;
+      padding-top: 1rem;
+  }
+
+}
+
 
 
 /*NAVBAR*/
@@ -721,24 +771,24 @@ content: "!";
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 20em;
+  width: 30em;
   align-items: center;
   text-align: center;
   /* width: 45em; */
   height: 20em;
-  filter: url('#red-sunset');
+  filter: none;
 }
 
 #imgplus{
   display: inline;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20em;
-  align-items: center;
-  text-align: center;
-  /* width: 45em; */
-  height: 20em;
-  filter: url('#red-sunset');
+}
+.decoration::after{
+  content: url("../../images/artdeco.jpeg");
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 3px;
+padding-bottom: 2rem;
 }
 
 .containerpadding {

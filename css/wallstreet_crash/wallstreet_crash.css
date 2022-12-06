@@ -836,7 +836,16 @@ color: #000;
   text-align: center;
   /* width: 45em; */
   height: 20em;
- 
+  filter:none;
+  opacity: 1;
+}
+.decoration::after{
+  content: url("../../images/artdeco.jpeg");
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 3px;
+padding-bottom: 2rem;
 }
 #imgplus{
   display: inline;
@@ -874,11 +883,11 @@ color: #000;
     background-image: url("../../images/artdecowallpaper.jpg");
     /*grid-area: navbardoc;*/
     position: fixed;
-   /* margin-top: -6.5rem;
+    margin-top: -6.5rem;
     padding-top: 7rem;
     padding-left: 0.5em;
     padding-bottom: 7.5rem;
-    padding-right: 0.5em;*/
+    padding-right: 0.5em;
   }
 
   #navbardoc a {
