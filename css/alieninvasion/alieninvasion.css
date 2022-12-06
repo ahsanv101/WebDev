@@ -1319,7 +1319,7 @@ figcaption{
     --time-transition: ease-in-out 0.3s;
 }
 
-@media (max-width: 768px){
+/*@media (max-width: 768px){
     .btn-third{
         font-size: 3vh !important;
         margin-left: 1rem !important;
@@ -1329,7 +1329,7 @@ figcaption{
         padding-top: 1rem;
     }
 }
-
+*/
 
 
 
@@ -1362,7 +1362,7 @@ h5{
 
 
 
-@media (min-width: 992px) and (max-width: 1200px){
+/*@media (min-width: 992px) and (max-width: 1200px){
     .issue-description{
         font-size: 2.5vh !important;
         padding-bottom: 0.5rem !important;
@@ -1378,7 +1378,7 @@ h5{
       padding-bottom: 0.5rem !important;
   }
 }
-
+*/
 .text-people {
   background-color: #ffddff;
 }

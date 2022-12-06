@@ -781,7 +781,7 @@ button{
     --time-transition: ease-in-out 0.3s;
 }
 
-@media (max-width: 768px){
+/*@media (max-width: 768px){
     .btn-third{
         font-size: 3vh !important;
         margin-left: 1rem !important;
@@ -790,7 +790,7 @@ button{
         margin-left: 1rem !important;
         padding-top: 1rem;
     }
-  }
+  }*/
  
   nav#navbardoc {
     grid-area: navbardoc/navbardoc/navbardoc/navbardoc;
@@ -1031,7 +1031,7 @@ h5{
 }  
 
 
-@media (min-width: 768px) and (max-width: 992px){
+/*@media (min-width: 768px) and (max-width: 992px){
     #about-proj p{
         font-size: 3vh;
     }
@@ -1048,9 +1048,7 @@ h5{
         padding-bottom: 0.5rem !important;
     }
 }
-
-
-/* Addded by ahsan */
+*/
 
 
 
