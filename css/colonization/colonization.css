@@ -845,7 +845,7 @@ h2{
   color:#260d0e;
 } */
 
-#eyes{
+#eyes, .formaggio{
   display:none;}
 
 
@@ -1420,6 +1420,7 @@ background-color: #000;
 #file p,#file2 {
   font-size: 1.2rem;
  }
+
 
 #file2 img {
   padding: 1em;

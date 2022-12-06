@@ -509,6 +509,9 @@ a:hover {
 .titlehidden, #main-title-col, #main-title-col2, #main-title-wall, #main-title, .walls{
   display:none;
 }
+.nope{
+  display:none;
+}
 #first-text{
   line-height: 2;
 }
