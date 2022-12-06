@@ -5,7 +5,22 @@
 #main-title-col{
   visibility: hidden;
 }
+::-webkit-scrollbar-track {
+  border-radius: 1.3em;
+}
+ 
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-thumb { 
+  background:#260D0E;
+  border-radius: 10em;
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#000000;
+}
 @font-face {
   font-family: 'canterbury';
   src: url(../fonts/Canterbury.ttf);
