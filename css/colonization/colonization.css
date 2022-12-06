@@ -856,9 +856,6 @@ display: none;
 /* #imgplus{
   display: inline;
 } */
-.alertspeak{
-  display:none;
-}
 
 .filtro{
   display:none;
@@ -1804,7 +1801,7 @@ display: none;
   
     width: 12em;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
   
   
   }

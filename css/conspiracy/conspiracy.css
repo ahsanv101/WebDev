@@ -972,9 +972,7 @@ display: none;
   display:none;
 }
 
-.alertspeak{
-  display:none;
-}
+
 
 .filtro{
   display:none;
@@ -2084,7 +2082,7 @@ display: none;
     background-repeat: no-repeat;
     width: 12em;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   #main-doc h5{
     padding-left: 1em;
