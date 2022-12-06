@@ -550,7 +550,14 @@ footer p{
   padding-top:4rem;
   background-image: url(../../images/peste.png);
 }
-
+#doclist h2{
+  padding-top: 2em;
+  color:#40171b;
+  padding-bottom: 1em;
+}
+#doclist h3{
+  padding-top: 1em;
+}
 /*end doclist*/
 
 /*start matadata*/
@@ -630,6 +637,7 @@ input[type="checkbox"]{
   padding-top:3em!important;
   font-family: 'old';
   font-size:3em;
+  color: #bab1a0;
 }
 #file2 h2, #file h2{
   font-size:1em;
@@ -643,7 +651,7 @@ figcaption{
   padding-top: 10rem;
 }
  #file2 p, #file p, #file2 a, #file a{
-  color:#260D0E!important;
+  color:#bab1a0;
   text-align: justify;
 }
 .list-people2{
@@ -652,7 +660,10 @@ figcaption{
 }
 #metado{
   background-color: #bab1a0;
-  background-image: linear-gradient(transparent,rgba(0,0,0,0.8));
+  background-image: url(../../images/peste3.jpg)
+}
+#list .nav-item{
+  border: 4mm ridge #732627;
 }
 .space{
   padding:2rem;
@@ -660,10 +671,12 @@ figcaption{
 #file{
   overflow-y: scroll;
   height: 800px;
+  border: 4mm ridge #732627;
 }
 #file2{
   overflow-y: scroll;
   height: 800px;
+  border: 4mm ridge #732627;
 }
 .main-section p{
   padding: 1rem;
