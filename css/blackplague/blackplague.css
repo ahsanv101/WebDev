@@ -112,6 +112,7 @@ a:hover{
     color:#bab1a0;
     width:100%;
     list-style: none;
+    cursor:inherit;
 }
 #navbarNavDropdown{
   color:#bab1a0;
