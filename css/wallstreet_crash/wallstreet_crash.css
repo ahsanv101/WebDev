@@ -15,18 +15,9 @@
 }
 
 
-/*px RELATIVE !*/
-@media (min-width: 768px) and (max-width: 992px){
-  #about-proj p{
-      font-size: 3vh;
-  }
-  .issue-description{
-      font-size: 2.5vh !important;
-      padding-bottom: 0.5rem !important;
-  }
-}
+/*RELATIVE*/
    /*documentation*/
-@media (max-width: 680px){
+/*@media (max-width: 680px){
   #navbardoc{
       display: none !important;
   }
@@ -35,21 +26,89 @@
         padding-left: 1em !important;
   }
   .main-body {
-        /* display: none !important; */
-  }
-  }
+        /* display: none !important; mancano parentesi finali */
 
 
-@media (min-width: 992px) and (max-width: 1200px){
+/*@media (min-width: 768px) and (max-width: 992px){
+  #about-proj p{
+      font-size: 3vh;
+  }
   .issue-description{
       font-size: 2.5vh !important;
       padding-bottom: 0.5rem !important;
   }
-}
-
+}*/
 
 @media (max-width: 992px){
-  /*NAVBAR*/
+  /*DOCUMENTATION RELA*/
+  #main-doc .main-section h3{
+    /* background-image: url(../images/olddd2.png); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 40em 3em; */
+    background-image: none !important;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    /* display: flex; */
+  }
+
+  #navbardoc{
+    
+    display: none !important;
+}
+#main-doc {
+  /* grid-area: mainContent; */
+  padding-left: 0em !important;
+}
+
+#main-doc p{
+  font-size:0.5em;
+}
+#main-doc h5{
+  font-size:0.8em;
+}
+
+.doc-img{
+  width: 10em !important;
+  height: 10em !important;
+ 
+}
+#mainheader h2{
+  font-size:1.8rem;
+}
+
+/*ABOUT US RELA*/
+.thumbnail p{
+  font-size: 0.7rem;
+
+}
+.thumbnail {
+height: 30em !important;
+
+  background-size: 10em 10em !important;
+
+  background-position: 6em 18em !important; 
+}
+
+/*INDEX RELA*/
+#about-proj p{
+  font-size: 3vh;
+}
+.issue-description{
+  font-size: 2.5vh !important;
+  padding-bottom: 0.5rem !important;
+}
+  .issue-description{
+      font-size: 2.5vh !important;
+      padding-bottom: 0.5rem !important;
+  }
+
+/*NAVBAR RELA*/
+#navbar{
+  /*background-image: none !important;
+  background-color: rgb(255, 255, 255) !important;*/
+ 
+}
   #navbar .collapse, #navba .collapse, #navb .collapse, #navbi .collapse{
       
       border-top: none;
@@ -63,6 +122,42 @@
   #first h2{
       font-size: 3.5vh;
   }
+/*TOPIC RELA */
+#peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
+  background-image: none !important;
+
+}
+
+#peoples-tab:hover,#peoples-tab:focus, #places-tab:hover,#places-tab:focus ,#events-tab:hover,#events-tab:focus ,#concepts-tab:hover, #concepts-tab:focus,#opinions-tab:hover,#opinions-tab:focus{
+  width: 7em !important;
+}
+
+.nav-item{
+  font-size: 1rem !important;
+  color:rgb(249, 247, 247) !important;
+} 
+
+
+#btn_1{
+  font-size: 0.1em !important;
+}
+
+
+.form-check-input{
+  font-size: 0.5em !important;
+}
+
+.list {
+  font-size: 0.6em !important;
+  line-height: 1; 
+  list-style-type: none;
+/* 			margin: 0;  */
+/* 			white-space: nowrap;  */
+/* 			overflow-x: hidden; */
+/* 			list-style-position:inside;   */
+}
+
+  /*SELECTOR RELA*/
   .fab-container:hover .sub-button:nth-child(2) {
     transform: translateY(-12vh) !important;
   }
@@ -82,9 +177,6 @@
     transform: translateY(-72vh) !important;
   }
 
-}  
-
-@media (max-width: 768px){
   .btn-third{
       font-size: 3vh !important;
       margin-left: 1rem !important;
@@ -93,6 +185,7 @@
       margin-left: 1rem !important;
       padding-top: 1rem;
   }
+
 }
 
 
@@ -792,6 +885,13 @@ color: #000;
 
 /*START DOCUMENTATION*/
 
+.col-sm #rudy{
+  background-color: #cccc00;
+  margin:0;
+  padding:0px 0px;
+  width: 1rem;
+}
+
 .doc-img{
   display: block;
   margin-left: auto;
@@ -822,12 +922,7 @@ color: #000;
 .containerpadding h2 {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-  padding-left: 17rem;
   }
-
-  .containerpadding h5 {
-    padding-bottom: 1.5rem;
-    }
 
   .main-body {
     display: grid;
@@ -837,12 +932,12 @@ color: #000;
 
   #main-doc {
     grid-area: mainContent;
-    padding-left: 17em;
+    padding-left: 12em;
   }
   
   #navbardoc {
     background-image: url("../../images/artdecowallpaper.jpg");
-    grid-area: navbardoc;
+    /*grid-area: navbardoc;*/
     position: fixed;
     margin-top: -6.5rem;
     padding-top: 7rem;
@@ -862,7 +957,7 @@ color: #000;
     color: black;
     font-family: 'hotel', serif;
     text-align: left;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     opacity: 0.9;
     border-radius: 0.5rem;
   }
@@ -972,51 +1067,6 @@ color: #000;
 .filtro{
   display:none;
 }
-
-.customAlert{
-  
-  display: none;
-  position: fixed;
-  min-width: 250px !important;
-  min-height: 20%;
-  height: 18rem;
-  width: 50rem;
-  left: 25%;
-  right:25%;
-  top: 30%;
-  padding: 20px;
-  box-sizing: border-box;
-  background: #242222;
-  z-index: 2;
-  
-}
-  .message{
-    padding: 10px;
-    color: #c9b080;
-    font-size: 28px;
-    /*line-height: 20px;*/
-    text-align: center;
-  }
-    
-  input[type='button']{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 50%;
-    height: 36px;
-    margin-top: -45px;
-    margin-left: -25%;
-    outline: 0;
-    border: 0.3rem double #c9b080;
-    background: #d8ccba;
-    color: white;
-  } 
-  
-  input[type='button']:hover{
-    transition: 0.3s;
-    cursor: pointer;
-    box-shadow: 0 0 0 5px #732627;
-  }
 
  /*La proprietà z-index nei CSS specifica la posizione di un elemento rispetto ad un altro. un elemento davanti all'altro*/
   #bann{

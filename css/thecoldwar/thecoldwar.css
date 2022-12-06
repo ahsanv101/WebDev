@@ -796,9 +796,7 @@ content: "!";
   padding-left: 17rem;
   }
 
-  .containerpadding h5 {
-    padding-bottom: 1.5rem;
-    }
+
 
   .main-body {
     display: grid;
@@ -808,7 +806,7 @@ content: "!";
    
   #main-doc {
     grid-area: mainContent;
-    padding-left: 17em;
+    padding-left: 12em;
   }
 
   #navbardoc {
