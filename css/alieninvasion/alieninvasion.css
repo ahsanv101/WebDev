@@ -203,8 +203,6 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
-  margin: 3em;
   opacity: 100%;
 }
 
@@ -246,13 +244,29 @@ a:hover {
 }
 
 /* OPTIONAL */
-
 /* for device responsiveness */
+@media (max-width:445px){
+  .cyberpunk{
+    font-size: 4em!important;
+  }
+  #project-description{
+    font-size: 1.5em!important;
+  }
+  .polartextcomm{
+    font-size: 1em!important;
+  }
+  #checkb{
+    padding-top: -3em;
+    padding-bottom: -3em;
+  }
+  .nav {
+    font-size: 1em;
+}
+
+
 @media (max-width: 992px){
 
-  #first h1{
-    font-size: 7.5vh !important;
-  }
+  
   /*NAVBAR*/
   #navbar .collapse, #navba .collapse, #navb .collapse, #navbi .collapse{
       
@@ -320,7 +334,7 @@ a:hover {
 }
 .fab-container:hover .sub-button:nth-child(7) {
   transform: translateY(-72vh) !important;
-}
+}}
 }
 .nav-item{
   font-size: 0.9rem !important;
@@ -336,16 +350,13 @@ a:hover {
 
 #peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
   background-image: none !important;
-  font-size: 1rem !important;
+  font-size: 1em !important;
 }
 
 
 
 
  
-  #first h1{
-      font-size: 8vh !important;
-  }
   #first #travel{
       margin-left: -1rem !important;
   }
@@ -485,11 +496,11 @@ a:hover {
 }
 
 #peoples-tab:hover,#peoples-tab:focus, #places-tab:hover,#places-tab:focus ,#events-tab:hover,#events-tab:focus ,#concepts-tab:hover, #concepts-tab:focus,#opinions-tab:hover,#opinions-tab:focus{
-  width: 7em !important;
+  font-size: 0.8em!important;
 }
 
 .nav-item, .dropdown-item{
-  font-size: 1rem !important;
+  font-size: 1rem;
 } 
 
 
@@ -558,7 +569,7 @@ a:hover {
 .cyberpunk{
   padding-top: 16vh ;
   text-align: center;
-  font-size: 10rem;
+  font-size:10em;
   font-family: 'tomorrow';
   padding-bottom: 20vh;
   background-image: url(../../images/galaxy.gif);
@@ -728,7 +739,7 @@ h2{
 body {
   margin: 0;
   letter-spacing: 0.2rem;
-  cursor: url(../../css/images/gary.png) 15 10,auto !important;
+  cursor: url(../../css/images/gary.png) 5 8,auto !important;
 }
 
 @keyframes drift1 {
