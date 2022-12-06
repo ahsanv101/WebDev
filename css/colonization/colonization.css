@@ -1114,10 +1114,13 @@ footer p{
 }
 
 /* DOCUMENTAION PAGE */
-#main-doc #colonization,#main-doc #blackplauge,#main-doc #wallstreet,#main-doc #coldwar,#main-doc #conspiracy,#main-doc #alieninvasion{
+/* #main-doc .colonization,#main-doc .blackplauge,#main-doc .wallstreet,#main-doc .coldwar,#main-doc .conspiracy,#main-doc .alieninvasion{
   padding: 1em;
-}
+} */
+/* 
+.main-section{
 
+} */
 
 .doc-img{
   display: block;
@@ -1853,6 +1856,7 @@ display: none;
     margin: 1rem;
     padding-top: 1rem;
     font-size: 1.5rem;
+    padding: 1em;
   }
   .main-section h5{
     font-size: 1.5rem;

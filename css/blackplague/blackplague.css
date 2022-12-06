@@ -5,7 +5,22 @@
 #main-title-col{
   visibility: hidden;
 }
+::-webkit-scrollbar-track {
+  border-radius: 1.3em;
+}
+ 
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-thumb { 
+  background:#260D0E;
+  border-radius: 10em;
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#000000;
+}
 @font-face {
   font-family: 'canterbury';
   src: url(../fonts/Canterbury.ttf);
@@ -30,7 +45,8 @@
 body{
   font-family: 'old', sans-serif;   
   max-width: fit-content;
-  min-width: fit-content;                           
+  min-width: fit-content;  
+  cursor: url(../../css/images/castello.png) 15 10,auto !important;                         
 }
 /*disclaimer style start*/
 
@@ -110,8 +126,8 @@ a:hover{
     background-color:#40171b;
     color:#bab1a0;
     width:100%;
-    cursor:pointer;
     list-style: none;
+    cursor:inherit;
 }
 #navbarNavDropdown{
   color:#bab1a0;
@@ -140,7 +156,6 @@ a:hover{
 }
 .dropdown-item{
   color:#bab1a0;
-  cursor:pointer;
   text-align: center;
 }
 .sub-button{
@@ -574,7 +589,6 @@ label{
   font-size: x-large;
   font-family:'scribish';
   color:#260D0E;
-  cursor: pointer;
 }
   
 label:hover{
@@ -738,9 +752,7 @@ main-section a{
   font-size:1.5rem;
   font
 }
-button{
-  cursor:pointer;
-}
+
 .text-center{
   background-color: #30302e;
 }
@@ -838,7 +850,7 @@ h5{
         border-top: none;
     }
     #first h1{
-        font-size: 8vh !important;
+        font-size: 7.5vh !important;
     }
     #first #travel{
         margin-left: -1rem !important;
@@ -857,10 +869,49 @@ h5{
     grid-area: mainContent !important;
     padding-left: 0em !important;
   }
+  .nav-link{
+    font-size: 1.5rem;
+  }
+  #navbarDropdownMenuLink, #navbarDropdownMenuL, #navbarDropdownMenuLi, #navbarDrop, #navbarDropp{ /*topic and themes*/
+    font-size: 1.5rem;
+  }
+  #main-doc p{
+    font-size:0.5em;
+  }
+  #main-doc h5{
+    font-size:0.8em;
+  }
+  #mainheader h2{
+    margin-left: 0;
+  }
+  #btn_1{
+    font-size: 0.7rem !important;
+  }
+  .dropdown-item{
+    font-size: 1.5rem;}
+
   fab shadow{
     background-color: black;
   }
+  .doc-img{
+    width: 10em !important;
+    height: 10em !important;
+  }
+  #peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
+    background-image: none !important;
+    font-size: 1rem !important;
+  }
+  .nav-item{
+    font-size: 0.9rem !important;
+  } 
   
+  .form-check-input{
+    font-size: 0.5em !important;
+  }
+  
+  .list_btn {
+    font-size: 1rem !important;
+  }
   .fab-container {
     display: flex;
     flex-direction: column;
@@ -912,6 +963,7 @@ h5{
     border-radius: 0 0 10px 0;
     z-index: -1;
   }
+  
   .fab-container .fab .fab-content {
     display: flex;
     align-items: center;
@@ -935,7 +987,6 @@ h5{
   
   }
   .fab-container .sub-button:hover {
-    cursor: pointer;
     background-color: #5b181f!important;
   }
   .fab-container .sub-button .material-icons {
@@ -1013,7 +1064,16 @@ h5{
   #btn_1{
     font-size: 0.1em !important;
   }
-  
+  .btn-third{
+    font-size: 3vh !important;
+    margin-left: 1rem !important;
+}
+.btn-third:first-child{
+    margin-left: 1rem !important;
+    padding-top: 1rem;
+}
+
+}
   
   .form-check-input{
     font-size: 0.5em !important;
