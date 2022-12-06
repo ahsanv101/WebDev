@@ -66,21 +66,21 @@ function changeThemeDoc(id,name) {
     // console.log(id,name);
     switch (id) {
 
-    case "plag":
+    case "plag": //if selected it will change the href of the current page 
         if (name == "Home"){ theme.href = "css/blackplague/blackplague.css";}
         
         else{
             theme.href = "../../css/blackplague/blackplague.css";
         }
-        localStorage.setItem('selectedTheme', 'plag');
+        localStorage.setItem('selectedTheme', 'plag'); //store the current page in the localstorage to rememeber the them (otherwise from html)
         break;
        
 
     case "colo":
-        if (name == "Home"){theme.href = "css/colonization/colonization.css";}
+        if (name == "Home"){theme.href = "css/colonization/colonization.css";} //from home 
         
         else{
-            theme.href = "../../css/colonization/colonization.css";
+            theme.href = "../../css/colonization/colonization.css"; //path from the other pages
         }
         
         localStorage.setItem('selectedTheme', 'colo');
@@ -152,11 +152,11 @@ function changeThemeDoc(id,name) {
 }
 
 
-docname = document.getElementsByTagName("title")[0];
+docname = document.getElementsByTagName("title")[0]; //it gets the name of the current page 
 // console.log(localStorage);
 
 
-if(localStorage.getItem('selectedTheme')){
+if(localStorage.getItem('selectedTheme')){ //localstorage is like a dictionary : keys and values 
 
 
     changeThemeDoc(localStorage.getItem('selectedTheme'),docname.innerHTML)
