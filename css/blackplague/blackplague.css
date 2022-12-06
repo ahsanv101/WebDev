@@ -143,14 +143,13 @@ a:hover{
   cursor:pointer;
   text-align: center;
 }
-#plag:hover, #colo:hover, #crash:hover, #cold:hover, #cons:hover, #ali:hover{
+.sub-button{
   background-color: #5b181f;
 }
-#plag, #colo, #crash, #cold, #cons, #ali{
+.fab-container #plag, .fab-container #colo, .fab-container #crash, .fab-container #cold,.fab-container #cons,.fab-container #ali{
   background-color: #30302e;
 }
 .dropdown-item:hover{
-  color:#000000;
   border-color: #5b181f!important;
   background-color: #bab1a0!important;
 }
@@ -295,7 +294,7 @@ h2{
 /*start content description*/
 #project-description{
   font-size: 4vh;
-  padding-top: 2vh;
+  padding-top: 15vh;
   text-align: center;
   color: black;
   padding-bottom: 2rem;
