@@ -355,6 +355,7 @@ img {
 
 
 /*INDEX PAGE*/
+.formaggiogio{display:none;}
   /*hideen titles*/
 #main-title-cold{
   display:none;
@@ -826,14 +827,6 @@ color: #000;
 
 
 /*START DOCUMENTATION*/
-
-.col-sm #rudy{
-  background-color: #cccc00;
-  margin:0;
-  padding:0px 0px;
-  width: 1rem;
-}
-
 .doc-img{
   display: block;
   margin-left: auto;
@@ -881,11 +874,11 @@ color: #000;
     background-image: url("../../images/artdecowallpaper.jpg");
     /*grid-area: navbardoc;*/
     position: fixed;
-    margin-top: -6.5rem;
+   /* margin-top: -6.5rem;
     padding-top: 7rem;
     padding-left: 0.5em;
     padding-bottom: 7.5rem;
-    padding-right: 0.5em;
+    padding-right: 0.5em;*/
   }
 
   #navbardoc a {
