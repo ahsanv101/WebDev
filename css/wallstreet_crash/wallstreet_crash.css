@@ -78,38 +78,25 @@
 
 
 /*TOPIC RELA */
-#peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
-  background-image: none !important;
-
+#btn_1{
+  font-size: 0.7rem !important;
 }
 
-#peoples-tab:hover,#peoples-tab:focus, #places-tab:hover,#places-tab:focus ,#events-tab:hover,#events-tab:focus ,#concepts-tab:hover, #concepts-tab:focus,#opinions-tab:hover,#opinions-tab:focus{
-  width: 7em !important;
+#peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
+  background-image: none !important;
+  font-size: 1rem !important;
 }
 
 .nav-item{
-  font-size: 1rem !important;
-  color:rgb(249, 247, 247) !important;
+  font-size: 0.9rem !important;
 } 
-
-
-#btn_1{
-  font-size: 0.1em !important;
-}
-
 
 .form-check-input{
   font-size: 0.5em !important;
 }
 
-.list {
-  font-size: 0.6em !important;
-  line-height: 1; 
-  list-style-type: none;
-/* 			margin: 0;  */
-/* 			white-space: nowrap;  */
-/* 			overflow-x: hidden; */
-/* 			list-style-position:inside;   */
+.list_btn {
+  font-size: 1rem !important;
 }
 
   /*SELECTOR RELA*/
