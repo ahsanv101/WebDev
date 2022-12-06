@@ -40,25 +40,30 @@
 }*/
 
 @media (max-width: 992px){
-  /*DOCUMENTATION RELA*/
-  #main-doc .main-section h3{
-    /* background-image: url(../images/olddd2.png); */
-    /* background-repeat: no-repeat; */
-    /* background-size: 40em 3em; */
-    background-image: none !important;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: center;
-    /* display: flex; */
-  }
+  /*INDEX RELA*/
 
-  #navbardoc{
-    
+#first h1{
+  font-size: 7.5rem !important;
+}
+/*ABOUT US RELA*/
+/* non funziona .thumbnail p{
+  font-size: 0.7rem;
+}*/
+
+
+  /*DOCUMENTATION RELA*/
+#navbardoc{
     display: none !important;
 }
+
 #main-doc {
   /* grid-area: mainContent; */
   padding-left: 0em !important;
+}
+
+.doc-img{
+  width: 10em !important;
+  height: 10em !important;
 }
 
 #main-doc p{
@@ -67,61 +72,11 @@
 #main-doc h5{
   font-size:0.8em;
 }
-
-.doc-img{
-  width: 10em !important;
-  height: 10em !important;
- 
-}
 #mainheader h2{
-  font-size:1.8rem;
+  margin-left: 0;
 }
 
-/*ABOUT US RELA*/
-.thumbnail p{
-  font-size: 0.7rem;
 
-}
-.thumbnail {
-height: 30em !important;
-
-  background-size: 10em 10em !important;
-
-  background-position: 6em 18em !important; 
-}
-
-/*INDEX RELA*/
-#about-proj p{
-  font-size: 3vh;
-}
-.issue-description{
-  font-size: 2.5vh !important;
-  padding-bottom: 0.5rem !important;
-}
-  .issue-description{
-      font-size: 2.5vh !important;
-      padding-bottom: 0.5rem !important;
-  }
-
-/*NAVBAR RELA*/
-#navbar{
-  /*background-image: none !important;
-  background-color: rgb(255, 255, 255) !important;*/
- 
-}
-  #navbar .collapse, #navba .collapse, #navb .collapse, #navbi .collapse{
-      
-      border-top: none;
-  }
-  #first h1{
-      font-size: 8vh !important;
-  }
-  #first #travel{
-      margin-left: -1rem !important;
-  }
-  #first h2{
-      font-size: 3.5vh;
-  }
 /*TOPIC RELA */
 #peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
   background-image: none !important;
