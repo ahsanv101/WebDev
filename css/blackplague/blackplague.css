@@ -30,7 +30,8 @@
 body{
   font-family: 'old', sans-serif;   
   max-width: fit-content;
-  min-width: fit-content;                           
+  min-width: fit-content;  
+  cursor: url(../../css/images/castello.png) 15 10,auto !important;                         
 }
 /*disclaimer style start*/
 
@@ -110,7 +111,6 @@ a:hover{
     background-color:#40171b;
     color:#bab1a0;
     width:100%;
-    cursor:pointer;
     list-style: none;
 }
 #navbarNavDropdown{
@@ -140,7 +140,6 @@ a:hover{
 }
 .dropdown-item{
   color:#bab1a0;
-  cursor:pointer;
   text-align: center;
 }
 .sub-button{
@@ -574,7 +573,6 @@ label{
   font-size: x-large;
   font-family:'scribish';
   color:#260D0E;
-  cursor: pointer;
 }
   
 label:hover{
@@ -738,9 +736,7 @@ main-section a{
   font-size:1.5rem;
   font
 }
-button{
-  cursor:pointer;
-}
+
 .text-center{
   background-color: #30302e;
 }
@@ -877,7 +873,7 @@ h5{
   }
   .dropdown-item{
     font-size: 1.5rem;}
-    
+
   fab shadow{
     background-color: black;
   }
@@ -975,7 +971,6 @@ h5{
   
   }
   .fab-container .sub-button:hover {
-    cursor: pointer;
     background-color: #5b181f!important;
   }
   .fab-container .sub-button .material-icons {
