@@ -255,7 +255,9 @@ a:hover {
 /* for device responsiveness */
 @media (max-width: 992px){
 
-
+  #first h1{
+    font-size: 7.5vh !important;
+  }
   /*NAVBAR*/
   #navbar .collapse, #navba .collapse, #navb .collapse, #navbi .collapse{
       
@@ -270,12 +272,77 @@ a:hover {
   #navbardoc{
     display: none !important;
 }
+#main-doc p{
+  font-size:0.5em;
+}
+#main-doc h5{
+  font-size:0.8em;
+}
+#btn_1{
+  font-size: 0.7rem !important;
+}
+.dropdown-item{
+  font-size: 1.5rem;
+}
+.btn-third{
+  font-size: 3vh !important;
+  margin-left: 1rem !important;
+}
+.btn-third:first-child{
+  margin-left: 1rem !important;
+  padding-top: 1rem;
+}
+.nav-link{
+  font-size: 1.5rem;
+}
+#navbarDropdownMenuLink, #navbarDropdownMenuL, #navbarDropdownMenuLi, #navbarDrop, #navbarDropp{ /*topic and themes*/
+  font-size: 1.5rem;
+}
 #main-doc {
   grid-area: mainContent !important;
-  padding-left: 0em !important;
+  padding-left: 0!important;
+}
+#main-doc p, #main-doc figcaption, #main-doc h5{
+  font-size:1em;
+}
+.fab-container:hover {
+  height: 100%;
+}
+.fab-container:hover .sub-button:nth-child(2) {
+  transform: translateY(-12vh) !important;
+}
+.fab-container:hover .sub-button:nth-child(3) {
+  transform: translateY(-24vh) !important;
+}
+.fab-container:hover .sub-button:nth-child(4) {
+  transform: translateY(-36vh) !important;
+}
+.fab-container:hover .sub-button:nth-child(5) {
+  transform: translateY(-48vh) !important;
+}
+.fab-container:hover .sub-button:nth-child(6) {
+  transform: translateY(-60vh) !important;
+}
+.fab-container:hover .sub-button:nth-child(7) {
+  transform: translateY(-72vh) !important;
+}
+}
+.nav-item{
+  font-size: 0.9rem !important;
+} 
+
+.form-check-input{
+  font-size: 0.5em !important;
 }
 
+.list_btn {
+  font-size: 1rem !important;
+}
 
+#peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
+  background-image: none !important;
+  font-size: 1rem !important;
+}
 
 
 
@@ -305,27 +372,7 @@ a:hover {
   right: 5vh;
   
 }
-.fab-container:hover {
-  height: 100%;
-}
-.fab-container:hover .sub-button:nth-child(2) {
-  transform: translateY(-12vh) !important;
-}
-.fab-container:hover .sub-button:nth-child(3) {
-  transform: translateY(-24vh) !important;
-}
-.fab-container:hover .sub-button:nth-child(4) {
-  transform: translateY(-36vh) !important;
-}
-.fab-container:hover .sub-button:nth-child(5) {
-  transform: translateY(-48vh) !important;
-}
-.fab-container:hover .sub-button:nth-child(6) {
-  transform: translateY(-60vh) !important;
-}
-.fab-container:hover .sub-button:nth-child(7) {
-  transform: translateY(-72vh) !important;
-}
+
 /* .fab-container:hover .sub-button:nth-child(6) {
   bottom: 1vh;
   transform: translateX(-12vh);

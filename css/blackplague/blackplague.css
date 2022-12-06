@@ -838,7 +838,7 @@ h5{
         border-top: none;
     }
     #first h1{
-        font-size: 8vh !important;
+        font-size: 7.5vh !important;
     }
     #first #travel{
         margin-left: -1rem !important;
@@ -857,10 +857,49 @@ h5{
     grid-area: mainContent !important;
     padding-left: 0em !important;
   }
+  .nav-link{
+    font-size: 1.5rem;
+  }
+  #navbarDropdownMenuLink, #navbarDropdownMenuL, #navbarDropdownMenuLi, #navbarDrop, #navbarDropp{ /*topic and themes*/
+    font-size: 1.5rem;
+  }
+  #main-doc p{
+    font-size:0.5em;
+  }
+  #main-doc h5{
+    font-size:0.8em;
+  }
+  #mainheader h2{
+    margin-left: 0;
+  }
+  #btn_1{
+    font-size: 0.7rem !important;
+  }
+  .dropdown-item{
+    font-size: 1.5rem;}
+    
   fab shadow{
     background-color: black;
   }
+  .doc-img{
+    width: 10em !important;
+    height: 10em !important;
+  }
+  #peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
+    background-image: none !important;
+    font-size: 1rem !important;
+  }
+  .nav-item{
+    font-size: 0.9rem !important;
+  } 
   
+  .form-check-input{
+    font-size: 0.5em !important;
+  }
+  
+  .list_btn {
+    font-size: 1rem !important;
+  }
   .fab-container {
     display: flex;
     flex-direction: column;
@@ -912,6 +951,7 @@ h5{
     border-radius: 0 0 10px 0;
     z-index: -1;
   }
+  
   .fab-container .fab .fab-content {
     display: flex;
     align-items: center;
@@ -1013,7 +1053,16 @@ h5{
   #btn_1{
     font-size: 0.1em !important;
   }
-  
+  .btn-third{
+    font-size: 3vh !important;
+    margin-left: 1rem !important;
+}
+.btn-third:first-child{
+    margin-left: 1rem !important;
+    padding-top: 1rem;
+}
+
+}
   
   .form-check-input{
     font-size: 0.5em !important;
