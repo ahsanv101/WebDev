@@ -1,10 +1,7 @@
-/* @import "/typetravel/styles/themes/components/dropdown.css";
-@import "/typetravel/styles/themes/components/sizingNavbar.css"; */
-/* @import "/typetravel/styles/home.css"; */
-/*Importing Black Plague fonts*/
 #main-title-col{
   visibility: hidden;
 }
+/*scrollbar of the website: blood colour, when you hover black*/
 ::-webkit-scrollbar-track {
   border-radius: 1.3em;
 }
@@ -21,6 +18,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background:#000000;
 }
+/*importing fonts*/
 @font-face {
   font-family: 'canterbury';
   src: url(../fonts/Canterbury.ttf);
@@ -46,10 +44,11 @@ body{
   font-family: 'old', sans-serif;   
   max-width: fit-content;
   min-width: fit-content;  
-  cursor: url(../../css/images/castello.png) 10 5,auto !important;                         
+  cursor: url(../../css/images/castello.png) 10 5,auto !important;      /*cursor of a castle*/                   
 }
-/*disclaimer style start*/
 
+
+/*disclaimer style start*/
 .modal-dialog{
   max-width: 100vh;
 }
@@ -63,10 +62,7 @@ body{
   margin-top: 0!important;
   background-color: inherit;
 }
-.modbod{
-  font-size: 2rem;
-  font-family: 'canterbury';
-  /* text-align: center; */
+.modbod{ /*text of disclaimer*/
   padding: 1rem;
   font-weight: 100;
   color:#5b181f;
@@ -122,7 +118,6 @@ a:hover{
 /*navbar start*/
 #navbar{
   font-family: 'canterbury', serif;
-    /* text-transform: lowercase; */
     background-color:#40171b;
     color:#bab1a0;
     width:100%;
@@ -292,7 +287,7 @@ h1:hover{
     transform: translateY(60vh) scaleX(.85) rotate(45deg);
   }
 }
-
+/*end of drop animation*/
 
 
 #first #travel{
@@ -814,8 +809,8 @@ main-section a{
     --time-transition: ease-in-out 0.3s;
 }
 
-/*@media (max-width: 768px){
-    .btn-third{
+
+.btn-third{
         font-size: 3vh !important;
         margin-left: 1rem !important;
     }
@@ -1073,9 +1068,6 @@ h5{
     background-position: center;
   }
   
-  .fab-content, .fab-shadow, .sub-button, .fab{
-  }
-  
   
   #peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
     background-image: none !important;
@@ -1112,32 +1104,7 @@ h5{
   .list {
     font-size: 0.6em !important;
     list-style-type: none;
-  /* 			margin: 0;  */
-  /* 			white-space: nowrap;  */
-  /* 			overflow-x: hidden; */
-  /* 			list-style-position:inside;   */
   }  
-}  
-
-
-/*@media (min-width: 768px) and (max-width: 992px){
-    #about-proj p{
-        font-size: 3vh;
-    }
-    .issue-description{
-        font-size: 2.5vh !important;
-        padding-bottom: 0.5rem !important;
-    }
-}
-
-
-@media (min-width: 992px) and (max-width: 1200px){
-    .issue-description{
-        font-size: 2.5vh !important;
-        padding-bottom: 0.5rem !important;
-    }
-}
-*/
 
 
 
@@ -1202,14 +1169,6 @@ text-align: center;
 
 }
 
-/* .row .white{
-  background-color: white;
-}
-
-.col-md-12 .tess{
-  text-align:center;
-} */
-
 /* SELECTOR */
 
 .fab-container {
@@ -1247,10 +1206,6 @@ text-align: center;
 .fab-container:hover .sub-button:nth-child(7) {
   transform: translateX(-84vh);
 }
-/* .fab-container:hover .sub-button:nth-child(6) {
-  bottom: 1vh;
-  transform: translateX(-12vh);
-} */
 
 .fab-container .fab {
   position: relative;
@@ -1353,29 +1308,6 @@ text-align: center;
   background-color: #30302e;
 }
 
-
-
-
-/* .fab-container #enable-future:hover{
-  background: url("/typetravel/images/Future/g25.gif") !important;
-  background-size: 12vh !important;
-} */
-
-/* .sub-button:nth-child(6){
-  background: url("/typetravel/images/icons/default-icon.png");
-  background-size: 5vh !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-size: 6vh;
-  text-decoration: none !important;
-  height: 8vh !important;
-  width: 8vh !important;
-  right: 3vh !important;
-} */
-
-/* .fab-container:hover{
-  background-color: #83c0cf !important;
-}
 
 /*START DOCUMENTATIO*/
 .containerpadding {
