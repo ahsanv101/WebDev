@@ -594,6 +594,7 @@ nav#navbardoc, a:hover, #mod:hover, #butto:hover{
   text-shadow: 0 0 3vw #179E05;
   animation: flux 2s linear infinite;
 }
+/*neon animation done through overlayed text shadows*/
 @keyframes neon {
   0%, 100% {
     text-shadow: 0 0 1vw #ffe6e6, 0 0 3vw #ff6666, 0 0 10vw #ff4d4d, 0 0 10vw #ff3333, 0 0 .4vw red, .5vw .5vw .1vw #806914;
