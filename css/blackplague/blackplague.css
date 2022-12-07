@@ -660,8 +660,8 @@ input[type="checkbox"]{
 .tab-content{
   overflow-y:scroll;
   height:250px;
-  color:#260D0E;
   padding-top: 1rem;
+  border: 4mm ridge #732627;
 }
 #file2 h1, #file h1{
   padding-top:3em!important;
@@ -727,7 +727,6 @@ main-section a{
   text-align: left;
   color:#bab1a0;
   background-color: #000;
-  border: 4mm ridge #732627;
   font-family: 'scribish';
   line-height: 1.5;
 }
@@ -905,13 +904,16 @@ h5{
     font-size: 1.5rem;
   }
   #main-doc p{
-    font-size:0.5em;
+    font-size:1.2em;
   }
   #main-doc h5{
-    font-size:0.8em;
+    font-size:1.5em;
+  }
+  #main-doc a{
+    font-size: 0.6em;
   }
   #mainheader h2{
-    margin-left: 0;
+    padding-left: 0!important;
   }
   #btn_1{
     font-size: 0.7rem !important;
@@ -950,7 +952,6 @@ h5{
     position: fixed;
     bottom: 5vh;
     right: 5vh;
-    
   }
   .fab-container:hover {
     height: 100%;
@@ -1220,6 +1221,9 @@ text-align: center;
   position: fixed;
   bottom: 5vh;
   right: 5vh;
+}
+.fab-container, .fab{
+  z-index: 2;
 }
 
 .fab-container:hover {
