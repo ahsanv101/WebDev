@@ -183,7 +183,10 @@ a:hover {
   max-width: 100%;
 }
 
+nav#navbardoc, a:hover, #mod:hover, #butto:hover{
+  cursor: url(../../css/images/gary.png) 5 8,auto !important;
 
+}
 /* OPTIONAL / webpage name  */
 .name {
   color: var(--white);
@@ -259,8 +262,26 @@ a:hover {
     padding-top: -3em;
     padding-bottom: -3em;
   }
-  .nav {
-    font-size: 1em;
+  .col-1{
+    display:none;
+  }
+  .nav-item, .dropdown-item, .nav, footer{
+    font-size: 1rem!important;
+  }
+  #mainheader h2{
+    font-size:1rem;
+    padding-left: 0!important;
+  }
+  #main-doc h3{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .main-body{
+    display: list-item;
+  }
+  .main-doc a{
+    font-size: 0.5em!important;
+  }
 }
 
 
@@ -274,10 +295,6 @@ a:hover {
      
       
   }
-  #navbar{
-    background-image: none !important;
-   
-  }
   #navbardoc{
     display: none !important;
 }
@@ -290,9 +307,7 @@ a:hover {
 #btn_1{
   font-size: 0.7rem !important;
 }
-.dropdown-item{
-  font-size: 1.5rem;
-}
+
 .btn-third{
   font-size: 3vh !important;
   margin-left: 1rem !important;
@@ -304,9 +319,7 @@ a:hover {
 .nav-link{
   font-size: 1.5rem;
 }
-#navbarDropdownMenuLink, #navbarDropdownMenuL, #navbarDropdownMenuLi, #navbarDrop, #navbarDropp{ /*topic and themes*/
-  font-size: 1.5rem;
-}
+
 #main-doc {
   grid-area: mainContent !important;
   padding-left: 0!important;
@@ -334,11 +347,9 @@ a:hover {
 }
 .fab-container:hover .sub-button:nth-child(7) {
   transform: translateY(-72vh) !important;
-}}
 }
-.nav-item{
-  font-size: 0.9rem !important;
-} 
+}
+
 
 .form-check-input{
   font-size: 0.5em !important;
@@ -350,7 +361,7 @@ a:hover {
 
 #peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
   background-image: none !important;
-  font-size: 1em !important;
+  font-size: 0.8em !important;
 }
 
 
@@ -500,7 +511,7 @@ a:hover {
 }
 
 .nav-item, .dropdown-item{
-  font-size: 1rem;
+  font-size: 2rem;
 } 
 
 
@@ -1670,7 +1681,7 @@ text-align: center;
   background-image: url(../../images/galaxy.gif);
 }
 #mainheader h2{
-  padding-left: 17rem!important;
+  padding-left: 17rem;
 }
 #theme5, #main-doc h3{
   background-color: #000!important;

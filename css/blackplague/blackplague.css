@@ -46,7 +46,7 @@ body{
   font-family: 'old', sans-serif;   
   max-width: fit-content;
   min-width: fit-content;  
-  cursor: url(../../css/images/castello.png) 15 10,auto !important;                         
+  cursor: url(../../css/images/castello.png) 10 5,auto !important;                         
 }
 /*disclaimer style start*/
 
@@ -127,7 +127,7 @@ a:hover{
     color:#bab1a0;
     width:100%;
     list-style: none;
-    cursor:inherit;
+    cursor: url(../../css/images/castello.png) 10 5,auto !important;                        
 }
 #navbarNavDropdown{
   color:#bab1a0;
@@ -138,21 +138,33 @@ a:hover{
   font-size: 2rem;
   color:#bab1a0!important;
   border: 2px 2px ridge #bab1a0;
+  cursor: url(../../css/images/castello.png) 10 5,auto !important;                        
+
 } 
 #navbarDropdownMenuLink, #nav-active-link, .nav-item nav-link{
-  color:#bab1a0;
+  color:#bab1a0;                        
+
+}
+#navbarDropdownMenuLink:hover{
+  cursor: url(../../css/images/castello.png) 10 5,auto !important;                        
+
 }
 .dropdown-toggle{
   color:#bab1a0;
+  cursor: url(../../css/images/castello.png) 10 5,auto !important;                        
 }
 .dropdown-menu:hover{
   border-color: #5b181f;
+  cursor: url(../../css/images/castello.png) 10 5,auto !important;                        
+
 }
 .dropdown-menu{
   background-color: #40171b;
   background-size: 12em!important;
   min-width:10em;
   color:#bab1a0;
+  cursor: url(../../css/images/castello.png) 10 5,auto !important;                        
+
 }
 .dropdown-item{
   color:#bab1a0;
@@ -384,6 +396,7 @@ display: none;
 #btn-themes:hover{
   background-color:#260D0E;
   color: #5b181f;
+  cursor: url(../../css/images/castello.png) 10 5,auto !important;                        
 }
 #btn-issues{
   color:#260d0e;
@@ -392,6 +405,7 @@ display: none;
 #btn-issues:hover{
   background-color: #bab1a0;
   color: #5b181f;
+  cursor: url(../../css/images/castello.png) 10 5,auto !important;                       
 }
 #btn-issues, #btn-themes{
     font-family: 'scribish', serif;
@@ -449,7 +463,9 @@ display: none;
   color: #bab1a0;
   margin-top: 1rem;
 }
-
+#btn-primary:hover{
+  cursor: url(../../css/images/castello.png) 10 5,auto !important;                        
+}
 /*end third section*/
 
 /*start fourth section*/
@@ -850,7 +866,7 @@ h5{
         border-top: none;
     }
     #first h1{
-        font-size: 7.5vh !important;
+        font-size: 9vh !important;
     }
     #first #travel{
         margin-left: -1rem !important;
@@ -861,6 +877,13 @@ h5{
     #navbar{
       background-image: none !important;
      
+    }
+    #bann{
+      margin-left: 0;
+    }
+    #peoples-tab, #places-tab ,#events-tab ,#concepts-tab,#opinions-tab {
+      background-image: none !important;
+      font-size: 0.8em !important;
     }
     #navbardoc{
       display: none !important;
@@ -901,9 +924,9 @@ h5{
     background-image: none !important;
     font-size: 1rem !important;
   }
-  .nav-item{
-    font-size: 0.9rem !important;
-  } 
+  footer{
+    font-size: 2em;
+  }
   
   .form-check-input{
     font-size: 0.5em !important;
@@ -1056,8 +1079,8 @@ h5{
     width: 7em !important;
   }
   
-  .nav-item{
-    font-size: 1rem !important;
+  .nav-item, .dropdown-item{
+    font-size: 1.5rem !important;
   } 
   
   
@@ -1391,8 +1414,9 @@ nav#navbardoc a {
 .main-body{
   margin:0;
 }
-nav#navbardoc a:hover{
-  background-color: #000;
+nav#navbardoc, a:hover, #mod:hover, #butt:hover{
+  cursor: url(../../css/images/castello.png) 10 5,auto !important;                        
+
 }
 #navbardoc p{
   font-size: 2rem;
