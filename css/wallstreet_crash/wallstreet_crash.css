@@ -1194,6 +1194,11 @@ padding-bottom: 2rem;
   color: #0645AD;
 }
 
+ul{
+  color: #c9b080;
+  font-style: italic;
+}
+
 
 #file{
   overflow-y: scroll;
