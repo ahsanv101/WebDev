@@ -686,15 +686,12 @@ figcaption{
 }
 .list-people2{
   font-family:'scribish';
-  color:#5b181f;
 }
 #metado{
   background-color: #bab1a0;
   background-image: url(../../images/peste3.jpg)
 }
-#list .nav-item{
-  border: 4mm ridge #732627;
-}
+
 .space{
   padding:2rem;
 }
@@ -724,6 +721,15 @@ main-section a{
   border: 4mm ridge #732627;
   color: #bab1a0;
   background-color: #40171b;
+}
+#sentenceContent, .list, .list-people2{
+  font-size: 0.8em;
+  text-align: left;
+  color:#bab1a0;
+  background-color: #000;
+  border: 4mm ridge #732627;
+  font-family: 'scribish';
+  line-height: 1.5;
 }
 /*end metadata style*/
 
@@ -1104,7 +1110,6 @@ h5{
   
   .list {
     font-size: 0.6em !important;
-    line-height: 1; 
     list-style-type: none;
   /* 			margin: 0;  */
   /* 			white-space: nowrap;  */
